@@ -1,21 +1,56 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { apiKey } from './cleaners/apiKey';
+import { connect } from 'react-redux';
+import { loadShows } from './actions';
+import { withRouter } from 'react-router-dom'
 
-class App extends Component {
+export class App extends Component {
+  constructor(props) {
+    super(props)
+    // this.state = {
+    //   shows: []
+    // }
+  }
+
+  getShows = async () => {
+    const response = await fetch(`http://api.jambase.com/events?zipCode=80216&radius=10&page=0&api_key=${apiKey}`)
+    const eventData = await response.json();
+    console.log(eventData.Events)
+    // this.setState({ shows: eventData})
+    // this.props.loadShows(eventData);
+  };
+
+
+  componentDidMount = () => {
+    // console.log(this.props)
+    // this.props.loadShows('shows!!!!!!')
+    // this.getShows() 
+  };
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+        <header className="App-header">     
+          <h1 className="App-title">Welcome to Personal Project</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        
       </div>
     );
-  }
-}
+  };
+};
 
-export default App;
+// export const mapStateToProps = (state) => {
+//   return {
+//     shows: state.shows
+//   };
+// };
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    loadShows: (shows) => (dispatch(loadShows(shows)))
+  };
+};
+
+
+export default withRouter(connect(null, mapDispatchToProps)(App));
