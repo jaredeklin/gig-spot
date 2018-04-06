@@ -6,14 +6,13 @@ import { setLocation } from './actions';
 export class LandingPage extends Component {
   constructor() {
     super()
-    this.state ={ 
+    this.state = { 
       zipCode: '',
       radius: ''
     }
   }
 
   handleChange = (event) => {
-    console.log(this.props)
     const { name, value } = event.target;
     this.setState({
       [name]: value
@@ -23,7 +22,9 @@ export class LandingPage extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.setLocation(this.state);
-    this.props.history.push('/main');
+    // console.log(this.props)
+    const path = './main';
+    this.props.history.push(path);
   }
 
 
@@ -57,4 +58,4 @@ export const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(LandingPage);
+export default withRouter(connect(null, mapDispatchToProps)(LandingPage));

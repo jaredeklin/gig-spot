@@ -12,13 +12,12 @@ export class App extends Component {
 
   getShows = async () => {
     try {
-      const zipCode = 80203;
-      const radius = 10
+      const { zipCode, radius } = this.props.location
       const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&radius=${radius}&page=0&api_key=${jambaseApiKey}`);
       const eventData = await response.json();
       console.log(eventData)
 
-        const concerts =  eventData.Events.reduce( async (array, show) => {
+      const concerts =  eventData.Events.reduce( async (array, show) => {
       const artistImage = await this.getImage(show.Artists[0].Name);
       console.log(artistImage)
       const venueName = show.Venue.Name;
@@ -65,14 +64,11 @@ export class App extends Component {
   };
 
   render() {
+    // const { zipCode, radius } = this.props.location
     return (
       <div className="App">
-        <header className="App-header">     
-          <h1 className="App-title">Welcome to Personal Project</h1>
-        </header>
-
         <Route exact path = '/' render={ () => <LandingPage />} />
-        <Route exact path = '/Main' render={ () => <Main />} />
+        <Route exact path = '/main' render={ () => <Main location={this.props}/>} />
       </div>
     );
   };
