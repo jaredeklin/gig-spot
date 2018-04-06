@@ -31,23 +31,28 @@ export class LandingPage extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className='location-form'>
-        <input 
-          type='text'
-          name='zipCode'
-          value={this.state.zipCode}
-          onChange={this.handleChange}
-          placeholder='Zip-code'
-        />
-        <input
-          type='text'
-          name='radius'
-          value={this.state.radius}
-          onChange={this.handleChange}
-          placeholder='Radius'
-        />
-        <button>Submit</button>
-      </form>
+      <section className='landing-page'>
+        <header className="App-header">     
+          <h1 className="App-title">Welcome to Personal Project</h1>
+        </header>
+        <form onSubmit={this.handleSubmit} className='location-form'>
+          <input 
+            type='text'
+            name='zipCode'
+            value={this.state.zipCode}
+            onChange={this.handleChange}
+            placeholder='Zip-code'
+          />
+          <input
+            type='text'
+            name='radius'
+            value={this.state.radius}
+            onChange={this.handleChange}
+            placeholder='Radius'
+          />
+          <button>Submit</button>
+        </form>
+      </section>
     )
   }
 }

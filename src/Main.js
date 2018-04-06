@@ -8,8 +8,6 @@ export const Main = (props) => {
     <div className='main'>
       <header className="App-header">     
         <h1 className="App-title">Welcome to Personal Project</h1>
-        <h3>Location: { zipCode }</h3>
-        <h3>Radius: { radius }</h3>
       </header>
       <h3>hello, i'm Main, where tonights cards are going to go</h3>
       <TonightCard />
