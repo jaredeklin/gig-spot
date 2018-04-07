@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setLocation } from './actions';
+import { setLocation, loadShows } from './actions';
+import { fetchShows } from './cleaners/dataCleaner'
 
 export class LandingPage extends Component {
   constructor() {
@@ -19,10 +20,13 @@ export class LandingPage extends Component {
     });
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
+    const shows = await fetchShows(this.state)
+    this.props.loadShows(shows);
     this.props.setLocation(this.state);
-    // console.log(this.props)
+    // console.log(shows)
+
     const path = './main';
     this.props.history.push(path);
   }
@@ -32,9 +36,6 @@ export class LandingPage extends Component {
   render() {
     return (
       <section className='landing-page'>
-        <header className="App-header">     
-          <h1 className="App-title">Welcome to Personal Project</h1>
-        </header>
         <form onSubmit={this.handleSubmit} className='location-form'>
           <input 
             type='text'
@@ -59,7 +60,8 @@ export class LandingPage extends Component {
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    setLocation: (location) => (dispatch(setLocation(location)))
+    setLocation: (location) => (dispatch(setLocation(location))),
+    loadShows: (location) => (dispatch(loadShows(location)))
   };
 };
 
