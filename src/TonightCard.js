@@ -1,8 +1,13 @@
 import React from 'react';
-import './tonightCard.css'
+import './tonightCard.css';
+import defaultImage from './images/black-woven.jpg';
 
 export const TonightCard = (props) => {
-  const { image, artist, venue, date } = props.show;
+  let { image, artist, venue, date } = props.show;
+  if (!image) {
+    image = defaultImage;
+  }
+  console.log(image)
 
   return (
     <article className="tonight-card">
