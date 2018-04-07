@@ -15,6 +15,10 @@ h1 {
   text-align: center;
 }
 
+input {
+  outline: none;
+}
+
 .location-form {
   box-sizing: border-box;
   width: 50%;

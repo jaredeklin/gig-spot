@@ -16,6 +16,10 @@ export const cleanConcertData = (concerts) => {
   }, []); 
 }
 
+export const cleanDate = (date) => {
+  
+}
+
 export const fetchShows = async (location) => {
   const { zipCode, radius } = location
   try {

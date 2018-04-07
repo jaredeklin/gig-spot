@@ -11,12 +11,11 @@ import LocationForm from './LocationForm.js';
 export class App extends Component {
 
   render() {
-    console.log(this.props.location)
   
     return (
       <div className="App">
         <header className="App-header">     
-          <h1 className="App-title">Welcome to Concert Box Tracker</h1>
+          <h1 className="App-title">Welcome to Concert Tracker Box</h1>
           {
             this.props.location.pathname === '/main' &&
               <LocationForm id='main-form' />
