@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setLocation, loadShows } from '../../actions';
-import { fetchShows } from '../../cleaners/dataCleaner'
+import { fetchShows } from '../../cleaners/fetchShows'
 
 export class LocationForm extends Component {
   constructor() {
