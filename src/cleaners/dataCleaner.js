@@ -5,10 +5,12 @@ export const cleanConcertData = (concerts) => {
     const venue = show.Venue.Name;
     const date = show.Date;
     const artist = show.Artists[0].Name;
+    const id = show.Id;
     const concertData = {
       artist,
       venue,
       date,
+      id
     }
     return [...array, concertData]
   }, []); 

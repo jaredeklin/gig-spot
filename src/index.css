@@ -21,6 +21,12 @@ h1 {
   margin: auto;
 }
 
+#main-form {
+  width: 25%;
+  margin: 5px;
+  float: right;
+}
+
 .tonights-shows {
   overflow: scroll;
   width: 100%;
@@ -31,5 +37,6 @@ h1 {
 .tonight-inner {
   transition: 450ms transform;
   white-space: nowrap;
-  margin: 80px 0;
+  margin: 40px 0;
+  padding: 0 30px;
 }

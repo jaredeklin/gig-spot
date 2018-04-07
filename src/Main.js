@@ -1,16 +1,15 @@
 import React from 'react';
 import { TonightCard } from './TonightCard';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 export const Main = (props) => {
-  // const { zipCode, radius } = props.location;
-
   let tonightCards;
-  if(props.shows) {
+
+  if (props.shows) {
     tonightCards = props.shows.map(show => {
-      return(<TonightCard show={show}/>)
-    })
-  }
+      return(<TonightCard show={show} key={show.id} />)
+    });
+  };
 
   return (
     <div className='main'>
@@ -27,4 +26,4 @@ export const mapStateToProps = (state) => ({
   shows: state.shows
 });
 
-export default connect(mapStateToProps)(Main)
+export default connect(mapStateToProps)(Main);
