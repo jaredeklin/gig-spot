@@ -7,9 +7,20 @@ describe('LocationForm', () => {
 
   beforeEach(() => {
     wrapper = shallow(<LocationForm />)
-  })
+  });
 
   it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('handleChange should set the state', () => {
+    let mockEvent = { target: { value: 80203, name: 'zipCode'}};
+    wrapper.instance().handleChange(mockEvent);
+    const expected = { zipCode: 80203, radius: ''};
+    expect(wrapper.state()).toEqual(expected);
+  });
+
+  it('handleSubmit', () => {
+
   })
-})
+});
