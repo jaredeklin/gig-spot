@@ -8,7 +8,7 @@ export const TonightCard = (props) => {
 
   return (
     <article className="tonight-card">
-      <img src={ image ? image : defaultImage } className='artist-image' alt="artist image"/>
+      <img src={ image ? image : defaultImage } className='artist-image' alt="artist"/>
       <h4 className="artist">{ artist }</h4>
       <h4 className="venue">{ venue }</h4>
       <h4 className="date">{ formatedDate }</h4>
