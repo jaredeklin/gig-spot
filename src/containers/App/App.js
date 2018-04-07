@@ -1,29 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { jambaseApiKey, lastFmApiKey } from './cleaners/apiKey';
 import { connect } from 'react-redux';
-import { loadShows } from './actions';
+import { loadShows } from '../../actions';
 import { withRouter, Route } from 'react-router-dom';
-import LandingPage from './LandingPage';
-import  Main from './Main';
+import Main from '../Main/Main';
+import LocationForm from '../LocationForm/LocationForm.js';
 
 
 export class App extends Component {
-
-
-
-
-
-
 
   render() {
   
     return (
       <div className="App">
         <header className="App-header">     
-          <h1 className="App-title">Welcome to Personal Project</h1>
+          <h1 className="App-title">Welcome to Concert Tracker Box</h1>
+          {
+            this.props.location.pathname === '/main' &&
+              <LocationForm id='main-form' />
+          }
         </header>
-        <Route exact path = '/' render={ () => <LandingPage />} />
+        <Route exact path = '/' render={ () => <LocationForm />} />
         <Route exact path = '/main' render={ () => <Main />} />
       </div>
     );
@@ -33,7 +30,7 @@ export class App extends Component {
 export const mapStateToProps = (state) => {
   return {
     shows: state.shows,
-    location: state.location
+    searchLocation: state.location
   };
 };
 
