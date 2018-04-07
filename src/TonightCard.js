@@ -3,7 +3,7 @@ import './tonightCard.css'
 
 export const TonightCard = (props) => {
   const { image, artist, venue, date } = props.show;
-  console.log(props)
+
   return (
     <article className="tonight-card">
       <img src={image} className='artist-image'/>
