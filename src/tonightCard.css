@@ -1,0 +1,12 @@
+.tonight-card {
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  white-space: initial;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}

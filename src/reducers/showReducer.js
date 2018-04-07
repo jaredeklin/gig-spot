@@ -1,5 +1,5 @@
 const showReducer = (state = [], action) => {
-  console.log(action.type)
+  console.log('show reducer:', action.type)
   switch(action.type) {
   case 'LOAD_SHOWS':
     return [...action.shows];
