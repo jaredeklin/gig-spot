@@ -1,5 +1,5 @@
 import React from 'react';
-import { TonightCard } from './TonightCard';
+import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
 
 export const Main = (props) => {

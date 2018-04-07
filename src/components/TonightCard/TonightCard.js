@@ -1,6 +1,6 @@
 import React from 'react';
 import './tonightCard.css';
-import defaultImage from './images/black-woven.jpg';
+import defaultImage from '../../images/black-woven.jpg';
 
 export const TonightCard = (props) => {
   let { image, artist, venue, date } = props.show;

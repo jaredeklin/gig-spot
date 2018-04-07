@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import { loadShows } from './actions';
+import { loadShows } from '../../actions';
 import { withRouter, Route } from 'react-router-dom';
-// import LandingPage from './LandingPage';
-import Main from './Main';
-import LocationForm from './LocationForm.js';
+import Main from '../Main/Main';
+import LocationForm from '../LocationForm/LocationForm.js';
 
 
 export class App extends Component {
