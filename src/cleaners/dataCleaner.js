@@ -3,7 +3,7 @@ import { lastFmApiKey, jambaseApiKey } from './apiKey'
 export const cleanConcertData = (concerts) => {
   return concerts.reduce((array, show) => {
     const venue = show.Venue.Name;
-    const date = show.Date;
+    const date = cleanDate(show.Date);
     const artist = show.Artists[0].Name;
     const id = show.Id;
     const concertData = {
@@ -17,7 +17,16 @@ export const cleanConcertData = (concerts) => {
 }
 
 export const cleanDate = (date) => {
-  
+  const cleanEventDate = new Date(date).toString();
+  const splitEventDate = cleanEventDate.split(' ');
+
+  return {
+    dayName: splitEventDate[0],
+    day: splitEventDate[2],
+    month: splitEventDate[1],
+    year: splitEventDate[3],
+    startTime: splitEventDate[4].split(':', 2).join(':')
+  }
 }
 
 export const fetchShows = async (location) => {

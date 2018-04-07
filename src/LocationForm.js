@@ -16,27 +16,8 @@ export class LocationForm extends Component {
   }
 
   cleanDate = (dirtyDate) => {
-    const currentDate = new Date()
-    console.log(currentDate)
-    // const splitCurrent = currentDate.split(" ")
-    // const otherDate = new Date(currentDate)
-    const splitString = dirtyDate.split('T')
-    const date = splitString[0];
-    const splitDate = date.split('-')
-    const time = splitString[1];
-    const splitTime = time.split(':')
-    const cleanTime = {
-      hour: splitTime[0],
-      minute: splitTime[1]
-    }
-    const cleanD = {
-      day: splitDate[2],
-      month: splitDate[1],
-      year: splitDate[0]
-    }
-    // const monthConv = this.convertMonth(splitCurrent[1])
-    
-    // console.log(currentDate, monthConv)
+    const currentDateISO = new Date().toISOString()
+
   }
 
   convertMonth = (month) => {
@@ -45,55 +26,55 @@ export class LocationForm extends Component {
       return 'Jan';
 
     case 'Jan':
-      return '1';
+      return '01';
 
     case '2':
       return 'Feb';
 
     case 'Feb':
-      return '2';
+      return '02';
 
     case '3':
       return 'Mar';
 
     case 'Mar':
-      return '3';
+      return '03';
 
     case '4':
       return 'Apr';
 
     case 'Apr':
-      return '4';
+      return '04';
 
     case '5':
       return 'May';
 
     case 'May':
-      return '5';
+      return '05';
 
     case '6':
       return 'Jun';
 
     case 'Jun':
-      return '6';
+      return '06';
 
     case '7':
       return 'Jul';
 
     case 'Jul':
-      return '7';
+      return '07';
 
     case '8':
       return 'Aug';
 
     case 'Aug':
-      return '8';
+      return '08';
 
     case '9':
       return 'Sep';
 
     case 'Sep':
-      return '9';
+      return '09';
 
     case '10':
       return 'Oct';
@@ -120,10 +101,10 @@ export class LocationForm extends Component {
 
   handleChange = (event) => {
     const { name, value } = event.target;
+
     this.setState({
       [name]: value
     });
-    this.cleanDate(this.dirtyDate)
   };
 
   handleSubmit = async (event) => {
