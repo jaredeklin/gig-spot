@@ -4,7 +4,15 @@ exports[`LocationForm should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <LocationForm />,
+  Symbol(enzyme.__unrendered__): <LocationForm
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+    loadShows={[Function]}
+    setLocation={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

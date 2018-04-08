@@ -52,7 +52,7 @@ ShallowWrapper {
         <h4
           className="date"
 >
-          Apr 20 20:00
+          [object Object] undefined
 </h4>,
       ],
       "className": "tonight-card",
@@ -101,11 +101,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Apr 20 20:00",
+          "children": "[object Object] undefined",
           "className": "date",
         },
         "ref": null,
-        "rendered": "Apr 20 20:00",
+        "rendered": "[object Object] undefined",
         "type": "h4",
       },
     ],
@@ -136,7 +136,7 @@ ShallowWrapper {
           <h4
             className="date"
 >
-            Apr 20 20:00
+            [object Object] undefined
 </h4>,
         ],
         "className": "tonight-card",
@@ -185,11 +185,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Apr 20 20:00",
+            "children": "[object Object] undefined",
             "className": "date",
           },
           "ref": null,
-          "rendered": "Apr 20 20:00",
+          "rendered": "[object Object] undefined",
           "type": "h4",
         },
       ],
@@ -258,7 +258,7 @@ ShallowWrapper {
         <h4
           className="date"
 >
-          Apr 20 20:00
+          [object Object] undefined
 </h4>,
       ],
       "className": "tonight-card",
@@ -307,11 +307,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Apr 20 20:00",
+          "children": "[object Object] undefined",
           "className": "date",
         },
         "ref": null,
-        "rendered": "Apr 20 20:00",
+        "rendered": "[object Object] undefined",
         "type": "h4",
       },
     ],
@@ -342,7 +342,7 @@ ShallowWrapper {
           <h4
             className="date"
 >
-            Apr 20 20:00
+            [object Object] undefined
 </h4>,
         ],
         "className": "tonight-card",
@@ -391,11 +391,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Apr 20 20:00",
+            "children": "[object Object] undefined",
             "className": "date",
           },
           "ref": null,
-          "rendered": "Apr 20 20:00",
+          "rendered": "[object Object] undefined",
           "type": "h4",
         },
       ],

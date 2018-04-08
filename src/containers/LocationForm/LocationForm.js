@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setLocation, loadShows } from '../../actions';
-import { fetchShows } from '../../cleaners/fetchShows'
+import { fetchShows } from '../../cleaners/fetchShows';
 
 export class LocationForm extends Component {
   constructor() {
@@ -14,13 +14,16 @@ export class LocationForm extends Component {
   };
 
   // cleanDate = () => {
-  //   const dirtyISODate = "2018-04-20T21:00:00"
-  //   const currentDateISO = new Date().toISOString()
+  //   const dirtyISODate = "2018-04-18T01:20:30"
+  //   // const currentDateISO = new Date().toISOString()
+  //   // const cleanDate = new Date(dirtyISODate).toLocaleDateString([], {
+  //   //   month: 'short',
+  //   //   day: 'numeric'
+  //   // })
   // }
 
   handleChange = (event) => {
     const { name, value } = event.target;
-
     this.setState({
       [name]: value
     });

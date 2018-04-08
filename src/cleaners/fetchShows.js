@@ -1,5 +1,6 @@
-import { lastFmApiKey, jambaseApiKey } from './apiKey';
+import { jambaseApiKey } from './apiKey';
 import { fetchImage } from './fetchImage';
+import { cleanConcertData } from './cleanConcertData';
 
 export const fetchShows = async (location) => {
   const { zipCode, radius } = location;
@@ -11,35 +12,6 @@ export const fetchShows = async (location) => {
 
     return completedConcertObject;
   } catch (error) {
-    throw error;
+    throw error
   }
 };
-
-export const cleanConcertData = (concerts) => {
-  return concerts.reduce((array, show) => {
-    const venue = show.Venue.Name;
-    const date = cleanDate(show.Date);
-    const artist = show.Artists[0].Name;
-    const id = show.Id;
-    const concertData = {
-      artist,
-      venue,
-      date,
-      id
-    }
-    return [...array, concertData]
-  }, []); 
-}
-
-export const cleanDate = (date) => {
-  const cleanEventDate = new Date(date).toString();
-  const splitEventDate = cleanEventDate.split(' ');
-
-  return {
-    dayName: splitEventDate[0],
-    day: splitEventDate[2],
-    month: splitEventDate[1],
-    year: splitEventDate[3],
-    startTime: splitEventDate[4].split(':', 2).join(':')
-  }
-}

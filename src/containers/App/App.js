@@ -6,7 +6,6 @@ import { withRouter, Route } from 'react-router-dom';
 import Main from '../Main/Main';
 import LocationForm from '../LocationForm/LocationForm.js';
 
-
 export class App extends Component {
 
   render() {
@@ -14,10 +13,13 @@ export class App extends Component {
     return (
       <div className="App">
         <header className="App-header">     
-          <h1 className="App-title">Welcome to Concert Tracker Box</h1>
+          <h1>Welcome to Concert Tracker Box</h1>
           {
             this.props.location.pathname === '/main' &&
+            <div className='change-location'>
+              <p>Update location:</p>
               <LocationForm id='main-form' />
+            </div>
           }
         </header>
         <Route exact path = '/' render={ () => <LocationForm />} />
@@ -28,9 +30,10 @@ export class App extends Component {
 };
 
 export const mapStateToProps = (state) => {
+  const { shows, searchLocation } = state
   return {
-    shows: state.shows,
-    searchLocation: state.location
+    shows,
+    searchLocation
   };
 };
 
