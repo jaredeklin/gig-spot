@@ -1,5 +1,4 @@
 export const cleanImage = (artistData) => {
-  console.log(artistData)
   if (!artistData.artist || !artistData.artist.image[4]) {
 
     return null; 

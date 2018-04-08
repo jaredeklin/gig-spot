@@ -4,7 +4,6 @@ import { LocationForm } from './LocationForm';
 import { fetchShows } from '../../cleaners/fetchShows';
 import { mockTonightCardData } from '../../cleaners/mockData';
 
-
 jest.mock('../../cleaners/fetchShows');
 
 describe('LocationForm', () => {
@@ -32,7 +31,7 @@ describe('LocationForm', () => {
   });
 
   it('handleChange should set the state', () => {
-    let mockEvent = { target: { value: 80203, name: 'zipCode'}};
+    let mockEvent = { target: { value: 80203, name: 'zipCode' }};
     const expected = { zipCode: 80203, radius: ''};
     
     wrapper.instance().handleChange(mockEvent);
@@ -61,6 +60,6 @@ describe('LocationForm', () => {
     it('expect history.push() to have been called', async () => {
       await wrapper.instance().handleSubmit(mockEvent);
       expect(mockHistory.push).toHaveBeenCalled();
-    })
+    });
   });
 });

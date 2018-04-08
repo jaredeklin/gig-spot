@@ -1,3 +1,5 @@
+
+
 export const mockTonightCardData = {
   artist: "Selina Albright", 
   venue: "The Soiled Dove Underground", 
@@ -5,7 +7,6 @@ export const mockTonightCardData = {
   id: 3108932, 
   image: "https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png" 
 };
-
 
 export const mockTonightCardDataWOImage = {
   artist: "Selina Albright", 
