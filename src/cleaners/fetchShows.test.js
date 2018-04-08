@@ -35,4 +35,13 @@ describe('fetchShows', () => {
   // it('fetchImage should be called with correct params', () => {
 
   // });
+  
+  it('should throw an error if a bad response is returned', () => {
+    window.fetch = jest.fn(() => Promise.reject({
+      status: 404
+    }));
+    const expected = { 'status': 404 };
+
+    expect(fetchShows(mockLocation)).rejects.toEqual(expected);
+  })
 });
