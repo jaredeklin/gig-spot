@@ -33,12 +33,12 @@ describe('fetchImage', () => {
     expect(cleanImage).toHaveBeenCalledWith(mockFetchArtistImageReturnData)
   });
 
-  // it('should throw an error if response is bad', async () => {
-  //   window.fetch = jest.fn().mockImplementation(() => Promise.reject({
-  //     status: 404
-  //   }));
+  it('should throw an error if response is bad', async () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.reject({
+      status: 404
+    }));
 
-  //   const expected = { 'status': 404 }
-  //   await expect(fetchImage(mockFetchImageConcertData)).toEqual(expected)
-  // })
+    const expected = { 'status': 404 }
+    expect(fetchImage(mockFetchImageConcertData)).rejects.toEqual(expected)
+  })
 });
