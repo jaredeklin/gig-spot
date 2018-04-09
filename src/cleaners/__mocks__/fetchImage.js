@@ -1,0 +1,1 @@
+export const fetchImage = jest.fn();

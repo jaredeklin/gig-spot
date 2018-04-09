@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TonightCard should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    show={
+        Object {
+            "artist": "Selina Albright",
+            "date": Object {
+              "day": "20",
+              "dayName": "Fri",
+              "month": "Apr",
+              "startTime": "20:00",
+              "year": "2018",
+            },
+            "id": 3108932,
+            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png",
+            "venue": "The Soiled Dove Underground",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="artist"
+          className="artist-image"
+          src="https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png"
+/>,
+        <h4
+          className="artist"
+>
+          Selina Albright
+</h4>,
+        <h4
+          className="venue"
+>
+          The Soiled Dove Underground
+</h4>,
+        <h4
+          className="date"
+>
+          [object Object] undefined
+</h4>,
+      ],
+      "className": "tonight-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "artist",
+          "className": "artist-image",
+          "src": "https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Selina Albright",
+          "className": "artist",
+        },
+        "ref": null,
+        "rendered": "Selina Albright",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "The Soiled Dove Underground",
+          "className": "venue",
+        },
+        "ref": null,
+        "rendered": "The Soiled Dove Underground",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "[object Object] undefined",
+          "className": "date",
+        },
+        "ref": null,
+        "rendered": "[object Object] undefined",
+        "type": "h4",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="artist"
+            className="artist-image"
+            src="https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png"
+/>,
+          <h4
+            className="artist"
+>
+            Selina Albright
+</h4>,
+          <h4
+            className="venue"
+>
+            The Soiled Dove Underground
+</h4>,
+          <h4
+            className="date"
+>
+            [object Object] undefined
+</h4>,
+        ],
+        "className": "tonight-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "artist",
+            "className": "artist-image",
+            "src": "https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Selina Albright",
+            "className": "artist",
+          },
+          "ref": null,
+          "rendered": "Selina Albright",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Soiled Dove Underground",
+            "className": "venue",
+          },
+          "ref": null,
+          "rendered": "The Soiled Dove Underground",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "[object Object] undefined",
+            "className": "date",
+          },
+          "ref": null,
+          "rendered": "[object Object] undefined",
+          "type": "h4",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`TonightCard should match the snapshot 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    show={
+        Object {
+            "artist": "Selina Albright",
+            "date": Object {
+              "day": "20",
+              "dayName": "Fri",
+              "month": "Apr",
+              "startTime": "20:00",
+              "year": "2018",
+            },
+            "id": 3108932,
+            "image": null,
+            "venue": "The Soiled Dove Underground",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="artist"
+          className="artist-image"
+          src="black-woven.jpg"
+/>,
+        <h4
+          className="artist"
+>
+          Selina Albright
+</h4>,
+        <h4
+          className="venue"
+>
+          The Soiled Dove Underground
+</h4>,
+        <h4
+          className="date"
+>
+          [object Object] undefined
+</h4>,
+      ],
+      "className": "tonight-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "artist",
+          "className": "artist-image",
+          "src": "black-woven.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Selina Albright",
+          "className": "artist",
+        },
+        "ref": null,
+        "rendered": "Selina Albright",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "The Soiled Dove Underground",
+          "className": "venue",
+        },
+        "ref": null,
+        "rendered": "The Soiled Dove Underground",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "[object Object] undefined",
+          "className": "date",
+        },
+        "ref": null,
+        "rendered": "[object Object] undefined",
+        "type": "h4",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="artist"
+            className="artist-image"
+            src="black-woven.jpg"
+/>,
+          <h4
+            className="artist"
+>
+            Selina Albright
+</h4>,
+          <h4
+            className="venue"
+>
+            The Soiled Dove Underground
+</h4>,
+          <h4
+            className="date"
+>
+            [object Object] undefined
+</h4>,
+        ],
+        "className": "tonight-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "artist",
+            "className": "artist-image",
+            "src": "black-woven.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Selina Albright",
+            "className": "artist",
+          },
+          "ref": null,
+          "rendered": "Selina Albright",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Soiled Dove Underground",
+            "className": "venue",
+          },
+          "ref": null,
+          "rendered": "The Soiled Dove Underground",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "[object Object] undefined",
+            "className": "date",
+          },
+          "ref": null,
+          "rendered": "[object Object] undefined",
+          "type": "h4",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
