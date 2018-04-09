@@ -32,12 +32,8 @@ button {
 }
 
 #main-form {
-  /*width: 25%;*/
   display: inline;
   margin: 10px;
-/*  position: absolute;
-  right: -30px;
-  top: 0%;*/
 }
 
 #main-form input {
@@ -79,4 +75,11 @@ button {
 
 .tonight-inner h4 {
   /*text-align: left;*/
+}
+
+.loading-gif {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 40%;
 }

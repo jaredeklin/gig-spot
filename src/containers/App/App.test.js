@@ -18,5 +18,13 @@ describe('App', () => {
     wrapper = shallow(<App location={mockLocation} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+//   it('should map mapDispatchToProps to props', () => {
+//     const mockShows =  [];
+//     const mockSearchLocation = [];
+
+//     const mappedShows = mapStateToProps(mockShows);
+//     expect(mappedShows).toEqual();
+//   })
 });
 
