@@ -13,15 +13,6 @@ export class LocationForm extends Component {
     }  
   };
 
-  // cleanDate = () => {
-  //   const dirtyISODate = "2018-04-18T01:20:30"
-  //   // const currentDateISO = new Date().toISOString()
-  //   // const cleanDate = new Date(dirtyISODate).toLocaleDateString([], {
-  //   //   month: 'short',
-  //   //   day: 'numeric'
-  //   // })
-  // }
-
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({

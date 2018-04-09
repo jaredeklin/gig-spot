@@ -12,5 +12,11 @@ describe('App', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should match the snapshot when path is ./main', () => {
+    const mockLocation = { history: { pathname: './main' }};
+    wrapper = shallow(<App location={mockLocation} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
 

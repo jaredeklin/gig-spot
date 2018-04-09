@@ -16,14 +16,14 @@ export class App extends Component {
           <h1>Welcome to Concert Tracker Box</h1>
           {
             this.props.location.pathname === '/main' &&
-            <div className='change-location'>
-              <p>Update location:</p>
-              <LocationForm id='main-form' />
-            </div>
+              <div className='change-location'>
+                <p>Update location:</p>
+                <LocationForm id='main-form' />
+              </div>
           }
         </header>
-        <Route exact path = '/' render={ () => <LocationForm />} />
-        <Route exact path = '/main' render={ () => <Main />} />
+        <Route exact path = '/' render={ () => <LocationForm /> } />
+        <Route exact path = '/main' render={ () => <Main /> } />
       </div>
     );
   };

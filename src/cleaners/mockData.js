@@ -1,4 +1,57 @@
+export const mockFetchShowsData = {
+    "Info": {
+        "TotalResults": 174,
+        "PageNumber": 0,
+        "Message": null
+    },
+    "Events": [{
+        "Id": 3106726,
+        "Date": "2018-04-08T21:00:00",
+        "Venue": {
+            "Id": 160831,
+            "Name": "Streets Of London Pub",
+            "Address": "1501 E Colfax Ave",
+            "City": "Denver",
+            "State": "Colorado",
+            "StateCode": "CO",
+            "Country": "US",
+            "CountryCode": "US",
+            "ZipCode": "80218",
+            "Url": "",
+            "Latitude": 0.0,
+            "Longitude": 0.0
+        },
+        "Artists": [{
+            "Id": 123882,
+            "Name": "Shawn James"
+        }],
+        "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api"
+    }]
+}
 
+export const mockCleanConcertData = [{
+        "Id": 3106726,
+        "Date": "2018-04-08T21:00:00",
+        "Venue": {
+            "Id": 160831,
+            "Name": "Streets Of London Pub",
+            "Address": "1501 E Colfax Ave",
+            "City": "Denver",
+            "State": "Colorado",
+            "StateCode": "CO",
+            "Country": "US",
+            "CountryCode": "US",
+            "ZipCode": "80218",
+            "Url": "",
+            "Latitude": 0.0,
+            "Longitude": 0.0
+        },
+        "Artists": [{
+            "Id": 123882,
+            "Name": "Shawn James"
+        }],
+        "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api"
+    }]
 
 export const mockTonightCardData = {
   artist: "Selina Albright", 
