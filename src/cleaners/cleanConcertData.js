@@ -9,6 +9,8 @@ export const cleanConcertData = (concerts) => {
       month: 'short',
       day: 'numeric'
     });
+    console.log(date)
+    console.log(show.Date)
     const startTime = cleanTime(show.Date)
     const concertData = {
       artist,

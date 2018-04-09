@@ -1,4 +1,4 @@
-const locationReducer = (state = {}, action) => {
+const searchLocationReducer = (state = {}, action) => {
   switch(action.type) {
   case 'SET_LOCATION':
     return { zipCode: action.location.zipCode, radius: action.location.radius }
@@ -8,4 +8,4 @@ const locationReducer = (state = {}, action) => {
   }
 }
 
-export default locationReducer;
+export default searchLocationReducer;

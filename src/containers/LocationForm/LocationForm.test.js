@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { LocationForm } from './LocationForm';
+import { LocationForm, mapDispatchToProps } from './LocationForm';
 import { fetchShows } from '../../cleaners/fetchShows';
 import { mockTonightCardData } from '../../cleaners/mockData';
 
@@ -23,7 +23,7 @@ describe('LocationForm', () => {
       loadShows={mockLoadShows} 
       setLocation={mockSetLocation}
       history={mockHistory}
-      />)      
+      />) ;     
   });
 
   it('should match the snapshot', () => {
@@ -36,6 +36,15 @@ describe('LocationForm', () => {
     
     wrapper.instance().handleChange(mockEvent);
     expect(wrapper.state()).toEqual(expected);
+  });
+
+  it('should map dispatch to props', () => {
+    const mockDispatch = jest.fn();
+    const mapped = mapDispatchToProps(mockDispatch);
+
+    mapped.loadShows();
+    mapped.setLocation();
+    expect(mockDispatch).toHaveBeenCalled();
   });
 
   describe('handleSubmit', () => {
