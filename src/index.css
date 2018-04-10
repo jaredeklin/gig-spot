@@ -62,19 +62,28 @@ button {
 .tonights-shows {
   overflow: scroll;
   width: 100%;
-  position: absolute;
-  top: 185px;
+  position: relative;
+  /*top: 185px;*/
+  /*min-height: 200px;*/
 }
 
-.tonight-inner {
+.shows-inner {
   transition: 450ms transform;
   white-space: nowrap;
-  margin: 40px 0;
+  margin: 20px 0;
   padding: 0 30px;
 }
 
 .tonight-inner h4 {
   /*text-align: left;*/
+}
+
+.shows {
+  overflow: scroll;
+  width: 100%;
+  /*min-height: 200px;*/
+  position: relative;
+
 }
 
 .loading-gif {

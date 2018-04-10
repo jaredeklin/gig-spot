@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter, Route } from 'react-router-dom';
 import Main from '../Main/Main';
 import LocationForm from '../LocationForm/LocationForm.js';
+import { EventDetails } from '../../components/EventDetails/EventDetails'
 
 export class App extends Component {
 
@@ -21,11 +22,27 @@ export class App extends Component {
               </div>
           }
         </header>
-        <Route exact path = '/' render={ () => <LocationForm /> } />
-        <Route exact path = '/main' render={ () => <Main /> } />
+        <Route exact path = '/' component={ LocationForm } />
+        <Route exact path = '/main' component={ Main } />
+        <Route exact path = '/event-details' component={ EventDetails } />
+
+        <Route path={`/event-details/:id`} render={({ match }) => {
+          console.log(match.params.id)
+          console.log(this.props.shows)
+          const concert = this.props.shows.find(show => show.id === parseInt(match.params.id))
+          console.log(concert)
+          if (concert) {
+            return (<EventDetails {...concert} />)
+          }
+        }} />
+        
       </div>
     );
   };
 };
 
-export default withRouter(connect(null)(App));
+export const mapStateToProps = (state) => ({
+  shows: state.shows
+});
+
+export default withRouter(connect(mapStateToProps)(App));

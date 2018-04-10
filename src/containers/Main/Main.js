@@ -14,8 +14,20 @@ export const Main = (props) => {
   return (
     <div className='main'>
       <section className='tonights-shows'>
-        <div className='tonight-inner'>
-          <h4>Tonight:</h4>
+        <h4>Tonight:</h4>
+        <div className='shows-inner'>
+          { tonightCards }
+        </div>
+      </section>
+      <section className='shows'>
+        <h4>This Week:</h4>
+        <div className='shows-inner'>
+          { tonightCards }
+        </div>
+      </section>
+      <section className='shows'>
+        <h4>Upcoming:</h4>
+        <div className='shows-inner'>
           { tonightCards }
         </div>
       </section>
