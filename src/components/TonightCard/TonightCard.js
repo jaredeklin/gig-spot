@@ -2,7 +2,6 @@ import React from 'react';
 import './tonightCard.css';
 import defaultImage from '../../images/black-woven.jpg';
 import { Link } from 'react-router-dom';
-import { EventDetails } from '../EventDetails/EventDetails';
 
 export const TonightCard = (props) => {
   let { image, headlineArtist, venue, date, startTime, id } = props.show;

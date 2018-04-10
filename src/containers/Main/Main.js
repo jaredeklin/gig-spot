@@ -13,20 +13,20 @@ export const Main = (props) => {
 
   return (
     <div className='main'>
+      <h2 className='event-happening-when-text'>Tonight:</h2>
       <section className='tonights-shows'>
-        <h4>Tonight:</h4>
         <div className='shows-inner'>
           { tonightCards }
         </div>
       </section>
+      <h2 className='event-happening-when-text'>This Week:</h2>
       <section className='shows'>
-        <h4>This Week:</h4>
         <div className='shows-inner'>
           { tonightCards }
         </div>
       </section>
+      <h2 className='event-happening-when-text'>Upcoming:</h2>
       <section className='shows'>
-        <h4>Upcoming:</h4>
         <div className='shows-inner'>
           { tonightCards }
         </div>

@@ -1,7 +1,7 @@
 .tonight-card {
   display: inline-block;
   width: 250px;
-  height: 350px;
+  height: 300px;
   margin: 10px;
   cursor: pointer;
   transition: 450ms all;

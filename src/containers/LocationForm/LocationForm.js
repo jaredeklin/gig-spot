@@ -17,41 +17,79 @@ export class LocationForm extends Component {
     }  
   };
 
-  // testData = () =>{
-  //   const test = mockFetchData.Events.reduce((concertArray, show) => {
-  //     const venue = {
-  //       name: show.Venue.Name,
-  //       id: show.Venue.Id,
-  //       url: show.Venue.Url,
-  //       address: show.Venue.Address,
-  //       city: show.Venue.City
-  //     }
-  //     const headlineArtist = show.Artists[0]
-  //     const supportArtists = show.Artists.filter(artist => artist.Id !== show.Artists[0].Id);
-  //     const tickets = show.TicketUrl
-  //     const id = show.Id;
-  //     const date = new Date(show.Date).toLocaleDateString([], {
-  //       month: 'short',
-  //       day: 'numeric'
-  //     });  
-  //     // const startTime = cleanTime(show.Date)
-  //     const concertData = {
-  //       headlineArtist,
-  //       supportArtists,
-  //       venue,
-  //       date,
-  //       // startTime,
-  //       id,
-  //       tickets
-  //     };
+  testData = () =>{
+    
+    // // const today2 = today.toISOString();
+    
+    const todaysEvents = mockFetchData.Events.filter(event => {
+      const today = (new Date()).toISOString().slice(0, 10);
+      const eventDate = event.Date.slice(0, 10)
 
-  //     return [...concertArray, concertData];
-  //   }, []);
-  //   console.log(test)
-  // }
+      return eventDate == today
+    })
+    console.log('today:', todaysEvents)
+
+    const thisWeek = mockFetchData.Events.filter(event => {
+      const tommorrow = new Date();
+      let nextWeek = new Date();
+
+      tommorrow.setDate(tommorrow.getDate() + 1);
+      nextWeek.setDate(nextWeek.getDate() + 7);
+
+      const nextWeekDate = nextWeek.toISOString();
+      const tommorrowDate = tommorrow.toISOString().slice(0, 10);
+      
+      return event.Date >= tommorrowDate && event.Date < nextWeekDate
+    })
+    console.log('thisWeek', thisWeek)
+
+    const upcomingEvents = mockFetchData.Events.filter(event => {
+      const today = (new Date()).toISOString();
+      let nextWeek = new Date();
+
+      nextWeek.setDate(nextWeek.getDate() + 7);
+      const nextWeekEvents = nextWeek.toISOString();
+
+      return event.Date > nextWeekEvents
+    })
+
+    console.log("upcomingEvents", upcomingEvents)
+
+
+    // const test = mockFetchData.Events.reduce((concertArray, show) => {
+    //   const venue = {
+    //     name: show.Venue.Name,
+    //     id: show.Venue.Id,
+    //     url: show.Venue.Url,
+    //     address: show.Venue.Address,
+    //     city: show.Venue.City
+    //   }
+    //   const headlineArtist = show.Artists[0]
+    //   const supportArtists = show.Artists.filter(artist => artist.Id !== show.Artists[0].Id);
+    //   const tickets = show.TicketUrl
+    //   const id = show.Id;
+    //   const date = new Date(show.Date).toLocaleDateString([], {
+    //     month: 'short',
+    //     day: 'numeric'
+    //   });  
+    //   // const startTime = cleanTime(show.Date)
+    //   const concertData = {
+    //     headlineArtist,
+    //     supportArtists,
+    //     venue,
+    //     date,
+    //     // startTime,
+    //     id,
+    //     tickets
+    //   };
+
+    //   return [...concertArray, concertData];
+    // }, []);
+    // console.log(test)
+  }
 
   handleChange = (event) => {
-    // this.testData()
+    this.testData()
     const { name, value } = event.target;
     this.setState({
       [name]: value

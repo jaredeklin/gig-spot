@@ -70,7 +70,7 @@ button {
 .shows-inner {
   transition: 450ms transform;
   white-space: nowrap;
-  margin: 20px 0;
+  margin: 15px 0;
   padding: 0 30px;
 }
 
@@ -83,7 +83,6 @@ button {
   width: 100%;
   /*min-height: 200px;*/
   position: relative;
-
 }
 
 .detail-img {
@@ -96,4 +95,8 @@ button {
   width: 200px;
   position: relative;
   left: 40%;
+}
+
+.event-happening-when-text {
+  margin: 5px 0 0 40px;
 }
