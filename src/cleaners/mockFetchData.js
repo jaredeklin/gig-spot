@@ -1,4 +1,4 @@
-{
+export const mockFetchData = {
     "Info": {
         "TotalResults": 174,
         "PageNumber": 0,

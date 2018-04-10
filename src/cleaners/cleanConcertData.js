@@ -1,25 +1,33 @@
 import { cleanTime } from './cleanTime';
 
 export const cleanConcertData = (concerts) => {
-  return concerts.reduce((array, show) => {
-    const venue = show.Venue.Name;
-    const artist = show.Artists[0].Name;
+  return concerts.reduce((concertArray, show) => {
+    const venue = {
+      name: show.Venue.Name,
+      id: show.Venue.Id,
+      url: show.Venue.Url,
+      address: show.Venue.Address,
+      city: show.Venue.City
+    }
+    const headlineArtist = show.Artists[0]
+    const supportArtists = show.Artists.filter(artist => artist.Id !== show.Artists[0].Id);
+    const tickets = show.TicketUrl
     const id = show.Id;
     const date = new Date(show.Date).toLocaleDateString([], {
       month: 'short',
       day: 'numeric'
-    });
-    console.log(date)
-    console.log(show.Date)
+    });  
     const startTime = cleanTime(show.Date)
     const concertData = {
-      artist,
+      headlineArtist,
+      supportArtists,
       venue,
       date,
       startTime,
-      id
+      id,
+      tickets
     };
 
-    return [...array, concertData];
+    return [...concertArray, concertData];
   }, []); 
 };

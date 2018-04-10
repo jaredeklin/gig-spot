@@ -27,10 +27,8 @@ export class App extends Component {
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
-          console.log(match.params.id)
-          console.log(this.props.shows)
           const concert = this.props.shows.find(show => show.id === parseInt(match.params.id))
-          console.log(concert)
+
           if (concert) {
             return (<EventDetails {...concert} />)
           }

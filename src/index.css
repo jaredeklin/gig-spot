@@ -86,6 +86,11 @@ button {
 
 }
 
+.detail-img {
+  height: 300px;
+  width: 300px;
+}
+
 .loading-gif {
   height: 200px;
   width: 200px;

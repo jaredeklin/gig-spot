@@ -1,15 +1,20 @@
 import React from 'react';
 
 export const EventDetails = (props) => {
-  const { artist, date, image, venue, startTime} = props;
+  console.log(props)
+  const { headlineArtist, supportArtists, date, image, venue, startTime, tickets} = props;
+  const allSupportArtists = supportArtists.map(artist => (<h4>{artist.Name}</h4>));
 
   return (
     <article className='event-details'>
-      <h2>{artist}</h2>
+      <h2>{headlineArtist.Name}</h2>
+      {allSupportArtists}
       <img src={image} className='detail-img'/>
-      <h4>{venue}</h4>
+      <h4><a href={venue.url}>{venue.name}</a></h4>
       <h4>{date}</h4>
       <h4>{startTime}</h4>
+      <h4><a href={tickets}>Tickets</a></h4>
+
     </article>
   )
 }

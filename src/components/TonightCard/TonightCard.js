@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { EventDetails } from '../EventDetails/EventDetails';
 
 export const TonightCard = (props) => {
-  let { image, artist, venue, date, startTime, id } = props.show;
-
+  let { image, headlineArtist, venue, date, startTime, id } = props.show;
+  
   return (
     <Link to={`event-details/${id}`}>
       <article className="tonight-card">
         <img src={ image ? image : defaultImage } className='artist-image' alt="artist"/>
-        <h4 className="artist">{ artist }</h4>
-        <h4 className="venue">{ venue }</h4>
+        <h4 className="artist">{ headlineArtist.Name }</h4>
+        <h4 className="venue">{ venue.name }</h4>
         <h4 className="date">{`${date} ${startTime}`}</h4>
       </article>
     </Link>
