@@ -3,8 +3,10 @@ import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
 
 export const Main = (props) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows } = props
+  const { tonightsShows, thisWeeksShows, upcomingShows } = props;
+  const combined = [...tonightsShows, ...thisWeeksShows];
   let tonightCards, thisWeekCards, upcomingCards;
+  // const checkNumberOfEvents = tonightsShows.length < 3 ? combined : thisWeeksShows
 
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
@@ -13,23 +15,30 @@ export const Main = (props) => {
   };
 
   if (thisWeeksShows) {
-    thisWeekCards = thisWeeksShows.map(show => {
-      return (<TonightCard show={show} key={show.id} />)
-    })
-  }
+    if (tonightsShows.length <= 2) {
+      thisWeekCards = combined.map(show => {
+        return (<TonightCard show={show} key={show.id} />)
+      });
+    } else {
+      thisWeekCards = thisWeeksShows.map(show => {
+        return (<TonightCard show={show} key={show.id} />)
+      });
+    }
+  };
 
   if (upcomingShows) {
     upcomingCards = upcomingShows.map(show => {
       return (<TonightCard show={show} key={show.id} />)
-    })
-  }
+    });
+  };
+
 
   return (
     <div className='main'>
       {
         thisWeeksShows.length > 0 &&
         <div>
-        { tonightsShows.length > 0 &&
+        { tonightsShows.length > 2 &&
           <div>
             <h2 className='event-happening-when-text'>Tonight:</h2>
             <section className='tonights-shows'>

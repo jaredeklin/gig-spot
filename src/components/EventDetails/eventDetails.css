@@ -1,0 +1,45 @@
+.event-details {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.detail-right {
+  grid-column: 2 / 3;
+  padding-left: 30px;
+}
+
+.detail-img {
+  grid-column: 1;
+  height: 350px;
+  width: 350px;
+}
+
+.headliner {
+  margin-top: 50px;
+  font-size: 36px;
+}
+
+.detail-date {
+  position: relative;
+  top: -20%;
+  left: 65%;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.tickets {
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.tickets:hover {
+  background-color: rgba(0, 0, 0, .5);
+}

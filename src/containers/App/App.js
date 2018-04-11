@@ -21,14 +21,16 @@ export class App extends Component {
                 <LocationForm id='main-form' />
               </div>
           }
-          
+
         </header>
         <Route exact path = '/' component={ LocationForm } />
         <Route exact path = '/main' component={ Main } />
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
-          const concert = this.props.shows.find(show => show.id === parseInt(match.params.id))
+          const { tonightsShows, thisWeeksShows, upcomingShows} = this.props
+          const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows]
+          const concert = allShows.find(show => show.id === parseInt(match.params.id))
 
           if (concert) {
             return (<EventDetails {...concert} />)
@@ -40,8 +42,13 @@ export class App extends Component {
   };
 };
 
-export const mapStateToProps = (state) => ({
-  shows: state.shows
-});
+export const mapStateToProps = (state) => {
+  const { tonightsShows, thisWeeksShows, upcomingShows} = state;
+  return {
+    tonightsShows,
+    thisWeeksShows,
+    upcomingShows
+  };
+};
 
 export default withRouter(connect(mapStateToProps)(App));
