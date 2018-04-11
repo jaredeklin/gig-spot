@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setLocation, loadShows } from '../../actions';
+import { 
+  setLocation, 
+  loadUpcomingShows, 
+  loadTonightsShows, 
+  loadThisWeeksShows 
+} from '../../actions';
 import { fetchShows } from '../../cleaners/fetchShows';
 import loadingGif from '../../images/loader.gif';
 
+import {cleanConcertData} from '../../cleaners/cleanConcertData'
+import { fetchImage } from '../../cleaners/fetchImage'
 import {mockFetchData} from '../../cleaners/mockFetchData'
 
 export class LocationForm extends Component {
@@ -17,19 +24,17 @@ export class LocationForm extends Component {
     }  
   };
 
-  testData = () =>{
+
     
-    // // const today2 = today.toISOString();
-    
-    const todaysEvents = mockFetchData.Events.filter(event => {
+    filterTodaysShows = (shows) => shows.filter(event => {
       const today = (new Date()).toISOString().slice(0, 10);
       const eventDate = event.Date.slice(0, 10)
 
       return eventDate == today
     })
-    console.log('today:', todaysEvents)
+    // console.log('today:', todaysEvents)
 
-    const thisWeek = mockFetchData.Events.filter(event => {
+    filterThisWeeksShows = (shows) => shows.filter(event => {
       const tommorrow = new Date();
       let nextWeek = new Date();
 
@@ -41,9 +46,9 @@ export class LocationForm extends Component {
       
       return event.Date >= tommorrowDate && event.Date < nextWeekDate
     })
-    console.log('thisWeek', thisWeek)
+    // console.log('thisWeek', thisWeek)
 
-    const upcomingEvents = mockFetchData.Events.filter(event => {
+    filterUpcomingShows = (shows) => shows.filter(event => {
       const today = (new Date()).toISOString();
       let nextWeek = new Date();
 
@@ -51,45 +56,38 @@ export class LocationForm extends Component {
       const nextWeekEvents = nextWeek.toISOString();
 
       return event.Date > nextWeekEvents
-    })
-
-    console.log("upcomingEvents", upcomingEvents)
+    });
 
 
-    // const test = mockFetchData.Events.reduce((concertArray, show) => {
-    //   const venue = {
-    //     name: show.Venue.Name,
-    //     id: show.Venue.Id,
-    //     url: show.Venue.Url,
-    //     address: show.Venue.Address,
-    //     city: show.Venue.City
-    //   }
-    //   const headlineArtist = show.Artists[0]
-    //   const supportArtists = show.Artists.filter(artist => artist.Id !== show.Artists[0].Id);
-    //   const tickets = show.TicketUrl
-    //   const id = show.Id;
-    //   const date = new Date(show.Date).toLocaleDateString([], {
-    //     month: 'short',
-    //     day: 'numeric'
-    //   });  
-    //   // const startTime = cleanTime(show.Date)
-    //   const concertData = {
-    //     headlineArtist,
-    //     supportArtists,
-    //     venue,
-    //     date,
-    //     // startTime,
-    //     id,
-    //     tickets
-    //   };
+    handleTodaysShows = async (shows) => {
+      const todaysShows = this.filterTodaysShows(shows);
+      const cleanConcert = cleanConcertData(todaysShows)
+      const completedConcertObject = await fetchImage(cleanConcert)
+      console.log(completedConcertObject)
+      this.props.loadTonightsShows(completedConcertObject)
+      // return completedConcertObject
+    }
 
-    //   return [...concertArray, concertData];
-    // }, []);
-    // console.log(test)
-  }
+    handleThisWeeksShows = async (shows) => {
+      const thisWeeksShows = this.filterThisWeeksShows(shows);
+      const cleanConcert = cleanConcertData(thisWeeksShows);
+      const completedConcertObject = await fetchImage(cleanConcert);
+      this.props.loadThisWeeksShows(completedConcertObject);
+    }
+
+    handleUpcomingShows = async (shows) => {
+      const upcomingShows = this.filterUpcomingShows(shows);
+      const cleanConcert = cleanConcertData(upcomingShows);
+      const completedConcertObject = await fetchImage(cleanConcert);
+      this.props.loadUpcomingShows(completedConcertObject);
+    }
+  
 
   handleChange = (event) => {
-    this.testData()
+
+    // console.log(today)
+
+
     const { name, value } = event.target;
     this.setState({
       [name]: value
@@ -99,10 +97,22 @@ export class LocationForm extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     this.setState({ loading: true });
-    const { loadShows, setLocation, history } = this.props;
+    const { loadTonightsShows, loadUpcomingShows, setLocation, history } = this.props;
     const shows = await fetchShows(this.state);
+    this.handleTodaysShows(shows.Events)
+    this.handleThisWeeksShows(shows.Events)
+    this.handleUpcomingShows(shows.Events)
 
-    loadShows(shows);
+    // const todaysShows = this.filterTodaysShows(mockFetchData);
+    // console.log(todaysShows)
+    // loadTonightsShows(todaysShows);
+
+    // const thisWeeksShows = this.filterThisWeeksShows(shows);
+    // loadThisWeeksShows(thisWeeksShows);
+
+    // const upcomingShows = this.filterUpcomingShows(shows);
+    // loadUpcomingShows(upcomingShows);
+
     setLocation(this.state);
     history.push('./main');
     this.setState({
@@ -144,7 +154,9 @@ export class LocationForm extends Component {
 export const mapDispatchToProps = (dispatch) => {
   return {
     setLocation: (location) => (dispatch(setLocation(location))),
-    loadShows: (location) => (dispatch(loadShows(location)))
+    loadUpcomingShows: (shows) => (dispatch(loadUpcomingShows(shows))),
+    loadTonightsShows: (shows) => (dispatch(loadTonightsShows(shows))),
+    loadThisWeeksShows: (shows) => (dispatch(loadThisWeeksShows(shows)))
   };
 };
 

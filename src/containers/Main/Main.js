@@ -3,13 +3,26 @@ import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
 
 export const Main = (props) => {
-  let tonightCards;
+  const { tonightsShows, thisWeeksShows, upcomingShows } = props
+  let tonightCards, thisWeekCards, upcomingCards;
 
-  if (props.shows) {
-    tonightCards = props.shows.map(show => {
-      return(<TonightCard show={show} key={show.id} />)
+  if (tonightsShows) {
+    tonightCards = tonightsShows.map(show => {
+      return (<TonightCard show={show} key={show.id} />)
     });
   };
+
+  if (thisWeeksShows) {
+    thisWeekCards = thisWeeksShows.map(show => {
+      return (<TonightCard show={show} key={show.id} />)
+    })
+  }
+
+  if (upcomingShows) {
+    upcomingCards = upcomingShows.map(show => {
+      return (<TonightCard show={show} key={show.id} />)
+    })
+  }
 
   return (
     <div className='main'>
@@ -22,21 +35,26 @@ export const Main = (props) => {
       <h2 className='event-happening-when-text'>This Week:</h2>
       <section className='shows'>
         <div className='shows-inner'>
-          { tonightCards }
+          { thisWeekCards }
         </div>
       </section>
       <h2 className='event-happening-when-text'>Upcoming:</h2>
       <section className='shows'>
         <div className='shows-inner'>
-          { tonightCards }
+          { upcomingCards }
         </div>
       </section>
     </div>
   );
 };
 
-export const mapStateToProps = (state) => ({
-  shows: state.shows
-});
+export const mapStateToProps = (state) => {
+  const { tonightsShows, thisWeeksShows, upcomingShows } = state;
+  return {
+    tonightsShows,
+    thisWeeksShows,
+    upcomingShows
+  }
+};
 
 export default connect(mapStateToProps)(Main);
