@@ -28,8 +28,10 @@ export class LocationForm extends Component {
     
     filterTodaysShows = (shows) => shows.filter(event => {
       const today = (new Date()).toISOString().slice(0, 10);
+      // const today = new Date()
       const eventDate = event.Date.slice(0, 10)
-
+      console.log('today', today)
+      console.log('eventDate', eventDate)
       return eventDate == today
     })
     // console.log('today:', todaysEvents)
@@ -84,8 +86,10 @@ export class LocationForm extends Component {
   
 
   handleChange = (event) => {
-
-    // console.log(today)
+    const today = new Date()
+    const today2 = today.toISOString()
+    console.log('today', today)
+    console.log('todya2',today2)
 
 
     const { name, value } = event.target;

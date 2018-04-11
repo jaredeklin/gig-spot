@@ -26,25 +26,30 @@ export const Main = (props) => {
 
   return (
     <div className='main'>
-      <h2 className='event-happening-when-text'>Tonight:</h2>
-      <section className='tonights-shows'>
-        <div className='shows-inner'>
-          { tonightCards }
+      {
+        thisWeeksShows.length > 0 &&
+        <div>
+          <h2 className='event-happening-when-text'>Tonight:</h2>
+          <section className='tonights-shows'>
+            <div className='shows-inner'>
+            { tonightCards }
+            </div>
+          </section>
+          <h2 className='event-happening-when-text'>This Week:</h2>
+          <section className='shows'>
+            <div className='shows-inner'>
+            { thisWeekCards }
+            </div>
+          </section>
+          <h2 className='event-happening-when-text'>Upcoming:</h2>
+          <section className='shows'>
+            <div className='shows-inner'>
+            { upcomingCards }
+            </div>
+          </section>
         </div>
-      </section>
-      <h2 className='event-happening-when-text'>This Week:</h2>
-      <section className='shows'>
-        <div className='shows-inner'>
-          { thisWeekCards }
-        </div>
-      </section>
-      <h2 className='event-happening-when-text'>Upcoming:</h2>
-      <section className='shows'>
-        <div className='shows-inner'>
-          { upcomingCards }
-        </div>
-      </section>
-    </div>
+      }
+      </div>
   );
 };
 
