@@ -29,12 +29,16 @@ export const Main = (props) => {
       {
         thisWeeksShows.length > 0 &&
         <div>
-          <h2 className='event-happening-when-text'>Tonight:</h2>
-          <section className='tonights-shows'>
-            <div className='shows-inner'>
-            { tonightCards }
-            </div>
-          </section>
+        { tonightsShows.length > 0 &&
+          <div>
+            <h2 className='event-happening-when-text'>Tonight:</h2>
+            <section className='tonights-shows'>
+              <div className='shows-inner'>
+              { tonightCards }
+              </div>
+            </section>
+          </div>
+        }
           <h2 className='event-happening-when-text'>This Week:</h2>
           <section className='shows'>
             <div className='shows-inner'>
