@@ -1,7 +1,7 @@
 .tonight-card {
   display: inline-block;
   width: 250px;
-  height: 300px;
+  height: 310px;
   margin: 10px;
   cursor: pointer;
   transition: 450ms all;
@@ -9,4 +9,11 @@
   white-space: initial;
   vertical-align: bottom;
   box-sizing: border-box;
+  opacity: .8
 }
+
+.tonight-card:hover {
+  opacity: 1;
+}
+
+

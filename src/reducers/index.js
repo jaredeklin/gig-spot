@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux';
-import tonightsShowReducer from './tonightsShowReducer';
+import { 
+  tonightsShowReducer, 
+  thisWeeksShowsReducer, 
+  upcomingShowsReducer
+} from './showReducers';
+
 import searchLocationReducer from './searchLocationReducer';
-import thisWeeksShowsReducer from './thisWeeksShowsReducer';
-import upcomingShowsReducer from './upcomingShowsReducer';
 
 export const rootReducer = combineReducers({
   tonightsShows: tonightsShowReducer,
