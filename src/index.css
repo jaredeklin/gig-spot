@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body, html {
   padding: 0 10px;
   /*background: #0e0f11;*/
@@ -62,14 +67,15 @@ button {
 .tonights-shows {
   overflow: scroll;
   width: 100%;
-  position: absolute;
-  top: 185px;
+  position: relative;
+  /*top: 185px;*/
+  /*min-height: 200px;*/
 }
 
-.tonight-inner {
+.shows-inner {
   transition: 450ms transform;
   white-space: nowrap;
-  margin: 40px 0;
+  margin: 15px 0;
   padding: 0 30px;
 }
 
@@ -77,9 +83,25 @@ button {
   /*text-align: left;*/
 }
 
+.shows {
+  overflow: scroll;
+  width: 100%;
+  /*min-height: 200px;*/
+  position: relative;
+}
+
+.detail-img {
+  height: 300px;
+  width: 300px;
+}
+
 .loading-gif {
   height: 200px;
   width: 200px;
   position: relative;
   left: 40%;
+}
+
+.event-happening-when-text {
+  margin: 5px 0 0 40px;
 }
