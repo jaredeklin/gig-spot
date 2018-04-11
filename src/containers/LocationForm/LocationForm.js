@@ -27,37 +27,33 @@ export class LocationForm extends Component {
 
     
     filterTodaysShows = (shows) => shows.filter(event => {
-      const today = (new Date()).toISOString().slice(0, 10);
-      // const today = new Date()
-      const eventDate = event.Date.slice(0, 10)
-      console.log('today', today)
-      console.log('eventDate', eventDate)
-      return eventDate == today
-    })
-    // console.log('today:', todaysEvents)
+      const today = new Date().toDateString();
+      const eventDate = new Date(event.Date).toDateString();
+
+      return eventDate === today;
+    });
 
     filterThisWeeksShows = (shows) => shows.filter(event => {
-      const tommorrow = new Date();
-      let nextWeek = new Date();
+      const tom = new Date().toDateString();
+      const next = new Date().toDateString();
+      const tommorrow = new Date(tom);
+      const nextWeek = new Date(next);
+      const eventDate = new Date(event.Date)
 
       tommorrow.setDate(tommorrow.getDate() + 1);
       nextWeek.setDate(nextWeek.getDate() + 7);
 
-      const nextWeekDate = nextWeek.toISOString();
-      const tommorrowDate = tommorrow.toISOString().slice(0, 10);
-      
-      return event.Date >= tommorrowDate && event.Date < nextWeekDate
+      return eventDate >= tommorrow && eventDate <= nextWeek
     })
-    // console.log('thisWeek', thisWeek)
 
     filterUpcomingShows = (shows) => shows.filter(event => {
-      const today = (new Date()).toISOString();
-      let nextWeek = new Date();
+      const next = new Date().toDateString();
+      const nextWeek = new Date(next);
+      const eventDate = new Date(event.Date)
 
       nextWeek.setDate(nextWeek.getDate() + 7);
-      const nextWeekEvents = nextWeek.toISOString();
 
-      return event.Date > nextWeekEvents
+      return eventDate > nextWeek
     });
 
 
@@ -65,9 +61,7 @@ export class LocationForm extends Component {
       const todaysShows = this.filterTodaysShows(shows);
       const cleanConcert = cleanConcertData(todaysShows)
       const completedConcertObject = await fetchImage(cleanConcert)
-      console.log(completedConcertObject)
       this.props.loadTonightsShows(completedConcertObject)
-      // return completedConcertObject
     }
 
     handleThisWeeksShows = async (shows) => {
@@ -82,17 +76,11 @@ export class LocationForm extends Component {
       const cleanConcert = cleanConcertData(upcomingShows);
       const completedConcertObject = await fetchImage(cleanConcert);
       this.props.loadUpcomingShows(completedConcertObject);
-    }
-  
+    }  
 
   handleChange = (event) => {
-    const today = new Date()
-    const today2 = today.toISOString()
-    console.log('today', today)
-    console.log('todya2',today2)
-
-
     const { name, value } = event.target;
+
     this.setState({
       [name]: value
     });
@@ -106,16 +94,6 @@ export class LocationForm extends Component {
     this.handleTodaysShows(shows.Events)
     this.handleThisWeeksShows(shows.Events)
     this.handleUpcomingShows(shows.Events)
-
-    // const todaysShows = this.filterTodaysShows(mockFetchData);
-    // console.log(todaysShows)
-    // loadTonightsShows(todaysShows);
-
-    // const thisWeeksShows = this.filterThisWeeksShows(shows);
-    // loadThisWeeksShows(thisWeeksShows);
-
-    // const upcomingShows = this.filterUpcomingShows(shows);
-    // loadUpcomingShows(upcomingShows);
 
     setLocation(this.state);
     history.push('./main');

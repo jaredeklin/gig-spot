@@ -21,6 +21,7 @@ export class App extends Component {
                 <LocationForm id='main-form' />
               </div>
           }
+          
         </header>
         <Route exact path = '/' component={ LocationForm } />
         <Route exact path = '/main' component={ Main } />
