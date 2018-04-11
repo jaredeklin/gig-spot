@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { 
   tonightsShowReducer, 
   thisWeeksShowsReducer, 
-  upcomingShowsReducer 
+  upcomingShowsReducer
 } from './showReducers';
 
 import searchLocationReducer from './searchLocationReducer';

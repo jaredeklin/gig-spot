@@ -9,10 +9,11 @@
   white-space: initial;
   vertical-align: bottom;
   box-sizing: border-box;
+  opacity: .8
 }
 
 .tonight-card:hover {
-  opacity: .8;
+  opacity: 1;
 }
 
 

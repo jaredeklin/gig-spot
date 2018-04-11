@@ -15,7 +15,8 @@ export const cleanConcertData = (concerts) => {
     const id = show.Id;
     const date = new Date(show.Date).toLocaleDateString([], {
       month: 'short',
-      day: 'numeric'
+      day: 'numeric',
+      year: 'numeric'
     });  
     const startTime = cleanTime(show.Date)
     const concertData = {

@@ -5,7 +5,7 @@ export const tonightsShowReducer = (state = [], action) => {
 
   default:
     return state;
-  };
+  }
 };
 
 export const thisWeeksShowsReducer = (state = [], action) => {
@@ -14,7 +14,7 @@ export const thisWeeksShowsReducer = (state = [], action) => {
     return [...action.shows];
   default:
     return state;
-  };
+  }
 };
 
 export const upcomingShowsReducer = (state = [], action) => {
@@ -24,6 +24,6 @@ export const upcomingShowsReducer = (state = [], action) => {
 
     default:
       return state;
-  };
+  }
 };
 
