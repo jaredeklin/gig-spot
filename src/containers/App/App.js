@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import { withRouter, Route } from 'react-router-dom';
+import { withRouter, Route, NavLink } from 'react-router-dom';
 import Main from '../Main/Main';
 import LocationForm from '../LocationForm/LocationForm.js';
 import { EventDetails } from '../../components/EventDetails/EventDetails'
@@ -9,16 +9,24 @@ import { EventDetails } from '../../components/EventDetails/EventDetails'
 export class App extends Component {
 
   render() {
-  
+    console.log(this.props.location)
     return (
       <div className="App">
         <header className="App-header">     
           <h1>Concert Box Tracker Box</h1>
           {
-            this.props.location.pathname === '/main' &&
+            (this.props.upcomingShows[0] && this.props.location === '/main') &&
               <div className='change-location'>
                 <p>Update location:</p>
                 <LocationForm id='main-form' />
+              </div>
+          }
+
+          {
+            this.props.location.pathname.includes('/event-details') &&
+              <div className='change-location'>
+                <NavLink to='../main'>Doing the thing?!?!?!?!??!</NavLink>
+                
               </div>
           }
 

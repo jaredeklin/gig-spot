@@ -67,7 +67,7 @@ export const fetchShows = (location) => {
 
   return async (dispatch) => {
     // dispatch(showIsLoading(true));
-    // const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&radius=${radius}&page=0&api_key=${jambaseApiKey}`);
+    // // const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&radius=${radius}&page=0&api_key=${jambaseApiKey}`);
     // if( !response.ok ) {
     //   throw new Error(response.statusText);
     // }
