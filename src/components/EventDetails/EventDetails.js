@@ -14,7 +14,10 @@ export const EventDetails = (props) => {
         <h4 className='detail-venue'><a href={venue.url}>{venue.name}</a></h4>
         <div className='detail-date'>{date}</div>
         <h4 className='detail-start-time'>{startTime}</h4>
-        <a href={tickets} className='tickets'>Tickets</a>
+        {
+          tickets &&
+           <a href={tickets} className='tickets'>Tickets</a>
+        }
       </div>
     </article>
   )

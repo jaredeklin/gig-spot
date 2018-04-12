@@ -13,7 +13,7 @@ export class App extends Component {
     return (
       <div className="App">
         <header className="App-header">     
-          <h1>Concert Box Tracker Box Concert</h1>
+          <h1>Concert Box Tracker Box</h1>
           {
             this.props.location.pathname === '/main' &&
               <div className='change-location'>
