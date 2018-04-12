@@ -11,19 +11,32 @@ export const filterDates = (shows) => {
     const eventDate = new Date(event.date).toDateString();
 
     return eventDate === today;
+  }).map(show => {
+    return { ...show, date: cleanDate(show.date)}
   });
 
   const thisWeeksShows = shows.filter(event => {
     const eventDate = new Date(event.date);
 
     return eventDate >= tommorrow && eventDate <= nextWeek;
+  }).map(show => {
+    return { ...show, date: cleanDate(show.date)}
   });
 
   const upcomingShows = shows.filter(event => {
     const eventDate = new Date(event.date);
 
     return eventDate > nextWeek;
+  }).map(show => {
+    return { ...show, date: cleanDate(show.date)}
   });
 
   return [todaysShows, thisWeeksShows, upcomingShows];  
+}
+
+const cleanDate = (date) => {
+  return new Date(date).toLocaleDateString( [], {
+    month: 'short',
+    day: 'numeric'
+  })
 }
