@@ -4,18 +4,18 @@ import { connect } from 'react-redux';
 import { withRouter, Route, NavLink } from 'react-router-dom';
 import Main from '../Main/Main';
 import LocationForm from '../LocationForm/LocationForm.js';
-import { EventDetails } from '../../components/EventDetails/EventDetails'
+import { EventDetails } from '../../components/EventDetails/EventDetails';
 
 export class App extends Component {
 
   render() {
-    console.log(this.props.location)
+    const { upcomingShows, location } = this.props;
     return (
       <div className="App">
         <header className="App-header">     
           <h1>Concert Box Tracker Box</h1>
           {
-            (this.props.upcomingShows[0] && this.props.location === '/main') &&
+            location === '/main' &&
               <div className='change-location'>
                 <p>Update location:</p>
                 <LocationForm id='main-form' />
@@ -23,14 +23,15 @@ export class App extends Component {
           }
 
           {
-            this.props.location.pathname.includes('/event-details') &&
+            location.pathname.includes('/event-details') &&
               <div className='change-location'>
                 <NavLink to='../main'>Doing the thing?!?!?!?!??!</NavLink>
-                
               </div>
           }
 
         </header>
+        <img src={ loadingGif } className='loading-gif'/>
+
         <Route exact path = '/' component={ LocationForm } />
         <Route exact path = '/main' component={ Main } />
         <Route exact path = '/event-details' component={ EventDetails } />
@@ -44,14 +45,13 @@ export class App extends Component {
             return (<EventDetails {...concert} />)
           }
         }} />
-        
       </div>
     );
   };
 };
 
 export const mapStateToProps = (state) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows} = state;
+  const { tonightsShows, thisWeeksShows, upcomingShows } = state;
   return {
     tonightsShows,
     thisWeeksShows,
@@ -59,4 +59,4 @@ export const mapStateToProps = (state) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps)(App));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

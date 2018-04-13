@@ -66,17 +66,19 @@ export const fetchShows = (location) => {
   const { zipCode, radius } = location;
 
   return async (dispatch) => {
-    // dispatch(showIsLoading(true));
-    // // const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&radius=${radius}&page=0&api_key=${jambaseApiKey}`);
-    // if( !response.ok ) {
-    //   throw new Error(response.statusText);
-    // }
-    // dispatch(showIsLoading(false));
-    const response = mockFetchData
-    const cleanData = cleanConcertData(response.Events);
+    dispatch(showIsLoading(true));
+    const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&radius=${radius}&page=0&api_key=${jambaseApiKey}`);
+    if( !response.ok ) {
+      throw new Error(response.statusText);
+    }
+    
+    // const concertData = mockFetchData
+    const concertData = await response.json()
+    const cleanData = cleanConcertData(concertData.Events);
     const dataWithImage = await fetchImage(cleanData);
     const dates = filterDates(dataWithImage);
     
+    dispatch(showIsLoading(false));
     dispatch(loadTonightsShows(dates[0]));
     dispatch(loadThisWeeksShows(dates[1]));
     dispatch(loadUpcomingShows(dates[2]));
