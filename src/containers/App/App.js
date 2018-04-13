@@ -5,17 +5,19 @@ import { withRouter, Route, NavLink } from 'react-router-dom';
 import Main from '../Main/Main';
 import LocationForm from '../LocationForm/LocationForm.js';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
+import loadingGif from '../../images/loader.gif';
 
 export class App extends Component {
 
   render() {
-    const { upcomingShows, location } = this.props;
+    const { upcomingShows, location, loading, error } = this.props;
+
     return (
       <div className="App">
         <header className="App-header">     
           <h1>Concert Box Tracker Box</h1>
           {
-            location === '/main' &&
+            location.pathname === '/main' &&
               <div className='change-location'>
                 <p>Update location:</p>
                 <LocationForm id='main-form' />
@@ -30,7 +32,10 @@ export class App extends Component {
           }
 
         </header>
-        <img src={ loadingGif } className='loading-gif'/>
+        {
+          loading &&
+            <img src={ loadingGif } className='loading-gif'/>
+        }
 
         <Route exact path = '/' component={ LocationForm } />
         <Route exact path = '/main' component={ Main } />
@@ -51,12 +56,14 @@ export class App extends Component {
 };
 
 export const mapStateToProps = (state) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows } = state;
+  const { tonightsShows, thisWeeksShows, upcomingShows, loading, error } = state;
   return {
     tonightsShows,
     thisWeeksShows,
-    upcomingShows
+    upcomingShows,
+    loading,
+    error
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(connect(mapStateToProps)(App));
