@@ -7,10 +7,6 @@ import {
 } from '../../actions';
 import loadingGif from '../../images/loader.gif';
 
-import {cleanConcertData} from '../../cleaners/cleanConcertData'
-import { fetchImage } from '../../cleaners/fetchImage'
-import {mockFetchData} from '../../cleaners/mockFetchData'
-
 export class LocationForm extends Component {
   constructor() {
     super()

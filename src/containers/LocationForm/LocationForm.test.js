@@ -12,7 +12,7 @@ describe('LocationForm', () => {
 
   beforeEach(() => {
     mockEvent = { preventDefault: jest.fn() };
-    mockLoadShows = jest.fn();
+    mockFetchShows = jest.fn();
     mockSetLocation = jest.fn();
     mockHistory = { push: jest.fn() };
     mockState = { zipCode: 80203, radius: 10 };
@@ -20,7 +20,7 @@ describe('LocationForm', () => {
 
     wrapper = shallow(
       <LocationForm 
-      loadShows={mockLoadShows} 
+      fetchShows={mockFetchShows} 
       setLocation={mockSetLocation}
       history={mockHistory}
       />) ;     
@@ -42,7 +42,7 @@ describe('LocationForm', () => {
     const mockDispatch = jest.fn();
     const mapped = mapDispatchToProps(mockDispatch);
 
-    mapped.loadShows();
+    mapped.fetchShows();
     mapped.setLocation();
     expect(mockDispatch).toHaveBeenCalled();
   });
@@ -52,13 +52,13 @@ describe('LocationForm', () => {
     it('expect fetchShows to have been called with correct params', () => {
       wrapper.setState(mockState);
       wrapper.instance().handleSubmit(mockEvent);
-      expect(fetchShows).toHaveBeenCalledWith(mockState);
+      expect(mockFetchShows).toHaveBeenCalledWith(mockState);
     });
 
-    it('expect loadShows to have been called with correct params', async () => {
-      await wrapper.instance().handleSubmit(mockEvent);
-      expect(mockLoadShows).toHaveBeenCalledWith(mockTonightCardData);
-    });
+    // it('expect loadShows to have been called with correct params', async () => {
+    //   await wrapper.instance().handleSubmit(mockEvent);
+    //   expect(mockLoadShows).toHaveBeenCalledWith(mockTonightCardData);
+    // });
 
     it('expect setLocation to have been called with correct params', async () => {
       wrapper.setState(mockState);
