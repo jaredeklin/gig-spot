@@ -43,10 +43,12 @@ export const fetchShows = (zipCode) => {
 
     return async (dispatch) => {
       dispatch(showIsLoading(true));
-      // const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&page=0&api_key=${jambaseApiKey}`);
+      // const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&page=all&api_key=${jambaseApiKey}`);
+      // const response = await fetch(``);
+
       // if( !response.ok ) {
       //   dispatch(showHasErrored(true))
-      //   // throw new Error(response.statusText);
+      //   throw new Error(response.statusText);
       // }
       
       const concertData = mockFetchData

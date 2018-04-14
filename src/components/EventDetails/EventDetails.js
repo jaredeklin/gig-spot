@@ -6,8 +6,7 @@ export const EventDetails = (props) => {
   const allSupportArtists = supportArtists.map(artist => {
     return (<h4 className='support' key={id}>{artist.Name}</h4>)
   });
-  // console.log(props)
-  // console.log(venue)
+
   return (
     <article className='event-details'>
       <img src={image} className='detail-img' alt='artist'/>

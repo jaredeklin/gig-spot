@@ -68,6 +68,7 @@ export const Main = (props) => {
 
 export const mapStateToProps = (state) => {
   const { tonightsShows, thisWeeksShows, upcomingShows } = state;
+  
   return {
     tonightsShows,
     thisWeeksShows,

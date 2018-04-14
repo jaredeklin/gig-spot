@@ -1,4 +1,4 @@
-import { fetchShows } from './fetchShows';
+import { fetchShows } from '../fetchShows';
 import { jambaseApiKey } from './apiKey';
 import { fetchImage } from './fetchImage';
 import { cleanConcertData } from './cleanConcertData';
@@ -12,11 +12,8 @@ jest.mock('./fetchImage');
 jest.mock('./cleanConcertData');
 
 describe('fetchShows', () => {
-  const mockLocation = {
-    zipCode: 80218,
-    radius: 10
-  }
-  const {zipCode, radius} = mockLocation;
+  const mockLocation = { zipCode: 80218 }
+  const { zipCode } = mockLocation;
 
   beforeEach(() => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
@@ -26,7 +23,7 @@ describe('fetchShows', () => {
   });
 
   it('should call fetch with correct url', () => {
-    const url = `http://api.jambase.com/events?zipCode=${zipCode}&radius=${radius}&page=0&api_key=${jambaseApiKey}`;
+    const url = `http://api.jambase.com/events?zipCode=${zipCode}&page=all&api_key=${jambaseApiKey}`;
     
     fetchShows(mockLocation);
     expect(window.fetch).toHaveBeenCalledWith(url);

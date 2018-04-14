@@ -23,7 +23,6 @@
 }
 
 .headliner {
-  /*margin-top: 50px;*/
   font-size: 36px;
 }
 
@@ -62,7 +61,7 @@
 
 .tickets {
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 15px;
 }
 
