@@ -10,9 +10,12 @@ export const TonightCard = (props) => {
     <Link to={`event-details/${id}`}>
       <article className="tonight-card">
         <img src={ image ? image : defaultImage } className='artist-image' alt="artist"/>
-        <h4 className="artist">{ headlineArtist.Name }</h4>
-        <h4 className="venue">{ venue.name }</h4>
-        <h4 className="date">{`${date} ${startTime}`}</h4>
+        <div className='card-info'>
+          <h4 className="artist">{ headlineArtist.Name }</h4>
+          <div className="venue">{ venue.name }</div>
+          <div className="date">{ date }</div>
+          <div className="time">{ startTime }</div>
+        </div>
       </article>
     </Link>
   );

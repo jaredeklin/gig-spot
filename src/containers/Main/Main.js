@@ -39,7 +39,7 @@ export const Main = (props) => {
         thisWeeksShows.length > 0 &&
         <div>
         { tonightsShows.length > 2 &&
-          <div>
+          <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>
             <section className='tonights-shows'>
               <div className='shows-inner'>

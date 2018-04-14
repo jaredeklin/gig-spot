@@ -27,14 +27,21 @@ export class App extends Component {
           {
             location.pathname.includes('/event-details') &&
               <div className='change-location'>
-                <NavLink to='../main'>Doing the thing?!?!?!?!??!</NavLink>
+                <NavLink to='../main' className='home-button'>Home</NavLink>
               </div>
           }
 
         </header>
         {
           loading &&
-            <img src={ loadingGif } className='loading-gif'/>
+            <div className='loading'>
+              <img src={ loadingGif } className='loading-gif'/>
+              <h2>Finding local shows....</h2>
+            </div>
+        }
+        {
+          error &&
+            <h2 className='loading'>Nooooooooo!!!!!!! Something went wrong.</h2>
         }
 
         <Route exact path = '/' component={ LocationForm } />

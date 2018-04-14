@@ -4,14 +4,11 @@ import {
   thisWeeksShowsReducer, 
   upcomingShowsReducer,
   loadingReducer,
-  errorReducer,
-  searchLocationReducer
+  errorReducer
 } from './reducers';
-
 
 export const rootReducer = combineReducers({
   tonightsShows: tonightsShowReducer,
-  searchLocation: searchLocationReducer,
   thisWeeksShows: thisWeeksShowsReducer,
   upcomingShows: upcomingShowsReducer,
   loading: loadingReducer,
