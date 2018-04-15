@@ -35,11 +35,11 @@ export class LocationForm extends Component {
 
       <form onSubmit={this.handleSubmit} className='location-form' id={this.props.id}>
         <input 
-        type='text'
-        name='zipCode'
-        value={this.state.zipCode}
-        onChange={this.handleChange}
-        placeholder='Zip-code'
+          type='text'
+          name='zipCode'
+          value={this.state.zipCode}
+          onChange={this.handleChange}
+          placeholder='Zip-code'
         />
         <button>Submit</button>
       </form>

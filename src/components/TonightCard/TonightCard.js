@@ -3,8 +3,8 @@ import './tonightCard.css';
 import defaultImage from '../../images/black-woven.jpg';
 import { Link } from 'react-router-dom';
 
-export const TonightCard = (props) => {
-  let { image, headlineArtist, venue, date, startTime, id } = props.show;
+export const TonightCard = ({ show }) => {
+  let { image, headlineArtist, venue, date, startTime, id } = show;
   
   return (
     <Link to={`event-details/${id}`}>

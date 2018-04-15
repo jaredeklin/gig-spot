@@ -1,4 +1,23 @@
 import * as actions from './index';
+import { jambaseApiKey } from '../cleaners/apiKey';
+import { fetchImage } from '../cleaners/fetchImage';
+import { cleanConcertData } from '../cleaners/cleanConcertData';
+import { filterDates } from '../cleaners/filterDates';
+import { 
+  mockFetchShowsData, 
+  mockCleanConcertData,
+  mockFetchImageCallData,
+  mockReturnedCleanConcertData,
+} from '../cleaners/mockData';
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+
+const middlewares = [thunk];
+const mockStore = configureMockStore(middlewares)
+
+jest.mock('../cleaners/fetchImage');
+jest.mock('../cleaners/cleanConcertData');
+jest.mock('../cleaners/filterDates');
 
 describe('loadTonightsShows', () => {
   it('should return a type of LOAD_TONIGHTS_SHOWS and payload', () => {
@@ -56,5 +75,52 @@ describe('showHasErrored', () => {
 
     expect(actions.showHasErrored(false)).toEqual(expected);
   });
+});
+
+describe('fetchShows', () => {
+  const mockLocation = { zipCode: 80218 }
+  const { zipCode } = mockLocation;
+  const store = mockStore({})
+
+  beforeEach(() => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve(mockFetchShowsData)
+    }));
+  });
+
+  it('should call fetch with correct url', () => {
+    const baseUrl = 'http://api.jambase.com/events?zipCode';
+    const url = `${baseUrl}=${zipCode}&page=all&api_key=${jambaseApiKey}`;
+ 
+    store.dispatch(actions.fetchShows(zipCode));
+    expect(window.fetch).toHaveBeenCalledWith(url);
+  });
+
+  it('cleanConcertData should be called with correct params', () => {
+    store.dispatch(actions.fetchShows(zipCode));
+    expect(cleanConcertData).toHaveBeenCalledWith(mockCleanConcertData);
+  });
+
+  it('fetchImage should be called with correct params', () => {
+    store.dispatch(actions.fetchShows(zipCode));
+    expect(fetchImage).toHaveBeenCalledWith(mockFetchImageCallData);
+  });
+
+  it('should throw an error if a bad response is returned', () => {
+    window.fetch = jest.fn(() => Promise.reject({
+      status: 404
+    }));
+    const expected = { 'status': 404 };
+
+    expect(store.dispatch(actions.fetchShows(zipCode))).rejects.toEqual(expected);
+  })
+
+  // it('showIsLoading should be called', () => {
+  //   const mockShowIsLoading = jest.fn();
+    
+    
+  //   expect(store.dispatch)
+  // })
 });
 

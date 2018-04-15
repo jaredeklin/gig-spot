@@ -1,8 +1,8 @@
 import React from 'react';
 import './eventDetails.css';
 
-export const EventDetails = (props) => {
-  const { headlineArtist, supportArtists, date, image, venue, startTime, tickets, id} = props;
+export const EventDetails = ({concert}) => {
+  const { headlineArtist, supportArtists, date, image, venue, startTime, tickets, id} = concert;
   const allSupportArtists = supportArtists.map(artist => {
     return (<h4 className='support' key={id}>{artist.Name}</h4>)
   });

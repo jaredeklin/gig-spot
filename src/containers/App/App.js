@@ -10,7 +10,7 @@ import loadingGif from '../../images/loader.gif';
 export class App extends Component {
 
   render() {
-    const { upcomingShows, location, loading, error } = this.props;
+    const { location, loading, error } = this.props;
 
     return (
       <div className="App">
@@ -54,7 +54,7 @@ export class App extends Component {
           const concert = allShows.find(show => show.id === parseInt(match.params.id))
 
           if (concert) {
-            return (<EventDetails {...concert} />)
+            return (<EventDetails concert={concert} />)
           }
         }} />
       </div>
@@ -64,6 +64,7 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => {
   const { tonightsShows, thisWeeksShows, upcomingShows, loading, error } = state;
+
   return {
     tonightsShows,
     thisWeeksShows,

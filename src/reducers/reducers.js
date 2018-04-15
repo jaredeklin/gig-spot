@@ -46,20 +46,14 @@ export const errorReducer = (state = false, action) => {
   switch(action.type) {
 
   case 'SHOW_HAS_ERRORED':
-    return action.showHasErrored
-
-  default:
-    return state
-  }
-};
-
-export const searchLocationReducer = (state = {}, action) => {
-  switch(action.type) {
-  case 'SET_LOCATION':
-    return { zipCode: action.location.zipCode, radius: action.location.radius }
+    return action.showHasErrored;
 
   default:
     return state;
   }
 };
+
+
+
+
 

@@ -5,6 +5,7 @@ import { filterDates } from '../cleaners/filterDates';
 
 import { mockFetchData } from '../cleaners/mockFetchData';
 
+
 export const loadTonightsShows = (shows) => ({
   type: "LOAD_TONIGHTS_SHOWS",
   shows
@@ -20,11 +21,6 @@ export const loadUpcomingShows = (shows) => ({
   shows
 });
 
-// export const setLocation = (location) => ({
-//   type: "SET_LOCATION",
-//   location
-// });
-
 export const showIsLoading = (bool) => ({
   type: 'SHOW_IS_LOADING',
   showIsLoading: bool
@@ -37,22 +33,20 @@ export const showHasErrored = (bool) => ({
 
 
 export const fetchShows = (zipCode) => {
-  // const { zipCode } = location;
-
   try {
-
     return async (dispatch) => {
       dispatch(showIsLoading(true));
-      // const response = await fetch(`http://api.jambase.com/events?zipCode=${zipCode}&page=all&api_key=${jambaseApiKey}`);
-      // const response = await fetch(``);
 
-      // if( !response.ok ) {
-      //   dispatch(showHasErrored(true))
-      //   throw new Error(response.statusText);
-      // }
+      const rootUrl = 'http://api.jambase.com/events?'
+      const response = await fetch(`${rootUrl}zipCode=${zipCode}&page=all&api_key=${jambaseApiKey}`);
+
+      if( !response.ok ) {
+        dispatch(showHasErrored(true))
+        throw new Error(response.statusText);
+      }
       
-      const concertData = mockFetchData
-      // const concertData = await response.json()
+      // const concertData = mockFetchData
+      const concertData = await response.json()
       const cleanData = cleanConcertData(concertData.Events);
       const dataWithImage = await fetchImage(cleanData);
       const dates = filterDates(dataWithImage);
@@ -63,7 +57,9 @@ export const fetchShows = (zipCode) => {
       dispatch(loadUpcomingShows(dates[2]));
     };
 
-  } catch (dispatch) {
+  } 
+  catch (dispatch) {
+    console.log('error')
     dispatch(showHasErrored(true))
   }
 }

@@ -1,30 +1,99 @@
 import React from 'react';
-import App from './App';
+import { App, mapStateToProps } from './App';
 import { shallow } from 'enzyme';
 
 describe('App', () => {
-  let wrapper;
+  let wrapper, mockLocation;
+  let mockTonightsShows, mockUpcomingShows, mockThisWeeksShows;
 
   beforeEach(() => {
-    wrapper = shallow(<App />)
+
+    mockLocation = { pathname: '' };
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={false}
+        error={false} 
+      />);
   });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should match the snapshot when path is ./main', () => {
-    const mockLocation = { history: { pathname: './main' }};
-    wrapper = shallow(<App location={mockLocation} />);
+  it('should match the snapshot when path is /main', () => {
+    mockLocation = { pathname: '/main' };
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={false}
+        error={false} 
+      />);
+
     expect(wrapper).toMatchSnapshot();
   });
 
-//   it('should map mapDispatchToProps to props', () => {
-//     const mockShows =  [];
-//     const mockSearchLocation = [];
+  it('should match the snapshot when path includes /event-details', () => {
+    mockLocation = { pathname: '/event-details' };
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={false}
+        error={false} 
+      />);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
 
-//     const mappedShows = mapStateToProps(mockShows);
-//     expect(mappedShows).toEqual();
-//   })
+  it('should match the snapshot when loading', () => {
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={true}
+        error={false} 
+      />);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should match the snapshot when there is an error', () => {
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={false}
+        error={true} 
+      />);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should map map state to props', () => {
+    const mockStore =  {
+      tonightsShows: [{artist: 'someone'}],
+      thisWeeksShows: [{artist: 'someoneElse'}],
+      upcomingShows: [{artist: 'someoneBetter'}],
+      loading: false,
+      error: false
+    };
+    
+
+    const mapped = mapStateToProps(mockStore);
+    expect(mapped.tonightsShows).toEqual([{artist: 'someone'}]);
+  })
 });
 
