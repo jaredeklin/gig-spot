@@ -12,9 +12,15 @@ ShallowWrapper {
             "pathname": "",
           }
     }
-    thisWeeksShows={undefined}
-    tonightsShows={undefined}
-    upcomingShows={undefined}
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -301,9 +307,15 @@ ShallowWrapper {
             "pathname": "",
           }
     }
-    thisWeeksShows={undefined}
-    tonightsShows={undefined}
-    upcomingShows={undefined}
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -329,6 +341,7 @@ ShallowWrapper {
           className="loading"
 >
           <img
+                    alt="loading"
                     className="loading-gif"
                     src="loader.gif"
           />
@@ -400,6 +413,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <img
+              alt="loading"
               className="loading-gif"
               src="loader.gif"
 />,
@@ -416,6 +430,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "alt": "loading",
               "className": "loading-gif",
               "src": "loader.gif",
             },
@@ -510,6 +525,7 @@ ShallowWrapper {
             className="loading"
 >
             <img
+                        alt="loading"
                         className="loading-gif"
                         src="loader.gif"
             />
@@ -581,6 +597,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <img
+                alt="loading"
                 className="loading-gif"
                 src="loader.gif"
 />,
@@ -597,6 +614,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "alt": "loading",
                 "className": "loading-gif",
                 "src": "loader.gif",
               },
@@ -696,9 +714,15 @@ ShallowWrapper {
             "pathname": "/event-details",
           }
     }
-    thisWeeksShows={undefined}
-    tonightsShows={undefined}
-    upcomingShows={undefined}
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1095,9 +1119,15 @@ ShallowWrapper {
             "pathname": "/main",
           }
     }
-    thisWeeksShows={undefined}
-    tonightsShows={undefined}
-    upcomingShows={undefined}
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1504,9 +1534,15 @@ ShallowWrapper {
             "pathname": "",
           }
     }
-    thisWeeksShows={undefined}
-    tonightsShows={undefined}
-    upcomingShows={undefined}
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

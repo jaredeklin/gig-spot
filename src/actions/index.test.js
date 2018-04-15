@@ -87,25 +87,53 @@ describe('fetchShows', () => {
       ok: true,
       json: () => Promise.resolve(mockFetchShowsData)
     }));
+
+    store.clearActions();
+    store.dispatch(actions.fetchShows(zipCode));
   });
 
   it('should call fetch with correct url', () => {
     const baseUrl = 'http://api.jambase.com/events?zipCode';
     const url = `${baseUrl}=${zipCode}&page=all&api_key=${jambaseApiKey}`;
  
-    store.dispatch(actions.fetchShows(zipCode));
     expect(window.fetch).toHaveBeenCalledWith(url);
   });
 
   it('cleanConcertData should be called with correct params', () => {
-    store.dispatch(actions.fetchShows(zipCode));
+
     expect(cleanConcertData).toHaveBeenCalledWith(mockCleanConcertData);
   });
 
   it('fetchImage should be called with correct params', () => {
-    store.dispatch(actions.fetchShows(zipCode));
+
     expect(fetchImage).toHaveBeenCalledWith(mockFetchImageCallData);
   });
+
+  it('should handle error if status is not ok', async () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: false,
+      statusText: 'you fucked up',
+      json: () => Promise.resolve(mockFetchShowsData)
+    }));
+
+    const expectedActions = [ 
+      { type: 'SHOW_IS_LOADING', showIsLoading: true },
+      { type: 'SHOW_HAS_ERRORED', showHasErrored: true },
+      { type: 'SHOW_IS_LOADING', showIsLoading: false },
+      { type: 'LOAD_TONIGHTS_SHOWS', shows: 1 },
+      { type: 'LOAD_THIS_WEEKS_SHOWS', shows: 2 },
+      { type: 'LOAD_UPCOMING_SHOWS', shows: 3 } 
+    ];
+
+    store.clearActions();
+    await store.dispatch(actions.fetchShows(zipCode));
+    const actualActions = store.getActions();
+
+    expect(actualActions).toEqual(expectedActions);
+
+    // console.log(Error)
+    expect(store.dispatch(actions.fetchShows(zipCode))).toThrow('');
+  })
 
   it('should throw an error if a bad response is returned', () => {
     window.fetch = jest.fn(() => Promise.reject({
@@ -114,13 +142,22 @@ describe('fetchShows', () => {
     const expected = { 'status': 404 };
 
     expect(store.dispatch(actions.fetchShows(zipCode))).rejects.toEqual(expected);
-  })
+  });
 
-  // it('showIsLoading should be called', () => {
-  //   const mockShowIsLoading = jest.fn();
-    
-    
-  //   expect(store.dispatch)
-  // })
+  it('actions should be called', () => {
+    const expectedActions = [ 
+      { type: 'SHOW_IS_LOADING', showIsLoading: true },
+      { type: 'SHOW_IS_LOADING', showIsLoading: false },
+      { type: 'LOAD_TONIGHTS_SHOWS', shows: 1 },
+      { type: 'LOAD_THIS_WEEKS_SHOWS', shows: 2 },
+      { type: 'LOAD_UPCOMING_SHOWS', shows: 3 } 
+    ];
+
+    const actualActions = store.getActions();
+
+    expect(actualActions).toEqual(expectedActions);
+  });
+
+
 });
 

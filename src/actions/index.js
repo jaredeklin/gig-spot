@@ -38,11 +38,13 @@ export const fetchShows = (zipCode) => {
       dispatch(showIsLoading(true));
 
       const rootUrl = 'http://api.jambase.com/events?'
-      const response = await fetch(`${rootUrl}zipCode=${zipCode}&page=all&api_key=${jambaseApiKey}`);
-
+      const api = `&page=all&api_key=${jambaseApiKey}`;
+      const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
+      console.log(response)
       if( !response.ok ) {
         dispatch(showHasErrored(true))
-        throw new Error(response.statusText);
+        // console.log('you fucked up')
+        throw Error(response.statusText);
       }
       
       // const concertData = mockFetchData

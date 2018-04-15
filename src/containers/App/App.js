@@ -9,6 +9,13 @@ import loadingGif from '../../images/loader.gif';
 
 export class App extends Component {
 
+  findMatch = (match) => {
+    const { tonightsShows, thisWeeksShows, upcomingShows} = this.props;
+    const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows];
+
+    return allShows.find(show => show.id === parseInt(match.params.id));
+  }
+
   render() {
     const { location, loading, error } = this.props;
 
@@ -35,7 +42,7 @@ export class App extends Component {
         {
           loading &&
             <div className='loading'>
-              <img src={ loadingGif } className='loading-gif'/>
+              <img src={ loadingGif } className='loading-gif' alt='loading'/>
               <h2>Finding local shows....</h2>
             </div>
         }
@@ -49,12 +56,10 @@ export class App extends Component {
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
-          const { tonightsShows, thisWeeksShows, upcomingShows} = this.props
-          const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows]
-          const concert = allShows.find(show => show.id === parseInt(match.params.id))
+          const concert = this.findMatch(match)
 
           if (concert) {
-            return (<EventDetails concert={concert} />)
+            return (<EventDetails concert={concert} />);
           }
         }} />
       </div>
