@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -7,56 +8,109 @@ a {
   text-decoration: none;
 }
 
-body, html {
-  font-family: 'Open Sans', sans-serif;
-  min-height: 100vh;
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  height: 100%
 }
 
 h1 {
   font-size: 50px;
-  margin: 45px auto;
-  width: 875px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  padding-top: 50px;
+  text-align: center;
 }
 
 input {
   outline: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 75px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 1px 0 0 5px;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  background: transparent;
 }
 
 button {
+  color: grey;
   outline: none;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 75px;
+  height: 25px;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  padding: 1px 0 0 0;
+  margin: 0 0 0 5px;
+  background: transparent;
+}
+
+.landing-page-background {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('./images/stage-instruments.jpg');
+}
+
+.landing-page {
+  width: 400px;
+  background-color: rgba(0, 0, 0, .8);
+  top: 170px;
+  color: white;
+  margin: auto;
+  height: 400px;
+  position: relative;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.landing-page h1 {
+  margin: 50px 0 -5px 0;
+  text-align: center;
+  width: 100%;
+  background: unset;
+}
+
+.landing-page p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.landing-page input {
+  color: white;
+}
+.landing-page button {
+  color: grey;
+}
+
+.landing-page button:hover {
+  /*color: white;*/
+  box-shadow: 0 0 20px 0;
+}
+
+.landing-page input::placeholder {
+  color: grey;
 }
 
 .main {
-  width: 102%;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .home-button {
   color: white;
 }
 
-.location-form {
-  box-sizing: border-box;
-  width: 50%;
-  margin: auto;
-}
-
-#main-form {
-  display: inline;
-  margin: 10px;
-}
-
-#main-form input {
-  display: inline-block;
-  width: 50px;
-  margin: 0 3px;
-}
-
-#main-form button {
-  display: inline-block;
-  width: 60px;
-}
-
-.change-location {
+.home {
   position: absolute;
   right: 20px;
   top: 15px;
@@ -64,8 +118,32 @@ button {
   width: auto;
 }
 
+.location-form {
+  box-sizing: border-box;
+  width: fit-content;
+  margin: auto;
+}
+
+#main-form {
+  display: inline;
+  margin: 10px;
+  z-index: 1;
+}
+
+#main-form button:hover {
+  box-shadow: 0 0 6px 0;
+}
+
+.change-location {
+  position: absolute;
+  right: 20px;
+  display: -webkit-box;
+  width: auto;
+}
+
 .change-location p {
   display: inline;
+  color: grey;
 }
 
 .tonights-shows {
@@ -81,7 +159,7 @@ button {
 .shows-inner {
   transition: 450ms transform;
   white-space: nowrap;
-  margin: 15px 0;
+  margin: 5px 0;
   padding: 0 30px;
 }
 
@@ -89,6 +167,7 @@ button {
   overflow: scroll;
   width: 100%;
   position: relative;
+  margin: -5px 0 -15px 0;
 }
 
 .detail-img {
@@ -101,15 +180,22 @@ button {
   left: 40%;
 }
 
+.error {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+}
+
 .loading-gif {
   height: 200px;
   width: 200px;
 }
 
 .event-happening-when-text {
-  margin: 5px 0 0 40px;
+  margin: 15px 0 0 40px;
 }
 
-.tonight-outer .event-happening-when-text {
+/*.tonight-outer .event-happening-when-text {
   margin-top: 20px;
-}
+}*/

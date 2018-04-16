@@ -1,6 +1,7 @@
 import { cleanTime } from './cleanTime';
 
 export const cleanConcertData = (concerts) => {
+
   return concerts.reduce((concertArray, show) => {
     const venue = {
       name: show.Venue.Name,
@@ -18,6 +19,7 @@ export const cleanConcertData = (concerts) => {
       day: 'numeric',
       year: 'numeric'
     });  
+
     const startTime = cleanTime(show.Date)
     const concertData = {
       headlineArtist,

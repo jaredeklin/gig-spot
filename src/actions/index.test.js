@@ -6,6 +6,7 @@ import { filterDates } from '../cleaners/filterDates';
 import { 
   mockFetchShowsData, 
   mockCleanConcertData,
+  mockExpectedCleanConcertData,
   mockFetchImageCallData,
   mockReturnedCleanConcertData,
 } from '../cleaners/mockData';
@@ -112,7 +113,7 @@ describe('fetchShows', () => {
   it('should handle error if status is not ok', async () => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       ok: false,
-      statusText: 'you fucked up',
+      statusText: 'you have been a very bad boy',
       json: () => Promise.resolve(mockFetchShowsData)
     }));
 
@@ -128,11 +129,11 @@ describe('fetchShows', () => {
     store.clearActions();
     await store.dispatch(actions.fetchShows(zipCode));
     const actualActions = store.getActions();
-
     expect(actualActions).toEqual(expectedActions);
 
-    // console.log(Error)
-    expect(store.dispatch(actions.fetchShows(zipCode))).toThrow('');
+    const expectedError = Error('you have been a very bad boy')
+    console.log(expectedError)
+    expect(store.dispatch(actions.fetchShows(zipCode))).toThrow(expectedError);
   })
 
   it('should throw an error if a bad response is returned', () => {
@@ -157,7 +158,5 @@ describe('fetchShows', () => {
 
     expect(actualActions).toEqual(expectedActions);
   });
-
-
 });
 

@@ -6,6 +6,8 @@ import Main from '../Main/Main';
 import LocationForm from '../LocationForm/LocationForm.js';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
 import loadingGif from '../../images/loader.gif';
+import { LandingPage } from '../../components/LandingPage/LandingPage';
+import { Header } from '../../components/Header/Header';
 
 export class App extends Component {
 
@@ -21,24 +23,18 @@ export class App extends Component {
 
     return (
       <div className="App">
+      { location.pathname !== '/' &&
         <header className="App-header">     
-          <h1>Concert Box Tracker Box</h1>
-          {
-            location.pathname === '/main' &&
-              <div className='change-location'>
-                <p>Update location:</p>
-                <LocationForm id='main-form' />
-              </div>
-          }
+          <h1>Gig Spot</h1>
 
           {
             location.pathname.includes('/event-details') &&
-              <div className='change-location'>
+              <div className='home'>
                 <NavLink to='../main' className='home-button'>Home</NavLink>
               </div>
           }
-
         </header>
+      }
         {
           loading &&
             <div className='loading'>
@@ -48,10 +44,12 @@ export class App extends Component {
         }
         {
           error &&
-            <h2 className='loading'>Nooooooooo!!!!!!! Something went wrong.</h2>
+            <h2 className='error'>
+              Nooooooooo!!!!!!! Something went wrong. Please try again.
+            </h2>
         }
 
-        <Route exact path = '/' component={ LocationForm } />
+        <Route exact path = '/' component={ LandingPage } />
         <Route exact path = '/main' component={ Main } />
         <Route exact path = '/event-details' component={ EventDetails } />
 

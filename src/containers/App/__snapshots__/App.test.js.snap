@@ -39,7 +39,7 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Concert Box Tracker Box
+                    Gig Spot
           </h1>
 </header>,
         false,
@@ -75,9 +75,8 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Concert Box Tracker Box
+              Gig Spot
 </h1>,
-            false,
             false,
           ],
           "className": "App-header",
@@ -89,13 +88,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Concert Box Tracker Box",
+              "children": "Gig Spot",
             },
             "ref": null,
-            "rendered": "Concert Box Tracker Box",
+            "rendered": "Gig Spot",
             "type": "h1",
           },
-          false,
           false,
         ],
         "type": "header",
@@ -167,7 +165,7 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Concert Box Tracker Box
+                        Gig Spot
             </h1>
 </header>,
           false,
@@ -203,9 +201,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Concert Box Tracker Box
+                Gig Spot
 </h1>,
-              false,
               false,
             ],
             "className": "App-header",
@@ -217,13 +214,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Concert Box Tracker Box",
+                "children": "Gig Spot",
               },
               "ref": null,
-              "rendered": "Concert Box Tracker Box",
+              "rendered": "Gig Spot",
               "type": "h1",
             },
-            false,
             false,
           ],
           "type": "header",
@@ -334,7 +330,7 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Concert Box Tracker Box
+                    Gig Spot
           </h1>
 </header>,
         <div
@@ -381,9 +377,8 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Concert Box Tracker Box
+              Gig Spot
 </h1>,
-            false,
             false,
           ],
           "className": "App-header",
@@ -395,13 +390,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Concert Box Tracker Box",
+              "children": "Gig Spot",
             },
             "ref": null,
-            "rendered": "Concert Box Tracker Box",
+            "rendered": "Gig Spot",
             "type": "h1",
           },
-          false,
           false,
         ],
         "type": "header",
@@ -518,7 +512,7 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Concert Box Tracker Box
+                        Gig Spot
             </h1>
 </header>,
           <div
@@ -565,9 +559,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Concert Box Tracker Box
+                Gig Spot
 </h1>,
-              false,
               false,
             ],
             "className": "App-header",
@@ -579,13 +572,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Concert Box Tracker Box",
+                "children": "Gig Spot",
               },
               "ref": null,
-              "rendered": "Concert Box Tracker Box",
+              "rendered": "Gig Spot",
               "type": "h1",
             },
-            false,
             false,
           ],
           "type": "header",
@@ -741,10 +733,10 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Concert Box Tracker Box
+                    Gig Spot
           </h1>
           <div
-                    className="change-location"
+                    className="home"
           >
                     <NavLink
                               activeClassName="active"
@@ -789,11 +781,10 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Concert Box Tracker Box
+              Gig Spot
 </h1>,
-            false,
             <div
-              className="change-location"
+              className="home"
 >
               <NavLink
                             activeClassName="active"
@@ -814,13 +805,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Concert Box Tracker Box",
+              "children": "Gig Spot",
             },
             "ref": null,
-            "rendered": "Concert Box Tracker Box",
+            "rendered": "Gig Spot",
             "type": "h1",
           },
-          false,
           Object {
             "instance": null,
             "key": undefined,
@@ -834,7 +824,7 @@ ShallowWrapper {
 >
                 Home
 </NavLink>,
-              "className": "change-location",
+              "className": "home",
             },
             "ref": null,
             "rendered": Object {
@@ -924,10 +914,10 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Concert Box Tracker Box
+                        Gig Spot
             </h1>
             <div
-                        className="change-location"
+                        className="home"
             >
                         <NavLink
                                     activeClassName="active"
@@ -972,11 +962,10 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Concert Box Tracker Box
+                Gig Spot
 </h1>,
-              false,
               <div
-                className="change-location"
+                className="home"
 >
                 <NavLink
                                 activeClassName="active"
@@ -997,13 +986,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Concert Box Tracker Box",
+                "children": "Gig Spot",
               },
               "ref": null,
-              "rendered": "Concert Box Tracker Box",
+              "rendered": "Gig Spot",
               "type": "h1",
             },
-            false,
             Object {
               "instance": null,
               "key": undefined,
@@ -1017,7 +1005,7 @@ ShallowWrapper {
 >
                   Home
 </NavLink>,
-                "className": "change-location",
+                "className": "home",
               },
               "ref": null,
               "rendered": Object {
@@ -1146,18 +1134,8 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Concert Box Tracker Box
+                    Gig Spot
           </h1>
-          <div
-                    className="change-location"
-          >
-                    <p>
-                              Update location:
-                    </p>
-                    <withRouter(Connect(LocationForm))
-                              id="main-form"
-                    />
-          </div>
 </header>,
         false,
         false,
@@ -1192,18 +1170,8 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Concert Box Tracker Box
+              Gig Spot
 </h1>,
-            <div
-              className="change-location"
->
-              <p>
-                            Update location:
-              </p>
-              <withRouter(Connect(LocationForm))
-                            id="main-form"
-              />
-</div>,
             false,
           ],
           "className": "App-header",
@@ -1215,53 +1183,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Concert Box Tracker Box",
+              "children": "Gig Spot",
             },
             "ref": null,
-            "rendered": "Concert Box Tracker Box",
+            "rendered": "Gig Spot",
             "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <p>
-                  Update location:
-</p>,
-                <withRouter(Connect(LocationForm))
-                  id="main-form"
-/>,
-              ],
-              "className": "change-location",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Update location:",
-                },
-                "ref": null,
-                "rendered": "Update location:",
-                "type": "p",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "id": "main-form",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
           },
           false,
         ],
@@ -1334,18 +1260,8 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Concert Box Tracker Box
+                        Gig Spot
             </h1>
-            <div
-                        className="change-location"
-            >
-                        <p>
-                                    Update location:
-                        </p>
-                        <withRouter(Connect(LocationForm))
-                                    id="main-form"
-                        />
-            </div>
 </header>,
           false,
           false,
@@ -1380,18 +1296,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Concert Box Tracker Box
+                Gig Spot
 </h1>,
-              <div
-                className="change-location"
->
-                <p>
-                                Update location:
-                </p>
-                <withRouter(Connect(LocationForm))
-                                id="main-form"
-                />
-</div>,
               false,
             ],
             "className": "App-header",
@@ -1403,53 +1309,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Concert Box Tracker Box",
+                "children": "Gig Spot",
               },
               "ref": null,
-              "rendered": "Concert Box Tracker Box",
+              "rendered": "Gig Spot",
               "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <p>
-                    Update location:
-</p>,
-                  <withRouter(Connect(LocationForm))
-                    id="main-form"
-/>,
-                ],
-                "className": "change-location",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Update location:",
-                  },
-                  "ref": null,
-                  "rendered": "Update location:",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "id": "main-form",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
             },
             false,
           ],
@@ -1561,7 +1425,7 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Concert Box Tracker Box
+                    Gig Spot
           </h1>
 </header>,
         false,
@@ -1601,9 +1465,8 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Concert Box Tracker Box
+              Gig Spot
 </h1>,
-            false,
             false,
           ],
           "className": "App-header",
@@ -1615,13 +1478,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Concert Box Tracker Box",
+              "children": "Gig Spot",
             },
             "ref": null,
-            "rendered": "Concert Box Tracker Box",
+            "rendered": "Gig Spot",
             "type": "h1",
           },
-          false,
           false,
         ],
         "type": "header",
@@ -1704,7 +1566,7 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Concert Box Tracker Box
+                        Gig Spot
             </h1>
 </header>,
           false,
@@ -1744,9 +1606,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Concert Box Tracker Box
+                Gig Spot
 </h1>,
-              false,
               false,
             ],
             "className": "App-header",
@@ -1758,13 +1619,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Concert Box Tracker Box",
+                "children": "Gig Spot",
               },
               "ref": null,
-              "rendered": "Concert Box Tracker Box",
+              "rendered": "Gig Spot",
               "type": "h1",
             },
-            false,
             false,
           ],
           "type": "header",

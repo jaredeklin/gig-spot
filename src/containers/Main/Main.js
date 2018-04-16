@@ -1,9 +1,10 @@
 import React from 'react';
 import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
+import LocationForm from '../LocationForm/LocationForm';
 
 export const Main = (props) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows } = props;
+  const { tonightsShows, thisWeeksShows, upcomingShows, loading } = props;
   const combined = [...tonightsShows, ...thisWeeksShows];
   let tonightCards, thisWeekCards, upcomingCards;
   // const checkNumberOfEvents = tonightsShows.length < 3 ? combined : thisWeeksShows
@@ -35,7 +36,14 @@ export const Main = (props) => {
 
 
   return (
+      
     <div className='main'>
+    { !loading && 
+        <div className='change-location'>
+        <p>Update location:</p>
+        <LocationForm id='main-form' />
+        </div>
+    }
       {
         thisWeeksShows.length > 0 &&
         <div>
@@ -55,12 +63,17 @@ export const Main = (props) => {
             { thisWeekCards }
             </div>
           </section>
-          <h2 className='event-happening-when-text'>Upcoming:</h2>
-          <section className='shows'>
-            <div className='shows-inner'>
-            { upcomingCards }
-            </div>
-          </section>
+          { 
+            tonightsShows.length + thisWeeksShows.length < 48 &&
+              <div>
+                <h2 className='event-happening-when-text'>Upcoming:</h2>
+                <section className='shows'>
+                  <div className='shows-inner'>
+                  { upcomingCards }
+                  </div>
+                </section>
+              </div>
+          }
         </div>
       }
       </div>
@@ -68,12 +81,13 @@ export const Main = (props) => {
 };
 
 export const mapStateToProps = (state) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows } = state;
+  const { tonightsShows, thisWeeksShows, upcomingShows, loading } = state;
   
   return {
     tonightsShows,
     thisWeeksShows,
-    upcomingShows
+    upcomingShows,
+    loading
   };
 };
 

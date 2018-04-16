@@ -20,10 +20,21 @@
   grid-column: 1;
   height: 350px;
   width: 350px;
+  opacity: .9;
 }
 
 .headliner {
   font-size: 36px;
+  width: 350px;
+}
+
+.support {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.support h4 {
+  margin-top: 2px;
 }
 
 .detail-date {
@@ -47,6 +58,15 @@
   margin-bottom: 30px;
 }
 
+.detail-start-time {
+  position: absolute;
+  right: 35px;
+  bottom: 185px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .ticket-info {
   text-align: center;
   position: absolute;
@@ -59,12 +79,18 @@
   border-right: 1px solid;
 }
 
-.tickets {
+/*.tickets {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}*/
+
+.ticket-info h4 {
   position: absolute;
   left: 20px;
   top: 15px;
 }
 
 .ticket-info:hover {
-  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 3px 0;
 }
