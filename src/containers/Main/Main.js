@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import LocationForm from '../LocationForm/LocationForm';
 
 export const Main = (props) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows } = props;
+  const { tonightsShows, thisWeeksShows, upcomingShows, loading } = props;
   const combined = [...tonightsShows, ...thisWeeksShows];
   let tonightCards, thisWeekCards, upcomingCards;
   // const checkNumberOfEvents = tonightsShows.length < 3 ? combined : thisWeeksShows
@@ -37,14 +37,15 @@ export const Main = (props) => {
 
   return (
     <div className='main'>
+      { !loading && 
+          <div className='change-location'>
+            <p>Update location:</p>
+            <LocationForm id='main-form' />
+          </div>
+      }
       {
         thisWeeksShows.length > 0 &&
         <div>
-        <div className='change-location'>
-          <p>Update location:</p>
-          <LocationForm id='main-form' />
-        </div>
-        
         { tonightsShows.length > 2 &&
           <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>
@@ -74,12 +75,13 @@ export const Main = (props) => {
 };
 
 export const mapStateToProps = (state) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows } = state;
+  const { tonightsShows, thisWeeksShows, upcomingShows, loading } = state;
   
   return {
     tonightsShows,
     thisWeeksShows,
-    upcomingShows
+    upcomingShows,
+    loading
   };
 };
 
