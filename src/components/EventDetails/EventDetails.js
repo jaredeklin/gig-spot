@@ -24,12 +24,12 @@ export const EventDetails = ({concert}) => {
           <a href={venue.url}>{venue.url}</a>
           <div className='address'>{venue.address}, {venue.city}</div>
         </div>
-        <h4 className='detail-start-time'>{startTime}</h4>
+        <div className='detail-start-time'>{startTime}</div>
         {
           tickets &&
-            <div className='ticket-info'>
-              <a href={tickets} className='tickets'>Get tickets</a>
-            </div>
+            <a href={tickets} className='ticket-info'>
+              <h4>Get tickets</h4>
+            </a>
         }
       </div>
     </article>

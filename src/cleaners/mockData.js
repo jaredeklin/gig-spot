@@ -33,6 +33,7 @@ export const mockFetchShowsData = {
 export const mockCleanConcertData = [{
         "Id": 3106726,
         "Date": "2018-04-08T21:00:00",
+        "startTime": "21:00",
         "Venue": {
             "Id": 160831,
             "Name": "Streets Of London Pub",
@@ -54,7 +55,7 @@ export const mockCleanConcertData = [{
         "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api"
     }]
 
-export const mockReturnedCleanConcertData = [{"date": "2018 M04 8", "headlineArtist": {"Id": 123882, "Name": "Shawn James"}, "id": 3106726, "startTime": "21:00", "supportArtists": [], "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": 160831, "name": "Streets Of London Pub", "url": ""}}]
+export const mockReturnedCleanConcertData = [{"date": "2018 M04 8", "headlineArtist": {"Id": 123882, "Name": "Shawn James"}, "id": 3106726, "startTime": undefined, "supportArtists": [], "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": 160831, "name": "Streets Of London Pub", "url": ""}}]
 
 export const mockTonightCardData = {
   artist: "Selina Albright", 
@@ -158,3 +159,10 @@ export const mockFetchImageCallData = [{
   "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", 
   "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": '160831', "name": "Streets Of London Pub", "url": ""}
 }]
+
+export const mockExpectedCleanConcertData = [{"Artists": [{"Id": 123882, "Name": "Shawn James"}], "Date": "2018-04-08T21:00:00", "Id": 3106726, "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "Venue": {"Address": "1501 E Colfax Ave", "City": "Denver", "Country": "US", "CountryCode": "US", "Id": 160831, "Latitude": 0, "Longitude": 0, "Name": "Streets Of London Pub", "State": "Colorado", "StateCode": "CO", "Url": "", "ZipCode": "80218"}}, {"Artists": [{"Id": 123882, "Name": "Shawn James"}], "Date": "2018-04-08T21:00:00", "Id": 3106726, "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "Venue": {"Address": "1501 E Colfax Ave", "City": "Denver", "Country": "US", "CountryCode": "US", "Id": 160831, "Latitude": 0, "Longitude": 0, "Name": "Streets Of London Pub", "State": "Colorado", "StateCode": "CO", "Url": "", "ZipCode": "80218"}}]
+
+
+
+
+

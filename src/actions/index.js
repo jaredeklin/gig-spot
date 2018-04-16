@@ -37,18 +37,19 @@ export const fetchShows = (zipCode) => {
     return async (dispatch) => {
       dispatch(showIsLoading(true));
 
-      const rootUrl = 'http://api.jambase.com/events?'
-      const api = `&page=all&api_key=${jambaseApiKey}`;
-      const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
-      console.log(response)
-      if( !response.ok ) {
-        dispatch(showHasErrored(true))
-        // console.log('you fucked up')
-        throw Error(response.statusText);
-      }
+      // const rootUrl = 'http://api.jambase.com/events?'
+      // const api = `&page=all&api_key=${jambaseApiKey}`;
+      // const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
       
-      // const concertData = mockFetchData
-      const concertData = await response.json()
+      // if( !response.ok ) {
+      //   dispatch(showHasErrored(true))
+      //   // console.log('you fucked up')
+      //   // throw Error(response.statusText);
+      // }
+      
+      const concertData = mockFetchData
+      // const concertData = await response.json()
+      // console.log(concertData.Events)
       const cleanData = cleanConcertData(concertData.Events);
       const dataWithImage = await fetchImage(cleanData);
       const dates = filterDates(dataWithImage);
@@ -61,8 +62,8 @@ export const fetchShows = (zipCode) => {
 
   } 
   catch (dispatch) {
-    console.log('error')
-    dispatch(showHasErrored(true))
+    console.log('error in the catch')
+    dispatch(showHasErrored(true));
   }
 }
 

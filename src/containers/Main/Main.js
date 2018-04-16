@@ -1,6 +1,7 @@
 import React from 'react';
 import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
+import LocationForm from '../LocationForm/LocationForm';
 
 export const Main = (props) => {
   const { tonightsShows, thisWeeksShows, upcomingShows } = props;
@@ -39,6 +40,11 @@ export const Main = (props) => {
       {
         thisWeeksShows.length > 0 &&
         <div>
+        <div className='change-location'>
+          <p>Update location:</p>
+          <LocationForm id='main-form' />
+        </div>
+        
         { tonightsShows.length > 2 &&
           <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>

@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -7,31 +8,66 @@ a {
   text-decoration: none;
 }
 
-body, html {
-  font-family: 'Open Sans', sans-serif;
-  min-height: 100vh;
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
   font-size: 50px;
-  margin: 45px auto;
-  width: 875px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  padding-top: 50px;
+  text-align: center;
 }
 
-input {
-  outline: none;
-}
-
+input,
 button {
   outline: none;
 }
 
+.landing-page-background {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('./images/stage-instruments.jpg');
+}
+
+.landing-page {
+  width: 600px;
+  background-color: rgba(0, 0, 0, .8);
+  top: 160px;
+  color: white;
+  margin: auto;
+  height: 275px;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.landing-page h1 {
+  text-align: center;
+  width: 100%;
+  background: unset;
+}
+
+.landing-page p {
+  text-align: center;
+}
+
 .main {
-  width: 102%;
+  position: relative;
 }
 
 .home-button {
   color: white;
+}
+
+.home {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  display: -webkit-box;
+  width: auto;
 }
 
 .location-form {
