@@ -8,6 +8,7 @@ export const Main = (props) => {
   let tonightCards, thisWeekCards, upcomingCards;
   // const checkNumberOfEvents = tonightsShows.length < 3 ? combined : thisWeeksShows
 
+
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
       return (<TonightCard show={show} key={show.id} />)
@@ -39,7 +40,7 @@ export const Main = (props) => {
         thisWeeksShows.length > 0 &&
         <div>
         { tonightsShows.length > 2 &&
-          <div>
+          <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>
             <section className='tonights-shows'>
               <div className='shows-inner'>
@@ -68,11 +69,12 @@ export const Main = (props) => {
 
 export const mapStateToProps = (state) => {
   const { tonightsShows, thisWeeksShows, upcomingShows } = state;
+  
   return {
     tonightsShows,
     thisWeeksShows,
     upcomingShows
-  }
+  };
 };
 
 export default connect(mapStateToProps)(Main);

@@ -5,13 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <LocationForm
+    fetchShows={[Function]}
     history={
         Object {
             "push": [Function],
           }
     }
-    loadShows={[Function]}
-    setLocation={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -33,13 +32,6 @@ ShallowWrapper {
           type="text"
           value=""
 />,
-        <input
-          name="radius"
-          onChange={[Function]}
-          placeholder="Radius"
-          type="text"
-          value=""
-/>,
         <button>
           Submit
 </button>,
@@ -58,21 +50,6 @@ ShallowWrapper {
           "name": "zipCode",
           "onChange": [Function],
           "placeholder": "Zip-code",
-          "type": "text",
-          "value": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "name": "radius",
-          "onChange": [Function],
-          "placeholder": "Radius",
           "type": "text",
           "value": "",
         },
@@ -108,13 +85,6 @@ ShallowWrapper {
             type="text"
             value=""
 />,
-          <input
-            name="radius"
-            onChange={[Function]}
-            placeholder="Radius"
-            type="text"
-            value=""
-/>,
           <button>
             Submit
 </button>,
@@ -133,21 +103,6 @@ ShallowWrapper {
             "name": "zipCode",
             "onChange": [Function],
             "placeholder": "Zip-code",
-            "type": "text",
-            "value": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "name": "radius",
-            "onChange": [Function],
-            "placeholder": "Radius",
             "type": "text",
             "value": "",
           },

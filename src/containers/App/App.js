@@ -9,8 +9,15 @@ import loadingGif from '../../images/loader.gif';
 
 export class App extends Component {
 
+  findMatch = (match) => {
+    const { tonightsShows, thisWeeksShows, upcomingShows} = this.props;
+    const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows];
+
+    return allShows.find(show => show.id === parseInt(match.params.id));
+  }
+
   render() {
-    const { upcomingShows, location, loading, error } = this.props;
+    const { location, loading, error } = this.props;
 
     return (
       <div className="App">
@@ -27,14 +34,21 @@ export class App extends Component {
           {
             location.pathname.includes('/event-details') &&
               <div className='change-location'>
-                <NavLink to='../main'>Doing the thing?!?!?!?!??!</NavLink>
+                <NavLink to='../main' className='home-button'>Home</NavLink>
               </div>
           }
 
         </header>
         {
           loading &&
-            <img src={ loadingGif } className='loading-gif'/>
+            <div className='loading'>
+              <img src={ loadingGif } className='loading-gif' alt='loading'/>
+              <h2>Finding local shows....</h2>
+            </div>
+        }
+        {
+          error &&
+            <h2 className='loading'>Nooooooooo!!!!!!! Something went wrong.</h2>
         }
 
         <Route exact path = '/' component={ LocationForm } />
@@ -42,12 +56,10 @@ export class App extends Component {
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
-          const { tonightsShows, thisWeeksShows, upcomingShows} = this.props
-          const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows]
-          const concert = allShows.find(show => show.id === parseInt(match.params.id))
+          const concert = this.findMatch(match)
 
           if (concert) {
-            return (<EventDetails {...concert} />)
+            return (<EventDetails concert={concert} />);
           }
         }} />
       </div>
@@ -57,6 +69,7 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => {
   const { tonightsShows, thisWeeksShows, upcomingShows, loading, error } = state;
+
   return {
     tonightsShows,
     thisWeeksShows,

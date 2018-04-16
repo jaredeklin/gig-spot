@@ -1,19 +1,78 @@
 .tonight-card {
   display: inline-block;
   width: 250px;
-  height: 310px;
+  height: 250px;
   margin: 10px;
-  cursor: pointer;
-  transition: 450ms all;
-  transform-origin: center left;
+  /*cursor: pointer;*/
+  /*transition: 450ms all;*/
+  /*transform-origin: center left;*/
   white-space: initial;
-  vertical-align: bottom;
+  /*vertical-align: bottom;*/
   box-sizing: border-box;
-  opacity: .8
+  opacity: .8;
+  position: relative;
 }
 
 .tonight-card:hover {
   opacity: 1;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0 ,0 , 0, .5);
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+.artist {
+  font-size: 16px
+}
+
+.venue {
+  margin: 2px 0;
+  font-size: 14px
+}
+
+.time {
+  display: none;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.tonights-shows .tonight-card {
+  width: 300px;
+  height: 300px;
+}
+
+.tonights-shows .card-info {
+  /*width: 300px;*/
+  padding: 5px 10px;
+}
+
+.tonights-shows .artist {
+  font-size: 20px;
+}
+
+.tonights-shows .venue {
+  font-size: 16px;
+}
+
+.tonights-shows .date {
+  display: none;
+}
+
+.tonights-shows img {
+  width: 300px;
+}
+
+.tonights-shows .time {
+  display: unset;
+  font-size: 16px;
 }
 
 

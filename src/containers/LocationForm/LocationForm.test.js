@@ -1,28 +1,23 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { LocationForm, mapDispatchToProps } from './LocationForm';
-import { fetchShows } from '../../cleaners/fetchShows';
 import { mockTonightCardData } from '../../cleaners/mockData';
-
-jest.mock('../../cleaners/fetchShows');
 
 describe('LocationForm', () => {
   let wrapper;
-  let mockEvent, mockLoadShows, mockSetLocation, mockHistory, mockState;
+  let mockEvent, mockFetchShows, mockHistory, mockState;
 
   beforeEach(() => {
     mockEvent = { preventDefault: jest.fn() };
     mockFetchShows = jest.fn();
-    mockSetLocation = jest.fn();
     mockHistory = { push: jest.fn() };
-    mockState = { zipCode: 80203, radius: 10 };
+    mockState = { zipCode: 80203 };
 
 
     wrapper = shallow(
       <LocationForm 
-      fetchShows={mockFetchShows} 
-      setLocation={mockSetLocation}
-      history={mockHistory}
+        fetchShows={mockFetchShows} 
+        history={mockHistory}
       />) ;     
   });
 
@@ -32,7 +27,7 @@ describe('LocationForm', () => {
 
   it('handleChange should set the state', () => {
     let mockEvent = { target: { value: 80203, name: 'zipCode' }};
-    const expected = { zipCode: 80203, radius: ''};
+    const expected = { zipCode: 80203 };
     
     wrapper.instance().handleChange(mockEvent);
     expect(wrapper.state()).toEqual(expected);
@@ -43,7 +38,6 @@ describe('LocationForm', () => {
     const mapped = mapDispatchToProps(mockDispatch);
 
     mapped.fetchShows();
-    mapped.setLocation();
     expect(mockDispatch).toHaveBeenCalled();
   });
 
@@ -52,23 +46,20 @@ describe('LocationForm', () => {
     it('expect fetchShows to have been called with correct params', () => {
       wrapper.setState(mockState);
       wrapper.instance().handleSubmit(mockEvent);
-      expect(mockFetchShows).toHaveBeenCalledWith(mockState);
+      expect(mockFetchShows).toHaveBeenCalledWith(mockState.zipCode);
     });
 
-    // it('expect loadShows to have been called with correct params', async () => {
-    //   await wrapper.instance().handleSubmit(mockEvent);
-    //   expect(mockLoadShows).toHaveBeenCalledWith(mockTonightCardData);
-    // });
-
-    it('expect setLocation to have been called with correct params', async () => {
-      wrapper.setState(mockState);
-      await wrapper.instance().handleSubmit(mockEvent);
-      expect(mockSetLocation).toHaveBeenCalledWith(mockState);
-    });
-
-    it('expect history.push() to have been called', async () => {
-      await wrapper.instance().handleSubmit(mockEvent);
+    it('expect history.push() to have been called', () => {
+      wrapper.instance().handleSubmit(mockEvent);
       expect(mockHistory.push).toHaveBeenCalled();
+    });
+
+    it('should reset state to default', () => {
+      const expected = { zipCode: '' };
+
+      wrapper.setState(mockState);
+      wrapper.instance().handleSubmit(mockEvent);
+      expect(wrapper.state()).toEqual(expected);
     });
   });
 });

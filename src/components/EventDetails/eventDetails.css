@@ -1,12 +1,20 @@
 .event-details {
   display: grid;
-  grid-template-columns: 40% 60%;
+  /*grid-template-columns: 40% 60%;*/
+  grid-template-columns: 350px 525px;
+  margin: 50px auto;
+  width: 80%;
+  box-shadow: 1px 0 5px 0;
+  max-height: 350px;
+  width: 875px;
 }
 
 .detail-right {
   grid-column: 2 / 3;
-  padding-left: 30px;
-}
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+} 
 
 .detail-img {
   grid-column: 1;
@@ -15,14 +23,13 @@
 }
 
 .headliner {
-  margin-top: 50px;
   font-size: 36px;
 }
 
 .detail-date {
-  position: relative;
-  top: -20%;
-  left: 65%;
+  position: absolute;
+  top: 0;
+  right: 5px;
   height: 100px;
   width: 100px;
   border: 1px solid black;
@@ -31,15 +38,33 @@
   text-align: center;
   box-sizing: border-box;
   font-size: 24px;
-  margin: 20px;
+  margin: 30px;
+}
+
+.detail-venue {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+
+.ticket-info {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  height: 50px;
+  width: 115px;
+  border-left: 1px solid;
+  border-right: 1px solid;
 }
 
 .tickets {
-  height: 50px;
-  width: 100px;
-  border: 1px solid black;
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
 
-.tickets:hover {
+.ticket-info:hover {
   background-color: rgba(0, 0, 0, .5);
 }

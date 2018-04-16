@@ -1,5 +1,4 @@
 * {
-  width: 100%;
   margin: 0;
 }
 
@@ -9,17 +8,14 @@ a {
 }
 
 body, html {
-  padding: 0 10px;
-  /*background: #0e0f11;*/
-  /*color: #ecf0f1;*/
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
 }
 
 h1 {
-  text-align: center;
-  position: absolute;
-  top: 10%;
+  font-size: 50px;
+  margin: 45px auto;
+  width: 875px;
 }
 
 input {
@@ -28,6 +24,14 @@ input {
 
 button {
   outline: none;
+}
+
+.main {
+  width: 102%;
+}
+
+.home-button {
+  color: white;
 }
 
 .location-form {
@@ -54,10 +58,10 @@ button {
 
 .change-location {
   position: absolute;
-  right: 0;
-  top: 10px;
+  right: 20px;
+  top: 15px;
   display: -webkit-box;
-  width: 320px;
+  width: auto;
 }
 
 .change-location p {
@@ -68,8 +72,10 @@ button {
   overflow: scroll;
   width: 100%;
   position: relative;
-  /*top: 185px;*/
-  /*min-height: 200px;*/
+}
+
+.artist-image {
+  width: 250px;
 }
 
 .shows-inner {
@@ -79,14 +85,9 @@ button {
   padding: 0 30px;
 }
 
-.tonight-inner h4 {
-  /*text-align: left;*/
-}
-
 .shows {
   overflow: scroll;
   width: 100%;
-  /*min-height: 200px;*/
   position: relative;
 }
 
@@ -95,13 +96,20 @@ button {
   width: 300px;
 }
 
-.loading-gif {
-  height: 200px;
-  width: 200px;
+.loading {
   position: relative;
   left: 40%;
 }
 
+.loading-gif {
+  height: 200px;
+  width: 200px;
+}
+
 .event-happening-when-text {
   margin: 5px 0 0 40px;
+}
+
+.tonight-outer .event-happening-when-text {
+  margin-top: 20px;
 }

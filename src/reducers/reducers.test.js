@@ -1,33 +1,70 @@
 import * as actions from '../actions';
-import {
-  showReducer,
-  searchLocationReducer,
-} from './showReducer';
+import * as reducer from './reducers';
 
-describe('showReducer', () => {
-
-  describe('tonightsShowReducer', () => {
-    it('should return a default state', () => {
-      expect(showReducer(undefined, {})). toEqual([]);
-    });
-
-    it('should load tonights shows', () => {
-      const shows = [{artist: 'someArtist', venue: 'the vault'}];
-
-      expect(showReducer(undefined, actions.loadShows(shows))).toEqual(shows);
-    });
-  })
-
-  describe('searchLocationReducer', () => {
-    it('should return a default state', () => {
-      expect(searchLocationReducer(undefined, {})).toEqual({});
-    });
-
-    it('should set a location', () => {
-      const location = { radius: 10, zipCode: 80203 };
-
-      expect(searchLocationReducer(undefined, actions.setLocation(location))).toEqual(location);
-    })
+describe('tonightsShowReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.tonightsShowReducer(undefined, {})).toEqual([]);
   });
-  
+
+  it('should load tonights shows', () => {
+    const shows = [{artist: 'someArtist', venue: 'the vault'}];
+
+    expect(reducer.tonightsShowReducer(undefined, 
+      actions.loadTonightsShows(shows))).toEqual(shows);
+  });
 });
+
+describe('thisWeeksShowsReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.thisWeeksShowsReducer(undefined, {})).toEqual([]);
+  });
+
+  it('should load thisWeeks shows', () => {
+    const shows = [{artist: 'someArtist', venue: 'the vault'}];
+
+    expect(reducer.thisWeeksShowsReducer(undefined, 
+      actions.loadThisWeeksShows(shows))).toEqual(shows);
+  });
+});
+
+describe('upcomingShowsReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.upcomingShowsReducer(undefined, {})).toEqual([]);
+  });
+
+  it('should load upcoming shows', () => {
+    const shows = [{artist: 'someArtist', venue: 'the vault'}];
+
+    expect(reducer.upcomingShowsReducer(undefined, 
+      actions.loadUpcomingShows(shows))).toEqual(shows);
+  });
+});
+
+describe('loadingReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.loadingReducer(undefined, {})).toEqual(false);
+  });
+
+  it('should update with a boolean', () => {
+    const bool = true;
+
+    expect(reducer.loadingReducer(undefined, actions.showIsLoading(bool)))
+      .toEqual(bool);
+  });
+});
+
+describe('errorReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.errorReducer(undefined, {})).toEqual(false);
+  });
+
+  it('should update with a boolean', () => {
+    const bool = true;
+
+    expect(reducer.errorReducer(undefined, actions.showHasErrored(bool)))
+      .toEqual(bool);
+  });
+});
+
+
+  
