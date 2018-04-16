@@ -79,21 +79,19 @@ ShallowWrapper {
                               Denver
                     </div>
           </div>
-          <h4
+          <div
                     className="detail-start-time"
           >
                     8:00 PM
-          </h4>
-          <div
-                    className="ticket-info"
-          >
-                    <a
-                              className="tickets"
-                              href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-                    >
-                              Get tickets
-                    </a>
           </div>
+          <a
+                    className="ticket-info"
+                    href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+          >
+                    <h4>
+                              Get tickets
+                    </h4>
+          </a>
 </div>,
       ],
       "className": "event-details",
@@ -151,21 +149,19 @@ ShallowWrapper {
                             Denver
               </div>
 </div>,
-            <h4
+            <div
               className="detail-start-time"
 >
               8:00 PM
-</h4>,
-            <div
-              className="ticket-info"
->
-              <a
-                            className="tickets"
-                            href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-              >
-                            Get tickets
-              </a>
 </div>,
+            <a
+              className="ticket-info"
+              href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+>
+              <h4>
+                            Get tickets
+              </h4>
+</a>,
           ],
           "className": "detail-right",
         },
@@ -281,20 +277,18 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "8:00 PM",
-            "type": "h4",
+            "type": "div",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                className="tickets"
-                href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
->
+              "children": <h4>
                 Get tickets
-</a>,
+</h4>,
               "className": "ticket-info",
+              "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
             },
             "ref": null,
             "rendered": Object {
@@ -303,14 +297,12 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Get tickets",
-                "className": "tickets",
-                "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
               },
               "ref": null,
               "rendered": "Get tickets",
-              "type": "a",
+              "type": "h4",
             },
-            "type": "div",
+            "type": "a",
           },
         ],
         "type": "div",
@@ -364,21 +356,19 @@ ShallowWrapper {
                                     Denver
                         </div>
             </div>
-            <h4
+            <div
                         className="detail-start-time"
             >
                         8:00 PM
-            </h4>
-            <div
-                        className="ticket-info"
-            >
-                        <a
-                                    className="tickets"
-                                    href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-                        >
-                                    Get tickets
-                        </a>
             </div>
+            <a
+                        className="ticket-info"
+                        href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+            >
+                        <h4>
+                                    Get tickets
+                        </h4>
+            </a>
 </div>,
         ],
         "className": "event-details",
@@ -436,21 +426,19 @@ ShallowWrapper {
                                 Denver
                 </div>
 </div>,
-              <h4
+              <div
                 className="detail-start-time"
 >
                 8:00 PM
-</h4>,
-              <div
-                className="ticket-info"
->
-                <a
-                                className="tickets"
-                                href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-                >
-                                Get tickets
-                </a>
 </div>,
+              <a
+                className="ticket-info"
+                href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+>
+                <h4>
+                                Get tickets
+                </h4>
+</a>,
             ],
             "className": "detail-right",
           },
@@ -566,20 +554,18 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "8:00 PM",
-              "type": "h4",
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  className="tickets"
-                  href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
->
+                "children": <h4>
                   Get tickets
-</a>,
+</h4>,
                 "className": "ticket-info",
+                "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
               },
               "ref": null,
               "rendered": Object {
@@ -588,14 +574,12 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Get tickets",
-                  "className": "tickets",
-                  "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
                 },
                 "ref": null,
                 "rendered": "Get tickets",
-                "type": "a",
+                "type": "h4",
               },
-              "type": "div",
+              "type": "a",
             },
           ],
           "type": "div",

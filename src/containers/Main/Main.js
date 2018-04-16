@@ -36,13 +36,14 @@ export const Main = (props) => {
 
 
   return (
+      
     <div className='main'>
-      { !loading && 
-          <div className='change-location'>
-            <p>Update location:</p>
-            <LocationForm id='main-form' />
-          </div>
-      }
+    { !loading && 
+        <div className='change-location'>
+        <p>Update location:</p>
+        <LocationForm id='main-form' />
+        </div>
+    }
       {
         thisWeeksShows.length > 0 &&
         <div>
@@ -62,12 +63,17 @@ export const Main = (props) => {
             { thisWeekCards }
             </div>
           </section>
-          <h2 className='event-happening-when-text'>Upcoming:</h2>
-          <section className='shows'>
-            <div className='shows-inner'>
-            { upcomingCards }
-            </div>
-          </section>
+          { 
+            tonightsShows.length + thisWeeksShows.length < 48 &&
+              <div>
+                <h2 className='event-happening-when-text'>Upcoming:</h2>
+                <section className='shows'>
+                  <div className='shows-inner'>
+                  { upcomingCards }
+                  </div>
+                </section>
+              </div>
+          }
         </div>
       }
       </div>

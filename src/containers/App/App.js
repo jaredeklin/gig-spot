@@ -44,7 +44,9 @@ export class App extends Component {
         }
         {
           error &&
-            <h2 className='loading'>Nooooooooo!!!!!!! Something went wrong.</h2>
+            <h2 className='error'>
+              Nooooooooo!!!!!!! Something went wrong. Please try again.
+            </h2>
         }
 
         <Route exact path = '/' component={ LandingPage } />

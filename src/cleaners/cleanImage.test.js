@@ -10,6 +10,6 @@ describe('cleanImage', () => {
   });
 
   it('if artist doesnt exist return null', () => {
-    expect(cleanImage({})).toEqual(null);
+    expect(cleanImage({})).toEqual('black-woven.jpg');
   });
 });
