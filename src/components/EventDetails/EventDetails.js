@@ -1,5 +1,6 @@
 import React from 'react';
 import './eventDetails.css';
+import PropTypes from 'prop-types';
 
 export const EventDetails = ({concert}) => {
   const { 
@@ -43,4 +44,8 @@ export const EventDetails = ({concert}) => {
       </div>
     </article>
   );
+};
+
+EventDetails.propTypes = {
+  concert: PropTypes.object
 };

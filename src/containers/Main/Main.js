@@ -2,12 +2,13 @@ import React from 'react';
 import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
 import LocationForm from '../LocationForm/LocationForm';
+import PropTypes from 'prop-types';
 
 export const Main = (props) => {
   const { tonightsShows, thisWeeksShows, upcomingShows, loading } = props;
   const combined = [...tonightsShows, ...thisWeeksShows];
   let tonightCards, thisWeekCards, upcomingCards;
-
+ 
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
       return (<TonightCard show={show} key={show.id} />);
@@ -89,3 +90,10 @@ export const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Main);
+
+Main.propTypes = {
+  tonightsShows: PropTypes.array,
+  thisWeeksShows: PropTypes.array,
+  upcomingShows: PropTypes.array,
+  loading: PropTypes.bool
+};

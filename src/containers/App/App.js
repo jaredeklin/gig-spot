@@ -6,6 +6,7 @@ import Main from '../Main/Main';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
 import loadingGif from '../../images/loader.gif';
 import { LandingPage } from '../../components/LandingPage/LandingPage';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
 
@@ -13,7 +14,7 @@ export class App extends Component {
     const { tonightsShows, thisWeeksShows, upcomingShows} = this.props;
     const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows];
 
-    return allShows.find(show => show.id === parseInt(match.params.id));
+    return allShows.find(show => show.id === parseInt(match.params.id, 10));
   }
 
   render() {
@@ -82,3 +83,12 @@ export const mapStateToProps = (state) => {
 };
 
 export default withRouter(connect(mapStateToProps)(App));
+
+App.propTypes = {
+  tonightsShows: PropTypes.array,
+  thisWeeksShows: PropTypes.array,
+  upcomingShows: PropTypes.array,
+  loading: PropTypes.bool,
+  error: PropTypes.bool,
+  location: PropTypes.object
+};

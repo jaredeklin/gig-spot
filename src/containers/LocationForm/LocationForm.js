@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchShows } from '../../actions';
+import PropTypes from 'prop-types';
 
 export class LocationForm extends Component {
   constructor() {
@@ -55,3 +56,8 @@ export const mapDispatchToProps = (dispatch) => ({
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(LocationForm));
+
+LocationForm.propTypes = {
+  history: PropTypes.object,
+  id: PropTypes.string
+};
