@@ -4,9 +4,9 @@ import { Main, mapStateToProps } from './Main';
 import { mockFetchImageReturnData } from '../../cleaners/mockData';
 
 describe('Main', () => {
-  const mockTonightsShows = [mockFetchImageReturnData];
-  const mockUpcomingShows = [mockFetchImageReturnData];
-  const mockThisWeeksShows = [mockFetchImageReturnData];
+  let mockTonightsShows = [mockFetchImageReturnData];
+  let mockUpcomingShows = [mockFetchImageReturnData];
+  let mockThisWeeksShows = [mockFetchImageReturnData];
 
   it('should match the snapshot with props', () => {
     let wrapper = shallow(
@@ -15,6 +15,19 @@ describe('Main', () => {
         thisWeeksShows={mockThisWeeksShows}
         upcomingShows={mockUpcomingShows}
       />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should match the snapshot with more than 2 items tonightsShows', () => {
+    mockTonightsShows = [{}, {}, {}, {}, {}];
+    let wrapper = shallow(
+      <Main 
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+      />);
+
     expect(wrapper).toMatchSnapshot();
   });
 
