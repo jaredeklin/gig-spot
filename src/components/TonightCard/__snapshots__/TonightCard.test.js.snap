@@ -15,7 +15,12 @@ ShallowWrapper {
             "id": 3092703,
             "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
             "startTime": "8:00 PM",
-            "supportArtists": Array [],
+            "supportArtists": Array [
+              Object {
+                "Id": "123882",
+                "Name": "Shawn James",
+              },
+            ],
             "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
             "venue": Object {
               "address": "7401 E. 1st Ave",

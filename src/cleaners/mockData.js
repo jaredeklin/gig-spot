@@ -142,7 +142,7 @@ export const mockConcertProps = {
   },
   id: 3092703,
   startTime: "8:00 PM",
-  supportArtists: [],
+  supportArtists: [{"Id": '123882', "Name": "Shawn James"}],
   tickets: "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
   venue: {
     name: "The Soiled Dove Underground", 

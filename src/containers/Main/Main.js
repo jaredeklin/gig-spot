@@ -62,7 +62,7 @@ export const Main = (props) => {
             </div>
           </section>
           { 
-            tonightsShows.length + thisWeeksShows.length < 48 &&
+            upcomingShows.length > 3 &&
               <div>
                 <h2 className='event-happening-when-text'>Upcoming:</h2>
                 <section className='shows'>

@@ -15,7 +15,12 @@ ShallowWrapper {
             "id": 3092703,
             "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
             "startTime": "8:00 PM",
-            "supportArtists": Array [],
+            "supportArtists": Array [
+              Object {
+                "Id": "123882",
+                "Name": "Shawn James",
+              },
+            ],
             "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
             "venue": Object {
               "address": "7401 E. 1st Ave",
@@ -57,6 +62,16 @@ ShallowWrapper {
                     className="detail-date"
           >
                     Apr 13, 2018
+          </div>
+          <div
+                    className="support"
+          >
+                    With:
+                    <h4
+                              className="support"
+                    >
+                              Shawn James
+                    </h4>
           </div>
           <div
                     className="detail-venue"
@@ -127,7 +142,16 @@ ShallowWrapper {
 >
               Apr 13, 2018
 </div>,
-            false,
+            <div
+              className="support"
+>
+              With:
+              <h4
+                            className="support"
+              >
+                            Shawn James
+              </h4>
+</div>,
             <div
               className="detail-venue"
 >
@@ -191,7 +215,41 @@ ShallowWrapper {
             "rendered": "Apr 13, 2018",
             "type": "div",
           },
-          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "With:",
+                Array [
+                  <h4
+                    className="support"
+>
+                    Shawn James
+</h4>,
+                ],
+              ],
+              "className": "support",
+            },
+            "ref": null,
+            "rendered": Array [
+              "With:",
+              Object {
+                "instance": null,
+                "key": "123882",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Shawn James",
+                  "className": "support",
+                },
+                "ref": null,
+                "rendered": "Shawn James",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -336,6 +394,16 @@ ShallowWrapper {
                         Apr 13, 2018
             </div>
             <div
+                        className="support"
+            >
+                        With:
+                        <h4
+                                    className="support"
+                        >
+                                    Shawn James
+                        </h4>
+            </div>
+            <div
                         className="detail-venue"
             >
                         <h4
@@ -404,7 +472,16 @@ ShallowWrapper {
 >
                 Apr 13, 2018
 </div>,
-              false,
+              <div
+                className="support"
+>
+                With:
+                <h4
+                                className="support"
+                >
+                                Shawn James
+                </h4>
+</div>,
               <div
                 className="detail-venue"
 >
@@ -468,7 +545,41 @@ ShallowWrapper {
               "rendered": "Apr 13, 2018",
               "type": "div",
             },
-            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "With:",
+                  Array [
+                    <h4
+                      className="support"
+>
+                      Shawn James
+</h4>,
+                  ],
+                ],
+                "className": "support",
+              },
+              "ref": null,
+              "rendered": Array [
+                "With:",
+                Object {
+                  "instance": null,
+                  "key": "123882",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Shawn James",
+                    "className": "support",
+                  },
+                  "ref": null,
+                  "rendered": "Shawn James",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,
