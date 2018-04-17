@@ -3,11 +3,9 @@ import './App.css';
 import { connect } from 'react-redux';
 import { withRouter, Route, NavLink } from 'react-router-dom';
 import Main from '../Main/Main';
-import LocationForm from '../LocationForm/LocationForm.js';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
 import loadingGif from '../../images/loader.gif';
 import { LandingPage } from '../../components/LandingPage/LandingPage';
-import { Header } from '../../components/Header/Header';
 
 export class App extends Component {
 
@@ -23,7 +21,7 @@ export class App extends Component {
 
     return (
       <div className="App">
-      { location.pathname !== '/' &&
+        { location.pathname !== '/' &&
         <header className="App-header">     
           <h1>Gig Spot</h1>
 
@@ -34,7 +32,7 @@ export class App extends Component {
               </div>
           }
         </header>
-      }
+        }
         {
           loading &&
             <div className='loading'>
@@ -54,7 +52,7 @@ export class App extends Component {
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
-          const concert = this.findMatch(match)
+          const concert = this.findMatch(match);
 
           if (concert) {
             return (<EventDetails concert={concert} />);
@@ -62,11 +60,17 @@ export class App extends Component {
         }} />
       </div>
     );
-  };
-};
+  }
+}
 
 export const mapStateToProps = (state) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows, loading, error } = state;
+  const { 
+    tonightsShows, 
+    thisWeeksShows, 
+    upcomingShows, 
+    loading, 
+    error 
+  } = state;
 
   return {
     tonightsShows,

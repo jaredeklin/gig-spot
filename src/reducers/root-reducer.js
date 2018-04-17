@@ -16,10 +16,10 @@ export const appReducer = combineReducers({
 });
 
 export const rootReducer = (state, action) => {
-  console.log(state, action)
-  if(action.type === 'CLEAR_STORE') {
+
+  if (action.type === 'CLEAR_STORE') {
     state = undefined;  
-  };
+  }
 
   return appReducer(state, action);
 };

@@ -85,17 +85,49 @@ describe('App', () => {
   });
 
   it('findMatch should return a match if true', () => {
-    const mockMatch = {params: {id: 1}}
+    const mockMatch = {params: {id: 1}};
     const expected = {id: 1}; 
     
-    expect(wrapper.instance().findMatch(mockMatch)).toEqual(expected)
-  })
+    expect(wrapper.instance().findMatch(mockMatch)).toEqual(expected);
+  });
 
   it('findMatch should return undefined if no match', () => {
-    const mockMatch = {params: {id: 7}}
+    const mockMatch = {params: {id: 7}};
     
-    expect(wrapper.instance().findMatch(mockMatch)).toEqual(undefined)
-  })
+    expect(wrapper.instance().findMatch(mockMatch)).toEqual(undefined);
+  });
+
+  it('should match the snapshot when there is a match', () => {
+    const mockMatch = {params: {id: 1}};
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={false}
+        error={true} 
+        match={mockMatch}
+      />);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should match the snapshot when there is not a match', () => {
+    const mockMatch = {params: {id: 7}};
+    wrapper = shallow(
+      <App
+        location={mockLocation}
+        tonightsShows={mockTonightsShows}
+        thisWeeksShows={mockThisWeeksShows}
+        upcomingShows={mockUpcomingShows}
+        loading={false}
+        error={true} 
+        match={mockMatch}
+      />);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
 
   it('should map map state to props', () => {
     const mockStore =  {
@@ -108,6 +140,6 @@ describe('App', () => {
     
     const mapped = mapStateToProps(mockStore);
     expect(mapped.tonightsShows).toEqual([{artist: 'someone'}]);
-  })
+  });
 });
 

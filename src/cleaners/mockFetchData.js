@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 export const mockFetchData = {
     "Info": {
         "TotalResults": 233,

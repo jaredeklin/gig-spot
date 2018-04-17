@@ -4,10 +4,12 @@ import { cleanImage } from './cleanImage';
 export const fetchImage = (concerts) => {
  
   const promises = concerts.map( async (concert) => {
-    const artist = concert.headlineArtist.Name
+    const artist = concert.headlineArtist.Name;
+    const baseUrl = 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo';
+    const keyUrl = `&artist=${artist}&api_key=${lastFmApiKey}&format=json`;
 
     try {
-      const response = await fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=${lastFmApiKey}&format=json`);
+      const response = await fetch(`${baseUrl}${keyUrl}`);
       const artistData = await response.json();
 
       return ({ ...concert, image: cleanImage(artistData) });

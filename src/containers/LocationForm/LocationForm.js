@@ -5,11 +5,11 @@ import { fetchShows } from '../../actions';
 
 export class LocationForm extends Component {
   constructor() {
-    super()
+    super();
     this.state = { 
       zipCode: ''
-    }  
-  };
+    }; 
+  }
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,7 +23,7 @@ export class LocationForm extends Component {
     event.preventDefault();
     const { fetchShows, history } = this.props;
     
-    fetchShows(this.state.zipCode)
+    fetchShows(this.state.zipCode);
     history.push('./main');
     this.setState({
       zipCode: ''
@@ -32,8 +32,11 @@ export class LocationForm extends Component {
 
   render() {
     return (
-
-      <form onSubmit={this.handleSubmit} className='location-form' id={this.props.id}>
+      <form 
+        onSubmit={this.handleSubmit} 
+        className='location-form' 
+        id={this.props.id}
+      >
         <input 
           type='text'
           name='zipCode'
@@ -44,8 +47,8 @@ export class LocationForm extends Component {
         <button>Submit</button>
       </form>
     );
-  };
-};
+  }
+}
 
 export const mapDispatchToProps = (dispatch) => ({
   fetchShows: (shows) => (dispatch(fetchShows(shows)))

@@ -12,7 +12,7 @@ export const filterDates = (shows) => {
 
     return eventDate === today;
   }).map(show => {
-    return { ...show, date: cleanDate(show.date)}
+    return { ...show, date: cleanDate(show.date) };
   });
 
   const thisWeeksShows = shows.filter(event => {
@@ -20,7 +20,7 @@ export const filterDates = (shows) => {
 
     return eventDate >= tommorrow && eventDate <= nextWeek;
   }).map(show => {
-    return { ...show, date: cleanDate(show.date)}
+    return { ...show, date: cleanDate(show.date) };
   });
 
   const upcomingShows = shows.filter(event => {
@@ -28,15 +28,15 @@ export const filterDates = (shows) => {
 
     return eventDate > nextWeek;
   }).map(show => {
-    return { ...show, date: cleanDate(show.date)}
+    return { ...show, date: cleanDate(show.date) };
   });
 
   return [todaysShows, thisWeeksShows, upcomingShows];  
-}
+};
 
 const cleanDate = (date) => {
   return new Date(date).toLocaleDateString( [], {
     month: 'short',
     day: 'numeric'
-  })
-}
+  });
+};

@@ -3,7 +3,6 @@ import { cleanImage } from './cleanImage';
 import { lastFmApiKey } from './apiKey';
 import { 
   mockFetchImageConcertData,  
-  mockFetchImageReturnData,
   mockFetchArtistImageReturnData 
 } from './mockData';
 
@@ -18,8 +17,9 @@ describe('fetchImage', () => {
     }));
 
 
-    const artist = mockFetchImageConcertData[0].headlineArtist.Name
-    const url = `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=${lastFmApiKey}&format=json`
+    const artist = mockFetchImageConcertData[0].headlineArtist.Name;
+    const base = `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&`;
+    const url = `${base}artist=${artist}&api_key=${lastFmApiKey}&format=json`;
     
     fetchImage(mockFetchImageConcertData);
     expect(window.fetch).toHaveBeenCalledWith(url);
@@ -33,7 +33,7 @@ describe('fetchImage', () => {
     }));
 
     fetchImage(mockFetchImageConcertData);
-    expect(cleanImage).toHaveBeenCalledWith(mockFetchArtistImageReturnData)
+    expect(cleanImage).toHaveBeenCalledWith(mockFetchArtistImageReturnData);
   });
 
   it('should throw an error if response is bad', async () => {
@@ -41,7 +41,7 @@ describe('fetchImage', () => {
       status: 404
     }));
 
-    const expected = { 'status': 404 }
-    expect(fetchImage(mockFetchImageConcertData)).rejects.toEqual(expected)
-  })
+    const expected = { 'status': 404 };
+    expect(fetchImage(mockFetchImageConcertData)).rejects.toEqual(expected);
+  });
 });

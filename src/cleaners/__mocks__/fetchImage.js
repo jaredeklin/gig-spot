@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const fetchImage = jest.fn().mockReturnValue([{
   "date": "2018 M04 8", 
   "headlineArtist": {"Id": '123882', "Name": "Shawn James"}, 

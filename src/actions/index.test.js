@@ -5,8 +5,6 @@ import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { filterDates } from '../cleaners/filterDates';
 import { 
   mockFetchShowsData, 
-  mockCleanConcertData,
-  mockExpectedCleanConcertData,
   mockFetchImageCallData,
   mockFilterDataCall
 } from '../cleaners/mockData';
@@ -59,8 +57,8 @@ describe('loadUpcomingShows', () => {
 describe('showIsLoading', () => {
   it('should return a type of SHOW_IS_LOADING and payload', () => {
     const expected = { 
-      "showIsLoading": true, 
-      "type": "SHOW_IS_LOADING"
+      type: "SHOW_IS_LOADING",
+      showIsLoading: true
     };
 
     expect(actions.showIsLoading(true)).toEqual(expected);
@@ -70,16 +68,26 @@ describe('showIsLoading', () => {
 describe('showHasErrored', () => {
   it('should return a type of SHOW_HAS_ERRORED and payload', () => {
     const expected = {
-      "showHasErrored": false, 
-      "type": "SHOW_HAS_ERRORED"
+      type: "SHOW_HAS_ERRORED",
+      showHasErrored: false 
     };
 
     expect(actions.showHasErrored(false)).toEqual(expected);
   });
 });
 
+describe('clearStore', () => {
+  it('should return a type of CLEAR_STORE', () => {
+    const expected = {
+      type: 'CLEAR_STORE'
+    };
+
+    expect(actions.clearStore()).toEqual(expected);
+  });
+});
+
 describe('fetchShows', () => {
-  const mockLocation = { zipCode: 80218 }
+  const mockLocation = { zipCode: 80218 };
   const { zipCode } = mockLocation;
   const store = mockStore({});
 
@@ -111,7 +119,7 @@ describe('fetchShows', () => {
   });
 
   it('filterDates should be called with correct params', () => {
-    expect(filterDates).toHaveBeenCalledWith(mockFilterDataCall)
+    expect(filterDates).toHaveBeenCalledWith(mockFilterDataCall);
   });
 
   it('should fire proper actions if status is not ok', async () => {
@@ -121,6 +129,7 @@ describe('fetchShows', () => {
     }));
 
     const expectedActions = [ 
+      {"type": "CLEAR_STORE"},
       { type: 'SHOW_HAS_ERRORED', showHasErrored: false },
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_HAS_ERRORED', showHasErrored: true },
@@ -137,17 +146,18 @@ describe('fetchShows', () => {
   it('should throw an error if a bad response is returned', async () => {
     window.fetch = jest.fn(() => Promise.resolve({
       ok: false,
-      statusText: 'you have been a very bad boy',
-    }))
+      statusText: 'you have been a very bad boy'
+    }));
 
-    const expected = Promise.resolve(Error('you have been a very bad boy'))
+    const expected = Promise.resolve(Error('you have been a very bad boy'));
 
     expect(store.dispatch(actions.fetchShows(zipCode))).toEqual(expected);
   });
 
   it('all actions should be called', () => {
     const expectedActions = [
-      { type: 'SHOW_HAS_ERRORED', showHasErrored: false, }, 
+      {"type": "CLEAR_STORE"},
+      { type: 'SHOW_HAS_ERRORED', showHasErrored: false }, 
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_IS_LOADING', showIsLoading: false },
       { type: 'LOAD_TONIGHTS_SHOWS', shows: 1 },

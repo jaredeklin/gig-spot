@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { LocationForm, mapDispatchToProps } from './LocationForm';
-import { mockTonightCardData } from '../../cleaners/mockData';
 
 describe('LocationForm', () => {
   let wrapper;

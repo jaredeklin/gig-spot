@@ -2,8 +2,7 @@ import { jambaseApiKey } from '../cleaners/apiKey';
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { fetchImage } from '../cleaners/fetchImage';
 import { filterDates } from '../cleaners/filterDates';
-
-import { mockFetchData } from '../cleaners/mockFetchData';
+// import { mockFetchData } from '../cleaners/mockFetchData';
 
 
 export const loadTonightsShows = (shows) => ({
@@ -47,9 +46,9 @@ export const fetchShows = (zipCode) => {
       const api = `&page=0&api_key=${jambaseApiKey}`;
       const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
 
-      if( !response.ok ) {  
+      if ( !response.ok ) {  
         throw Error(response.statusText);
-      };
+      }
         
       // const concertData = mockFetchData
       const concertData = await response.json();

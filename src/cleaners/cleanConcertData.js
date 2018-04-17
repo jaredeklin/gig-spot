@@ -10,9 +10,10 @@ export const cleanConcertData = (concerts) => {
       address: show.Venue.Address,
       city: show.Venue.City
     };
-    const headlineArtist = show.Artists[0]
-    const supportArtists = show.Artists.filter(artist => artist.Id !== show.Artists[0].Id);
-    const tickets = show.TicketUrl
+    const headlineArtist = show.Artists[0];
+    const supportArtists = show.Artists
+      .filter(artist => artist.Id !== show.Artists[0].Id);
+    const tickets = show.TicketUrl;
     const id = show.Id;
     const date = new Date(show.Date).toLocaleDateString([], {
       month: 'short',
@@ -20,7 +21,7 @@ export const cleanConcertData = (concerts) => {
       year: 'numeric'
     });  
 
-    const startTime = cleanTime(show.Date)
+    const startTime = cleanTime(show.Date);
     const concertData = {
       headlineArtist,
       supportArtists,

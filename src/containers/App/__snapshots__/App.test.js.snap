@@ -1386,6 +1386,334 @@ ShallowWrapper {
 }
 `;
 
+exports[`App should match the snapshot when there is a match 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    error={true}
+    loading={false}
+    location={
+        Object {
+            "pathname": "",
+          }
+    }
+    match={
+        Object {
+            "params": Object {
+              "id": 1,
+            },
+          }
+    }
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+>
+          <h1>
+                    Gig Spot
+          </h1>
+</header>,
+        false,
+        <h2
+          className="error"
+>
+          Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+/>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/main"
+/>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/event-details"
+/>,
+        <Route
+          path="/event-details/:id"
+          render={[Function]}
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Gig Spot
+</h1>,
+            false,
+          ],
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Gig Spot",
+            },
+            "ref": null,
+            "rendered": "Gig Spot",
+            "type": "h1",
+          },
+          false,
+        ],
+        "type": "header",
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "className": "error",
+        },
+        "ref": null,
+        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/main",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/event-details",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "path": "/event-details/:id",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+>
+            <h1>
+                        Gig Spot
+            </h1>
+</header>,
+          false,
+          <h2
+            className="error"
+>
+            Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/main"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/event-details"
+/>,
+          <Route
+            path="/event-details/:id"
+            render={[Function]}
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Gig Spot
+</h1>,
+              false,
+            ],
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Gig Spot",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": "h1",
+            },
+            false,
+          ],
+          "type": "header",
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/main",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/event-details",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "path": "/event-details/:id",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
 exports[`App should match the snapshot when there is an error 1`] = `
 ShallowWrapper {
   "length": 1,
@@ -1396,6 +1724,334 @@ ShallowWrapper {
     location={
         Object {
             "pathname": "",
+          }
+    }
+    thisWeeksShows={Array []}
+    tonightsShows={
+        Array [
+            Object {
+              "id": 1,
+            },
+          ]
+    }
+    upcomingShows={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+>
+          <h1>
+                    Gig Spot
+          </h1>
+</header>,
+        false,
+        <h2
+          className="error"
+>
+          Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+/>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/main"
+/>,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/event-details"
+/>,
+        <Route
+          path="/event-details/:id"
+          render={[Function]}
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Gig Spot
+</h1>,
+            false,
+          ],
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Gig Spot",
+            },
+            "ref": null,
+            "rendered": "Gig Spot",
+            "type": "h1",
+          },
+          false,
+        ],
+        "type": "header",
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "className": "error",
+        },
+        "ref": null,
+        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/main",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/event-details",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "path": "/event-details/:id",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+>
+            <h1>
+                        Gig Spot
+            </h1>
+</header>,
+          false,
+          <h2
+            className="error"
+>
+            Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/main"
+/>,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/event-details"
+/>,
+          <Route
+            path="/event-details/:id"
+            render={[Function]}
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Gig Spot
+</h1>,
+              false,
+            ],
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Gig Spot",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": "h1",
+            },
+            false,
+          ],
+          "type": "header",
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/main",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/event-details",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "path": "/event-details/:id",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`App should match the snapshot when there is not a match 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    error={true}
+    loading={false}
+    location={
+        Object {
+            "pathname": "",
+          }
+    }
+    match={
+        Object {
+            "params": Object {
+              "id": 7,
+            },
           }
     }
     thisWeeksShows={Array []}

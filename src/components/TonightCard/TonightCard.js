@@ -9,7 +9,11 @@ export const TonightCard = ({ show }) => {
   return (
     <Link to={`event-details/${id}`}>
       <article className="tonight-card">
-        <img src={ image ? image : defaultImage } className='artist-image' alt="artist"/>
+        <img 
+          src={ image ? image : defaultImage } 
+          className='artist-image' 
+          alt="artist"
+        />
         <div className='card-info'>
           <h4 className="artist">{ headlineArtist.Name }</h4>
           <div className="venue">{ venue.name }</div>
