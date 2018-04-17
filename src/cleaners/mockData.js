@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 export const mockFetchShowsData = {
     "Info": {
         "TotalResults": 174,
@@ -162,7 +164,58 @@ export const mockFetchImageCallData = [{
 
 export const mockExpectedCleanConcertData = [{"Artists": [{"Id": 123882, "Name": "Shawn James"}], "Date": "2018-04-08T21:00:00", "Id": 3106726, "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "Venue": {"Address": "1501 E Colfax Ave", "City": "Denver", "Country": "US", "CountryCode": "US", "Id": 160831, "Latitude": 0, "Longitude": 0, "Name": "Streets Of London Pub", "State": "Colorado", "StateCode": "CO", "Url": "", "ZipCode": "80218"}}, {"Artists": [{"Id": 123882, "Name": "Shawn James"}], "Date": "2018-04-08T21:00:00", "Id": 3106726, "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "Venue": {"Address": "1501 E Colfax Ave", "City": "Denver", "Country": "US", "CountryCode": "US", "Id": 160831, "Latitude": 0, "Longitude": 0, "Name": "Streets Of London Pub", "State": "Colorado", "StateCode": "CO", "Url": "", "ZipCode": "80218"}}]
 
+export const mockFilterDataCall = [{
+  "date": "2018 M04 8", 
+  "headlineArtist": {"Id": '123882', "Name": "Shawn James"}, 
+  "id": '3106726', 
+  "startTime": "21:00", 
+  "supportArtists": [], 
+  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", 
+  "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": '160831', "name": "Streets Of London Pub", "url": ""},
+  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
+}]
 
+export const mockFilterDatesData = [{
+        "Id": 3083885,
+        "date": "2018-04-16T18:30:00",
+        "Artists": [{
+            "Id": 42467,
+            "Name": "Cradle of Filth "
+        }, {
+            "Id": 118639,
+            "Name": "Uncured"
+        }, {
+            "Id": 128218,
+            "Name": "Jinjer"
+        }],
+    }, {
+        "Id": 3109433,
+        "date": "2018-04-18T00:00:00",
+        "Artists": [{
+            "Id": 101680,
+            "Name": "Lapalux"
+        }],
+    }, {
+        "Id": 3102725,
+        "date": "2018-04-20T21:00:00",
+        
+        "Artists": [{
+            "Id": 25778,
+            "Name": "Chali 2na"
+        }, {
+            "Id": 36359,
+            "Name": "Method Man"
+        }, {
+            "Id": 40914,
+            "Name": "Redman"
+        }, {
+            "Id": 51319,
+            "Name": "Collie Buddz "
+        }],
+    }
+]
+
+export const mockExpectedFilterDates = [[{"Artists": [{"Id": 42467, "Name": "Cradle of Filth "}, {"Id": 118639, "Name": "Uncured"}, {"Id": 128218, "Name": "Jinjer"}], "Id": 3083885, "date": "M04 16"}], [{"Artists": [{"Id": 101680, "Name": "Lapalux"}], "Id": 3109433, "date": "M04 18"}, {"Artists": [{"Id": 25778, "Name": "Chali 2na"}, {"Id": 36359, "Name": "Method Man"}, {"Id": 40914, "Name": "Redman"}, {"Id": 51319, "Name": "Collie Buddz "}], "Id": 3102725, "date": "M04 20"}], []]
 
 
 

@@ -1,10 +1,20 @@
 import React from 'react';
 import './eventDetails.css';
+import PropTypes from 'prop-types';
 
 export const EventDetails = ({concert}) => {
-  const { headlineArtist, supportArtists, date, image, venue, startTime, tickets, id} = concert;
+  const { 
+    headlineArtist, 
+    supportArtists, 
+    date, 
+    image, 
+    venue, 
+    startTime, 
+    tickets
+  } = concert;
+
   const allSupportArtists = supportArtists.map(artist => {
-    return (<h4 className='support' key={id}>{artist.Name}</h4>)
+    return (<h4 className='support' key={artist.Id}>{artist.Name}</h4>);
   });
 
   return (
@@ -16,7 +26,7 @@ export const EventDetails = ({concert}) => {
         {
           supportArtists.length > 0 &&  
             <div className='support'>With:
-            {allSupportArtists}
+              {allSupportArtists}
             </div>
         }
         <div className='detail-venue'>
@@ -33,5 +43,9 @@ export const EventDetails = ({concert}) => {
         }
       </div>
     </article>
-  )
-}
+  );
+};
+
+EventDetails.propTypes = {
+  concert: PropTypes.object
+};

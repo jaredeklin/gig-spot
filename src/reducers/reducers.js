@@ -1,5 +1,5 @@
 export const tonightsShowReducer = (state = [], action) => {
-  switch(action.type) {
+  switch (action.type) {
     
   case 'LOAD_TONIGHTS_SHOWS':
     return [...action.shows];
@@ -10,7 +10,7 @@ export const tonightsShowReducer = (state = [], action) => {
 };
 
 export const thisWeeksShowsReducer = (state = [], action) => {
-  switch(action.type) {
+  switch (action.type) {
 
   case 'LOAD_THIS_WEEKS_SHOWS':
     return [...action.shows];
@@ -21,7 +21,7 @@ export const thisWeeksShowsReducer = (state = [], action) => {
 };
 
 export const upcomingShowsReducer = (state = [], action) => {
-  switch(action.type) {
+  switch (action.type) {
 
   case 'LOAD_UPCOMING_SHOWS':
     return [...action.shows];
@@ -32,7 +32,7 @@ export const upcomingShowsReducer = (state = [], action) => {
 };
 
 export const loadingReducer = (state = false, action) => {
-  switch(action.type) {
+  switch (action.type) {
 
   case 'SHOW_IS_LOADING':
     return action.showIsLoading;
@@ -43,7 +43,7 @@ export const loadingReducer = (state = false, action) => {
 };
 
 export const errorReducer = (state = false, action) => {
-  switch(action.type) {
+  switch (action.type) {
 
   case 'SHOW_HAS_ERRORED':
     return action.showHasErrored;

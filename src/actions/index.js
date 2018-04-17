@@ -2,8 +2,7 @@ import { jambaseApiKey } from '../cleaners/apiKey';
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { fetchImage } from '../cleaners/fetchImage';
 import { filterDates } from '../cleaners/filterDates';
-
-import { mockFetchData } from '../cleaners/mockFetchData';
+// import { mockFetchData } from '../cleaners/mockFetchData';
 
 
 export const loadTonightsShows = (shows) => ({
@@ -31,22 +30,28 @@ export const showHasErrored = (bool) => ({
   showHasErrored: bool
 });
 
+export const clearStore = () => ({
+  type: 'CLEAR_STORE'
+});
+
 
 export const fetchShows = (zipCode) => {
   
   return async (dispatch) => {
     try {
-      dispatch(showHasErrored(false))
+      dispatch(clearStore());
+      dispatch(showHasErrored(false));
       dispatch(showIsLoading(true));
-      // const rootUrl = 'http://api.jambase.com/events?';
-      // const api = `&page=all&api_key=${jambaseApiKey}`;
-      // const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
-      // if( !response.ok ) {      
-      //   throw Error(response.statusText);
-      // }
+      const rootUrl = 'http://api.jambase.com/events?';
+      const api = `&page=0&api_key=${jambaseApiKey}`;
+      const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
+
+      if ( !response.ok ) {  
+        throw Error(response.statusText);
+      }
         
-      const concertData = mockFetchData
-      // const concertData = await response.json();
+      // const concertData = mockFetchData
+      const concertData = await response.json();
       const cleanData = cleanConcertData(concertData.Events);
       const dataWithImage = await fetchImage(cleanData);
       const dates = filterDates(dataWithImage);
@@ -55,15 +60,14 @@ export const fetchShows = (zipCode) => {
       dispatch(loadTonightsShows(dates[0]));
       dispatch(loadThisWeeksShows(dates[1]));
       dispatch(loadUpcomingShows(dates[2]));
+
     } catch (error) {
-      dispatch(showHasErrored(true));
-      dispatch(showIsLoading(false));
+      if (error) {
+        dispatch(showHasErrored(true));
+        dispatch(showIsLoading(false));
+      }
     }
   };
-} ;
-  // catch (error) {
-  //   console.log('error in the catch')
-  //   throw error;
-  // }
-
+};
+ 
 

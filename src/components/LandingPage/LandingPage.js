@@ -10,5 +10,5 @@ export const LandingPage = () => {
         <LocationForm />
       </article>
     </section>
-  )
-}
+  );
+};

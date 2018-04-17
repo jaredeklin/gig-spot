@@ -6,10 +6,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers/root-reducer';
-import { composeWithDevTools } from 'redux-devtools-extension'
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
+/* eslint-disable */
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
+/* eslint-enable */
 
 const router = (
   <Provider store={store}>
