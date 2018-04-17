@@ -7,8 +7,6 @@ export const Main = (props) => {
   const { tonightsShows, thisWeeksShows, upcomingShows, loading } = props;
   const combined = [...tonightsShows, ...thisWeeksShows];
   let tonightCards, thisWeekCards, upcomingCards;
-  // const checkNumberOfEvents = tonightsShows.length < 3 ? combined : thisWeeksShows
-
 
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
@@ -33,7 +31,6 @@ export const Main = (props) => {
       return (<TonightCard show={show} key={show.id} />)
     });
   };
-
 
   return (
       

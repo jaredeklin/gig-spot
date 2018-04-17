@@ -8,13 +8,13 @@ import {
   mockCleanConcertData,
   mockExpectedCleanConcertData,
   mockFetchImageCallData,
-  mockReturnedCleanConcertData,
+  mockFilterDataCall
 } from '../cleaners/mockData';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
 const middlewares = [thunk];
-const mockStore = configureMockStore(middlewares)
+const mockStore = configureMockStore(middlewares);
 
 jest.mock('../cleaners/fetchImage');
 jest.mock('../cleaners/cleanConcertData');
@@ -81,7 +81,7 @@ describe('showHasErrored', () => {
 describe('fetchShows', () => {
   const mockLocation = { zipCode: 80218 }
   const { zipCode } = mockLocation;
-  const store = mockStore({})
+  const store = mockStore({});
 
   beforeEach(() => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
@@ -95,14 +95,14 @@ describe('fetchShows', () => {
 
   it('should call fetch with correct url', () => {
     const baseUrl = 'http://api.jambase.com/events?zipCode';
-    const url = `${baseUrl}=${zipCode}&page=all&api_key=${jambaseApiKey}`;
+    const url = `${baseUrl}=${zipCode}&page=0&api_key=${jambaseApiKey}`;
  
     expect(window.fetch).toHaveBeenCalledWith(url);
   });
 
   it('cleanConcertData should be called with correct params', () => {
 
-    expect(cleanConcertData).toHaveBeenCalledWith(mockCleanConcertData);
+    expect(cleanConcertData).toHaveBeenCalled();
   });
 
   it('fetchImage should be called with correct params', () => {
@@ -110,43 +110,44 @@ describe('fetchShows', () => {
     expect(fetchImage).toHaveBeenCalledWith(mockFetchImageCallData);
   });
 
-  it('should handle error if status is not ok', async () => {
+  it('filterDates should be called with correct params', () => {
+    expect(filterDates).toHaveBeenCalledWith(mockFilterDataCall)
+  });
+
+  it('should fire proper actions if status is not ok', async () => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       ok: false,
-      statusText: 'you have been a very bad boy',
       json: () => Promise.resolve(mockFetchShowsData)
     }));
 
     const expectedActions = [ 
+      { type: 'SHOW_HAS_ERRORED', showHasErrored: false },
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_HAS_ERRORED', showHasErrored: true },
-      { type: 'SHOW_IS_LOADING', showIsLoading: false },
-      { type: 'LOAD_TONIGHTS_SHOWS', shows: 1 },
-      { type: 'LOAD_THIS_WEEKS_SHOWS', shows: 2 },
-      { type: 'LOAD_UPCOMING_SHOWS', shows: 3 } 
+      { type: 'SHOW_IS_LOADING', showIsLoading: false } 
     ];
 
     store.clearActions();
     await store.dispatch(actions.fetchShows(zipCode));
     const actualActions = store.getActions();
+
     expect(actualActions).toEqual(expectedActions);
-
-    const expectedError = Error('you have been a very bad boy')
-    console.log(expectedError)
-    expect(store.dispatch(actions.fetchShows(zipCode))).toThrow(expectedError);
-  })
-
-  it('should throw an error if a bad response is returned', () => {
-    window.fetch = jest.fn(() => Promise.reject({
-      status: 404
-    }));
-    const expected = { 'status': 404 };
-
-    expect(store.dispatch(actions.fetchShows(zipCode))).rejects.toEqual(expected);
   });
 
-  it('actions should be called', () => {
-    const expectedActions = [ 
+  it('should throw an error if a bad response is returned', async () => {
+    window.fetch = jest.fn(() => Promise.resolve({
+      ok: false,
+      statusText: 'you have been a very bad boy',
+    }))
+
+    const expected = Promise.resolve(Error('you have been a very bad boy'))
+
+    expect(store.dispatch(actions.fetchShows(zipCode))).toEqual(expected);
+  });
+
+  it('all actions should be called', () => {
+    const expectedActions = [
+      { type: 'SHOW_HAS_ERRORED', showHasErrored: false, }, 
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_IS_LOADING', showIsLoading: false },
       { type: 'LOAD_TONIGHTS_SHOWS', shows: 1 },
@@ -159,4 +160,3 @@ describe('fetchShows', () => {
     expect(actualActions).toEqual(expectedActions);
   });
 });
-

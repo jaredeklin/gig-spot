@@ -25,6 +25,19 @@ h1 {
   text-align: center;
 }
 
+/*h1 {
+  font-size: 33px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .8);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 58px;
+    text-align: center;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 40px;
+}*/
+
 input {
   outline: none;
   font-size: 16px;
@@ -36,6 +49,10 @@ input {
   border: 1px solid #757575;
   border-radius: 3px;
   background: transparent;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #FFF inset;
 }
 
 button {
@@ -88,12 +105,16 @@ button {
 .landing-page input {
   color: white;
 }
+
+.landing-page input:-webkit-autofill {
+  -webkit-text-fill-color: #FFF !important;
+  -webkit-box-shadow: 0 0 0 30px black inset;
+}
 .landing-page button {
   color: grey;
 }
 
 .landing-page button:hover {
-  /*color: white;*/
   box-shadow: 0 0 20px 0;
 }
 
@@ -196,6 +217,3 @@ button {
   margin: 15px 0 0 40px;
 }
 
-/*.tonight-outer .event-happening-when-text {
-  margin-top: 20px;
-}*/

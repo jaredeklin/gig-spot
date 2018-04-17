@@ -1430,9 +1430,9 @@ ShallowWrapper {
 </header>,
         false,
         <h2
-          className="loading"
+          className="error"
 >
-          Nooooooooo!!!!!!! Something went wrong.
+          Nooooooooo!!!!!!! Something went wrong. Please try again.
 </h2>,
         <Route
           component={[Function]}
@@ -1494,11 +1494,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong.",
-          "className": "loading",
+          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "className": "error",
         },
         "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong.",
+        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
         "type": "h2",
       },
       Object {
@@ -1571,9 +1571,9 @@ ShallowWrapper {
 </header>,
           false,
           <h2
-            className="loading"
+            className="error"
 >
-            Nooooooooo!!!!!!! Something went wrong.
+            Nooooooooo!!!!!!! Something went wrong. Please try again.
 </h2>,
           <Route
             component={[Function]}
@@ -1635,11 +1635,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong.",
-            "className": "loading",
+            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+            "className": "error",
           },
           "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong.",
+          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
           "type": "h2",
         },
         Object {

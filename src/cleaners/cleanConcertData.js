@@ -9,7 +9,7 @@ export const cleanConcertData = (concerts) => {
       url: show.Venue.Url,
       address: show.Venue.Address,
       city: show.Venue.City
-    }
+    };
     const headlineArtist = show.Artists[0]
     const supportArtists = show.Artists.filter(artist => artist.Id !== show.Artists[0].Id);
     const tickets = show.TicketUrl
