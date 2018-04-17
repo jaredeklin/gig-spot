@@ -8,8 +8,8 @@ describe('App', () => {
   beforeEach(() => {
 
     mockTonightsShows = [{id: 1}];
-    mockUpcomingShows = [];
-    mockThisWeeksShows = [];
+    mockUpcomingShows = [{id: 2}];
+    mockThisWeeksShows = [{id: 3}];
     mockLocation = { pathname: '' };
     wrapper = shallow(
       <App

@@ -12,7 +12,13 @@ ShallowWrapper {
             "pathname": "",
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -20,7 +26,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -303,7 +315,13 @@ ShallowWrapper {
             "pathname": "",
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -311,7 +329,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -706,7 +730,13 @@ ShallowWrapper {
             "pathname": "/event-details",
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -714,7 +744,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1107,7 +1143,13 @@ ShallowWrapper {
             "pathname": "/main",
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -1115,7 +1157,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1405,7 +1453,13 @@ ShallowWrapper {
             },
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -1413,7 +1467,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1726,7 +1786,13 @@ ShallowWrapper {
             "pathname": "",
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -1734,7 +1800,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -2054,7 +2126,13 @@ ShallowWrapper {
             },
           }
     }
-    thisWeeksShows={Array []}
+    thisWeeksShows={
+        Array [
+            Object {
+              "id": 3,
+            },
+          ]
+    }
     tonightsShows={
         Array [
             Object {
@@ -2062,7 +2140,13 @@ ShallowWrapper {
             },
           ]
     }
-    upcomingShows={Array []}
+    upcomingShows={
+        Array [
+            Object {
+              "id": 2,
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

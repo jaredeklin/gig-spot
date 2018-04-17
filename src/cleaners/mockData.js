@@ -142,7 +142,7 @@ export const mockConcertProps = {
   },
   id: 3092703,
   startTime: "8:00 PM",
-  supportArtists: [],
+  supportArtists: [{"Id": '123882', "Name": "Shawn James"}],
   tickets: "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
   venue: {
     name: "The Soiled Dove Underground", 
@@ -197,7 +197,7 @@ export const mockFilterDatesData = [{
         }],
     }, {
         "Id": 3102725,
-        "date": "2018-04-20T21:00:00",
+        "date": "2018-04-25T21:00:00",
         
         "Artists": [{
             "Id": 25778,
@@ -215,7 +215,9 @@ export const mockFilterDatesData = [{
     }
 ]
 
-export const mockExpectedFilterDates = [[{"Artists": [{"Id": 42467, "Name": "Cradle of Filth "}, {"Id": 118639, "Name": "Uncured"}, {"Id": 128218, "Name": "Jinjer"}], "Id": 3083885, "date": "M04 16"}], [{"Artists": [{"Id": 101680, "Name": "Lapalux"}], "Id": 3109433, "date": "M04 18"}, {"Artists": [{"Id": 25778, "Name": "Chali 2na"}, {"Id": 36359, "Name": "Method Man"}, {"Id": 40914, "Name": "Redman"}, {"Id": 51319, "Name": "Collie Buddz "}], "Id": 3102725, "date": "M04 20"}], []]
+export const mockExpectedFilterDates = [[{"Artists": [{"Id": 42467, "Name": "Cradle of Filth "}, {"Id": 118639, "Name": "Uncured"}, {"Id": 128218, "Name": "Jinjer"}], "Id": 3083885, "date": "M04 16"}], 
+[{"Artists": [{"Id": 101680, "Name": "Lapalux"}], "Id": 3109433, "date": "M04 18"}, ], 
+[{"Artists": [{"Id": 25778, "Name": "Chali 2na"}, {"Id": 36359, "Name": "Method Man"}, {"Id": 40914, "Name": "Redman"}, {"Id": 51319, "Name": "Collie Buddz "}], "Id": 3102725, "date": "M04 25"}]]
 
 
 
