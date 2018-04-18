@@ -31,7 +31,7 @@ Jared Eklin || https://github.com/jaredeklin
 
 ## Project Layout
 
-![Desktop Layout](https://user-images.githubusercontent.com/30199861/38278806-c208523a-375a-11e8-89bd-4d55652f1ede.png)
+![Desktop Layout](./src/images/desktop-layout.png)
 ![Ipad Layout](https://user-images.githubusercontent.com/30199861/38278808-c63b45ec-375a-11e8-9789-889f938cb25e.png)
 ![Mobile Layout](https://user-images.githubusercontent.com/30199861/38278808-c63b45ec-375a-11e8-9789-889f938cb25e.png)
 ![Event Layout](https://user-images.githubusercontent.com/30199861/38278808-c63b45ec-375a-11e8-9789-889f938cb25e.png)
