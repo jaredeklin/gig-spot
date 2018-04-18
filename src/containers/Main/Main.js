@@ -11,25 +11,25 @@ export const Main = (props) => {
  
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
-      return (<TonightCard show={show} key={show.id} />);
+      return (<TonightCard show={show} key={`3${show.id}`} />);
     });
   }
 
   if (thisWeeksShows) {
     if (tonightsShows.length <= 2) {
       thisWeekCards = combined.map(show => {
-        return (<TonightCard show={show} key={show.id} />);
+        return (<TonightCard show={show} key={`1${show.id}`} />);
       });
     } else {
       thisWeekCards = thisWeeksShows.map(show => {
-        return (<TonightCard show={show} key={show.id} />);
+        return (<TonightCard show={show} key={`4${show.id}`} />);
       });
     }
   }
 
   if (upcomingShows) {
     upcomingCards = upcomingShows.map(show => {
-      return (<TonightCard show={show} key={show.id} />);
+      return (<TonightCard show={show} key={`2${show.id}`} />);
     });
   }
 
@@ -44,7 +44,7 @@ export const Main = (props) => {
       }
       {
         thisWeeksShows.length > 0 &&
-        <div>
+        <div className='all-shows'>
           { tonightsShows.length > 2 &&
           <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>
@@ -72,6 +72,17 @@ export const Main = (props) => {
                 </section>
               </div>
           }
+          <div className="jambase">
+            <a 
+              href="http://www.JamBase.com" 
+              target="_top" 
+              title="JamBase Concert Search"
+            ><img 
+                src= "http://images.jambase.com/logos/jambase140x70.gif" 
+                alt="Search JamBase Concerts" 
+                border="0" />
+            </a>
+          </div>
         </div>
       }
     </div>

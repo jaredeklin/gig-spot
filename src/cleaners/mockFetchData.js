@@ -8,7 +8,7 @@ export const mockFetchData = {
     },
     "Events": [{
         "Id": 3092703,
-        "Date": "2018-04-13T20:00:00",
+        "Date": "2018-04-17T20:00:00",
         "Venue": {
             "Id": 59319,
             "Name": "The Soiled Dove Underground",
@@ -52,7 +52,7 @@ export const mockFetchData = {
         "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1631456/tfly?utm_medium=api"
     }, {
         "Id": 3071868,
-        "Date": "2018-04-13T21:00:00",
+        "Date": "2018-04-17T21:00:00",
         "Venue": {
             "Id": 21309,
             "Name": "Cervantes' Masterpiece Ballroom",
@@ -212,7 +212,7 @@ export const mockFetchData = {
         "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1620889/tfly?utm_medium=api"
     }, {
         "Id": 3088912,
-        "Date": "2018-04-15T00:00:00",
+        "Date": "2018-04-17T00:00:00",
         "Venue": {
             "Id": 2978,
             "Name": "Gothic Theatre",

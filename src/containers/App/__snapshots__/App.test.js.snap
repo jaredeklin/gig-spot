@@ -54,8 +54,6 @@ ShallowWrapper {
                     Gig Spot
           </h1>
 </header>,
-        false,
-        false,
         <Route
           component={[Function]}
           exact={true}
@@ -66,6 +64,8 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        false,
+        false,
         <Route
           component={[Function]}
           exact={true}
@@ -110,8 +110,6 @@ ShallowWrapper {
         ],
         "type": "header",
       },
-      false,
-      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -138,6 +136,8 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -180,8 +180,6 @@ ShallowWrapper {
                         Gig Spot
             </h1>
 </header>,
-          false,
-          false,
           <Route
             component={[Function]}
             exact={true}
@@ -192,6 +190,8 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          false,
+          false,
           <Route
             component={[Function]}
             exact={true}
@@ -236,8 +236,6 @@ ShallowWrapper {
           ],
           "type": "header",
         },
-        false,
-        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -264,6 +262,8 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -357,19 +357,6 @@ ShallowWrapper {
                     Gig Spot
           </h1>
 </header>,
-        <div
-          className="loading"
->
-          <img
-                    alt="loading"
-                    className="loading-gif"
-                    src="loader.gif"
-          />
-          <h2>
-                    Finding local shows....
-          </h2>
-</div>,
-        false,
         <Route
           component={[Function]}
           exact={true}
@@ -380,6 +367,19 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        <div
+          className="loading"
+>
+          <img
+                    alt="loading"
+                    className="loading-gif"
+                    src="spinning-7-inch.gif"
+          />
+          <h2>
+                    Finding local shows....
+          </h2>
+</div>,
+        false,
         <Route
           component={[Function]}
           exact={true}
@@ -427,53 +427,6 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <img
-              alt="loading"
-              className="loading-gif"
-              src="loader.gif"
-/>,
-            <h2>
-              Finding local shows....
-</h2>,
-          ],
-          "className": "loading",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "loading",
-              "className": "loading-gif",
-              "src": "loader.gif",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Finding local shows....",
-            },
-            "ref": null,
-            "rendered": "Finding local shows....",
-            "type": "h2",
-          },
-        ],
-        "type": "div",
-      },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "component": [Function],
@@ -497,6 +450,53 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="loading"
+              className="loading-gif"
+              src="spinning-7-inch.gif"
+/>,
+            <h2>
+              Finding local shows....
+</h2>,
+          ],
+          "className": "loading",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "loading",
+              "className": "loading-gif",
+              "src": "spinning-7-inch.gif",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Finding local shows....",
+            },
+            "ref": null,
+            "rendered": "Finding local shows....",
+            "type": "h2",
+          },
+        ],
+        "type": "div",
+      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -539,19 +539,6 @@ ShallowWrapper {
                         Gig Spot
             </h1>
 </header>,
-          <div
-            className="loading"
->
-            <img
-                        alt="loading"
-                        className="loading-gif"
-                        src="loader.gif"
-            />
-            <h2>
-                        Finding local shows....
-            </h2>
-</div>,
-          false,
           <Route
             component={[Function]}
             exact={true}
@@ -562,6 +549,19 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          <div
+            className="loading"
+>
+            <img
+                        alt="loading"
+                        className="loading-gif"
+                        src="spinning-7-inch.gif"
+            />
+            <h2>
+                        Finding local shows....
+            </h2>
+</div>,
+          false,
           <Route
             component={[Function]}
             exact={true}
@@ -609,53 +609,6 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <img
-                alt="loading"
-                className="loading-gif"
-                src="loader.gif"
-/>,
-              <h2>
-                Finding local shows....
-</h2>,
-            ],
-            "className": "loading",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "loading",
-                "className": "loading-gif",
-                "src": "loader.gif",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Finding local shows....",
-              },
-              "ref": null,
-              "rendered": "Finding local shows....",
-              "type": "h2",
-            },
-          ],
-          "type": "div",
-        },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "component": [Function],
@@ -679,6 +632,53 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="loading"
+                className="loading-gif"
+                src="spinning-7-inch.gif"
+/>,
+              <h2>
+                Finding local shows....
+</h2>,
+            ],
+            "className": "loading",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "loading",
+                "className": "loading-gif",
+                "src": "spinning-7-inch.gif",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Finding local shows....",
+              },
+              "ref": null,
+              "rendered": "Finding local shows....",
+              "type": "h2",
+            },
+          ],
+          "type": "div",
+        },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -784,8 +784,6 @@ ShallowWrapper {
                     </NavLink>
           </div>
 </header>,
-        false,
-        false,
         <Route
           component={[Function]}
           exact={true}
@@ -796,6 +794,8 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        false,
+        false,
         <Route
           component={[Function]}
           exact={true}
@@ -883,8 +883,6 @@ ShallowWrapper {
         ],
         "type": "header",
       },
-      false,
-      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -911,6 +909,8 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -965,8 +965,6 @@ ShallowWrapper {
                         </NavLink>
             </div>
 </header>,
-          false,
-          false,
           <Route
             component={[Function]}
             exact={true}
@@ -977,6 +975,8 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          false,
+          false,
           <Route
             component={[Function]}
             exact={true}
@@ -1064,8 +1064,6 @@ ShallowWrapper {
           ],
           "type": "header",
         },
-        false,
-        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -1092,6 +1090,8 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -1185,8 +1185,6 @@ ShallowWrapper {
                     Gig Spot
           </h1>
 </header>,
-        false,
-        false,
         <Route
           component={[Function]}
           exact={true}
@@ -1197,6 +1195,8 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        false,
+        false,
         <Route
           component={[Function]}
           exact={true}
@@ -1241,8 +1241,6 @@ ShallowWrapper {
         ],
         "type": "header",
       },
-      false,
-      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -1269,6 +1267,8 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -1311,8 +1311,6 @@ ShallowWrapper {
                         Gig Spot
             </h1>
 </header>,
-          false,
-          false,
           <Route
             component={[Function]}
             exact={true}
@@ -1323,6 +1321,8 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          false,
+          false,
           <Route
             component={[Function]}
             exact={true}
@@ -1367,8 +1367,6 @@ ShallowWrapper {
           ],
           "type": "header",
         },
-        false,
-        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -1395,6 +1393,8 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -1495,12 +1495,6 @@ ShallowWrapper {
                     Gig Spot
           </h1>
 </header>,
-        false,
-        <h2
-          className="error"
->
-          Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
         <Route
           component={[Function]}
           exact={true}
@@ -1511,6 +1505,12 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        false,
+        <h2
+          className="error"
+>
+          Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
         <Route
           component={[Function]}
           exact={true}
@@ -1555,19 +1555,6 @@ ShallowWrapper {
         ],
         "type": "header",
       },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "className": "error",
-        },
-        "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-        "type": "h2",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1593,6 +1580,19 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": [Function],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "className": "error",
+        },
+        "ref": null,
+        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+        "type": "h2",
       },
       Object {
         "instance": null,
@@ -1636,12 +1636,6 @@ ShallowWrapper {
                         Gig Spot
             </h1>
 </header>,
-          false,
-          <h2
-            className="error"
->
-            Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
           <Route
             component={[Function]}
             exact={true}
@@ -1652,6 +1646,12 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          false,
+          <h2
+            className="error"
+>
+            Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
           <Route
             component={[Function]}
             exact={true}
@@ -1696,19 +1696,6 @@ ShallowWrapper {
           ],
           "type": "header",
         },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-            "className": "error",
-          },
-          "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -1734,6 +1721,19 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "type": "h2",
         },
         Object {
           "instance": null,
@@ -1828,12 +1828,6 @@ ShallowWrapper {
                     Gig Spot
           </h1>
 </header>,
-        false,
-        <h2
-          className="error"
->
-          Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
         <Route
           component={[Function]}
           exact={true}
@@ -1844,6 +1838,12 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        false,
+        <h2
+          className="error"
+>
+          Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
         <Route
           component={[Function]}
           exact={true}
@@ -1888,19 +1888,6 @@ ShallowWrapper {
         ],
         "type": "header",
       },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "className": "error",
-        },
-        "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-        "type": "h2",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1926,6 +1913,19 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": [Function],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "className": "error",
+        },
+        "ref": null,
+        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+        "type": "h2",
       },
       Object {
         "instance": null,
@@ -1969,12 +1969,6 @@ ShallowWrapper {
                         Gig Spot
             </h1>
 </header>,
-          false,
-          <h2
-            className="error"
->
-            Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
           <Route
             component={[Function]}
             exact={true}
@@ -1985,6 +1979,12 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          false,
+          <h2
+            className="error"
+>
+            Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
           <Route
             component={[Function]}
             exact={true}
@@ -2029,19 +2029,6 @@ ShallowWrapper {
           ],
           "type": "header",
         },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-            "className": "error",
-          },
-          "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -2067,6 +2054,19 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "type": "h2",
         },
         Object {
           "instance": null,
@@ -2168,12 +2168,6 @@ ShallowWrapper {
                     Gig Spot
           </h1>
 </header>,
-        false,
-        <h2
-          className="error"
->
-          Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
         <Route
           component={[Function]}
           exact={true}
@@ -2184,6 +2178,12 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        false,
+        <h2
+          className="error"
+>
+          Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
         <Route
           component={[Function]}
           exact={true}
@@ -2228,19 +2228,6 @@ ShallowWrapper {
         ],
         "type": "header",
       },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "className": "error",
-        },
-        "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-        "type": "h2",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -2266,6 +2253,19 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": [Function],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "className": "error",
+        },
+        "ref": null,
+        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+        "type": "h2",
       },
       Object {
         "instance": null,
@@ -2309,12 +2309,6 @@ ShallowWrapper {
                         Gig Spot
             </h1>
 </header>,
-          false,
-          <h2
-            className="error"
->
-            Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
           <Route
             component={[Function]}
             exact={true}
@@ -2325,6 +2319,12 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          false,
+          <h2
+            className="error"
+>
+            Nooooooooo!!!!!!! Something went wrong. Please try again.
+</h2>,
           <Route
             component={[Function]}
             exact={true}
@@ -2369,19 +2369,6 @@ ShallowWrapper {
           ],
           "type": "header",
         },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-            "className": "error",
-          },
-          "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "type": "h2",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -2407,6 +2394,19 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+            "className": "error",
+          },
+          "ref": null,
+          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
+          "type": "h2",
         },
         Object {
           "instance": null,

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter, Route, NavLink } from 'react-router-dom';
 import Main from '../Main/Main';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
-import loadingGif from '../../images/loader.gif';
+import loadingGif from '../../images/spinning-7-inch.gif';
 import { LandingPage } from '../../components/LandingPage/LandingPage';
 import PropTypes from 'prop-types';
 
@@ -34,6 +34,10 @@ export class App extends Component {
           }
         </header>
         }
+
+        <Route exact path = '/' component={ LandingPage } />
+        <Route exact path = '/main' component={ Main } />
+
         {
           loading &&
             <div className='loading'>
@@ -47,9 +51,7 @@ export class App extends Component {
               Nooooooooo!!!!!!! Something went wrong. Please try again.
             </h2>
         }
-
-        <Route exact path = '/' component={ LandingPage } />
-        <Route exact path = '/main' component={ Main } />
+        
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
