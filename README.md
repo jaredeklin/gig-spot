@@ -42,9 +42,10 @@ Jared Eklin || https://github.com/jaredeklin
 
 #### Mobile landing page
 ![Mobile Landing page](./src/images/mobile-landing-page.png)
-
+<img src="./src/images/mobile-landing-page.png" width="375" height="667">
 #### Mobile layout
 ![Mobile Layout](./src/images/Mobile-layout.png)
+<img src="./src/images/mobile-landing-page.png" width="375" height="667"><img src="./src/images/Mobile-layout.png" width="375" height="667">
 
 #### Event detail layout
 ![Event Layout](./src/images/Event-layout.png)
