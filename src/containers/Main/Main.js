@@ -72,6 +72,17 @@ export const Main = (props) => {
                 </section>
               </div>
           }
+          <div className="jambase">
+            <a 
+              href="http://www.JamBase.com" 
+              target="_top" 
+              title="JamBase Concert Search"
+            ><img 
+                src= "http://images.jambase.com/logos/jambase140x70.gif" 
+                alt="Search JamBase Concerts" 
+                border="0" />
+            </a>
+          </div>
         </div>
       }
     </div>

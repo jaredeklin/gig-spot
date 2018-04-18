@@ -67,11 +67,9 @@ button {
 .landing-page {
   width: 400px;
   background-color: rgba(0, 0, 0, .8);
-  /*top: 170px;*/
   color: white;
   margin: auto;
   height: 400px;
-  /*position: relative;*/
   padding: 15px;
   border-radius: 50%;
   border: 1px solid white;
@@ -212,12 +210,12 @@ button {
 .all-shows {
   padding: 0 30px;
 }
+.jambase {
+  margin: 15px 0 0 0;
+  float: right;
+}
 
 @media screen and (max-width: 550px) {
-
-  header {
-    background-position-x: center;
-  }
  
   .landing-page-background {
     background-position-x: center;
@@ -257,7 +255,8 @@ button {
     padding: 0;
   }
 
-
-
+  .jambase {
+    margin-right: 10px;
+  }
 }
 
