@@ -30,11 +30,18 @@
 Jared Eklin || https://github.com/jaredeklin
 
 ## Project Layout
+
+#### Landing page
+![Landing page](./src/images/landing-page.png)
+
 #### Desktop layout
 ![Desktop Layout](./src/images/desktop-layout.png)
 
 #### Ipad layout
 ![Ipad Layout](./src/images/Ipad-layout.png)
+
+#### Mobile landing page
+![Mobile Landing page](./src/images/mobile-landing-page.png)
 
 #### Mobile layout
 ![Mobile Layout](./src/images/Mobile-layout.png)
