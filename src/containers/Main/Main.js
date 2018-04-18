@@ -11,25 +11,25 @@ export const Main = (props) => {
  
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
-      return (<TonightCard show={show} key={show.id} />);
+      return (<TonightCard show={show} key={`3${show.id}`} />);
     });
   }
 
   if (thisWeeksShows) {
     if (tonightsShows.length <= 2) {
       thisWeekCards = combined.map(show => {
-        return (<TonightCard show={show} key={show.id} />);
+        return (<TonightCard show={show} key={`1${show.id}`} />);
       });
     } else {
       thisWeekCards = thisWeeksShows.map(show => {
-        return (<TonightCard show={show} key={show.id} />);
+        return (<TonightCard show={show} key={`4${show.id}`} />);
       });
     }
   }
 
   if (upcomingShows) {
     upcomingCards = upcomingShows.map(show => {
-      return (<TonightCard show={show} key={show.id} />);
+      return (<TonightCard show={show} key={`2${show.id}`} />);
     });
   }
 

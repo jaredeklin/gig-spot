@@ -135,6 +135,10 @@
     bottom: 50px;
     font-weight: bold;
   }
+
+  .landing-page-background {
+    background-position-x: center; 
+  }
 }
 
 @media screen and (max-width: 550px) {

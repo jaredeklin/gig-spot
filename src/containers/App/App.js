@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter, Route, NavLink } from 'react-router-dom';
 import Main from '../Main/Main';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
-import loadingGif from '../../images/loader.gif';
+import loadingGif from '../../images/spinning-7-inch.gif';
 import { LandingPage } from '../../components/LandingPage/LandingPage';
 import PropTypes from 'prop-types';
 
