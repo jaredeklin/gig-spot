@@ -175,6 +175,18 @@ ShallowWrapper {
                                         src="http://images.jambase.com/logos/jambase140x70.gif"
                               />
                     </a>
+                    <a
+                              href="https://www.last.fm/home"
+                              target="_top"
+                              title="Last FM"
+                    >
+                              <img
+                                        alt="Last FM"
+                                        border="0"
+                                        className="last-fm"
+                                        src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+                              />
+                    </a>
           </div>
 </div>,
       ],
@@ -313,6 +325,18 @@ ShallowWrapper {
                                           alt="Search JamBase Concerts"
                                           border="0"
                                           src="http://images.jambase.com/logos/jambase140x70.gif"
+                            />
+              </a>
+              <a
+                            href="https://www.last.fm/home"
+                            target="_top"
+                            title="Last FM"
+              >
+                            <img
+                                          alt="Last FM"
+                                          border="0"
+                                          className="last-fm"
+                                          src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
                             />
               </a>
 </div>,
@@ -615,50 +639,98 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                href="http://www.JamBase.com"
-                target="_top"
-                title="JamBase Concert Search"
+              "children": Array [
+                <a
+                  href="http://www.JamBase.com"
+                  target="_top"
+                  title="JamBase Concert Search"
 >
-                <img
-                                alt="Search JamBase Concerts"
-                                border="0"
-                                src="http://images.jambase.com/logos/jambase140x70.gif"
-                />
+                  <img
+                                    alt="Search JamBase Concerts"
+                                    border="0"
+                                    src="http://images.jambase.com/logos/jambase140x70.gif"
+                  />
 </a>,
+                <a
+                  href="https://www.last.fm/home"
+                  target="_top"
+                  title="Last FM"
+>
+                  <img
+                                    alt="Last FM"
+                                    border="0"
+                                    className="last-fm"
+                                    src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+                  />
+</a>,
+              ],
               "className": "jambase",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <img
-                  alt="Search JamBase Concerts"
-                  border="0"
-                  src="http://images.jambase.com/logos/jambase140x70.gif"
-/>,
-                "href": "http://www.JamBase.com",
-                "target": "_top",
-                "title": "JamBase Concert Search",
-              },
-              "ref": null,
-              "rendered": Object {
+            "rendered": Array [
+              Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "alt": "Search JamBase Concerts",
-                  "border": "0",
-                  "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                  "children": <img
+                    alt="Search JamBase Concerts"
+                    border="0"
+                    src="http://images.jambase.com/logos/jambase140x70.gif"
+/>,
+                  "href": "http://www.JamBase.com",
+                  "target": "_top",
+                  "title": "JamBase Concert Search",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "img",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Search JamBase Concerts",
+                    "border": "0",
+                    "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
               },
-              "type": "a",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="Last FM"
+                    border="0"
+                    className="last-fm"
+                    src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+/>,
+                  "href": "https://www.last.fm/home",
+                  "target": "_top",
+                  "title": "Last FM",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Last FM",
+                    "border": "0",
+                    "className": "last-fm",
+                    "src": "https://cdn.last.fm/flatness/badges/lastfm_red.gif",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
+              },
+            ],
             "type": "div",
           },
         ],
@@ -769,6 +841,18 @@ ShallowWrapper {
                                                 alt="Search JamBase Concerts"
                                                 border="0"
                                                 src="http://images.jambase.com/logos/jambase140x70.gif"
+                                    />
+                        </a>
+                        <a
+                                    href="https://www.last.fm/home"
+                                    target="_top"
+                                    title="Last FM"
+                        >
+                                    <img
+                                                alt="Last FM"
+                                                border="0"
+                                                className="last-fm"
+                                                src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
                                     />
                         </a>
             </div>
@@ -909,6 +993,18 @@ ShallowWrapper {
                                                 alt="Search JamBase Concerts"
                                                 border="0"
                                                 src="http://images.jambase.com/logos/jambase140x70.gif"
+                                />
+                </a>
+                <a
+                                href="https://www.last.fm/home"
+                                target="_top"
+                                title="Last FM"
+                >
+                                <img
+                                                alt="Last FM"
+                                                border="0"
+                                                className="last-fm"
+                                                src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
                                 />
                 </a>
 </div>,
@@ -1211,50 +1307,98 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="http://www.JamBase.com"
-                  target="_top"
-                  title="JamBase Concert Search"
+                "children": Array [
+                  <a
+                    href="http://www.JamBase.com"
+                    target="_top"
+                    title="JamBase Concert Search"
 >
-                  <img
-                                    alt="Search JamBase Concerts"
-                                    border="0"
-                                    src="http://images.jambase.com/logos/jambase140x70.gif"
-                  />
+                    <img
+                                        alt="Search JamBase Concerts"
+                                        border="0"
+                                        src="http://images.jambase.com/logos/jambase140x70.gif"
+                    />
 </a>,
+                  <a
+                    href="https://www.last.fm/home"
+                    target="_top"
+                    title="Last FM"
+>
+                    <img
+                                        alt="Last FM"
+                                        border="0"
+                                        className="last-fm"
+                                        src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+                    />
+</a>,
+                ],
                 "className": "jambase",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <img
-                    alt="Search JamBase Concerts"
-                    border="0"
-                    src="http://images.jambase.com/logos/jambase140x70.gif"
-/>,
-                  "href": "http://www.JamBase.com",
-                  "target": "_top",
-                  "title": "JamBase Concert Search",
-                },
-                "ref": null,
-                "rendered": Object {
+              "rendered": Array [
+                Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "Search JamBase Concerts",
-                    "border": "0",
-                    "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                    "children": <img
+                      alt="Search JamBase Concerts"
+                      border="0"
+                      src="http://images.jambase.com/logos/jambase140x70.gif"
+/>,
+                    "href": "http://www.JamBase.com",
+                    "target": "_top",
+                    "title": "JamBase Concert Search",
                   },
                   "ref": null,
-                  "rendered": null,
-                  "type": "img",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Search JamBase Concerts",
+                      "border": "0",
+                      "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
                 },
-                "type": "a",
-              },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Last FM"
+                      border="0"
+                      className="last-fm"
+                      src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+/>,
+                    "href": "https://www.last.fm/home",
+                    "target": "_top",
+                    "title": "Last FM",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Last FM",
+                      "border": "0",
+                      "className": "last-fm",
+                      "src": "https://cdn.last.fm/flatness/badges/lastfm_red.gif",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+              ],
               "type": "div",
             },
           ],
@@ -1458,6 +1602,18 @@ ShallowWrapper {
                                         src="http://images.jambase.com/logos/jambase140x70.gif"
                               />
                     </a>
+                    <a
+                              href="https://www.last.fm/home"
+                              target="_top"
+                              title="Last FM"
+                    >
+                              <img
+                                        alt="Last FM"
+                                        border="0"
+                                        className="last-fm"
+                                        src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+                              />
+                    </a>
           </div>
 </div>,
       ],
@@ -1590,6 +1746,18 @@ ShallowWrapper {
                                           alt="Search JamBase Concerts"
                                           border="0"
                                           src="http://images.jambase.com/logos/jambase140x70.gif"
+                            />
+              </a>
+              <a
+                            href="https://www.last.fm/home"
+                            target="_top"
+                            title="Last FM"
+              >
+                            <img
+                                          alt="Last FM"
+                                          border="0"
+                                          className="last-fm"
+                                          src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
                             />
               </a>
 </div>,
@@ -1807,50 +1975,98 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                href="http://www.JamBase.com"
-                target="_top"
-                title="JamBase Concert Search"
+              "children": Array [
+                <a
+                  href="http://www.JamBase.com"
+                  target="_top"
+                  title="JamBase Concert Search"
 >
-                <img
-                                alt="Search JamBase Concerts"
-                                border="0"
-                                src="http://images.jambase.com/logos/jambase140x70.gif"
-                />
+                  <img
+                                    alt="Search JamBase Concerts"
+                                    border="0"
+                                    src="http://images.jambase.com/logos/jambase140x70.gif"
+                  />
 </a>,
+                <a
+                  href="https://www.last.fm/home"
+                  target="_top"
+                  title="Last FM"
+>
+                  <img
+                                    alt="Last FM"
+                                    border="0"
+                                    className="last-fm"
+                                    src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+                  />
+</a>,
+              ],
               "className": "jambase",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <img
-                  alt="Search JamBase Concerts"
-                  border="0"
-                  src="http://images.jambase.com/logos/jambase140x70.gif"
-/>,
-                "href": "http://www.JamBase.com",
-                "target": "_top",
-                "title": "JamBase Concert Search",
-              },
-              "ref": null,
-              "rendered": Object {
+            "rendered": Array [
+              Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "alt": "Search JamBase Concerts",
-                  "border": "0",
-                  "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                  "children": <img
+                    alt="Search JamBase Concerts"
+                    border="0"
+                    src="http://images.jambase.com/logos/jambase140x70.gif"
+/>,
+                  "href": "http://www.JamBase.com",
+                  "target": "_top",
+                  "title": "JamBase Concert Search",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "img",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Search JamBase Concerts",
+                    "border": "0",
+                    "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
               },
-              "type": "a",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="Last FM"
+                    border="0"
+                    className="last-fm"
+                    src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+/>,
+                  "href": "https://www.last.fm/home",
+                  "target": "_top",
+                  "title": "Last FM",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Last FM",
+                    "border": "0",
+                    "className": "last-fm",
+                    "src": "https://cdn.last.fm/flatness/badges/lastfm_red.gif",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "a",
+              },
+            ],
             "type": "div",
           },
         ],
@@ -1954,6 +2170,18 @@ ShallowWrapper {
                                                 alt="Search JamBase Concerts"
                                                 border="0"
                                                 src="http://images.jambase.com/logos/jambase140x70.gif"
+                                    />
+                        </a>
+                        <a
+                                    href="https://www.last.fm/home"
+                                    target="_top"
+                                    title="Last FM"
+                        >
+                                    <img
+                                                alt="Last FM"
+                                                border="0"
+                                                className="last-fm"
+                                                src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
                                     />
                         </a>
             </div>
@@ -2088,6 +2316,18 @@ ShallowWrapper {
                                                 alt="Search JamBase Concerts"
                                                 border="0"
                                                 src="http://images.jambase.com/logos/jambase140x70.gif"
+                                />
+                </a>
+                <a
+                                href="https://www.last.fm/home"
+                                target="_top"
+                                title="Last FM"
+                >
+                                <img
+                                                alt="Last FM"
+                                                border="0"
+                                                className="last-fm"
+                                                src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
                                 />
                 </a>
 </div>,
@@ -2305,50 +2545,98 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="http://www.JamBase.com"
-                  target="_top"
-                  title="JamBase Concert Search"
+                "children": Array [
+                  <a
+                    href="http://www.JamBase.com"
+                    target="_top"
+                    title="JamBase Concert Search"
 >
-                  <img
-                                    alt="Search JamBase Concerts"
-                                    border="0"
-                                    src="http://images.jambase.com/logos/jambase140x70.gif"
-                  />
+                    <img
+                                        alt="Search JamBase Concerts"
+                                        border="0"
+                                        src="http://images.jambase.com/logos/jambase140x70.gif"
+                    />
 </a>,
+                  <a
+                    href="https://www.last.fm/home"
+                    target="_top"
+                    title="Last FM"
+>
+                    <img
+                                        alt="Last FM"
+                                        border="0"
+                                        className="last-fm"
+                                        src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+                    />
+</a>,
+                ],
                 "className": "jambase",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <img
-                    alt="Search JamBase Concerts"
-                    border="0"
-                    src="http://images.jambase.com/logos/jambase140x70.gif"
-/>,
-                  "href": "http://www.JamBase.com",
-                  "target": "_top",
-                  "title": "JamBase Concert Search",
-                },
-                "ref": null,
-                "rendered": Object {
+              "rendered": Array [
+                Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "Search JamBase Concerts",
-                    "border": "0",
-                    "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                    "children": <img
+                      alt="Search JamBase Concerts"
+                      border="0"
+                      src="http://images.jambase.com/logos/jambase140x70.gif"
+/>,
+                    "href": "http://www.JamBase.com",
+                    "target": "_top",
+                    "title": "JamBase Concert Search",
                   },
                   "ref": null,
-                  "rendered": null,
-                  "type": "img",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Search JamBase Concerts",
+                      "border": "0",
+                      "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
                 },
-                "type": "a",
-              },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Last FM"
+                      border="0"
+                      className="last-fm"
+                      src="https://cdn.last.fm/flatness/badges/lastfm_red.gif"
+/>,
+                    "href": "https://www.last.fm/home",
+                    "target": "_top",
+                    "title": "Last FM",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Last FM",
+                      "border": "0",
+                      "className": "last-fm",
+                      "src": "https://cdn.last.fm/flatness/badges/lastfm_red.gif",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+              ],
               "type": "div",
             },
           ],
