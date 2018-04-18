@@ -30,9 +30,15 @@
 Jared Eklin || https://github.com/jaredeklin
 
 ## Project Layout
-
+#### Desktop layout
 ![Desktop Layout](./src/images/desktop-layout.png)
+
+#### Ipad layout
 ![Ipad Layout](./src/images/Ipad-layout.png)
-![Mobile Layout](./src/images/mobile-layout.png)
+
+#### Mobile layout
+![Mobile Layout](./src/images/Mobile-layout.png)
+
+#### Event detail layout
 ![Event Layout](./src/images/Event-layout.png)
 
