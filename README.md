@@ -38,14 +38,13 @@ Jared Eklin || https://github.com/jaredeklin
 ![Desktop Layout](./src/images/desktop-layout.png)
 
 #### Ipad layout
-![Ipad Layout](./src/images/Ipad-layout.png)
+<img src="./src/images/Ipad-layout.png" width="768" height="1024">
 
 #### Mobile landing page
-![Mobile Landing page](./src/images/mobile-landing-page.png)
 <img src="./src/images/mobile-landing-page.png" width="375" height="667">
+
 #### Mobile layout
-![Mobile Layout](./src/images/Mobile-layout.png)
-<img src="./src/images/mobile-landing-page.png" width="375" height="667"><img src="./src/images/Mobile-layout.png" width="375" height="667">
+<img src="./src/images/Mobile-layout.png" width="375" height="667">
 
 #### Event detail layout
 ![Event Layout](./src/images/Event-layout.png)
