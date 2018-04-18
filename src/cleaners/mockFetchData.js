@@ -52,7 +52,7 @@ export const mockFetchData = {
         "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1631456/tfly?utm_medium=api"
     }, {
         "Id": 3071868,
-        "Date": "2018-04-17T21:00:00",
+        "Date": "2018-04-18T21:00:00",
         "Venue": {
             "Id": 21309,
             "Name": "Cervantes' Masterpiece Ballroom",
@@ -74,7 +74,7 @@ export const mockFetchData = {
         "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1587522/tfly?utm_medium=api"
     }, {
         "Id": 3109306,
-        "Date": "2018-04-13T21:30:00",
+        "Date": "2018-04-18T21:30:00",
         "Venue": {
             "Id": 22335,
             "Name": "The Larimer Lounge",
@@ -284,7 +284,7 @@ export const mockFetchData = {
         "TicketUrl": "http://ticketmaster.evyy.net/c/252938/264167/4272?u=https%3A%2F%2Fwww.ticketfly.com%2Fpurchase%2Fevent%2F1588946"
     }, {
         "Id": 3091694,
-        "Date": "2018-04-17T19:00:00",
+        "Date": "2018-04-18T19:00:00",
         "Venue": {
             "Id": 108231,
             "Name": "Summit Music Hall",
@@ -1114,7 +1114,7 @@ export const mockFetchData = {
         "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1597077/tfly?utm_medium=api"
     }, {
         "Id": 3107225,
-        "Date": "2018-04-16T18:30:00",
+        "Date": "2018-04-18T18:30:00",
         "Venue": {
             "Id": 32585,
             "Name": "Hi Dive",
@@ -1161,7 +1161,7 @@ export const mockFetchData = {
         "TicketUrl": ""
     }, {
         "Id": 3104057,
-        "Date": "2018-04-16T18:30:00",
+        "Date": "2018-04-18T18:30:00",
         "Venue": {
             "Id": 19,
             "Name": "Boulder Theater",
@@ -1223,50 +1223,6 @@ export const mockFetchData = {
         "Artists": [{
             "Id": 104301,
             "Name": "George Ezra"
-        }],
-        "TicketUrl": ""
-    }, {
-        "Id": 3089651,
-        "Date": "2018-05-02T19:30:00",
-        "Venue": {
-            "Id": 19,
-            "Name": "Boulder Theater",
-            "Address": "2032 14th St.",
-            "City": "Boulder",
-            "State": "Colorado",
-            "StateCode": "CO",
-            "Country": "US",
-            "CountryCode": "US",
-            "ZipCode": "80302",
-            "Url": "http://www.bouldertheater.com/",
-            "Latitude": 40.018743,
-            "Longitude": -105.27725
-        },
-        "Artists": [{
-            "Id": 74113,
-            "Name": "Deva Premal & Miten "
-        }],
-        "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1603093/tfly?utm_medium=api"
-    }, {
-        "Id": 3031023,
-        "Date": "2018-05-03T00:00:00",
-        "Venue": {
-            "Id": 55842,
-            "Name": "Boettcher Concert Hall",
-            "Address": "14th and Curtis",
-            "City": "Denver",
-            "State": "Colorado",
-            "StateCode": "CO",
-            "Country": "US",
-            "CountryCode": "US",
-            "ZipCode": "80204",
-            "Url": "",
-            "Latitude": 39.74532,
-            "Longitude": -104.99725
-        },
-        "Artists": [{
-            "Id": 59938,
-            "Name": "Colorado Symphony Orchestra"
         }],
         "TicketUrl": ""
     }, {

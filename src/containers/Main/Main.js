@@ -82,6 +82,16 @@ export const Main = (props) => {
                 alt="Search JamBase Concerts" 
                 border="0" />
             </a>
+            <a 
+              href="https://www.last.fm/home" 
+              target="_top" 
+              title="Last FM"
+            ><img 
+                src= "https://cdn.last.fm/flatness/badges/lastfm_red.gif" 
+                alt="Last FM" 
+                className="last-fm"
+                border="0" />
+            </a>
           </div>
         </div>
       }
