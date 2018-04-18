@@ -88,7 +88,9 @@ ShallowWrapper {
                     id="main-form"
           />
 </div>,
-        <div>
+        <div
+          className="all-shows"
+>
           <div
                     className="tonight-outer"
           >
@@ -285,6 +287,7 @@ ShallowWrapper {
 </section>,
             false,
           ],
+          "className": "all-shows",
         },
         "ref": null,
         "rendered": Array [
@@ -600,7 +603,9 @@ ShallowWrapper {
                         id="main-form"
             />
 </div>,
-          <div>
+          <div
+            className="all-shows"
+>
             <div
                         className="tonight-outer"
             >
@@ -797,6 +802,7 @@ ShallowWrapper {
 </section>,
               false,
             ],
+            "className": "all-shows",
           },
           "ref": null,
           "rendered": Array [
@@ -1210,7 +1216,9 @@ ShallowWrapper {
                     id="main-form"
           />
 </div>,
-        <div>
+        <div
+          className="all-shows"
+>
           <h2
                     className="event-happening-when-text"
           >
@@ -1394,6 +1402,7 @@ ShallowWrapper {
 </section>,
             false,
           ],
+          "className": "all-shows",
         },
         "ref": null,
         "rendered": Array [
@@ -1624,7 +1633,9 @@ ShallowWrapper {
                         id="main-form"
             />
 </div>,
-          <div>
+          <div
+            className="all-shows"
+>
             <h2
                         className="event-happening-when-text"
             >
@@ -1808,6 +1819,7 @@ ShallowWrapper {
 </section>,
               false,
             ],
+            "className": "all-shows",
           },
           "ref": null,
           "rendered": Array [

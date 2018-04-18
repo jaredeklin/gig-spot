@@ -44,7 +44,7 @@ export const Main = (props) => {
       }
       {
         thisWeeksShows.length > 0 &&
-        <div>
+        <div className='all-shows'>
           { tonightsShows.length > 2 &&
           <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>

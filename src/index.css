@@ -59,6 +59,7 @@ button {
 
 .landing-page-background {
   min-height: 100vh;
+  display: flex;
   width: 100%;
   background-image: url('./images/stage-instruments.jpg');
 }
@@ -66,11 +67,11 @@ button {
 .landing-page {
   width: 400px;
   background-color: rgba(0, 0, 0, .8);
-  top: 170px;
+  /*top: 170px;*/
   color: white;
   margin: auto;
   height: 400px;
-  position: relative;
+  /*position: relative;*/
   padding: 15px;
   border-radius: 50%;
   border: 1px solid white;
@@ -146,9 +147,9 @@ button {
 
 .change-location {
   position: absolute;
-  right: 20px;
+  right: 30px;
   display: -webkit-box;
-  width: auto;
+  width: fit-content;
 }
 
 .change-location p {
@@ -170,7 +171,7 @@ button {
   transition: 450ms transform;
   white-space: nowrap;
   margin: 5px 0;
-  padding: 0 30px;
+  /*padding: 0 30px;*/
 }
 
 .shows {
@@ -186,15 +187,17 @@ button {
 }
 
 .loading {
-  position: relative;
-  left: 40%;
+  display: block;
+  margin: auto;
+  width: 320px;
+  text-align: center;
 }
 
 .error {
-  position: absolute;
-  top: 50%;
+  display: block;
+  margin: 90px auto;
+  padding: 0 20px;
   text-align: center;
-  width: 100%;
 }
 
 .loading-gif {
@@ -203,8 +206,58 @@ button {
 }
 
 .event-happening-when-text {
-  margin: 15px 0 0 40px;
+  margin: 15px 0 0 10px;
 }
 
+.all-shows {
+  padding: 0 30px;
+}
 
+@media screen and (max-width: 550px) {
+
+  header {
+    background-position-x: center;
+  }
+ 
+  .landing-page-background {
+    background-position-x: center;
+  }
+
+  .landing-page {
+    width: 320px;
+    height: 320px;
+    position: unset;
+  }
+
+  .landing-page h1 {
+    margin: 5px 0 -15px 0;
+  }
+
+  .landing-page p {
+    margin: 0 auto 30px auto;
+    width: 285px;
+  }
+
+  .change-location {
+    width: fit-content;
+    margin: 10px auto;
+    position: unset;
+    font-size: 14px;
+  }
+
+  .change-location input {
+    font-size: 14px;
+  }
+
+  .change-location button {
+    font-size: 14px;
+  }
+
+  .all-shows {
+    padding: 0;
+  }
+
+
+
+}
 

@@ -1,5 +1,4 @@
 import rootReducer from './root-reducer';
-import { appReducer } from './root-reducer';
 import * as actions from '../actions';
 
 describe('rootReducer', () => {
@@ -16,7 +15,7 @@ describe('rootReducer', () => {
     expect(rootReducer({}, actions.showIsLoading(true))).toEqual(expected);
   });
 
-  it('should clear the store when clearStore is fired' , () => {
+  it('should clear the store when clearStore is fired', () => {
     const expected = {
       "error": false, 
       "loading": false, 

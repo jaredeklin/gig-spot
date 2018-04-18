@@ -34,6 +34,10 @@ export class App extends Component {
           }
         </header>
         }
+
+        <Route exact path = '/' component={ LandingPage } />
+        <Route exact path = '/main' component={ Main } />
+
         {
           loading &&
             <div className='loading'>
@@ -47,9 +51,7 @@ export class App extends Component {
               Nooooooooo!!!!!!! Something went wrong. Please try again.
             </h2>
         }
-
-        <Route exact path = '/' component={ LandingPage } />
-        <Route exact path = '/main' component={ Main } />
+        
         <Route exact path = '/event-details' component={ EventDetails } />
 
         <Route path={`/event-details/:id`} render={({ match }) => {
