@@ -24,7 +24,7 @@ export class App extends Component {
       <div className="App">
         { location.pathname !== '/' &&
         <header className="App-header">     
-          <h1>Gig Spot</h1>
+          <h1><NavLink to='/' className='header-link'>Gig Spot</NavLink></h1>
 
           {
             location.pathname.includes('/event-details') &&
