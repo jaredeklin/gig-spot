@@ -83,6 +83,7 @@ ShallowWrapper {
                     </h4>
                     <a
                               href="http://www.soileddove.com/"
+                              target="_blank"
                     >
                               http://www.soileddove.com/
                     </a>
@@ -102,6 +103,7 @@ ShallowWrapper {
           <a
                     className="ticket-info"
                     href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                    target="_blank"
           >
                     <h4>
                               Get tickets
@@ -162,6 +164,7 @@ ShallowWrapper {
               </h4>
               <a
                             href="http://www.soileddove.com/"
+                            target="_blank"
               >
                             http://www.soileddove.com/
               </a>
@@ -181,6 +184,7 @@ ShallowWrapper {
             <a
               className="ticket-info"
               href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+              target="_blank"
 >
               <h4>
                             Get tickets
@@ -263,6 +267,7 @@ ShallowWrapper {
 </h4>,
                 <a
                   href="http://www.soileddove.com/"
+                  target="_blank"
 >
                   http://www.soileddove.com/
 </a>,
@@ -297,6 +302,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "http://www.soileddove.com/",
                   "href": "http://www.soileddove.com/",
+                  "target": "_blank",
                 },
                 "ref": null,
                 "rendered": "http://www.soileddove.com/",
@@ -347,6 +353,7 @@ ShallowWrapper {
 </h4>,
               "className": "ticket-info",
               "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+              "target": "_blank",
             },
             "ref": null,
             "rendered": Object {
@@ -413,6 +420,7 @@ ShallowWrapper {
                         </h4>
                         <a
                                     href="http://www.soileddove.com/"
+                                    target="_blank"
                         >
                                     http://www.soileddove.com/
                         </a>
@@ -432,6 +440,7 @@ ShallowWrapper {
             <a
                         className="ticket-info"
                         href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                        target="_blank"
             >
                         <h4>
                                     Get tickets
@@ -492,6 +501,7 @@ ShallowWrapper {
                 </h4>
                 <a
                                 href="http://www.soileddove.com/"
+                                target="_blank"
                 >
                                 http://www.soileddove.com/
                 </a>
@@ -511,6 +521,7 @@ ShallowWrapper {
               <a
                 className="ticket-info"
                 href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                target="_blank"
 >
                 <h4>
                                 Get tickets
@@ -593,6 +604,7 @@ ShallowWrapper {
 </h4>,
                   <a
                     href="http://www.soileddove.com/"
+                    target="_blank"
 >
                     http://www.soileddove.com/
 </a>,
@@ -627,6 +639,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "http://www.soileddove.com/",
                     "href": "http://www.soileddove.com/",
+                    "target": "_blank",
                   },
                   "ref": null,
                   "rendered": "http://www.soileddove.com/",
@@ -677,6 +690,7 @@ ShallowWrapper {
 </h4>,
                 "className": "ticket-info",
                 "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                "target": "_blank",
               },
               "ref": null,
               "rendered": Object {
