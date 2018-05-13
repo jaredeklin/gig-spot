@@ -51,7 +51,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
 </header>,
         <Route
@@ -87,7 +94,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             false,
           ],
@@ -100,10 +114,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           false,
@@ -177,7 +212,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
 </header>,
           <Route
@@ -213,7 +255,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               false,
             ],
@@ -226,10 +275,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             false,
@@ -354,7 +424,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
 </header>,
         <Route
@@ -401,7 +478,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             false,
           ],
@@ -414,10 +498,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           false,
@@ -536,7 +641,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
 </header>,
           <Route
@@ -583,7 +695,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               false,
             ],
@@ -596,10 +715,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             false,
@@ -769,7 +909,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
           <div
                     className="home"
@@ -817,7 +964,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             <div
               className="home"
@@ -841,10 +995,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           Object {
@@ -950,7 +1125,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
             <div
                         className="home"
@@ -998,7 +1180,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               <div
                 className="home"
@@ -1022,10 +1211,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             Object {
@@ -1182,7 +1392,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
 </header>,
         <Route
@@ -1218,7 +1435,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             false,
           ],
@@ -1231,10 +1455,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           false,
@@ -1308,7 +1553,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
 </header>,
           <Route
@@ -1344,7 +1596,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               false,
             ],
@@ -1357,10 +1616,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             false,
@@ -1492,7 +1772,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
 </header>,
         <Route
@@ -1532,7 +1819,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             false,
           ],
@@ -1545,10 +1839,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           false,
@@ -1633,7 +1948,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
 </header>,
           <Route
@@ -1673,7 +1995,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               false,
             ],
@@ -1686,10 +2015,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             false,
@@ -1825,7 +2175,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
 </header>,
         <Route
@@ -1865,7 +2222,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             false,
           ],
@@ -1878,10 +2242,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           false,
@@ -1966,7 +2351,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
 </header>,
           <Route
@@ -2006,7 +2398,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               false,
             ],
@@ -2019,10 +2418,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             false,
@@ -2165,7 +2585,14 @@ ShallowWrapper {
           className="App-header"
 >
           <h1>
-                    Gig Spot
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              className="header-link"
+                              to="/"
+                    >
+                              Gig Spot
+                    </NavLink>
           </h1>
 </header>,
         <Route
@@ -2205,7 +2632,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Gig Spot
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            className="header-link"
+                            to="/"
+              >
+                            Gig Spot
+              </NavLink>
 </h1>,
             false,
           ],
@@ -2218,10 +2652,31 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Gig Spot",
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="header-link"
+                to="/"
+>
+                Gig Spot
+</NavLink>,
             },
             "ref": null,
-            "rendered": "Gig Spot",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Gig Spot",
+                "className": "header-link",
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Gig Spot",
+              "type": [Function],
+            },
             "type": "h1",
           },
           false,
@@ -2306,7 +2761,14 @@ ShallowWrapper {
             className="App-header"
 >
             <h1>
-                        Gig Spot
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    className="header-link"
+                                    to="/"
+                        >
+                                    Gig Spot
+                        </NavLink>
             </h1>
 </header>,
           <Route
@@ -2346,7 +2808,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Gig Spot
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                className="header-link"
+                                to="/"
+                >
+                                Gig Spot
+                </NavLink>
 </h1>,
               false,
             ],
@@ -2359,10 +2828,31 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Gig Spot",
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  className="header-link"
+                  to="/"
+>
+                  Gig Spot
+</NavLink>,
               },
               "ref": null,
-              "rendered": "Gig Spot",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Gig Spot",
+                  "className": "header-link",
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Gig Spot",
+                "type": [Function],
+              },
               "type": "h1",
             },
             false,
