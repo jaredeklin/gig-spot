@@ -12,7 +12,7 @@
 #### This project was bootstrapped with create-react-app
 
 #### Clone down the repo
-#### ```git clone https://github.com/jaredeklin/personal-project```
+#### ```git clone https://github.com/jaredeklin/gig-spot```
 
 #### ```npm install```
 
