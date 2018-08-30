@@ -1,6 +1,6 @@
 # Gig Spot
 
-[View live site!](http://gigspot.surge.sh/)
+The Jambase Api used for this project no longer exists! I'm currently looking for an alternative.
 
 ## Synopsis
 #### Gig Spot is an application that is focused on finding concerts in your area. It was designed to give a special focus to concerts that are happening today and this week. This project was built using React, React-Router, Redux and used Jest and Enzyme for testing. The concert data is pulled from the Jambase API and the artist images are from the Last FM API.
