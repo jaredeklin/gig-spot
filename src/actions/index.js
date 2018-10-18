@@ -1,9 +1,6 @@
-import { jambaseApiKey } from '../cleaners/apiKey';
+import { eventfulApiKey } from '../cleaners/apiKey';
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { fetchImage } from '../cleaners/fetchImage';
-import { filterDates } from '../cleaners/filterDates';
-// import { mockFetchData } from '../cleaners/mockFetchData';
-
 
 export const loadTonightsShows = (shows) => ({
   type: "LOAD_TONIGHTS_SHOWS",
@@ -35,31 +32,46 @@ export const clearStore = () => ({
 });
 
 
-export const fetchShows = (zipCode) => {
-  
+export const fetchShows = (city) => {
+
   return async (dispatch) => {
     try {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
       dispatch(showIsLoading(true));
-      const rootUrl = 'http://api.jambase.com/events?';
-      const api = `&page=0&api_key=${jambaseApiKey}`;
-      const response = await fetch(`${rootUrl}zipCode=${zipCode}${api}`);
+      
+      const tommorrow = new Date();
+      const nextWeek = new Date();
+      const upcoming = new Date();
+      const upcomingEnd = new Date();
+      tommorrow.setDate(tommorrow.getDate() + 1);
+      nextWeek.setDate(nextWeek.getDate() + 7);
+      upcoming.setDate(upcoming.getDate() + 8);
+      upcomingEnd.setMonth(upcomingEnd.getMonth() + 3);
+      
+      const tommorrowDate = formatDate(tommorrow);
+      const nextWeekDate = formatDate(nextWeek);
+      const upcomingDate = formatDate(upcoming);
+      const upcomingEndDate = formatDate(upcomingEnd);
+      
+      const location = `location=${city}`;
+      const images = "image_sizes=large";
+      const sortOrder = 'sort_order=popularity';
+      const resultLength = 'page_size=50';
+      const category = `category=music`;
+      const rootUrl = `http://api.eventful.com/json/events/search?app_key=${eventfulApiKey}`;
+      const query = `${location}&${category}&${images}&${sortOrder}&${resultLength}`;
+      const url = `${rootUrl}&${query}`;
 
-      if ( !response.ok ) {  
-        throw Error(response.statusText);
-      }
-        
-      // const concertData = mockFetchData
-      const concertData = await response.json();
-      const cleanData = cleanConcertData(concertData.Events);
-      const dataWithImage = await fetchImage(cleanData);
-      const dates = filterDates(dataWithImage);
-        
+      const today = await getTodaysEvents(url);
       dispatch(showIsLoading(false));
-      dispatch(loadTonightsShows(dates[0]));
-      dispatch(loadThisWeeksShows(dates[1]));
-      dispatch(loadUpcomingShows(dates[2]));
+      dispatch(loadTonightsShows(today));
+     
+      const thisWeekEvents = await getThisWeeksEvents(url, tommorrowDate, nextWeekDate);
+      dispatch(loadThisWeeksShows(thisWeekEvents));
+
+      const upcomingEvents = await getUpcomingEvents(url, upcomingDate, upcomingEndDate);      
+      dispatch(loadUpcomingShows(upcomingEvents));
 
     } catch (error) {
       if (error) {
@@ -70,4 +82,59 @@ export const fetchShows = (zipCode) => {
   };
 };
  
+const cleanData = async (response) => {
+  const concertData = await response.json();
+  const cleanData = cleanConcertData(concertData.events.event);
+  
+  return await fetchImage(cleanData);
+};
+
+const getTodaysEvents = async (url) => {
+  const response = await fetch(`${url}&date=Today`);
+
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+
+  const todayData = await cleanData(response);
+
+  return todayData;
+};
+
+const getThisWeeksEvents = async (url, tommorrow, nextWeek) => {
+  const date = `date=${tommorrow}-${nextWeek}`;
+  const response = await fetch(`${url}&${date}`);
+
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+
+  const weekData = await cleanData(response);
+
+  return weekData;
+};
+
+const getUpcomingEvents = async (url, upcomingDate, upcomingEndDate) => {
+
+
+  const date = `date=${upcomingDate}-${upcomingEndDate}`;
+ 
+  const response = await fetch(`${url}&${date}`);
+
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+
+  const upcomingData = await cleanData(response);
+
+  return upcomingData;
+};
+
+
+const formatDate = (date) => {
+  return date
+    .toISOString()
+    .substr(0, 10)
+    .replace(/[-]/gi, '') + '00';
+};
 
