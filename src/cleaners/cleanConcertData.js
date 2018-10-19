@@ -5,8 +5,21 @@ const cleanArtists = new CleanArtists();
 
 export const cleanConcertData = (concerts) => {
 
-  return concerts.reduce((concertArray, show) => {
+  concerts = concerts.filter(concert => {
+    const { title, performers } = concert;
 
+    if (title.includes("Tickets") && !performers) {
+      return false;
+    }
+
+    if (title.includes("Parking")) {
+      return false;
+    }
+    return true;
+  });    
+
+  return concerts.reduce((concertArray, show) => {
+    
     const venue = {
       name: show.venue_name,
       id: show.venue_id,
@@ -20,7 +33,7 @@ export const cleanConcertData = (concerts) => {
     const headlineArtist = artists[0];
     const supportArtists = artists.filter(artist => artist !== artists[0]);
     const description = show.description;
-    const image = !show.image ? null : show.image.large.url;
+    const image = !show.image ? null : show.image.block250.url;
     const tickets = show.url;
     const id = show.id;
     const date = new Date(show.start_time).toLocaleDateString([], {
