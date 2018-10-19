@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export const TonightCard = ({ show }) => {
+
   let { image, headlineArtist, venue, date, startTime, id } = show;
   
   return (
@@ -16,7 +17,7 @@ export const TonightCard = ({ show }) => {
           alt="artist"
         />
         <div className='card-info'>
-          <h4 className="artist">{ headlineArtist.Name }</h4>
+          <h4 className="artist">{ headlineArtist }</h4>
           <div className="venue">{ venue.name }</div>
           <div className="date">{ date }</div>
           <div className="time">{ startTime }</div>
