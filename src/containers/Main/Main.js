@@ -6,9 +6,11 @@ import PropTypes from 'prop-types';
 
 export const Main = (props) => {
   const { tonightsShows, thisWeeksShows, upcomingShows, loading } = props;
-  const combined = [...tonightsShows, ...thisWeeksShows];
   let tonightCards, thisWeekCards, upcomingCards;
- 
+  const showTonightsEvents = tonightsShows.length > 2;
+  const showThisWeeksEvents = thisWeeksShows.length > 0;
+  const showUpcomingEvents = upcomingShows.length > 3; 
+
   if (tonightsShows) {
     tonightCards = tonightsShows.map(show => {
       return (<TonightCard show={show} key={`3${show.id}`} />);
@@ -17,6 +19,8 @@ export const Main = (props) => {
 
   if (thisWeeksShows) {
     if (tonightsShows.length <= 2) {
+      const combined = [...tonightsShows, ...thisWeeksShows];
+      
       thisWeekCards = combined.map(show => {
         return (<TonightCard show={show} key={`1${show.id}`} />);
       });
@@ -43,9 +47,9 @@ export const Main = (props) => {
           </div>
       }
       {
-        thisWeeksShows.length > 0 &&
+        (showTonightsEvents || showThisWeeksEvents || showUpcomingEvents) &&
         <div className='all-shows'>
-          { tonightsShows.length > 2 &&
+          { showTonightsEvents &&
           <div className='tonight-outer'>
             <h2 className='event-happening-when-text'>Tonight:</h2>
             <section className='tonights-shows'>
@@ -55,14 +59,18 @@ export const Main = (props) => {
             </section>
           </div>
           }
-          <h2 className='event-happening-when-text'>This Week:</h2>
-          <section className='shows'>
-            <div className='shows-inner'>
-              { thisWeekCards }
-            </div>
-          </section>
+          { showThisWeeksEvents &&
+          <div>
+            <h2 className='event-happening-when-text'>This Week:</h2>
+            <section className='shows'>
+              <div className='shows-inner'>
+                { thisWeekCards }
+              </div>
+            </section>
+          </div>
+          }
           { 
-            upcomingShows.length > 3 &&
+            showUpcomingEvents &&
               <div>
                 <h2 className='event-happening-when-text'>Upcoming:</h2>
                 <section className='shows'>
