@@ -20,7 +20,7 @@ export const Main = (props) => {
   if (thisWeeksShows) {
     if (tonightsShows.length <= 2) {
       const combined = [...tonightsShows, ...thisWeeksShows];
-      
+
       thisWeekCards = combined.map(show => {
         return (<TonightCard show={show} key={`1${show.id}`} />);
       });
@@ -80,16 +80,14 @@ export const Main = (props) => {
                 </section>
               </div>
           }
-          <div className="jambase">
-            <a 
-              href="http://www.JamBase.com" 
-              target="_top" 
-              title="JamBase Concert Search"
-            ><img 
-                src= "http://images.jambase.com/logos/jambase140x70.gif" 
-                alt="Search JamBase Concerts" 
-                border="0" />
+          <div className="icons">            
+            <a href="http://eventful.com/">
+              <img 
+                src="http://api.eventful.com/images/powered/eventful_139x44.gif"
+                alt="Local Events, Concerts, Tickets" 
+                className="eventful" />
             </a>
+
             <a 
               href="https://www.last.fm/home" 
               target="_top" 
