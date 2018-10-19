@@ -18,7 +18,7 @@ describe('fetchImage', () => {
 
 
     const artist = mockFetchImageConcertData[0].headlineArtist.Name;
-    const base = `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&`;
+    const base = 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&';
     const url = `${base}artist=${artist}&api_key=${lastFmApiKey}&format=json`;
     
     fetchImage(mockFetchImageConcertData);

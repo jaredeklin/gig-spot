@@ -3,17 +3,17 @@ import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { fetchImage } from '../cleaners/fetchImage';
 
 export const loadTonightsShows = (shows) => ({
-  type: "LOAD_TONIGHTS_SHOWS",
+  type: 'LOAD_TONIGHTS_SHOWS',
   shows
 });
 
 export const loadThisWeeksShows = (shows) => ({
-  type: "LOAD_THIS_WEEKS_SHOWS",
+  type: 'LOAD_THIS_WEEKS_SHOWS',
   shows
 });
 
 export const loadUpcomingShows = (shows) => ({
-  type: "LOAD_UPCOMING_SHOWS",
+  type: 'LOAD_UPCOMING_SHOWS',
   shows
 });
 
@@ -55,10 +55,10 @@ export const fetchShows = (city) => {
       const upcomingEndDate = formatDate(upcomingEnd);
       
       const location = `location=${city}`;
-      const images = "image_sizes=large";
+      const images = 'image_sizes=large,block250';
       const sortOrder = 'sort_order=popularity';
       const resultLength = 'page_size=50';
-      const category = `category=music`;
+      const category = 'category=music';
       const rootUrl = `http://api.eventful.com/json/events/search?app_key=${eventfulApiKey}`;
       const query = `${location}&${category}&${images}&${sortOrder}&${resultLength}`;
       const url = `${rootUrl}&${query}`;
@@ -85,7 +85,7 @@ export const fetchShows = (city) => {
 const cleanData = async (response) => {
   const concertData = await response.json();
   const cleanData = cleanConcertData(concertData.events.event);
-  
+
   return await fetchImage(cleanData);
 };
 

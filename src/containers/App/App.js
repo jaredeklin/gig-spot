@@ -24,37 +24,37 @@ export class App extends Component {
       <div className="App">
         { location.pathname !== '/' &&
         <header className="App-header">     
-          <h1><NavLink to='/' className='header-link'>Gig Spot</NavLink></h1>
+          <h1><NavLink to="/" className="header-link">Gig Spot</NavLink></h1>
 
           {
             location.pathname.includes('/event-details') &&
-              <div className='home'>
-                <NavLink to='../main' className='home-button'>Home</NavLink>
+              <div className="home">
+                <NavLink to="../main" className="home-button">Home</NavLink>
               </div>
           }
         </header>
         }
 
-        <Route exact path = '/' component={ LandingPage } />
-        <Route exact path = '/main' component={ Main } />
+        <Route exact path = "/" component={ LandingPage } />
+        <Route exact path = "/main" component={ Main } />
 
         {
           loading &&
-            <div className='loading'>
-              <img src={ loadingGif } className='loading-gif' alt='loading'/>
+            <div className="loading">
+              <img src={ loadingGif } className="loading-gif" alt="loading"/>
               <h2>Finding local shows....</h2>
             </div>
         }
         {
           error &&
-            <h2 className='error'>
+            <h2 className="error">
               Nooooooooo!!!!!!! Something went wrong. Please try again.
             </h2>
         }
         
-        <Route exact path = '/event-details' component={ EventDetails } />
+        <Route exact path = "/event-details" component={ EventDetails } />
 
-        <Route path={`/event-details/:id`} render={({ match }) => {
+        <Route path={'/event-details/:id'} render={({ match }) => {
           const concert = this.findMatch(match);
 
           if (concert) {

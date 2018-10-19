@@ -40,7 +40,7 @@
       "error",
       "prefer-double"
     ],
-    "quotes": ["error", "single", {"allowTemplateLiteral": true}]
+    "quotes": ["error", "single"]
   },
   "globals": {
     "expect": true

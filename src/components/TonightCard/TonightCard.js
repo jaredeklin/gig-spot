@@ -13,10 +13,10 @@ export const TonightCard = ({ show }) => {
       <article className="tonight-card">
         <img 
           src={ image ? image : defaultImage } 
-          className='artist-image' 
+          className="artist-image" 
           alt="artist"
         />
-        <div className='card-info'>
+        <div className="card-info">
           <h4 className="artist">{ headlineArtist }</h4>
           <div className="venue">{ venue.name }</div>
           <div className="date">{ date }</div>

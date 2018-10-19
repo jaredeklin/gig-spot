@@ -1,5 +1,5 @@
 import { cleanTime } from './cleanTime';
-import { CleanArtists } from "./cleanArtists";
+import { CleanArtists } from './cleanArtists';
 
 const cleanArtists = new CleanArtists();
 
@@ -8,11 +8,11 @@ export const cleanConcertData = (concerts) => {
   concerts = concerts.filter(concert => {
     const { title, performers } = concert;
 
-    if (title.includes("Tickets") && !performers) {
+    if (title.includes('Tickets') && !performers) {
       return false;
     }
 
-    if (title.includes("Parking")) {
+    if (title.includes('Parking')) {
       return false;
     }
     return true;

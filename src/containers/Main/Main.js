@@ -39,21 +39,21 @@ export const Main = (props) => {
 
   return (
       
-    <div className='main'>
+    <div className="main">
       { !loading && 
-          <div className='change-location'>
+          <div className="change-location">
             <p>Update location:</p>
-            <LocationForm id='main-form' />
+            <LocationForm id="main-form" />
           </div>
       }
       {
         (showTonightsEvents || showThisWeeksEvents || showUpcomingEvents) &&
-        <div className='all-shows'>
+        <div className="all-shows">
           { showTonightsEvents &&
-          <div className='tonight-outer'>
-            <h2 className='event-happening-when-text'>Tonight:</h2>
-            <section className='tonights-shows'>
-              <div className='shows-inner'>
+          <div className="tonight-outer">
+            <h2 className="event-happening-when-text">Tonight:</h2>
+            <section className="tonights-shows">
+              <div className="shows-inner">
                 { tonightCards }
               </div>
             </section>
@@ -61,9 +61,9 @@ export const Main = (props) => {
           }
           { showThisWeeksEvents &&
           <div>
-            <h2 className='event-happening-when-text'>This Week:</h2>
-            <section className='shows'>
-              <div className='shows-inner'>
+            <h2 className="event-happening-when-text">This Week:</h2>
+            <section className="shows">
+              <div className="shows-inner">
                 { thisWeekCards }
               </div>
             </section>
@@ -72,9 +72,9 @@ export const Main = (props) => {
           { 
             showUpcomingEvents &&
               <div>
-                <h2 className='event-happening-when-text'>Upcoming:</h2>
-                <section className='shows'>
-                  <div className='shows-inner'>
+                <h2 className="event-happening-when-text">Upcoming:</h2>
+                <section className="shows">
+                  <div className="shows-inner">
                     { upcomingCards }
                   </div>
                 </section>

@@ -5,7 +5,7 @@ export const cleanImage = (artistData, currentImage) => {
 
     return currentImage ? currentImage : defaultImage; 
   } else {
-    const artistImage = artistData.artist.image[4][`#text`];
+    const artistImage = artistData.artist.image[4]['#text'];
 
     return artistImage;
   }
