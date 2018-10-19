@@ -1,6 +1,9 @@
-import { eventfulApiKey } from '../cleaners/apiKey';
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { fetchImage } from '../cleaners/fetchImage';
+import { Dates } from '../cleaners/Dates';
+import { Query } from '../cleaners/Query';
+const dates = new Dates();
+const query = new Query();
 
 export const loadTonightsShows = (shows) => ({
   type: 'LOAD_TONIGHTS_SHOWS',
@@ -39,38 +42,18 @@ export const fetchShows = (city) => {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
       dispatch(showIsLoading(true));
-      
-      const tommorrow = new Date();
-      const nextWeek = new Date();
-      const upcoming = new Date();
-      const upcomingEnd = new Date();
-      tommorrow.setDate(tommorrow.getDate() + 1);
-      nextWeek.setDate(nextWeek.getDate() + 7);
-      upcoming.setDate(upcoming.getDate() + 8);
-      upcomingEnd.setMonth(upcomingEnd.getMonth() + 3);
-      
-      const tommorrowDate = formatDate(tommorrow);
-      const nextWeekDate = formatDate(nextWeek);
-      const upcomingDate = formatDate(upcoming);
-      const upcomingEndDate = formatDate(upcomingEnd);
-      
-      const location = `location=${city}`;
-      const images = 'image_sizes=large,block250';
-      const sortOrder = 'sort_order=popularity';
-      const resultLength = 'page_size=50';
-      const category = 'category=music';
-      const rootUrl = `http://api.eventful.com/json/events/search?app_key=${eventfulApiKey}`;
-      const query = `${location}&${category}&${images}&${sortOrder}&${resultLength}`;
-      const url = `${rootUrl}&${query}`;
 
-      const today = await getTodaysEvents(url);
+      const date = dates.getDates();
+      const url = query.getUrl(city);
+
+      const todaysEvents = await getTodaysEvents(url);
       dispatch(showIsLoading(false));
-      dispatch(loadTonightsShows(today));
-     
-      const thisWeekEvents = await getThisWeeksEvents(url, tommorrowDate, nextWeekDate);
+      dispatch(loadTonightsShows(todaysEvents));
+      
+      const thisWeekEvents = await getThisWeeksEvents(url, date);
       dispatch(loadThisWeeksShows(thisWeekEvents));
-
-      const upcomingEvents = await getUpcomingEvents(url, upcomingDate, upcomingEndDate);      
+      
+      const upcomingEvents = await getUpcomingEvents(url, date);      
       dispatch(loadUpcomingShows(upcomingEvents));
 
     } catch (error) {
@@ -97,11 +80,11 @@ const getTodaysEvents = async (url) => {
   }
 
   const todayData = await cleanData(response);
-
+  
   return todayData;
 };
 
-const getThisWeeksEvents = async (url, tommorrow, nextWeek) => {
+const getThisWeeksEvents = async (url, { tommorrow, nextWeek }) => {
   const date = `date=${tommorrow}-${nextWeek}`;
   const response = await fetch(`${url}&${date}`);
 
@@ -114,10 +97,10 @@ const getThisWeeksEvents = async (url, tommorrow, nextWeek) => {
   return weekData;
 };
 
-const getUpcomingEvents = async (url, upcomingDate, upcomingEndDate) => {
+const getUpcomingEvents = async (url, { upcoming, upcomingEnd} ) => {
 
 
-  const date = `date=${upcomingDate}-${upcomingEndDate}`;
+  const date = `date=${upcoming}-${upcomingEnd}`;
  
   const response = await fetch(`${url}&${date}`);
 
@@ -131,10 +114,12 @@ const getUpcomingEvents = async (url, upcomingDate, upcomingEndDate) => {
 };
 
 
-const formatDate = (date) => {
-  return date
-    .toISOString()
-    .substr(0, 10)
-    .replace(/[-]/gi, '') + '00';
-};
+// const formatDate = (date) => {
+//   return date
+//     .toISOString()
+//     .substr(0, 10)
+//     .replace(/[-]/gi, '') + '00';
+// };
+
+
 
