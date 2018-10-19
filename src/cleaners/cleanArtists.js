@@ -2,7 +2,7 @@ export class CleanArtists {
   clean = (show) => {
 
     if (!show.performers) {
-      const name = show.title.replace(/ [(]16[+] Event[)]/gi, "");
+      const name = show.title.replace(/ [(][0-9][0-9][+] Event[)]/gi, "");
       
       return [name];
     }
