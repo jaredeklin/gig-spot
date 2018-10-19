@@ -1,4 +1,4 @@
-import { eventfulApiKey } from "./apiKey";
+import { eventfulApiKey } from './apiKey';
 
 export class Query {
   getUrl = (city) => {
@@ -7,8 +7,8 @@ export class Query {
     const sortOrder = '&sort_order=popularity';
     const resultLength = '&page_size=25';
     const category = '&category=music';
-    const includes = "&include=categories,popularity,tickets,links";
-    const rootUrl = `http://api.eventful.com/json/events/search?`;
+    const includes = '&include=categories,popularity,tickets,links';
+    const rootUrl = 'http://api.eventful.com/json/events/search?';
     const query1 = `app_key=${eventfulApiKey}${location}${category}${images}`;
     const query2 = `${sortOrder}${resultLength}${includes}`;
     const url = `${rootUrl}${query1}${query2}`;
