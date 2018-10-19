@@ -16,7 +16,7 @@ export const cleanConcertData = (concerts) => {
       return false;
     }
     return true;
-  });    
+  });
 
   return concerts.reduce((concertArray, show) => {
     
