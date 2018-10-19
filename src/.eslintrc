@@ -36,6 +36,7 @@
     "id-length": "error",
     "id-blacklist": ["error", "data", "err", "e", "cb", "callback", "payload", "obj", "arr"],
     "max-depth": ["warn", 4],
+    "no-console": "warn",
     "jsx-quotes": [
       "error",
       "prefer-double"
