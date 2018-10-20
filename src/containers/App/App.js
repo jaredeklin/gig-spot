@@ -11,10 +11,9 @@ import PropTypes from 'prop-types';
 export class App extends Component {
 
   findMatch = (match) => {
-    const { tonightsShows, thisWeeksShows, upcomingShows} = this.props;
+    const { tonightsShows, thisWeeksShows, upcomingShows } = this.props;
     const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows];
-
-    return allShows.find(show => show.id === parseInt(match.params.id, 10));
+    return allShows.find(show => show.id === match.params.id);
   }
 
   render() {
@@ -52,14 +51,14 @@ export class App extends Component {
             </h2>
         }
         
-        <Route exact path = "/event-details" component={ EventDetails } />
-
         <Route path={'/event-details/:id'} render={({ match }) => {
           const concert = this.findMatch(match);
 
           if (concert) {
-            return (<EventDetails concert={concert} />);
+            return (<EventDetails concert={ concert } />);
           }
+
+          return null;
         }} />
       </div>
     );
