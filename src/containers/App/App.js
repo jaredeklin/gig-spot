@@ -7,6 +7,7 @@ import { EventDetails } from '../../components/EventDetails/EventDetails';
 import loadingGif from '../../images/spinning-7-inch.gif';
 import { LandingPage } from '../../components/LandingPage/LandingPage';
 import PropTypes from 'prop-types';
+import { fetchShows, getStorage } from '../../actions/index';
 
 export class App extends Component {
 
@@ -16,9 +17,18 @@ export class App extends Component {
     return allShows.find(show => show.id === match.params.id);
   }
 
+  componentDidMount = () => {
+    const { fetchShows } = this.props;
+    
+    if (localStorage.events) {
+      const events = getStorage();
+      fetchShows(events.city);
+    }
+  }
+
   render() {
     const { location, loading, error } = this.props;
-
+    
     return (
       <div className="App">
         { location.pathname !== '/' &&
@@ -83,7 +93,11 @@ export const mapStateToProps = (state) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps)(App));
+export const mapDispatchToProps = dispatch => ({
+  fetchShows: shows => dispatch(fetchShows(shows))
+});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
 
 App.propTypes = {
   tonightsShows: PropTypes.array,
@@ -91,5 +105,6 @@ App.propTypes = {
   upcomingShows: PropTypes.array,
   loading: PropTypes.bool,
   error: PropTypes.bool,
-  location: PropTypes.object
+  location: PropTypes.object,
+  fetchShows: PropTypes.func
 };
