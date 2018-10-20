@@ -36,14 +36,39 @@ export const clearStore = () => ({
 
 
 export const fetchShows = (city) => {
+  const date = dates.getDates();
 
+  if (localStorage.events) {
+    const retrievedEvents = localStorage.getItem('events');
+    const events = JSON.parse(retrievedEvents);
+    const match = date.today === events.date && city === events.city;
+    
+    if (match) {
+      return (dispatch) => {
+        try {
+          dispatch(clearStore());
+          dispatch(showHasErrored(false));
+          dispatch(showIsLoading(true));
+          dispatch(loadTonightsShows(events.tonightsShows));
+          dispatch(loadThisWeeksShows(events.thisWeeksShows));
+          dispatch(loadUpcomingShows(events.upcomingShows));
+          dispatch(showIsLoading(false));
+        } catch (error) {
+          if (error) {
+            dispatch(showHasErrored(true));
+            dispatch(showIsLoading(false));
+          }
+        }
+      };
+    }
+  }
+  
   return async (dispatch) => {
     try {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
       dispatch(showIsLoading(true));
 
-      const date = dates.getDates();
       const url = query.getUrl(city);
 
       const todaysEvents = await getTodaysEvents(url);
@@ -55,6 +80,16 @@ export const fetchShows = (city) => {
       
       const upcomingEvents = await getUpcomingEvents(url, date);      
       dispatch(loadUpcomingShows(upcomingEvents));
+      
+      const events = {
+        tonightsShows: todaysEvents,
+        thisWeeksShows: thisWeekEvents,
+        upcomingShows: upcomingEvents,
+        date: date.today,
+        city
+      };
+
+      addToStorage(events);
 
     } catch (error) {
       if (error) {
@@ -79,9 +114,7 @@ const getTodaysEvents = async (url) => {
     throw Error(response.statusText);
   }
 
-  const todayData = await cleanData(response);
-  
-  return todayData;
+  return await cleanData(response);
 };
 
 const getThisWeeksEvents = async (url, { tommorrow, nextWeek }) => {
@@ -92,34 +125,28 @@ const getThisWeeksEvents = async (url, { tommorrow, nextWeek }) => {
     throw Error(response.statusText);
   }
 
-  const weekData = await cleanData(response);
-
-  return weekData;
+  return await cleanData(response);
 };
 
-const getUpcomingEvents = async (url, { upcoming, upcomingEnd} ) => {
-
-
+const getUpcomingEvents = async (url, { upcoming, upcomingEnd }) => {
   const date = `date=${upcoming}-${upcomingEnd}`;
- 
   const response = await fetch(`${url}&${date}`);
 
   if (!response.ok) {
     throw Error(response.statusText);
   }
 
-  const upcomingData = await cleanData(response);
-
-  return upcomingData;
+  return await cleanData(response);
 };
 
+const addToStorage = (events) => {
+  if (localStorage.events) {
+    localStorage.removeItem('events');
+  }
 
-// const formatDate = (date) => {
-//   return date
-//     .toISOString()
-//     .substr(0, 10)
-//     .replace(/[-]/gi, '') + '00';
-// };
+  const stringifiedEvents = JSON.stringify(events);
+  localStorage.setItem('events', stringifiedEvents);
+};
 
 
 
