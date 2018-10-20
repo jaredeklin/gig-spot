@@ -1,6 +1,11 @@
 export class Dates {
 
   getDates() {
+    const today = new Date().toLocaleDateString([], {
+      month: "short",
+      day: "numeric",
+      year: "numeric"
+    });
     const tommorrow = new Date();
     const nextWeek = new Date();
     const upcoming = new Date();
@@ -11,6 +16,7 @@ export class Dates {
     upcomingEnd.setMonth(upcomingEnd.getMonth() + 3);
 
     return { 
+      today,
       tommorrow: this.formatDate(tommorrow),
       nextWeek: this.formatDate(nextWeek),
       upcoming: this.formatDate(upcoming), 
