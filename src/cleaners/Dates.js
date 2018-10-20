@@ -2,9 +2,9 @@ export class Dates {
 
   getDates() {
     const today = new Date().toLocaleDateString([], {
-      month: "short",
-      day: "numeric",
-      year: "numeric"
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
     });
     const tommorrow = new Date();
     const nextWeek = new Date();
