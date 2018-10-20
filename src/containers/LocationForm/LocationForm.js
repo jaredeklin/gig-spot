@@ -8,7 +8,7 @@ export class LocationForm extends Component {
   constructor() {
     super();
     this.state = { 
-      zipCode: ''
+      location: ''
     }; 
   }
 
@@ -23,12 +23,10 @@ export class LocationForm extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const { fetchShows, history } = this.props;
-    
-    fetchShows(this.state.zipCode);
+
+    fetchShows(this.state.location);
     history.push('./main');
-    this.setState({
-      zipCode: ''
-    });
+    this.setState({ location: '' });
   };
 
   render() {
@@ -40,10 +38,10 @@ export class LocationForm extends Component {
       >
         <input 
           type="text"
-          name="zipCode"
-          value={this.state.zipCode}
+          name="location"
+          value={this.state.location}
           onChange={this.handleChange}
-          placeholder="Zip-code"
+          placeholder="City"
         />
         <button>Submit</button>
       </form>
