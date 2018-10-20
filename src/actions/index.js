@@ -34,13 +34,11 @@ export const clearStore = () => ({
   type: 'CLEAR_STORE'
 });
 
-
 export const fetchShows = (city) => {
   const date = dates.getDates();
 
   if (localStorage.events) {
-    const retrievedEvents = localStorage.getItem('events');
-    const events = JSON.parse(retrievedEvents);
+    const events = getStorage();
     const match = date.today === events.date && city === events.city;
     
     if (match) {
@@ -146,6 +144,11 @@ const addToStorage = (events) => {
 
   const stringifiedEvents = JSON.stringify(events);
   localStorage.setItem('events', stringifiedEvents);
+};
+
+export const getStorage = () => {
+  const retrievedEvents = localStorage.getItem('events');
+  return JSON.parse(retrievedEvents);
 };
 
 
