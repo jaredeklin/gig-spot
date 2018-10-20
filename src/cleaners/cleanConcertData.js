@@ -37,8 +37,7 @@ export const cleanConcertData = (concerts) => {
 
     const date = new Date(start_time).toLocaleDateString([], {
       month: 'short',
-      day: 'numeric',
-      year: 'numeric'
+      day: 'numeric'
     });  
     const startTime = cleanTime(start_time);
     const concertData = {
@@ -54,7 +53,7 @@ export const cleanConcertData = (concerts) => {
       image: !image ? null : image.block250.url,
       categories
     };
-    
+
     return [...concertArray, concertData];
   }, []); 
 };
