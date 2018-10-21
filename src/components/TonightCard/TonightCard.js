@@ -12,7 +12,8 @@ export const TonightCard = ({ show }) => {
     <Link to={`event-details/${id}`}>
       <article className="tonight-card">
         <img 
-          src={ image ? image : defaultImage } 
+          src={image} 
+          onError={(event) => event.target.src = defaultImage}
           className="artist-image" 
           alt="artist"
         />
