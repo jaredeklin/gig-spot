@@ -31,17 +31,42 @@ export const upcomingShowsReducer = (state = [], action) => {
   }
 };
 
-export const loadingReducer = (state = false, action) => {
+export const tonightLoadingReducer = (state = false, action) => {  
   switch (action.type) {
 
-  case 'SHOW_IS_LOADING':
-    return action.showIsLoading;
+  case 'TONIGHT_IS_LOADING':
+    return action.tonightIsLoading;
 
   default:
     return state;
   }
 };
 
+export const thisWeekLoadingReducer = (state = false, action) => {
+  switch (action.type) {
+
+  case 'THIS_WEEK_IS_LOADING':
+    return action.thisWeekIsLoading;
+
+  default:
+    return state;
+  }
+};
+
+export const upcomingLoadingReducer = (state = false, action) => {
+  switch (action.type) {
+
+  case 'UPCOMING_IS_LOADING':
+    return action.upcomingIsLoading;
+
+  default:
+    return state;
+  }
+};
+
+  
+
+  
 export const errorReducer = (state = false, action) => {
   switch (action.type) {
 
