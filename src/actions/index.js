@@ -20,9 +20,19 @@ export const loadUpcomingShows = (shows) => ({
   shows
 });
 
-export const showIsLoading = (bool) => ({
-  type: 'SHOW_IS_LOADING',
-  showIsLoading: bool
+export const tonightIsLoading = (bool) => ({
+  type: 'TONIGHT_IS_LOADING',
+  tonightIsLoading: bool
+});
+
+export const thisWeekIsLoading = (bool) => ({
+  type: 'THIS_WEEK_IS_LOADING',
+  thisWeekIsLoading: bool
+});
+
+export const upcomingIsLoading = (bool) => ({
+  type: 'UPCOMING_IS_LOADING',
+  upcomingIsLoading: bool
 });
 
 export const showHasErrored = (bool) => ({
@@ -46,15 +56,12 @@ export const fetchShows = (city) => {
         try {
           dispatch(clearStore());
           dispatch(showHasErrored(false));
-          dispatch(showIsLoading(true));
           dispatch(loadTonightsShows(events.tonightsShows));
           dispatch(loadThisWeeksShows(events.thisWeeksShows));
           dispatch(loadUpcomingShows(events.upcomingShows));
-          dispatch(showIsLoading(false));
         } catch (error) {
           if (error) {
             dispatch(showHasErrored(true));
-            dispatch(showIsLoading(false));
           }
         }
       };
@@ -65,18 +72,21 @@ export const fetchShows = (city) => {
     try {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
-      dispatch(showIsLoading(true));
+      dispatch(tonightIsLoading(true));
 
       const url = query.getUrl(city);
-
       const todaysEvents = await getTodaysEvents(url);
-      dispatch(showIsLoading(false));
+      dispatch(tonightIsLoading(false));
       dispatch(loadTonightsShows(todaysEvents));
-      
+
+      dispatch(thisWeekIsLoading(true));    
       const thisWeekEvents = await getThisWeeksEvents(url, date);
+      dispatch(thisWeekIsLoading(false));
       dispatch(loadThisWeeksShows(thisWeekEvents));
-      
-      const upcomingEvents = await getUpcomingEvents(url, date);      
+
+      dispatch(upcomingIsLoading(true));
+      const upcomingEvents = await getUpcomingEvents(url, date); 
+      dispatch(upcomingIsLoading(false));     
       dispatch(loadUpcomingShows(upcomingEvents));
       
       const events = {
@@ -92,7 +102,9 @@ export const fetchShows = (city) => {
     } catch (error) {
       if (error) {
         dispatch(showHasErrored(true));
-        dispatch(showIsLoading(false));
+        dispatch(tonightIsLoading(false));
+        dispatch(thisWeekIsLoading(false));
+        dispatch(upcomingIsLoading(false));
       }
     }
   };
