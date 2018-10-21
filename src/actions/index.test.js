@@ -57,7 +57,7 @@ describe('loadUpcomingShows', () => {
 describe('showIsLoading', () => {
   it('should return a type of SHOW_IS_LOADING and payload', () => {
     const expected = { 
-      type: "SHOW_IS_LOADING",
+      type: 'SHOW_IS_LOADING',
       showIsLoading: true
     };
 
@@ -68,7 +68,7 @@ describe('showIsLoading', () => {
 describe('showHasErrored', () => {
   it('should return a type of SHOW_HAS_ERRORED and payload', () => {
     const expected = {
-      type: "SHOW_HAS_ERRORED",
+      type: 'SHOW_HAS_ERRORED',
       showHasErrored: false 
     };
 
@@ -129,7 +129,7 @@ describe('fetchShows', () => {
     }));
 
     const expectedActions = [ 
-      {"type": "CLEAR_STORE"},
+      {'type': 'CLEAR_STORE'},
       { type: 'SHOW_HAS_ERRORED', showHasErrored: false },
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_HAS_ERRORED', showHasErrored: true },
@@ -156,7 +156,7 @@ describe('fetchShows', () => {
 
   it('all actions should be called', () => {
     const expectedActions = [
-      {"type": "CLEAR_STORE"},
+      {'type': 'CLEAR_STORE'},
       { type: 'SHOW_HAS_ERRORED', showHasErrored: false }, 
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_IS_LOADING', showIsLoading: false },

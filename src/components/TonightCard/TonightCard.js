@@ -5,18 +5,20 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export const TonightCard = ({ show }) => {
+
   let { image, headlineArtist, venue, date, startTime, id } = show;
   
   return (
     <Link to={`event-details/${id}`}>
       <article className="tonight-card">
         <img 
-          src={ image ? image : defaultImage } 
-          className='artist-image' 
+          src={image} 
+          onError={(event) => event.target.src = defaultImage}
+          className="artist-image" 
           alt="artist"
         />
-        <div className='card-info'>
-          <h4 className="artist">{ headlineArtist.Name }</h4>
+        <div className="card-info">
+          <h4 className="artist">{ headlineArtist }</h4>
           <div className="venue">{ venue.name }</div>
           <div className="date">{ date }</div>
           <div className="time">{ startTime }</div>

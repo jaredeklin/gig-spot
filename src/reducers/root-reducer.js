@@ -3,7 +3,9 @@ import {
   tonightsShowReducer, 
   thisWeeksShowsReducer, 
   upcomingShowsReducer,
-  loadingReducer,
+  tonightLoadingReducer,
+  thisWeekLoadingReducer,
+  upcomingLoadingReducer,
   errorReducer
 } from './reducers';
 
@@ -11,7 +13,9 @@ export const appReducer = combineReducers({
   tonightsShows: tonightsShowReducer,
   thisWeeksShows: thisWeeksShowsReducer,
   upcomingShows: upcomingShowsReducer,
-  loading: loadingReducer,
+  tonightLoading: tonightLoadingReducer,
+  thisWeekLoading: thisWeekLoadingReducer,
+  upcomingLoading: upcomingLoadingReducer,
   error: errorReducer
 });
 
