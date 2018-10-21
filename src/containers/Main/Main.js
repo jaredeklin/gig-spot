@@ -3,9 +3,17 @@ import { TonightCard } from '../../components/TonightCard/TonightCard';
 import { connect } from 'react-redux';
 import LocationForm from '../LocationForm/LocationForm';
 import PropTypes from 'prop-types';
+import { Loading } from '../../components/Loading/Loading';
 
 export const Main = (props) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows, loading } = props;
+  const { 
+    tonightsShows, 
+    thisWeeksShows, 
+    upcomingShows,
+    tonightLoading, 
+    thisWeekLoading, 
+    upcomingLoading 
+  } = props;
   let tonightCards, thisWeekCards, upcomingCards;
   const showTonightsEvents = tonightsShows.length > 2;
   const showThisWeeksEvents = thisWeeksShows.length > 0;
@@ -40,7 +48,7 @@ export const Main = (props) => {
   return (
       
     <div className="main">
-      { !loading && 
+      { !tonightLoading && 
           <div className="change-location">
             <p>Update location:</p>
             <LocationForm id="main-form" />
@@ -59,6 +67,7 @@ export const Main = (props) => {
             </section>
           </div>
           }
+          { thisWeekLoading && <Loading message="Finding this weeks shows..."/>}
           { showThisWeeksEvents &&
           <div>
             <h2 className="event-happening-when-text">This Week:</h2>
@@ -69,6 +78,7 @@ export const Main = (props) => {
             </section>
           </div>
           }
+          {upcomingLoading && <Loading message="Finding upcoming shows..." />}
           { 
             showUpcomingEvents &&
               <div>
@@ -106,13 +116,22 @@ export const Main = (props) => {
 };
 
 export const mapStateToProps = (state) => {
-  const { tonightsShows, thisWeeksShows, upcomingShows, loading } = state;
+  const { 
+    tonightsShows, 
+    thisWeeksShows, 
+    upcomingShows, 
+    tonightLoading, 
+    thisWeekLoading, 
+    upcomingLoading 
+  } = state;
   
   return {
     tonightsShows,
     thisWeeksShows,
     upcomingShows,
-    loading
+    tonightLoading,
+    thisWeekLoading,
+    upcomingLoading
   };
 };
 
@@ -122,5 +141,7 @@ Main.propTypes = {
   tonightsShows: PropTypes.array,
   thisWeeksShows: PropTypes.array,
   upcomingShows: PropTypes.array,
-  loading: PropTypes.bool
+  tonightLoading: PropTypes.bool,
+  thisWeekLoading: PropTypes.bool,
+  upcomingLoading: PropTypes.bool
 };

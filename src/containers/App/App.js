@@ -28,7 +28,7 @@ export class App extends Component {
   }
 
   render() {
-    const { location, loading, error } = this.props;
+    const { location, tonightLoading, error } = this.props;
     
     return <div className="App">
       {location.pathname !== '/' && <header className="App-header">
@@ -48,7 +48,7 @@ export class App extends Component {
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/main" component={Main} />
 
-      {loading && <Loading message="Finding local shows...." />}
+      {tonightLoading && <Loading message="Finding local shows...." />}
       {error && <Error />}
 
       <Route path={'/event-details/:id'} render={({ match }) => {
@@ -69,7 +69,7 @@ export const mapStateToProps = (state) => {
     tonightsShows, 
     thisWeeksShows, 
     upcomingShows, 
-    loading, 
+    tonightLoading, 
     error 
   } = state;
 
@@ -77,7 +77,7 @@ export const mapStateToProps = (state) => {
     tonightsShows,
     thisWeeksShows,
     upcomingShows,
-    loading,
+    tonightLoading,
     error
   };
 };
@@ -92,7 +92,7 @@ App.propTypes = {
   tonightsShows: PropTypes.array,
   thisWeeksShows: PropTypes.array,
   upcomingShows: PropTypes.array,
-  loading: PropTypes.bool,
+  tonightLoading: PropTypes.bool,
   error: PropTypes.bool,
   location: PropTypes.object,
   fetchShows: PropTypes.func

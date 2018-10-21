@@ -194,7 +194,7 @@ button {
 
 .loading {
   display: block;
-  margin: auto;
+  margin: 30px auto;
   width: 320px;
   text-align: center;
 }
