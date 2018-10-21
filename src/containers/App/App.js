@@ -18,7 +18,7 @@ export class App extends Component {
     return allShows.find(show => show.id === match.params.id);
   }
 
-  componentDidMount = () => {
+  componentDidMount = () => {    
     const { fetchShows } = this.props;
     
     if (localStorage.events) {

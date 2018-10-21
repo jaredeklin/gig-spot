@@ -1,4 +1,4 @@
-import { eventfulApiKey } from './apiKey';
+const eventfulApiKey = process.env.REACT_APP_EVENTFUL_KEY;
 
 export class Query {
   getUrl = (city) => {

@@ -1,5 +1,7 @@
-import { lastFmApiKey } from './apiKey';
+// import { lastFmApiKey } from './apiKey';
 import { cleanImage } from './cleanImage';
+
+const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
 
 export const fetchImage = (concerts) => {
   const promises = concerts.map( async (concert) => {
