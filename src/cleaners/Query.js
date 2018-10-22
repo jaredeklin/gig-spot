@@ -1,7 +1,7 @@
 const eventfulApiKey = process.env.REACT_APP_EVENTFUL_KEY;
 
 export class Query {
-  getUrl = (city) => {
+  getUrl = city => {
     const location = `&location=${city}`;
     const images = '&image_sizes=large,block250';
     const sortOrder = '&sort_order=popularity';
@@ -15,5 +15,5 @@ export class Query {
     const url = `${proxyUrl}${rootUrl}${query1}${query2}`;
 
     return url;
-  }
+  };
 }

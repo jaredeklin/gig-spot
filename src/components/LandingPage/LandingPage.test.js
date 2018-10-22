@@ -1,6 +1,6 @@
 import React from 'react';
-import { LandingPage } from './LandingPage';
 import { shallow } from 'enzyme';
+import { LandingPage } from './LandingPage';
 
 describe('LandingPage', () => {
   it('should match the snapshot', () => {

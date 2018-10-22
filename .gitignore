@@ -11,6 +11,7 @@
 
 # misc
 /.vscode
+.prettierrc
 .DS_Store
 .env
 .env.local

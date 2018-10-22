@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import { 
-  tonightsShowReducer, 
-  thisWeeksShowsReducer, 
+import {
+  tonightsShowReducer,
+  thisWeeksShowsReducer,
   upcomingShowsReducer,
   tonightLoadingReducer,
   thisWeekLoadingReducer,
@@ -22,9 +22,8 @@ export const appReducer = combineReducers({
 });
 
 export const rootReducer = (state, action) => {
-
   if (action.type === 'CLEAR_STORE') {
-    state = undefined;  
+    return appReducer(undefined, action);
   }
 
   return appReducer(state, action);

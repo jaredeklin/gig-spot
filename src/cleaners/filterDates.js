@@ -1,4 +1,4 @@
-export const filterDates = (shows) => {
+export const filterDates = shows => {
   const today = new Date().toDateString();
   const tom = new Date().toDateString();
   const tommorrow = new Date(tom);
@@ -7,36 +7,35 @@ export const filterDates = (shows) => {
   tommorrow.setDate(tommorrow.getDate() + 1);
   nextWeek.setDate(nextWeek.getDate() + 7);
 
-  const todaysShows = shows.filter(event => {
-    const eventDate = new Date(event.date).toDateString();
+  const todaysShows = shows
+    .filter(event => {
+      const eventDate = new Date(event.date).toDateString();
 
-    return eventDate === today;
-  }).map(show => {
-    return { ...show, date: cleanDate(show.date) };
-  });
+      return eventDate === today;
+    })
+    .map(show => ({ ...show, date: cleanDate(show.date) }));
 
-  const thisWeeksShows = shows.filter(event => {
-    const eventDate = new Date(event.date);
+  const thisWeeksShows = shows
+    .filter(event => {
+      const eventDate = new Date(event.date);
 
-    return eventDate >= tommorrow && eventDate <= nextWeek;
-  }).map(show => {
-    return { ...show, date: cleanDate(show.date) };
-  });
+      return eventDate >= tommorrow && eventDate <= nextWeek;
+    })
+    .map(show => ({ ...show, date: cleanDate(show.date) }));
 
-  const upcomingShows = shows.filter(event => {
-    const eventDate = new Date(event.date);
+  const upcomingShows = shows
+    .filter(event => {
+      const eventDate = new Date(event.date);
 
-    return eventDate > nextWeek;
-  }).map(show => {
-    return { ...show, date: cleanDate(show.date) };
-  });
+      return eventDate > nextWeek;
+    })
+    .map(show => ({ ...show, date: cleanDate(show.date) }));
 
-  return [todaysShows, thisWeeksShows, upcomingShows];  
+  return [todaysShows, thisWeeksShows, upcomingShows];
 };
 
-const cleanDate = (date) => {
-  return new Date(date).toLocaleDateString( [], {
+const cleanDate = date =>
+  new Date(date).toLocaleDateString([], {
     month: 'short',
     day: 'numeric'
   });
-};

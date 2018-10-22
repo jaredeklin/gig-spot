@@ -7,12 +7,12 @@ import PropTypes from 'prop-types';
 export class LocationForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       location: ''
-    }; 
+    };
   }
 
-  handleChange = (event) => {
+  handleChange = event => {
     const { name, value } = event.target;
 
     this.setState({
@@ -20,7 +20,7 @@ export class LocationForm extends Component {
     });
   };
 
-  handleSubmit = async (event) => {
+  handleSubmit = async event => {
     event.preventDefault();
     const { fetchShows, history } = this.props;
 
@@ -33,12 +33,12 @@ export class LocationForm extends Component {
     const { currentLocation } = this.props;
 
     return (
-      <form 
-        onSubmit={this.handleSubmit} 
-        className="location-form" 
+      <form
+        onSubmit={this.handleSubmit}
+        className="location-form"
         id={this.props.id}
       >
-        <input 
+        <input
           type="text"
           name="location"
           value={this.state.location}
@@ -51,11 +51,16 @@ export class LocationForm extends Component {
   }
 }
 
-export const mapDispatchToProps = (dispatch) => ({
-  fetchShows: (shows) => (dispatch(fetchShows(shows)))
+export const mapDispatchToProps = dispatch => ({
+  fetchShows: shows => dispatch(fetchShows(shows))
 });
 
-export default withRouter(connect(null, mapDispatchToProps)(LocationForm));
+export default withRouter(
+  connect(
+    null,
+    mapDispatchToProps
+  )(LocationForm)
+);
 
 LocationForm.propTypes = {
   history: PropTypes.object,

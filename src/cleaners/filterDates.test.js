@@ -1,11 +1,7 @@
 import { filterDates } from './filterDates';
-import { 
-  mockFilterDatesData, 
-  mockExpectedFilterDates 
-} from './mockData';
+import { mockFilterDatesData, mockExpectedFilterDates } from './mockData';
 
-var MockDate = require('mockdate');
-
+const MockDate = require('mockdate');
 
 describe('filterDates', () => {
   it('should filter the shows into date categories', () => {
@@ -13,4 +9,3 @@ describe('filterDates', () => {
     expect(filterDates(mockFilterDatesData)).toEqual(mockExpectedFilterDates);
   });
 });
-
