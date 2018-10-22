@@ -5,8 +5,8 @@ import { fetchShows } from '../../actions';
 import PropTypes from 'prop-types';
 
 export class LocationForm extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { 
       location: ''
     }; 
@@ -30,6 +30,8 @@ export class LocationForm extends Component {
   };
 
   render() {
+    const { currentLocation } = this.props;
+
     return (
       <form 
         onSubmit={this.handleSubmit} 
@@ -41,7 +43,7 @@ export class LocationForm extends Component {
           name="location"
           value={this.state.location}
           onChange={this.handleChange}
-          placeholder="City"
+          placeholder={currentLocation ? currentLocation : 'City'}
         />
         <button>Submit</button>
       </form>
@@ -57,5 +59,6 @@ export default withRouter(connect(null, mapDispatchToProps)(LocationForm));
 
 LocationForm.propTypes = {
   history: PropTypes.object,
-  id: PropTypes.string
+  id: PropTypes.string,
+  currentLocation: PropTypes.string
 };

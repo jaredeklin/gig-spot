@@ -12,7 +12,8 @@ export const Main = (props) => {
     upcomingShows,
     tonightLoading, 
     thisWeekLoading, 
-    upcomingLoading 
+    upcomingLoading,
+    location 
   } = props;
   let tonightCards, thisWeekCards, upcomingCards;
   const showTonightsEvents = tonightsShows.length > 2;
@@ -45,74 +46,43 @@ export const Main = (props) => {
     });
   }
 
-  return (
-      
-    <div className="main">
-      { !tonightLoading && 
-          <div className="change-location">
-            <p>Update location:</p>
-            <LocationForm id="main-form" />
-          </div>
-      }
-      {
-        (showTonightsEvents || showThisWeeksEvents || showUpcomingEvents) &&
-        <div className="all-shows">
-          { showTonightsEvents &&
-          <div className="tonight-outer">
-            <h2 className="event-happening-when-text">Tonight:</h2>
-            <section className="tonights-shows">
-              <div className="shows-inner">
-                { tonightCards }
-              </div>
-            </section>
-          </div>
-          }
-          { thisWeekLoading && <Loading message="Finding this weeks shows..."/>}
-          { showThisWeeksEvents &&
-          <div>
-            <h2 className="event-happening-when-text">This Week:</h2>
-            <section className="shows">
-              <div className="shows-inner">
-                { thisWeekCards }
-              </div>
-            </section>
-          </div>
-          }
-          {upcomingLoading && <Loading message="Finding upcoming shows..." />}
-          { 
-            showUpcomingEvents &&
-              <div>
-                <h2 className="event-happening-when-text">Upcoming:</h2>
-                <section className="shows">
-                  <div className="shows-inner">
-                    { upcomingCards }
-                  </div>
-                </section>
-              </div>
-          }
-          <div className="icons">            
-            <a href="http://eventful.com/">
-              <img 
-                src="http://api.eventful.com/images/powered/eventful_139x44.gif"
-                alt="Local Events, Concerts, Tickets" 
-                className="eventful" />
-            </a>
+  return <div className="main">
+    {!tonightLoading && <div className="change-location">
+      <p>Update location:</p>
+      <LocationForm id="main-form" currentLocation={location}/>
+    </div>}
+    {(showTonightsEvents || showThisWeeksEvents || showUpcomingEvents) && <div className="all-shows">
+      {showTonightsEvents && <div className="tonight-outer">
+        <h2 className="event-happening-when-text">Tonight:</h2>
+        <section className="tonights-shows">
+          <div className="shows-inner">{tonightCards}</div>
+        </section>
+      </div>}
+      {thisWeekLoading && <Loading message="Finding this weeks shows..." />}
+      {showThisWeeksEvents && <div>
+        <h2 className="event-happening-when-text">This Week:</h2>
+        <section className="shows">
+          <div className="shows-inner">{thisWeekCards}</div>
+        </section>
+      </div>}
+      {upcomingLoading && <Loading message="Finding upcoming shows..." />}
+      {showUpcomingEvents && <div>
+        <h2 className="event-happening-when-text">Upcoming:</h2>
+        <section className="shows">
+          <div className="shows-inner">{upcomingCards}</div>
+        </section>
+      </div>}
+      <div className="icons">
+        <a href="http://eventful.com/">
+          <img src="http://api.eventful.com/images/powered/eventful_139x44.gif" alt="Local Events, Concerts, Tickets" className="eventful" />
+        </a>
 
-            <a 
-              href="https://www.last.fm/home" 
-              target="_top" 
-              title="Last FM"
-            ><img 
-                src= "https://cdn.last.fm/flatness/badges/lastfm_red.gif" 
-                alt="Last FM" 
-                className="last-fm"
-                border="0" />
-            </a>
-          </div>
-        </div>
-      }
-    </div>
-  );
+        <a href="https://www.last.fm/home" target="_top" title="Last FM">
+          <img src="https://cdn.last.fm/flatness/badges/lastfm_red.gif" alt="Last FM" className="last-fm" border="0" />
+        </a>
+      </div>
+    </div>}
+  </div>;
 };
 
 export const mapStateToProps = (state) => {
@@ -122,7 +92,8 @@ export const mapStateToProps = (state) => {
     upcomingShows, 
     tonightLoading, 
     thisWeekLoading, 
-    upcomingLoading 
+    upcomingLoading,
+    location 
   } = state;
   
   return {
@@ -131,7 +102,8 @@ export const mapStateToProps = (state) => {
     upcomingShows,
     tonightLoading,
     thisWeekLoading,
-    upcomingLoading
+    upcomingLoading,
+    location
   };
 };
 
@@ -143,5 +115,6 @@ Main.propTypes = {
   upcomingShows: PropTypes.array,
   tonightLoading: PropTypes.bool,
   thisWeekLoading: PropTypes.bool,
-  upcomingLoading: PropTypes.bool
+  upcomingLoading: PropTypes.bool,
+  location: PropTypes.string
 };
