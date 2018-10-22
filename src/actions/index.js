@@ -20,6 +20,11 @@ export const loadUpcomingShows = (shows) => ({
   shows
 });
 
+export const updateLocation = (city) => ({
+  type: 'UPDATE_LOCATION',
+  city
+});
+
 export const tonightIsLoading = (bool) => ({
   type: 'TONIGHT_IS_LOADING',
   tonightIsLoading: bool
@@ -56,6 +61,7 @@ export const fetchShows = (city) => {
         try {
           dispatch(clearStore());
           dispatch(showHasErrored(false));
+          dispatch(updateLocation(city));
           dispatch(loadTonightsShows(events.tonightsShows));
           dispatch(loadThisWeeksShows(events.thisWeeksShows));
           dispatch(loadUpcomingShows(events.upcomingShows));
@@ -73,6 +79,7 @@ export const fetchShows = (city) => {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
       dispatch(tonightIsLoading(true));
+      dispatch(updateLocation(city));
 
       const url = query.getUrl(city);
       const todaysEvents = await getTodaysEvents(url);

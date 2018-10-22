@@ -31,6 +31,16 @@ export const upcomingShowsReducer = (state = [], action) => {
   }
 };
 
+export const updateLocationReducer = (state = '', action) => {
+  switch (action.type) {
+  case 'UPDATE_LOCATION':
+    return action.city;
+  
+  default:
+    return state;
+  }
+};
+
 export const tonightLoadingReducer = (state = false, action) => {  
   switch (action.type) {
 

@@ -6,10 +6,12 @@ import {
   tonightLoadingReducer,
   thisWeekLoadingReducer,
   upcomingLoadingReducer,
-  errorReducer
+  errorReducer,
+  updateLocationReducer
 } from './reducers';
 
 export const appReducer = combineReducers({
+  location: updateLocationReducer,
   tonightsShows: tonightsShowReducer,
   thisWeeksShows: thisWeeksShowsReducer,
   upcomingShows: upcomingShowsReducer,
