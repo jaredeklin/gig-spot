@@ -12,8 +12,16 @@ export const fetchImage = (concerts) => {
     try {
       const response = await fetch(`${baseUrl}${keyUrl}`);
       const artistData = await response.json();
-      
-      return ({ ...concert, image: cleanImage(artistData, concert.image) });
+      const image = cleanImage(artistData, concert.image);
+      const cleanBio = (artistData) => {
+        if (artistData.artist) {
+          return artistData.artist.bio.content.split(' <a href=')[0];
+        }
+        return null;
+      };
+      const bio = cleanBio(artistData);
+
+      return ({ ...concert, image, bio });
 
     } catch (error) {
       console.log(error); //eslint-disable-line
@@ -23,3 +31,5 @@ export const fetchImage = (concerts) => {
 
   return Promise.all(promises); 
 };
+
+
