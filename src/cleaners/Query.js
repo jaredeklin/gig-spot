@@ -8,10 +8,11 @@ export class Query {
     const resultLength = '&page_size=25';
     const category = '&category=music';
     const includes = '&include=categories,popularity,tickets,links';
+    const proxyUrl = 'https://salty-waters-47393.herokuapp.com/';
     const rootUrl = 'http://api.eventful.com/json/events/search?';
     const query1 = `app_key=${eventfulApiKey}${location}${category}${images}`;
     const query2 = `${sortOrder}${resultLength}${includes}`;
-    const url = `${rootUrl}${query1}${query2}`;
+    const url = `${proxyUrl}${rootUrl}${query1}${query2}`;
 
     return url;
   }
