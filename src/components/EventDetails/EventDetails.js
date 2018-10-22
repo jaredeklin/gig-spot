@@ -4,6 +4,7 @@ import defaultImage from '../../images/black-woven.jpg';
 import './eventDetails.css';
 
 export const EventDetails = ({ concert }) => { 
+  window.scrollTo(0, 0);
   const { 
     headlineArtist, 
     supportArtists, 
@@ -11,26 +12,22 @@ export const EventDetails = ({ concert }) => {
     image, 
     venue, 
     startTime, 
-    tickets
+    tickets,
+    bio
   } = concert;
 
   const allSupportArtists = supportArtists.map(artist => {
     return (<h4 className="support" key={artist+Date.now()}>{artist}</h4>);
   });
 
-  return (
+  return <div>
     <article className="event-details">
-      <img 
-        src={image} 
-        onError={event => (event.target.src = defaultImage)} 
-        className="detail-img" 
-        alt="artist" 
-      />
+      <img src={image} onError={event => (event.target.src = defaultImage)} className="detail-img" alt="artist" />
       <div className="detail-right">
         <h2 className="headliner">{headlineArtist}</h2>
         <div className="detail-date">{date}</div>
         {supportArtists.length > 0 && <div className="support">
-          With:
+              With:
           {allSupportArtists}
         </div>}
         <div className="detail-venue">
@@ -47,7 +44,11 @@ export const EventDetails = ({ concert }) => {
         </a>}
       </div>
     </article>
-  );
+    {bio && <article className="bio-section">
+      <h3>Bio:</h3>
+      <p className="bio-text">{bio}</p>
+    </article>}
+  </div>;
 };
 
 EventDetails.propTypes = {
