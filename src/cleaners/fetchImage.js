@@ -14,7 +14,7 @@ export const fetchImage = concerts => {
       const image = cleanImage(artistData, concert.image);
       const cleanBio = artistData => {
         if (artistData.artist) {
-          return artistData.artist.bio.content.split(' <a href=')[0];
+          return artistData.artist.bio.summary.split(' <a href=')[0];
         }
         return null;
       };
@@ -23,7 +23,7 @@ export const fetchImage = concerts => {
       return { ...concert, image, bio };
     } catch (error) {
       console.log(error); //eslint-disable-line
-      return concert;
+      return { ...concert, bio: null };
     }
   });
 

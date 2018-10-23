@@ -28,6 +28,7 @@ export const cleanConcertData = concerts => {
       categories,
       links
     } = show;
+
     const venue = {
       name: show.venue_name,
       id: show.venue_id,
