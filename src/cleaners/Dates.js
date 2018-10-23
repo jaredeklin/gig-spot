@@ -1,5 +1,4 @@
 export class Dates {
-
   getDates() {
     const today = new Date().toLocaleDateString([], {
       month: 'short',
@@ -15,19 +14,21 @@ export class Dates {
     upcoming.setDate(upcoming.getDate() + 8);
     upcomingEnd.setMonth(upcomingEnd.getMonth() + 3);
 
-    return { 
+    return {
       today,
       tommorrow: this.formatDate(tommorrow),
       nextWeek: this.formatDate(nextWeek),
-      upcoming: this.formatDate(upcoming), 
+      upcoming: this.formatDate(upcoming),
       upcomingEnd: this.formatDate(upcomingEnd)
     };
   }
 
-  formatDate = (date) => {
-    return date
-      .toISOString()
-      .substr(0, 10)
-      .replace(/[-]/gi, '') + '00';
+  formatDate = date => {
+    return (
+      date
+        .toISOString()
+        .substr(0, 10)
+        .replace(/[-]/gi, '') + '00'
+    );
   };
 }

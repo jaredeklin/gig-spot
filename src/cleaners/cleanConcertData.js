@@ -3,8 +3,7 @@ import { CleanArtists } from './cleanArtists';
 
 const cleanArtists = new CleanArtists();
 
-export const cleanConcertData = (concerts) => {
-
+export const cleanConcertData = concerts => {
   concerts = concerts.filter(concert => {
     const { title, performers } = concert;
 
@@ -18,9 +17,17 @@ export const cleanConcertData = (concerts) => {
     return true;
   });
 
-  
   return concerts.reduce((concertArray, show) => {
-    const { id, popularity, tickets, description, image, start_time, categories, links} = show;    
+    const {
+      id,
+      popularity,
+      tickets,
+      description,
+      image,
+      start_time,
+      categories,
+      links
+    } = show;
     const venue = {
       name: show.venue_name,
       id: show.venue_id,
@@ -38,7 +45,7 @@ export const cleanConcertData = (concerts) => {
     const date = new Date(start_time).toLocaleDateString([], {
       month: 'short',
       day: 'numeric'
-    });  
+    });
     const startTime = cleanTime(start_time);
     const concertData = {
       headlineArtist,
@@ -55,23 +62,21 @@ export const cleanConcertData = (concerts) => {
     };
 
     return [...concertArray, concertData];
-  }, []); 
+  }, []);
 };
 
-
 const cleanTickets = (links, tickets) => {
-  
   if (links) {
     const preferred = links.link.find(ticket => ticket.url.includes('axs.com'));
 
     if (preferred) {
       return preferred.url;
     }
-  } 
+  }
 
   if (tickets) {
     return tickets.link[0].url;
-  } 
+  }
 
   return null;
 };

@@ -89,6 +89,15 @@
   box-shadow: 0 0 3px 0;
 }
 
+.bio-section {
+  width: 875px;
+  margin: 0 auto 50px auto;
+}
+
+.bio-text {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 900px) {
 
   header {
@@ -104,6 +113,10 @@
     grid-template-rows: 300px 80px;
     width: 600px;
     max-height: unset;
+  }
+
+  .bio-section {
+    width: 600px;
   }
 
   .detail-img {
@@ -152,6 +165,10 @@
     grid-template-rows: 300px auto;
     width: 300px;
     margin-top: 25px;
+  }
+
+  .bio-section {
+    width: 300px;
   }
 
   .detail-right {

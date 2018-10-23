@@ -1,15 +1,15 @@
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
 import * as actions from './index';
 import { jambaseApiKey } from '../cleaners/apiKey';
 import { fetchImage } from '../cleaners/fetchImage';
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { filterDates } from '../cleaners/filterDates';
-import { 
-  mockFetchShowsData, 
+import {
+  mockFetchShowsData,
   mockFetchImageCallData,
   mockFilterDataCall
 } from '../cleaners/mockData';
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -20,7 +20,7 @@ jest.mock('../cleaners/filterDates');
 
 describe('loadTonightsShows', () => {
   it('should return a type of LOAD_TONIGHTS_SHOWS and payload', () => {
-    const shows = [{artist: 'someArtist', venue: 'the vault'}];
+    const shows = [{ artist: 'someArtist', venue: 'the vault' }];
     const expected = {
       type: 'LOAD_TONIGHTS_SHOWS',
       shows
@@ -32,7 +32,7 @@ describe('loadTonightsShows', () => {
 
 describe('loadThisWeeksShows', () => {
   it('should return a type of LOAD_THIS_WEEKS_SHOWS and payload', () => {
-    const shows = [{artist: 'someArtist', venue: 'the vault'}];
+    const shows = [{ artist: 'someArtist', venue: 'the vault' }];
     const expected = {
       type: 'LOAD_THIS_WEEKS_SHOWS',
       shows
@@ -44,7 +44,7 @@ describe('loadThisWeeksShows', () => {
 
 describe('loadUpcomingShows', () => {
   it('should return a type of LOAD_UPCOMING_SHOWS and payload', () => {
-    const shows = [{artist: 'someArtist', venue: 'the vault'}];
+    const shows = [{ artist: 'someArtist', venue: 'the vault' }];
     const expected = {
       type: 'LOAD_UPCOMING_SHOWS',
       shows
@@ -56,7 +56,7 @@ describe('loadUpcomingShows', () => {
 
 describe('showIsLoading', () => {
   it('should return a type of SHOW_IS_LOADING and payload', () => {
-    const expected = { 
+    const expected = {
       type: 'SHOW_IS_LOADING',
       showIsLoading: true
     };
@@ -69,7 +69,7 @@ describe('showHasErrored', () => {
   it('should return a type of SHOW_HAS_ERRORED and payload', () => {
     const expected = {
       type: 'SHOW_HAS_ERRORED',
-      showHasErrored: false 
+      showHasErrored: false
     };
 
     expect(actions.showHasErrored(false)).toEqual(expected);
@@ -92,10 +92,12 @@ describe('fetchShows', () => {
   const store = mockStore({});
 
   beforeEach(() => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockFetchShowsData)
-    }));
+    window.fetch = jest.fn().mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockFetchShowsData)
+      })
+    );
 
     store.clearActions();
     store.dispatch(actions.fetchShows(zipCode));
@@ -104,17 +106,15 @@ describe('fetchShows', () => {
   it('should call fetch with correct url', () => {
     const baseUrl = 'http://api.jambase.com/events?zipCode';
     const url = `${baseUrl}=${zipCode}&page=0&api_key=${jambaseApiKey}`;
- 
+
     expect(window.fetch).toHaveBeenCalledWith(url);
   });
 
   it('cleanConcertData should be called with correct params', () => {
-
     expect(cleanConcertData).toHaveBeenCalled();
   });
 
   it('fetchImage should be called with correct params', () => {
-
     expect(fetchImage).toHaveBeenCalledWith(mockFetchImageCallData);
   });
 
@@ -123,17 +123,19 @@ describe('fetchShows', () => {
   });
 
   it('should fire proper actions if status is not ok', async () => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-      ok: false,
-      json: () => Promise.resolve(mockFetchShowsData)
-    }));
+    window.fetch = jest.fn().mockImplementation(() =>
+      Promise.resolve({
+        ok: false,
+        json: () => Promise.resolve(mockFetchShowsData)
+      })
+    );
 
-    const expectedActions = [ 
-      {'type': 'CLEAR_STORE'},
+    const expectedActions = [
+      { type: 'CLEAR_STORE' },
       { type: 'SHOW_HAS_ERRORED', showHasErrored: false },
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_HAS_ERRORED', showHasErrored: true },
-      { type: 'SHOW_IS_LOADING', showIsLoading: false } 
+      { type: 'SHOW_IS_LOADING', showIsLoading: false }
     ];
 
     store.clearActions();
@@ -144,10 +146,12 @@ describe('fetchShows', () => {
   });
 
   it('should throw an error if a bad response is returned', async () => {
-    window.fetch = jest.fn(() => Promise.resolve({
-      ok: false,
-      statusText: 'you have been a very bad boy'
-    }));
+    window.fetch = jest.fn(() =>
+      Promise.resolve({
+        ok: false,
+        statusText: 'you have been a very bad boy'
+      })
+    );
 
     const expected = Promise.resolve(Error('you have been a very bad boy'));
 
@@ -156,13 +160,13 @@ describe('fetchShows', () => {
 
   it('all actions should be called', () => {
     const expectedActions = [
-      {'type': 'CLEAR_STORE'},
-      { type: 'SHOW_HAS_ERRORED', showHasErrored: false }, 
+      { type: 'CLEAR_STORE' },
+      { type: 'SHOW_HAS_ERRORED', showHasErrored: false },
       { type: 'SHOW_IS_LOADING', showIsLoading: true },
       { type: 'SHOW_IS_LOADING', showIsLoading: false },
       { type: 'LOAD_TONIGHTS_SHOWS', shows: 1 },
       { type: 'LOAD_THIS_WEEKS_SHOWS', shows: 2 },
-      { type: 'LOAD_UPCOMING_SHOWS', shows: 3 } 
+      { type: 'LOAD_UPCOMING_SHOWS', shows: 3 }
     ];
 
     const actualActions = store.getActions();

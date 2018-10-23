@@ -5,14 +5,14 @@ import { fetchShows } from '../../actions';
 import PropTypes from 'prop-types';
 
 export class LocationForm extends Component {
-  constructor() {
-    super();
-    this.state = { 
+  constructor(props) {
+    super(props);
+    this.state = {
       location: ''
-    }; 
+    };
   }
 
-  handleChange = (event) => {
+  handleChange = event => {
     const { name, value } = event.target;
 
     this.setState({
@@ -20,7 +20,7 @@ export class LocationForm extends Component {
     });
   };
 
-  handleSubmit = async (event) => {
+  handleSubmit = async event => {
     event.preventDefault();
     const { fetchShows, history } = this.props;
 
@@ -30,18 +30,20 @@ export class LocationForm extends Component {
   };
 
   render() {
+    const { currentLocation } = this.props;
+
     return (
-      <form 
-        onSubmit={this.handleSubmit} 
-        className="location-form" 
+      <form
+        onSubmit={this.handleSubmit}
+        className="location-form"
         id={this.props.id}
       >
-        <input 
+        <input
           type="text"
           name="location"
           value={this.state.location}
           onChange={this.handleChange}
-          placeholder="City"
+          placeholder={currentLocation ? currentLocation : 'City'}
         />
         <button>Submit</button>
       </form>
@@ -49,13 +51,19 @@ export class LocationForm extends Component {
   }
 }
 
-export const mapDispatchToProps = (dispatch) => ({
-  fetchShows: (shows) => (dispatch(fetchShows(shows)))
+export const mapDispatchToProps = dispatch => ({
+  fetchShows: shows => dispatch(fetchShows(shows))
 });
 
-export default withRouter(connect(null, mapDispatchToProps)(LocationForm));
+export default withRouter(
+  connect(
+    null,
+    mapDispatchToProps
+  )(LocationForm)
+);
 
 LocationForm.propTypes = {
   history: PropTypes.object,
-  id: PropTypes.string
+  id: PropTypes.string,
+  currentLocation: PropTypes.string
 };

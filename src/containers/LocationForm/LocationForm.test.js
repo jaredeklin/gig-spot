@@ -4,7 +4,10 @@ import { LocationForm, mapDispatchToProps } from './LocationForm';
 
 describe('LocationForm', () => {
   let wrapper;
-  let mockEvent, mockFetchShows, mockHistory, mockState;
+  let mockEvent;
+  let mockFetchShows;
+  let mockHistory;
+  let mockState;
 
   beforeEach(() => {
     mockEvent = { preventDefault: jest.fn() };
@@ -12,12 +15,9 @@ describe('LocationForm', () => {
     mockHistory = { push: jest.fn() };
     mockState = { zipCode: 80203 };
 
-
     wrapper = shallow(
-      <LocationForm 
-        fetchShows={mockFetchShows} 
-        history={mockHistory}
-      />) ;     
+      <LocationForm fetchShows={mockFetchShows} history={mockHistory} />
+    );
   });
 
   it('should match the snapshot', () => {
@@ -25,9 +25,9 @@ describe('LocationForm', () => {
   });
 
   it('handleChange should set the state', () => {
-    let mockEvent = { target: { value: 80203, name: 'zipCode' }};
+    mockEvent = { target: { value: 80203, name: 'zipCode' } };
     const expected = { zipCode: 80203 };
-    
+
     wrapper.instance().handleChange(mockEvent);
     expect(wrapper.state()).toEqual(expected);
   });
@@ -41,7 +41,6 @@ describe('LocationForm', () => {
   });
 
   describe('handleSubmit', () => {
-
     it('expect fetchShows to have been called with correct params', () => {
       wrapper.setState(mockState);
       wrapper.instance().handleSubmit(mockEvent);

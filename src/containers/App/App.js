@@ -11,66 +11,74 @@ import { Loading } from '../../components/Loading/Loading';
 import { Error } from '../../components/Error/Error';
 
 export class App extends Component {
-
-  findMatch = (match) => {
+  findMatch = match => {
     const { tonightsShows, thisWeeksShows, upcomingShows } = this.props;
     const allShows = [...tonightsShows, ...thisWeeksShows, ...upcomingShows];
     return allShows.find(show => show.id === match.params.id);
-  }
+  };
 
-  componentDidMount = () => {    
+  componentDidMount = () => {
     const { fetchShows } = this.props;
-    
+
     if (localStorage.events) {
       const events = getStorage();
       fetchShows(events.city);
     }
-  }
+  };
 
   render() {
     const { location, tonightLoading, error } = this.props;
-    
-    return <div className="App">
-      {location.pathname !== '/' && <header className="App-header">
-        <h1>
-          <NavLink to="/" className="header-link">
+
+    return (
+      <div className="App">
+        {location.pathname !== '/' && (
+          <header className="App-header">
+            <h1>
+              <NavLink to="/" className="header-link">
                 Gig Spot
-          </NavLink>
-        </h1>
+              </NavLink>
+            </h1>
 
-        {location.pathname.includes('/event-details') && <div className="home">
-          <NavLink to="../main" className="home-button">
+            {location.pathname.includes('/event-details') && (
+              <div className="home">
+                <NavLink to="../main" className="home-button">
                   Home
-          </NavLink>
-        </div>}
-      </header>}
+                </NavLink>
+              </div>
+            )}
+          </header>
+        )}
 
-      <Route exact path="/" component={LandingPage} />
-      <Route exact path="/main" component={Main} />
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/main" component={Main} />
 
-      {tonightLoading && <Loading message="Finding local shows...." />}
-      {error && <Error />}
+        {tonightLoading && <Loading message="Finding local shows...." />}
+        {error && <Error />}
 
-      <Route path={'/event-details/:id'} render={({ match }) => {
-        const concert = this.findMatch(match);
+        <Route
+          path={'/event-details/:id'}
+          render={({ match }) => {
+            const concert = this.findMatch(match);
 
-        if (concert) {
-          return <EventDetails concert={concert} />;
-        }
+            if (concert) {
+              return <EventDetails concert={concert} />;
+            }
 
-        return null;
-      }} />
-    </div>;
+            return null;
+          }}
+        />
+      </div>
+    );
   }
 }
 
-export const mapStateToProps = (state) => {
-  const { 
-    tonightsShows, 
-    thisWeeksShows, 
-    upcomingShows, 
-    tonightLoading, 
-    error 
+export const mapStateToProps = state => {
+  const {
+    tonightsShows,
+    thisWeeksShows,
+    upcomingShows,
+    tonightLoading,
+    error
   } = state;
 
   return {
@@ -86,7 +94,12 @@ export const mapDispatchToProps = dispatch => ({
   fetchShows: shows => dispatch(fetchShows(shows))
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+);
 
 App.propTypes = {
   tonightsShows: PropTypes.array,
