@@ -54,14 +54,36 @@ describe('loadUpcomingShows', () => {
   });
 });
 
-describe('showIsLoading', () => {
-  it('should return a type of SHOW_IS_LOADING and payload', () => {
+describe('tonightIsLoading', () => {
+  it('should return a type of TONIGHT_IS_LOADING and payload', () => {
     const expected = {
-      type: 'SHOW_IS_LOADING',
-      showIsLoading: true
+      type: 'TONIGHT_IS_LOADING',
+      tonightIsLoading: true
     };
 
-    expect(actions.showIsLoading(true)).toEqual(expected);
+    expect(actions.tonightIsLoading(true)).toEqual(expected);
+  });
+});
+
+describe('thisWeekIsLoading', () => {
+  it('should return a type of THIS_WEEK_IS_LOADING and payload', () => {
+    const expected = {
+      type: 'THIS_WEEK_IS_LOADING',
+      thisWeekIsLoading: true
+    };
+
+    expect(actions.thisWeekIsLoading(true)).toEqual(expected);
+  });
+});
+
+describe('upcomingIsLoading', () => {
+  it('should return a type of UPCOMING_IS_LOADING and payload', () => {
+    const expected = {
+      type: 'UPCOMING_IS_LOADING',
+      upcomingIsLoading: true
+    };
+
+    expect(actions.upcomingIsLoading(true)).toEqual(expected);
   });
 });
 
@@ -86,7 +108,7 @@ describe('clearStore', () => {
   });
 });
 
-describe('fetchShows', () => {
+xdescribe('fetchShows', () => {
   const mockLocation = { zipCode: 80218 };
   const { zipCode } = mockLocation;
   const store = mockStore({});
