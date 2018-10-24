@@ -1,5 +1,6 @@
 import { cleanTime } from './cleanTime';
 import { CleanArtists } from './cleanArtists';
+const moment = require('moment');
 
 const cleanArtists = new CleanArtists();
 
@@ -28,6 +29,7 @@ export const cleanConcertData = concerts => {
       categories,
       links
     } = show;
+
     const venue = {
       name: show.venue_name,
       id: show.venue_id,
@@ -42,10 +44,7 @@ export const cleanConcertData = concerts => {
     const supportArtists = artists.filter(artist => artist !== artists[0]);
     const ticketUrl = cleanTickets(links, tickets);
 
-    const date = new Date(start_time).toLocaleDateString([], {
-      month: 'short',
-      day: 'numeric'
-    });
+    const date = moment(start_time).format('MMM D');
     const startTime = cleanTime(start_time);
     const concertData = {
       headlineArtist,

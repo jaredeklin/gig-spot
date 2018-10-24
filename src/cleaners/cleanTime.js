@@ -1,8 +1,7 @@
+const moment = require('moment');
+
 export const cleanTime = time => {
-  const startTime = new Date(time).toLocaleTimeString([], {
-    hour: '2-digit',
-    minute: '2-digit'
-  });
+  const startTime = moment(time).format('h:mm A');
 
   return startTime === '12:00 AM' ? '' : startTime;
 };

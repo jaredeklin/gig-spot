@@ -26,7 +26,7 @@ export const EventDetails = ({ concert }) => {
     <div>
       <article className="event-details">
         <img
-          src={image}
+          src={image ? image : defaultImage}
           onError={event => (event.target.src = defaultImage)}
           className="detail-img"
           alt="artist"
