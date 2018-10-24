@@ -45,73 +45,85 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <img
-          alt="artist"
-          className="detail-img"
-          src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
-/>,
-        <div
-          className="detail-right"
+        <article
+          className="event-details"
 >
-          <h2
-                    className="headliner"
-          >
-                    The English Beat
-          </h2>
+          <img
+                    alt="artist"
+                    className="detail-img"
+                    onError={[Function]}
+                    src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
+          />
           <div
-                    className="detail-date"
+                    className="detail-right"
           >
-                    Apr 13, 2018
-          </div>
-          <div
-                    className="support"
-          >
-                    With:
-                    <h4
+                    <h2
+                              className="headliner"
+                    >
+                              Object {
+                                        "Id": 34468,
+                                        "Name": "The English Beat",
+                                      }
+                    </h2>
+                    <div
+                              className="detail-date"
+                    >
+                              Apr 13, 2018
+                    </div>
+                    <div
                               className="support"
                     >
-                              Shawn James
-                    </h4>
-          </div>
-          <div
-                    className="detail-venue"
-          >
-                    <h4
-                              className="venue-name"
+                              With:
+                              <h4
+                                        className="support"
+                              >
+                                        Object {
+                                                  "Id": "123882",
+                                                  "Name": "Shawn James",
+                                                }
+                              </h4>
+                    </div>
+                    <div
+                              className="detail-venue"
                     >
-                              The Soiled Dove Underground
-                    </h4>
+                              <a
+                                        href="http://www.soileddove.com/"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                              >
+                                        <h4
+                                                  className="venue-name"
+                                        >
+                                                  The Soiled Dove Underground
+                                        </h4>
+                              </a>
+                              <div
+                                        className="address"
+                              >
+                                        7401 E. 1st Ave
+                                        , 
+                                        Denver
+                              </div>
+                    </div>
+                    <div
+                              className="detail-start-time"
+                    >
+                              8:00 PM
+                    </div>
                     <a
-                              href="http://www.soileddove.com/"
+                              className="ticket-info"
+                              href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                              rel="noopener noreferrer"
                               target="_blank"
                     >
-                              http://www.soileddove.com/
+                              <h4>
+                                        Get tickets
+                              </h4>
                     </a>
-                    <div
-                              className="address"
-                    >
-                              7401 E. 1st Ave
-                              , 
-                              Denver
-                    </div>
           </div>
-          <div
-                    className="detail-start-time"
-          >
-                    8:00 PM
-          </div>
-          <a
-                    className="ticket-info"
-                    href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-                    target="_blank"
-          >
-                    <h4>
-                              Get tickets
-                    </h4>
-          </a>
-</div>,
+</article>,
+        undefined,
       ],
-      "className": "event-details",
     },
     "ref": null,
     "rendered": Array [
@@ -120,78 +132,82 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "artist",
-          "className": "detail-img",
-          "src": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": Array [
-            <h2
-              className="headliner"
->
-              The English Beat
-</h2>,
+            <img
+              alt="artist"
+              className="detail-img"
+              onError={[Function]}
+              src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
+/>,
             <div
-              className="detail-date"
+              className="detail-right"
 >
-              Apr 13, 2018
-</div>,
-            <div
-              className="support"
->
-              With:
-              <h4
+              <h2
+                            className="headliner"
+              >
+                            Object {
+                                          "Id": 34468,
+                                          "Name": "The English Beat",
+                                        }
+              </h2>
+              <div
+                            className="detail-date"
+              >
+                            Apr 13, 2018
+              </div>
+              <div
                             className="support"
               >
-                            Shawn James
-              </h4>
-</div>,
-            <div
-              className="detail-venue"
->
-              <h4
-                            className="venue-name"
+                            With:
+                            <h4
+                                          className="support"
+                            >
+                                          Object {
+                                                        "Id": "123882",
+                                                        "Name": "Shawn James",
+                                                      }
+                            </h4>
+              </div>
+              <div
+                            className="detail-venue"
               >
-                            The Soiled Dove Underground
-              </h4>
+                            <a
+                                          href="http://www.soileddove.com/"
+                                          rel="noopener noreferrer"
+                                          target="_blank"
+                            >
+                                          <h4
+                                                        className="venue-name"
+                                          >
+                                                        The Soiled Dove Underground
+                                          </h4>
+                            </a>
+                            <div
+                                          className="address"
+                            >
+                                          7401 E. 1st Ave
+                                          , 
+                                          Denver
+                            </div>
+              </div>
+              <div
+                            className="detail-start-time"
+              >
+                            8:00 PM
+              </div>
               <a
-                            href="http://www.soileddove.com/"
+                            className="ticket-info"
+                            href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                            rel="noopener noreferrer"
                             target="_blank"
               >
-                            http://www.soileddove.com/
+                            <h4>
+                                          Get tickets
+                            </h4>
               </a>
-              <div
-                            className="address"
-              >
-                            7401 E. 1st Ave
-                            , 
-                            Denver
-              </div>
 </div>,
-            <div
-              className="detail-start-time"
->
-              8:00 PM
-</div>,
-            <a
-              className="ticket-info"
-              href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-              target="_blank"
->
-              <h4>
-                            Get tickets
-              </h4>
-</a>,
           ],
-          "className": "detail-right",
+          "className": "event-details",
         },
         "ref": null,
         "rendered": Array [
@@ -200,24 +216,14 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "The English Beat",
-              "className": "headliner",
+              "alt": "artist",
+              "className": "detail-img",
+              "onError": [Function],
+              "src": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
             },
             "ref": null,
-            "rendered": "The English Beat",
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Apr 13, 2018",
-              "className": "detail-date",
-            },
-            "ref": null,
-            "rendered": "Apr 13, 2018",
-            "type": "div",
+            "rendered": null,
+            "type": "img",
           },
           Object {
             "instance": null,
@@ -225,61 +231,71 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "With:",
-                Array [
+                <h2
+                  className="headliner"
+>
+                  Object {
+                                    "Id": 34468,
+                                    "Name": "The English Beat",
+                                  }
+</h2>,
+                <div
+                  className="detail-date"
+>
+                  Apr 13, 2018
+</div>,
+                <div
+                  className="support"
+>
+                  With:
                   <h4
-                    className="support"
+                                    className="support"
+                  >
+                                    Object {
+                                                      "Id": "123882",
+                                                      "Name": "Shawn James",
+                                                    }
+                  </h4>
+</div>,
+                <div
+                  className="detail-venue"
 >
-                    Shawn James
-</h4>,
-                ],
-              ],
-              "className": "support",
-            },
-            "ref": null,
-            "rendered": Array [
-              "With:",
-              Object {
-                "instance": null,
-                "key": "123882",
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Shawn James",
-                  "className": "support",
-                },
-                "ref": null,
-                "rendered": "Shawn James",
-                "type": "h4",
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <h4
-                  className="venue-name"
+                  <a
+                                    href="http://www.soileddove.com/"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                  >
+                                    <h4
+                                                      className="venue-name"
+                                    >
+                                                      The Soiled Dove Underground
+                                    </h4>
+                  </a>
+                  <div
+                                    className="address"
+                  >
+                                    7401 E. 1st Ave
+                                    , 
+                                    Denver
+                  </div>
+</div>,
+                <div
+                  className="detail-start-time"
 >
-                  The Soiled Dove Underground
-</h4>,
+                  8:00 PM
+</div>,
                 <a
-                  href="http://www.soileddove.com/"
+                  className="ticket-info"
+                  href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                  rel="noopener noreferrer"
                   target="_blank"
 >
-                  http://www.soileddove.com/
+                  <h4>
+                                    Get tickets
+                  </h4>
 </a>,
-                <div
-                  className="address"
->
-                  7401 E. 1st Ave
-                  , 
-                  Denver
-</div>,
               ],
-              "className": "detail-venue",
+              "className": "detail-right",
             },
             "ref": null,
             "rendered": Array [
@@ -288,25 +304,30 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "The Soiled Dove Underground",
-                  "className": "venue-name",
+                  "children": Object {
+                    "Id": 34468,
+                    "Name": "The English Beat",
+                  },
+                  "className": "headliner",
                 },
                 "ref": null,
-                "rendered": "The Soiled Dove Underground",
-                "type": "h4",
+                "rendered": Object {
+                  "Id": 34468,
+                  "Name": "The English Beat",
+                },
+                "type": "h2",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "http://www.soileddove.com/",
-                  "href": "http://www.soileddove.com/",
-                  "target": "_blank",
+                  "children": "Apr 13, 2018",
+                  "className": "detail-date",
                 },
                 "ref": null,
-                "rendered": "http://www.soileddove.com/",
-                "type": "a",
+                "rendered": "Apr 13, 2018",
+                "type": "div",
               },
               Object {
                 "instance": null,
@@ -314,66 +335,173 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "7401 E. 1st Ave",
-                    ", ",
-                    "Denver",
+                    "With:",
+                    Array [
+                      <h4
+                        className="support"
+>
+                        Object {
+                                                "Id": "123882",
+                                                "Name": "Shawn James",
+                                              }
+</h4>,
+                    ],
                   ],
-                  "className": "address",
+                  "className": "support",
                 },
                 "ref": null,
                 "rendered": Array [
-                  "7401 E. 1st Ave",
-                  ", ",
-                  "Denver",
+                  "With:",
+                  Object {
+                    "instance": null,
+                    "key": "[object Object]1540420216113",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Object {
+                        "Id": "123882",
+                        "Name": "Shawn James",
+                      },
+                      "className": "support",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "Id": "123882",
+                      "Name": "Shawn James",
+                    },
+                    "type": "h4",
+                  },
                 ],
                 "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <a
+                      href="http://www.soileddove.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+>
+                      <h4
+                                            className="venue-name"
+                      >
+                                            The Soiled Dove Underground
+                      </h4>
+</a>,
+                    <div
+                      className="address"
+>
+                      7401 E. 1st Ave
+                      , 
+                      Denver
+</div>,
+                  ],
+                  "className": "detail-venue",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <h4
+                        className="venue-name"
+>
+                        The Soiled Dove Underground
+</h4>,
+                      "href": "http://www.soileddove.com/",
+                      "rel": "noopener noreferrer",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "The Soiled Dove Underground",
+                        "className": "venue-name",
+                      },
+                      "ref": null,
+                      "rendered": "The Soiled Dove Underground",
+                      "type": "h4",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "7401 E. 1st Ave",
+                        ", ",
+                        "Denver",
+                      ],
+                      "className": "address",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "7401 E. 1st Ave",
+                      ", ",
+                      "Denver",
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "8:00 PM",
+                  "className": "detail-start-time",
+                },
+                "ref": null,
+                "rendered": "8:00 PM",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <h4>
+                    Get tickets
+</h4>,
+                  "className": "ticket-info",
+                  "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get tickets",
+                  },
+                  "ref": null,
+                  "rendered": "Get tickets",
+                  "type": "h4",
+                },
+                "type": "a",
               },
             ],
             "type": "div",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "8:00 PM",
-              "className": "detail-start-time",
-            },
-            "ref": null,
-            "rendered": "8:00 PM",
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <h4>
-                Get tickets
-</h4>,
-              "className": "ticket-info",
-              "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-              "target": "_blank",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Get tickets",
-              },
-              "ref": null,
-              "rendered": "Get tickets",
-              "type": "h4",
-            },
-            "type": "a",
-          },
         ],
-        "type": "div",
+        "type": "article",
       },
+      undefined,
     ],
-    "type": "article",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -382,73 +510,85 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <img
-            alt="artist"
-            className="detail-img"
-            src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
-/>,
-          <div
-            className="detail-right"
+          <article
+            className="event-details"
 >
-            <h2
-                        className="headliner"
-            >
-                        The English Beat
-            </h2>
+            <img
+                        alt="artist"
+                        className="detail-img"
+                        onError={[Function]}
+                        src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
+            />
             <div
-                        className="detail-date"
+                        className="detail-right"
             >
-                        Apr 13, 2018
-            </div>
-            <div
-                        className="support"
-            >
-                        With:
-                        <h4
+                        <h2
+                                    className="headliner"
+                        >
+                                    Object {
+                                                "Id": 34468,
+                                                "Name": "The English Beat",
+                                              }
+                        </h2>
+                        <div
+                                    className="detail-date"
+                        >
+                                    Apr 13, 2018
+                        </div>
+                        <div
                                     className="support"
                         >
-                                    Shawn James
-                        </h4>
-            </div>
-            <div
-                        className="detail-venue"
-            >
-                        <h4
-                                    className="venue-name"
+                                    With:
+                                    <h4
+                                                className="support"
+                                    >
+                                                Object {
+                                                            "Id": "123882",
+                                                            "Name": "Shawn James",
+                                                          }
+                                    </h4>
+                        </div>
+                        <div
+                                    className="detail-venue"
                         >
-                                    The Soiled Dove Underground
-                        </h4>
+                                    <a
+                                                href="http://www.soileddove.com/"
+                                                rel="noopener noreferrer"
+                                                target="_blank"
+                                    >
+                                                <h4
+                                                            className="venue-name"
+                                                >
+                                                            The Soiled Dove Underground
+                                                </h4>
+                                    </a>
+                                    <div
+                                                className="address"
+                                    >
+                                                7401 E. 1st Ave
+                                                , 
+                                                Denver
+                                    </div>
+                        </div>
+                        <div
+                                    className="detail-start-time"
+                        >
+                                    8:00 PM
+                        </div>
                         <a
-                                    href="http://www.soileddove.com/"
+                                    className="ticket-info"
+                                    href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                                    rel="noopener noreferrer"
                                     target="_blank"
                         >
-                                    http://www.soileddove.com/
+                                    <h4>
+                                                Get tickets
+                                    </h4>
                         </a>
-                        <div
-                                    className="address"
-                        >
-                                    7401 E. 1st Ave
-                                    , 
-                                    Denver
-                        </div>
             </div>
-            <div
-                        className="detail-start-time"
-            >
-                        8:00 PM
-            </div>
-            <a
-                        className="ticket-info"
-                        href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-                        target="_blank"
-            >
-                        <h4>
-                                    Get tickets
-                        </h4>
-            </a>
-</div>,
+</article>,
+          undefined,
         ],
-        "className": "event-details",
       },
       "ref": null,
       "rendered": Array [
@@ -457,78 +597,82 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "artist",
-            "className": "detail-img",
-            "src": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              <h2
-                className="headliner"
->
-                The English Beat
-</h2>,
+              <img
+                alt="artist"
+                className="detail-img"
+                onError={[Function]}
+                src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
+/>,
               <div
-                className="detail-date"
+                className="detail-right"
 >
-                Apr 13, 2018
-</div>,
-              <div
-                className="support"
->
-                With:
-                <h4
+                <h2
+                                className="headliner"
+                >
+                                Object {
+                                                "Id": 34468,
+                                                "Name": "The English Beat",
+                                              }
+                </h2>
+                <div
+                                className="detail-date"
+                >
+                                Apr 13, 2018
+                </div>
+                <div
                                 className="support"
                 >
-                                Shawn James
-                </h4>
-</div>,
-              <div
-                className="detail-venue"
->
-                <h4
-                                className="venue-name"
+                                With:
+                                <h4
+                                                className="support"
+                                >
+                                                Object {
+                                                                "Id": "123882",
+                                                                "Name": "Shawn James",
+                                                              }
+                                </h4>
+                </div>
+                <div
+                                className="detail-venue"
                 >
-                                The Soiled Dove Underground
-                </h4>
+                                <a
+                                                href="http://www.soileddove.com/"
+                                                rel="noopener noreferrer"
+                                                target="_blank"
+                                >
+                                                <h4
+                                                                className="venue-name"
+                                                >
+                                                                The Soiled Dove Underground
+                                                </h4>
+                                </a>
+                                <div
+                                                className="address"
+                                >
+                                                7401 E. 1st Ave
+                                                , 
+                                                Denver
+                                </div>
+                </div>
+                <div
+                                className="detail-start-time"
+                >
+                                8:00 PM
+                </div>
                 <a
-                                href="http://www.soileddove.com/"
+                                className="ticket-info"
+                                href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                                rel="noopener noreferrer"
                                 target="_blank"
                 >
-                                http://www.soileddove.com/
+                                <h4>
+                                                Get tickets
+                                </h4>
                 </a>
-                <div
-                                className="address"
-                >
-                                7401 E. 1st Ave
-                                , 
-                                Denver
-                </div>
 </div>,
-              <div
-                className="detail-start-time"
->
-                8:00 PM
-</div>,
-              <a
-                className="ticket-info"
-                href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
-                target="_blank"
->
-                <h4>
-                                Get tickets
-                </h4>
-</a>,
             ],
-            "className": "detail-right",
+            "className": "event-details",
           },
           "ref": null,
           "rendered": Array [
@@ -537,24 +681,14 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "The English Beat",
-                "className": "headliner",
+                "alt": "artist",
+                "className": "detail-img",
+                "onError": [Function],
+                "src": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
               },
               "ref": null,
-              "rendered": "The English Beat",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Apr 13, 2018",
-                "className": "detail-date",
-              },
-              "ref": null,
-              "rendered": "Apr 13, 2018",
-              "type": "div",
+              "rendered": null,
+              "type": "img",
             },
             Object {
               "instance": null,
@@ -562,61 +696,71 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "With:",
-                  Array [
+                  <h2
+                    className="headliner"
+>
+                    Object {
+                                        "Id": 34468,
+                                        "Name": "The English Beat",
+                                      }
+</h2>,
+                  <div
+                    className="detail-date"
+>
+                    Apr 13, 2018
+</div>,
+                  <div
+                    className="support"
+>
+                    With:
                     <h4
-                      className="support"
+                                        className="support"
+                    >
+                                        Object {
+                                                            "Id": "123882",
+                                                            "Name": "Shawn James",
+                                                          }
+                    </h4>
+</div>,
+                  <div
+                    className="detail-venue"
 >
-                      Shawn James
-</h4>,
-                  ],
-                ],
-                "className": "support",
-              },
-              "ref": null,
-              "rendered": Array [
-                "With:",
-                Object {
-                  "instance": null,
-                  "key": "123882",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Shawn James",
-                    "className": "support",
-                  },
-                  "ref": null,
-                  "rendered": "Shawn James",
-                  "type": "h4",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h4
-                    className="venue-name"
+                    <a
+                                        href="http://www.soileddove.com/"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                    >
+                                        <h4
+                                                            className="venue-name"
+                                        >
+                                                            The Soiled Dove Underground
+                                        </h4>
+                    </a>
+                    <div
+                                        className="address"
+                    >
+                                        7401 E. 1st Ave
+                                        , 
+                                        Denver
+                    </div>
+</div>,
+                  <div
+                    className="detail-start-time"
 >
-                    The Soiled Dove Underground
-</h4>,
+                    8:00 PM
+</div>,
                   <a
-                    href="http://www.soileddove.com/"
+                    className="ticket-info"
+                    href="http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api"
+                    rel="noopener noreferrer"
                     target="_blank"
 >
-                    http://www.soileddove.com/
+                    <h4>
+                                        Get tickets
+                    </h4>
 </a>,
-                  <div
-                    className="address"
->
-                    7401 E. 1st Ave
-                    , 
-                    Denver
-</div>,
                 ],
-                "className": "detail-venue",
+                "className": "detail-right",
               },
               "ref": null,
               "rendered": Array [
@@ -625,25 +769,30 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "The Soiled Dove Underground",
-                    "className": "venue-name",
+                    "children": Object {
+                      "Id": 34468,
+                      "Name": "The English Beat",
+                    },
+                    "className": "headliner",
                   },
                   "ref": null,
-                  "rendered": "The Soiled Dove Underground",
-                  "type": "h4",
+                  "rendered": Object {
+                    "Id": 34468,
+                    "Name": "The English Beat",
+                  },
+                  "type": "h2",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "http://www.soileddove.com/",
-                    "href": "http://www.soileddove.com/",
-                    "target": "_blank",
+                    "children": "Apr 13, 2018",
+                    "className": "detail-date",
                   },
                   "ref": null,
-                  "rendered": "http://www.soileddove.com/",
-                  "type": "a",
+                  "rendered": "Apr 13, 2018",
+                  "type": "div",
                 },
                 Object {
                   "instance": null,
@@ -651,66 +800,173 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      "7401 E. 1st Ave",
-                      ", ",
-                      "Denver",
+                      "With:",
+                      Array [
+                        <h4
+                          className="support"
+>
+                          Object {
+                                                    "Id": "123882",
+                                                    "Name": "Shawn James",
+                                                  }
+</h4>,
+                      ],
                     ],
-                    "className": "address",
+                    "className": "support",
                   },
                   "ref": null,
                   "rendered": Array [
-                    "7401 E. 1st Ave",
-                    ", ",
-                    "Denver",
+                    "With:",
+                    Object {
+                      "instance": null,
+                      "key": "[object Object]1540420216113",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Object {
+                          "Id": "123882",
+                          "Name": "Shawn James",
+                        },
+                        "className": "support",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "Id": "123882",
+                        "Name": "Shawn James",
+                      },
+                      "type": "h4",
+                    },
                   ],
                   "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <a
+                        href="http://www.soileddove.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+>
+                        <h4
+                                                className="venue-name"
+                        >
+                                                The Soiled Dove Underground
+                        </h4>
+</a>,
+                      <div
+                        className="address"
+>
+                        7401 E. 1st Ave
+                        , 
+                        Denver
+</div>,
+                    ],
+                    "className": "detail-venue",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <h4
+                          className="venue-name"
+>
+                          The Soiled Dove Underground
+</h4>,
+                        "href": "http://www.soileddove.com/",
+                        "rel": "noopener noreferrer",
+                        "target": "_blank",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "The Soiled Dove Underground",
+                          "className": "venue-name",
+                        },
+                        "ref": null,
+                        "rendered": "The Soiled Dove Underground",
+                        "type": "h4",
+                      },
+                      "type": "a",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "7401 E. 1st Ave",
+                          ", ",
+                          "Denver",
+                        ],
+                        "className": "address",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "7401 E. 1st Ave",
+                        ", ",
+                        "Denver",
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "8:00 PM",
+                    "className": "detail-start-time",
+                  },
+                  "ref": null,
+                  "rendered": "8:00 PM",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h4>
+                      Get tickets
+</h4>,
+                    "className": "ticket-info",
+                    "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Get tickets",
+                    },
+                    "ref": null,
+                    "rendered": "Get tickets",
+                    "type": "h4",
+                  },
+                  "type": "a",
                 },
               ],
               "type": "div",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "8:00 PM",
-                "className": "detail-start-time",
-              },
-              "ref": null,
-              "rendered": "8:00 PM",
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <h4>
-                  Get tickets
-</h4>,
-                "className": "ticket-info",
-                "href": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                "target": "_blank",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Get tickets",
-                },
-                "ref": null,
-                "rendered": "Get tickets",
-                "type": "h4",
-              },
-              "type": "a",
-            },
           ],
-          "type": "div",
+          "type": "article",
         },
+        undefined,
       ],
-      "type": "article",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

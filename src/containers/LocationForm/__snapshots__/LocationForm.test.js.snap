@@ -26,9 +26,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <input
-          name="zipCode"
+          name="location"
           onChange={[Function]}
-          placeholder="Zip-code"
+          placeholder="City"
           type="text"
           value=""
 />,
@@ -47,9 +47,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "name": "zipCode",
+          "name": "location",
           "onChange": [Function],
-          "placeholder": "Zip-code",
+          "placeholder": "City",
           "type": "text",
           "value": "",
         },
@@ -79,9 +79,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <input
-            name="zipCode"
+            name="location"
             onChange={[Function]}
-            placeholder="Zip-code"
+            placeholder="City"
             type="text"
             value=""
 />,
@@ -100,9 +100,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "name": "zipCode",
+            "name": "location",
             "onChange": [Function],
-            "placeholder": "Zip-code",
+            "placeholder": "City",
             "type": "text",
             "value": "",
           },

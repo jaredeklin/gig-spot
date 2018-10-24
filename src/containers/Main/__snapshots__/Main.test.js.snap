@@ -85,6 +85,7 @@ ShallowWrapper {
                     Update location:
           </p>
           <withRouter(Connect(LocationForm))
+                    currentLocation={undefined}
                     id="main-form"
           />
 </div>,
@@ -123,56 +124,56 @@ ShallowWrapper {
                               </div>
                     </section>
           </div>
-          <h2
-                    className="event-happening-when-text"
-          >
-                    This Week:
-          </h2>
-          <section
-                    className="shows"
-          >
-                    <div
-                              className="shows-inner"
+          <div>
+                    <h2
+                              className="event-happening-when-text"
                     >
-                              <Unknown
-                                        show={
-                                                  Array [
-                                                            Object {
-                                                              "date": "Apr 13, 2018",
-                                                              "headlineArtist": Object {
-                                                                "Id": 34468,
-                                                                "Name": "The English Beat",
-                                                              },
-                                                              "id": 3092703,
-                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                              "startTime": "8:00 PM",
-                                                              "supportArtists": Array [],
-                                                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                              "venue": Object {
-                                                                "address": "7401 E. 1st Ave",
-                                                                "city": "Denver",
-                                                                "id": 59319,
-                                                                "name": "The Soiled Dove Underground",
-                                                                "url": "http://www.soileddove.com/",
-                                                              },
-                                                            },
-                                                          ]
-                                        }
-                              />
-                    </div>
-          </section>
+                              This Week:
+                    </h2>
+                    <section
+                              className="shows"
+                    >
+                              <div
+                                        className="shows-inner"
+                              >
+                                        <Unknown
+                                                  show={
+                                                            Array [
+                                                                      Object {
+                                                                        "date": "Apr 13, 2018",
+                                                                        "headlineArtist": Object {
+                                                                          "Id": 34468,
+                                                                          "Name": "The English Beat",
+                                                                        },
+                                                                        "id": 3092703,
+                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                        "startTime": "8:00 PM",
+                                                                        "supportArtists": Array [],
+                                                                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                        "venue": Object {
+                                                                          "address": "7401 E. 1st Ave",
+                                                                          "city": "Denver",
+                                                                          "id": 59319,
+                                                                          "name": "The Soiled Dove Underground",
+                                                                          "url": "http://www.soileddove.com/",
+                                                                        },
+                                                                      },
+                                                                    ]
+                                                  }
+                                        />
+                              </div>
+                    </section>
+          </div>
           <div
-                    className="jambase"
+                    className="icons"
           >
                     <a
-                              href="http://www.JamBase.com"
-                              target="_top"
-                              title="JamBase Concert Search"
+                              href="http://eventful.com/"
                     >
                               <img
-                                        alt="Search JamBase Concerts"
-                                        border="0"
-                                        src="http://images.jambase.com/logos/jambase140x70.gif"
+                                        alt="Local Events, Concerts, Tickets"
+                                        className="eventful"
+                                        src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                               />
                     </a>
                     <a
@@ -204,6 +205,7 @@ ShallowWrapper {
               Update location:
 </p>,
             <withRouter(Connect(LocationForm))
+              currentLocation={undefined}
               id="main-form"
 />,
           ],
@@ -227,6 +229,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "currentLocation": undefined,
               "id": "main-form",
             },
             "ref": null,
@@ -274,57 +277,59 @@ ShallowWrapper {
                             </div>
               </section>
 </div>,
-            <h2
-              className="event-happening-when-text"
->
-              This Week:
-</h2>,
-            <section
-              className="shows"
->
-              <div
-                            className="shows-inner"
+            undefined,
+            <div>
+              <h2
+                            className="event-happening-when-text"
               >
-                            <Unknown
-                                          show={
-                                                        Array [
-                                                                      Object {
-                                                                        "date": "Apr 13, 2018",
-                                                                        "headlineArtist": Object {
-                                                                          "Id": 34468,
-                                                                          "Name": "The English Beat",
-                                                                        },
-                                                                        "id": 3092703,
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                        "venue": Object {
-                                                                          "address": "7401 E. 1st Ave",
-                                                                          "city": "Denver",
-                                                                          "id": 59319,
-                                                                          "name": "The Soiled Dove Underground",
-                                                                          "url": "http://www.soileddove.com/",
-                                                                        },
-                                                                      },
-                                                                    ]
-                                          }
-                            />
-              </div>
-</section>,
+                            This Week:
+              </h2>
+              <section
+                            className="shows"
+              >
+                            <div
+                                          className="shows-inner"
+                            >
+                                          <Unknown
+                                                        show={
+                                                                      Array [
+                                                                                    Object {
+                                                                                      "date": "Apr 13, 2018",
+                                                                                      "headlineArtist": Object {
+                                                                                        "Id": 34468,
+                                                                                        "Name": "The English Beat",
+                                                                                      },
+                                                                                      "id": 3092703,
+                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                      "startTime": "8:00 PM",
+                                                                                      "supportArtists": Array [],
+                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                      "venue": Object {
+                                                                                        "address": "7401 E. 1st Ave",
+                                                                                        "city": "Denver",
+                                                                                        "id": 59319,
+                                                                                        "name": "The Soiled Dove Underground",
+                                                                                        "url": "http://www.soileddove.com/",
+                                                                                      },
+                                                                                    },
+                                                                                  ]
+                                                        }
+                                          />
+                            </div>
+              </section>
+</div>,
+            undefined,
             false,
             <div
-              className="jambase"
+              className="icons"
 >
               <a
-                            href="http://www.JamBase.com"
-                            target="_top"
-                            title="JamBase Concert Search"
+                            href="http://eventful.com/"
               >
                             <img
-                                          alt="Search JamBase Concerts"
-                                          border="0"
-                                          src="http://images.jambase.com/logos/jambase140x70.gif"
+                                          alt="Local Events, Concerts, Tickets"
+                                          className="eventful"
+                                          src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                             />
               </a>
               <a
@@ -512,127 +517,180 @@ ShallowWrapper {
             ],
             "type": "div",
           },
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "This Week:",
-              "className": "event-happening-when-text",
-            },
-            "ref": null,
-            "rendered": "This Week:",
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="shows-inner"
+              "children": Array [
+                <h2
+                  className="event-happening-when-text"
 >
-                <Unknown
-                                show={
-                                                Array [
-                                                                Object {
-                                                                  "date": "Apr 13, 2018",
-                                                                  "headlineArtist": Object {
-                                                                    "Id": 34468,
-                                                                    "Name": "The English Beat",
-                                                                  },
-                                                                  "id": 3092703,
-                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                  "startTime": "8:00 PM",
-                                                                  "supportArtists": Array [],
-                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                  "venue": Object {
-                                                                    "address": "7401 E. 1st Ave",
-                                                                    "city": "Denver",
-                                                                    "id": 59319,
-                                                                    "name": "The Soiled Dove Underground",
-                                                                    "url": "http://www.soileddove.com/",
-                                                                  },
-                                                                },
-                                                              ]
-                                }
-                />
-</div>,
-              "className": "shows",
+                  This Week:
+</h2>,
+                <section
+                  className="shows"
+>
+                  <div
+                                    className="shows-inner"
+                  >
+                                    <Unknown
+                                                      show={
+                                                                        Array [
+                                                                                          Object {
+                                                                                            "date": "Apr 13, 2018",
+                                                                                            "headlineArtist": Object {
+                                                                                              "Id": 34468,
+                                                                                              "Name": "The English Beat",
+                                                                                            },
+                                                                                            "id": 3092703,
+                                                                                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                            "startTime": "8:00 PM",
+                                                                                            "supportArtists": Array [],
+                                                                                            "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                            "venue": Object {
+                                                                                              "address": "7401 E. 1st Ave",
+                                                                                              "city": "Denver",
+                                                                                              "id": 59319,
+                                                                                              "name": "The Soiled Dove Underground",
+                                                                                              "url": "http://www.soileddove.com/",
+                                                                                            },
+                                                                                          },
+                                                                                        ]
+                                                      }
+                                    />
+                  </div>
+</section>,
+              ],
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <Unknown
-                    show={
-                                        Array [
-                                                            Object {
-                                                              "date": "Apr 13, 2018",
-                                                              "headlineArtist": Object {
-                                                                "Id": 34468,
-                                                                "Name": "The English Beat",
-                                                              },
-                                                              "id": 3092703,
-                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                              "startTime": "8:00 PM",
-                                                              "supportArtists": Array [],
-                                                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                              "venue": Object {
-                                                                "address": "7401 E. 1st Ave",
-                                                                "city": "Denver",
-                                                                "id": 59319,
-                                                                "name": "The Soiled Dove Underground",
-                                                                "url": "http://www.soileddove.com/",
-                                                              },
-                                                            },
-                                                          ]
-                    }
-/>,
-                ],
-                "className": "shows-inner",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "This Week:",
+                  "className": "event-happening-when-text",
+                },
+                "ref": null,
+                "rendered": "This Week:",
+                "type": "h2",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="shows-inner"
+>
+                    <Unknown
+                                        show={
+                                                            Array [
+                                                                                Object {
+                                                                                  "date": "Apr 13, 2018",
+                                                                                  "headlineArtist": Object {
+                                                                                    "Id": 34468,
+                                                                                    "Name": "The English Beat",
+                                                                                  },
+                                                                                  "id": 3092703,
+                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                  "startTime": "8:00 PM",
+                                                                                  "supportArtists": Array [],
+                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                  "venue": Object {
+                                                                                    "address": "7401 E. 1st Ave",
+                                                                                    "city": "Denver",
+                                                                                    "id": 59319,
+                                                                                    "name": "The Soiled Dove Underground",
+                                                                                    "url": "http://www.soileddove.com/",
+                                                                                  },
+                                                                                },
+                                                                              ]
+                                        }
+                    />
+</div>,
+                  "className": "shows",
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
-                  "key": "4undefined",
-                  "nodeType": "function",
+                  "key": undefined,
+                  "nodeType": "host",
                   "props": Object {
-                    "show": Array [
-                      Object {
-                        "date": "Apr 13, 2018",
-                        "headlineArtist": Object {
-                          "Id": 34468,
-                          "Name": "The English Beat",
-                        },
-                        "id": 3092703,
-                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                        "startTime": "8:00 PM",
-                        "supportArtists": Array [],
-                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                        "venue": Object {
-                          "address": "7401 E. 1st Ave",
-                          "city": "Denver",
-                          "id": 59319,
-                          "name": "The Soiled Dove Underground",
-                          "url": "http://www.soileddove.com/",
-                        },
-                      },
+                    "children": Array [
+                      <Unknown
+                        show={
+                                                Array [
+                                                                        Object {
+                                                                          "date": "Apr 13, 2018",
+                                                                          "headlineArtist": Object {
+                                                                            "Id": 34468,
+                                                                            "Name": "The English Beat",
+                                                                          },
+                                                                          "id": 3092703,
+                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                          "startTime": "8:00 PM",
+                                                                          "supportArtists": Array [],
+                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                          "venue": Object {
+                                                                            "address": "7401 E. 1st Ave",
+                                                                            "city": "Denver",
+                                                                            "id": 59319,
+                                                                            "name": "The Soiled Dove Underground",
+                                                                            "url": "http://www.soileddove.com/",
+                                                                          },
+                                                                        },
+                                                                      ]
+                        }
+/>,
                     ],
+                    "className": "shows-inner",
                   },
                   "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "4undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Array [
+                          Object {
+                            "date": "Apr 13, 2018",
+                            "headlineArtist": Object {
+                              "Id": 34468,
+                              "Name": "The English Beat",
+                            },
+                            "id": 3092703,
+                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                            "startTime": "8:00 PM",
+                            "supportArtists": Array [],
+                            "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                            "venue": Object {
+                              "address": "7401 E. 1st Ave",
+                              "city": "Denver",
+                              "id": 59319,
+                              "name": "The Soiled Dove Underground",
+                              "url": "http://www.soileddove.com/",
+                            },
+                          },
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
                 },
-              ],
-              "type": "div",
-            },
-            "type": "section",
+                "type": "section",
+              },
+            ],
+            "type": "div",
           },
+          undefined,
           false,
           Object {
             "instance": null,
@@ -641,14 +699,12 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <a
-                  href="http://www.JamBase.com"
-                  target="_top"
-                  title="JamBase Concert Search"
+                  href="http://eventful.com/"
 >
                   <img
-                                    alt="Search JamBase Concerts"
-                                    border="0"
-                                    src="http://images.jambase.com/logos/jambase140x70.gif"
+                                    alt="Local Events, Concerts, Tickets"
+                                    className="eventful"
+                                    src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                   />
 </a>,
                 <a
@@ -664,7 +720,7 @@ ShallowWrapper {
                   />
 </a>,
               ],
-              "className": "jambase",
+              "className": "icons",
             },
             "ref": null,
             "rendered": Array [
@@ -674,13 +730,11 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <img
-                    alt="Search JamBase Concerts"
-                    border="0"
-                    src="http://images.jambase.com/logos/jambase140x70.gif"
+                    alt="Local Events, Concerts, Tickets"
+                    className="eventful"
+                    src="http://api.eventful.com/images/powered/eventful_139x44.gif"
 />,
-                  "href": "http://www.JamBase.com",
-                  "target": "_top",
-                  "title": "JamBase Concert Search",
+                  "href": "http://eventful.com/",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -688,9 +742,9 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "Search JamBase Concerts",
-                    "border": "0",
-                    "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                    "alt": "Local Events, Concerts, Tickets",
+                    "className": "eventful",
+                    "src": "http://api.eventful.com/images/powered/eventful_139x44.gif",
                   },
                   "ref": null,
                   "rendered": null,
@@ -753,6 +807,7 @@ ShallowWrapper {
                         Update location:
             </p>
             <withRouter(Connect(LocationForm))
+                        currentLocation={undefined}
                         id="main-form"
             />
 </div>,
@@ -791,56 +846,56 @@ ShallowWrapper {
                                     </div>
                         </section>
             </div>
-            <h2
-                        className="event-happening-when-text"
-            >
-                        This Week:
-            </h2>
-            <section
-                        className="shows"
-            >
-                        <div
-                                    className="shows-inner"
+            <div>
+                        <h2
+                                    className="event-happening-when-text"
                         >
-                                    <Unknown
-                                                show={
-                                                            Array [
-                                                                        Object {
-                                                                          "date": "Apr 13, 2018",
-                                                                          "headlineArtist": Object {
-                                                                            "Id": 34468,
-                                                                            "Name": "The English Beat",
-                                                                          },
-                                                                          "id": 3092703,
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                          "venue": Object {
-                                                                            "address": "7401 E. 1st Ave",
-                                                                            "city": "Denver",
-                                                                            "id": 59319,
-                                                                            "name": "The Soiled Dove Underground",
-                                                                            "url": "http://www.soileddove.com/",
-                                                                          },
-                                                                        },
-                                                                      ]
-                                                }
-                                    />
-                        </div>
-            </section>
+                                    This Week:
+                        </h2>
+                        <section
+                                    className="shows"
+                        >
+                                    <div
+                                                className="shows-inner"
+                                    >
+                                                <Unknown
+                                                            show={
+                                                                        Array [
+                                                                                    Object {
+                                                                                      "date": "Apr 13, 2018",
+                                                                                      "headlineArtist": Object {
+                                                                                        "Id": 34468,
+                                                                                        "Name": "The English Beat",
+                                                                                      },
+                                                                                      "id": 3092703,
+                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                      "startTime": "8:00 PM",
+                                                                                      "supportArtists": Array [],
+                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                      "venue": Object {
+                                                                                        "address": "7401 E. 1st Ave",
+                                                                                        "city": "Denver",
+                                                                                        "id": 59319,
+                                                                                        "name": "The Soiled Dove Underground",
+                                                                                        "url": "http://www.soileddove.com/",
+                                                                                      },
+                                                                                    },
+                                                                                  ]
+                                                            }
+                                                />
+                                    </div>
+                        </section>
+            </div>
             <div
-                        className="jambase"
+                        className="icons"
             >
                         <a
-                                    href="http://www.JamBase.com"
-                                    target="_top"
-                                    title="JamBase Concert Search"
+                                    href="http://eventful.com/"
                         >
                                     <img
-                                                alt="Search JamBase Concerts"
-                                                border="0"
-                                                src="http://images.jambase.com/logos/jambase140x70.gif"
+                                                alt="Local Events, Concerts, Tickets"
+                                                className="eventful"
+                                                src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                                     />
                         </a>
                         <a
@@ -872,6 +927,7 @@ ShallowWrapper {
                 Update location:
 </p>,
               <withRouter(Connect(LocationForm))
+                currentLocation={undefined}
                 id="main-form"
 />,
             ],
@@ -895,6 +951,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "currentLocation": undefined,
                 "id": "main-form",
               },
               "ref": null,
@@ -942,57 +999,59 @@ ShallowWrapper {
                                 </div>
                 </section>
 </div>,
-              <h2
-                className="event-happening-when-text"
->
-                This Week:
-</h2>,
-              <section
-                className="shows"
->
-                <div
-                                className="shows-inner"
+              undefined,
+              <div>
+                <h2
+                                className="event-happening-when-text"
                 >
-                                <Unknown
-                                                show={
-                                                                Array [
-                                                                                Object {
-                                                                                  "date": "Apr 13, 2018",
-                                                                                  "headlineArtist": Object {
-                                                                                    "Id": 34468,
-                                                                                    "Name": "The English Beat",
-                                                                                  },
-                                                                                  "id": 3092703,
-                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                  "startTime": "8:00 PM",
-                                                                                  "supportArtists": Array [],
-                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                                  "venue": Object {
-                                                                                    "address": "7401 E. 1st Ave",
-                                                                                    "city": "Denver",
-                                                                                    "id": 59319,
-                                                                                    "name": "The Soiled Dove Underground",
-                                                                                    "url": "http://www.soileddove.com/",
-                                                                                  },
-                                                                                },
-                                                                              ]
-                                                }
-                                />
-                </div>
-</section>,
+                                This Week:
+                </h2>
+                <section
+                                className="shows"
+                >
+                                <div
+                                                className="shows-inner"
+                                >
+                                                <Unknown
+                                                                show={
+                                                                                Array [
+                                                                                                Object {
+                                                                                                  "date": "Apr 13, 2018",
+                                                                                                  "headlineArtist": Object {
+                                                                                                    "Id": 34468,
+                                                                                                    "Name": "The English Beat",
+                                                                                                  },
+                                                                                                  "id": 3092703,
+                                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                  "startTime": "8:00 PM",
+                                                                                                  "supportArtists": Array [],
+                                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                                  "venue": Object {
+                                                                                                    "address": "7401 E. 1st Ave",
+                                                                                                    "city": "Denver",
+                                                                                                    "id": 59319,
+                                                                                                    "name": "The Soiled Dove Underground",
+                                                                                                    "url": "http://www.soileddove.com/",
+                                                                                                  },
+                                                                                                },
+                                                                                              ]
+                                                                }
+                                                />
+                                </div>
+                </section>
+</div>,
+              undefined,
               false,
               <div
-                className="jambase"
+                className="icons"
 >
                 <a
-                                href="http://www.JamBase.com"
-                                target="_top"
-                                title="JamBase Concert Search"
+                                href="http://eventful.com/"
                 >
                                 <img
-                                                alt="Search JamBase Concerts"
-                                                border="0"
-                                                src="http://images.jambase.com/logos/jambase140x70.gif"
+                                                alt="Local Events, Concerts, Tickets"
+                                                className="eventful"
+                                                src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                                 />
                 </a>
                 <a
@@ -1180,127 +1239,180 @@ ShallowWrapper {
               ],
               "type": "div",
             },
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "This Week:",
-                "className": "event-happening-when-text",
-              },
-              "ref": null,
-              "rendered": "This Week:",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="shows-inner"
+                "children": Array [
+                  <h2
+                    className="event-happening-when-text"
 >
-                  <Unknown
-                                    show={
-                                                      Array [
-                                                                        Object {
-                                                                          "date": "Apr 13, 2018",
-                                                                          "headlineArtist": Object {
-                                                                            "Id": 34468,
-                                                                            "Name": "The English Beat",
-                                                                          },
-                                                                          "id": 3092703,
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                          "venue": Object {
-                                                                            "address": "7401 E. 1st Ave",
-                                                                            "city": "Denver",
-                                                                            "id": 59319,
-                                                                            "name": "The Soiled Dove Underground",
-                                                                            "url": "http://www.soileddove.com/",
-                                                                          },
-                                                                        },
-                                                                      ]
-                                    }
-                  />
-</div>,
-                "className": "shows",
+                    This Week:
+</h2>,
+                  <section
+                    className="shows"
+>
+                    <div
+                                        className="shows-inner"
+                    >
+                                        <Unknown
+                                                            show={
+                                                                                Array [
+                                                                                                    Object {
+                                                                                                      "date": "Apr 13, 2018",
+                                                                                                      "headlineArtist": Object {
+                                                                                                        "Id": 34468,
+                                                                                                        "Name": "The English Beat",
+                                                                                                      },
+                                                                                                      "id": 3092703,
+                                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                      "startTime": "8:00 PM",
+                                                                                                      "supportArtists": Array [],
+                                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                                      "venue": Object {
+                                                                                                        "address": "7401 E. 1st Ave",
+                                                                                                        "city": "Denver",
+                                                                                                        "id": 59319,
+                                                                                                        "name": "The Soiled Dove Underground",
+                                                                                                        "url": "http://www.soileddove.com/",
+                                                                                                      },
+                                                                                                    },
+                                                                                                  ]
+                                                            }
+                                        />
+                    </div>
+</section>,
+                ],
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <Unknown
-                      show={
-                                            Array [
-                                                                  Object {
-                                                                    "date": "Apr 13, 2018",
-                                                                    "headlineArtist": Object {
-                                                                      "Id": 34468,
-                                                                      "Name": "The English Beat",
-                                                                    },
-                                                                    "id": 3092703,
-                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                    "startTime": "8:00 PM",
-                                                                    "supportArtists": Array [],
-                                                                    "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                    "venue": Object {
-                                                                      "address": "7401 E. 1st Ave",
-                                                                      "city": "Denver",
-                                                                      "id": 59319,
-                                                                      "name": "The Soiled Dove Underground",
-                                                                      "url": "http://www.soileddove.com/",
-                                                                    },
-                                                                  },
-                                                                ]
-                      }
-/>,
-                  ],
-                  "className": "shows-inner",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "This Week:",
+                    "className": "event-happening-when-text",
+                  },
+                  "ref": null,
+                  "rendered": "This Week:",
+                  "type": "h2",
                 },
-                "ref": null,
-                "rendered": Array [
-                  Object {
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="shows-inner"
+>
+                      <Unknown
+                                            show={
+                                                                  Array [
+                                                                                        Object {
+                                                                                          "date": "Apr 13, 2018",
+                                                                                          "headlineArtist": Object {
+                                                                                            "Id": 34468,
+                                                                                            "Name": "The English Beat",
+                                                                                          },
+                                                                                          "id": 3092703,
+                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                          "startTime": "8:00 PM",
+                                                                                          "supportArtists": Array [],
+                                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                          "venue": Object {
+                                                                                            "address": "7401 E. 1st Ave",
+                                                                                            "city": "Denver",
+                                                                                            "id": 59319,
+                                                                                            "name": "The Soiled Dove Underground",
+                                                                                            "url": "http://www.soileddove.com/",
+                                                                                          },
+                                                                                        },
+                                                                                      ]
+                                            }
+                      />
+</div>,
+                    "className": "shows",
+                  },
+                  "ref": null,
+                  "rendered": Object {
                     "instance": null,
-                    "key": "4undefined",
-                    "nodeType": "function",
+                    "key": undefined,
+                    "nodeType": "host",
                     "props": Object {
-                      "show": Array [
-                        Object {
-                          "date": "Apr 13, 2018",
-                          "headlineArtist": Object {
-                            "Id": 34468,
-                            "Name": "The English Beat",
-                          },
-                          "id": 3092703,
-                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                          "startTime": "8:00 PM",
-                          "supportArtists": Array [],
-                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                          "venue": Object {
-                            "address": "7401 E. 1st Ave",
-                            "city": "Denver",
-                            "id": 59319,
-                            "name": "The Soiled Dove Underground",
-                            "url": "http://www.soileddove.com/",
-                          },
-                        },
+                      "children": Array [
+                        <Unknown
+                          show={
+                                                    Array [
+                                                                              Object {
+                                                                                "date": "Apr 13, 2018",
+                                                                                "headlineArtist": Object {
+                                                                                  "Id": 34468,
+                                                                                  "Name": "The English Beat",
+                                                                                },
+                                                                                "id": 3092703,
+                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                "startTime": "8:00 PM",
+                                                                                "supportArtists": Array [],
+                                                                                "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                "venue": Object {
+                                                                                  "address": "7401 E. 1st Ave",
+                                                                                  "city": "Denver",
+                                                                                  "id": 59319,
+                                                                                  "name": "The Soiled Dove Underground",
+                                                                                  "url": "http://www.soileddove.com/",
+                                                                                },
+                                                                              },
+                                                                            ]
+                          }
+/>,
                       ],
+                      "className": "shows-inner",
                     },
                     "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "4undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Array [
+                            Object {
+                              "date": "Apr 13, 2018",
+                              "headlineArtist": Object {
+                                "Id": 34468,
+                                "Name": "The English Beat",
+                              },
+                              "id": 3092703,
+                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                              "startTime": "8:00 PM",
+                              "supportArtists": Array [],
+                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                              "venue": Object {
+                                "address": "7401 E. 1st Ave",
+                                "city": "Denver",
+                                "id": 59319,
+                                "name": "The Soiled Dove Underground",
+                                "url": "http://www.soileddove.com/",
+                              },
+                            },
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
                   },
-                ],
-                "type": "div",
-              },
-              "type": "section",
+                  "type": "section",
+                },
+              ],
+              "type": "div",
             },
+            undefined,
             false,
             Object {
               "instance": null,
@@ -1309,14 +1421,12 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <a
-                    href="http://www.JamBase.com"
-                    target="_top"
-                    title="JamBase Concert Search"
+                    href="http://eventful.com/"
 >
                     <img
-                                        alt="Search JamBase Concerts"
-                                        border="0"
-                                        src="http://images.jambase.com/logos/jambase140x70.gif"
+                                        alt="Local Events, Concerts, Tickets"
+                                        className="eventful"
+                                        src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                     />
 </a>,
                   <a
@@ -1332,7 +1442,7 @@ ShallowWrapper {
                     />
 </a>,
                 ],
-                "className": "jambase",
+                "className": "icons",
               },
               "ref": null,
               "rendered": Array [
@@ -1342,13 +1452,11 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <img
-                      alt="Search JamBase Concerts"
-                      border="0"
-                      src="http://images.jambase.com/logos/jambase140x70.gif"
+                      alt="Local Events, Concerts, Tickets"
+                      className="eventful"
+                      src="http://api.eventful.com/images/powered/eventful_139x44.gif"
 />,
-                    "href": "http://www.JamBase.com",
-                    "target": "_top",
-                    "title": "JamBase Concert Search",
+                    "href": "http://eventful.com/",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1356,9 +1464,9 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "alt": "Search JamBase Concerts",
-                      "border": "0",
-                      "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                      "alt": "Local Events, Concerts, Tickets",
+                      "className": "eventful",
+                      "src": "http://api.eventful.com/images/powered/eventful_139x44.gif",
                     },
                     "ref": null,
                     "rendered": null,
@@ -1519,87 +1627,88 @@ ShallowWrapper {
                     Update location:
           </p>
           <withRouter(Connect(LocationForm))
+                    currentLocation={undefined}
                     id="main-form"
           />
 </div>,
         <div
           className="all-shows"
 >
-          <h2
-                    className="event-happening-when-text"
-          >
-                    This Week:
-          </h2>
-          <section
-                    className="shows"
-          >
-                    <div
-                              className="shows-inner"
+          <div>
+                    <h2
+                              className="event-happening-when-text"
                     >
-                              <Unknown
-                                        show={
-                                                  Array [
-                                                            Object {
-                                                              "date": "Apr 13, 2018",
-                                                              "headlineArtist": Object {
-                                                                "Id": 34468,
-                                                                "Name": "The English Beat",
-                                                              },
-                                                              "id": 3092703,
-                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                              "startTime": "8:00 PM",
-                                                              "supportArtists": Array [],
-                                                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                              "venue": Object {
-                                                                "address": "7401 E. 1st Ave",
-                                                                "city": "Denver",
-                                                                "id": 59319,
-                                                                "name": "The Soiled Dove Underground",
-                                                                "url": "http://www.soileddove.com/",
-                                                              },
-                                                            },
-                                                          ]
-                                        }
-                              />
-                              <Unknown
-                                        show={
-                                                  Array [
-                                                            Object {
-                                                              "date": "Apr 13, 2018",
-                                                              "headlineArtist": Object {
-                                                                "Id": 34468,
-                                                                "Name": "The English Beat",
-                                                              },
-                                                              "id": 3092703,
-                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                              "startTime": "8:00 PM",
-                                                              "supportArtists": Array [],
-                                                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                              "venue": Object {
-                                                                "address": "7401 E. 1st Ave",
-                                                                "city": "Denver",
-                                                                "id": 59319,
-                                                                "name": "The Soiled Dove Underground",
-                                                                "url": "http://www.soileddove.com/",
-                                                              },
-                                                            },
-                                                          ]
-                                        }
-                              />
-                    </div>
-          </section>
+                              This Week:
+                    </h2>
+                    <section
+                              className="shows"
+                    >
+                              <div
+                                        className="shows-inner"
+                              >
+                                        <Unknown
+                                                  show={
+                                                            Array [
+                                                                      Object {
+                                                                        "date": "Apr 13, 2018",
+                                                                        "headlineArtist": Object {
+                                                                          "Id": 34468,
+                                                                          "Name": "The English Beat",
+                                                                        },
+                                                                        "id": 3092703,
+                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                        "startTime": "8:00 PM",
+                                                                        "supportArtists": Array [],
+                                                                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                        "venue": Object {
+                                                                          "address": "7401 E. 1st Ave",
+                                                                          "city": "Denver",
+                                                                          "id": 59319,
+                                                                          "name": "The Soiled Dove Underground",
+                                                                          "url": "http://www.soileddove.com/",
+                                                                        },
+                                                                      },
+                                                                    ]
+                                                  }
+                                        />
+                                        <Unknown
+                                                  show={
+                                                            Array [
+                                                                      Object {
+                                                                        "date": "Apr 13, 2018",
+                                                                        "headlineArtist": Object {
+                                                                          "Id": 34468,
+                                                                          "Name": "The English Beat",
+                                                                        },
+                                                                        "id": 3092703,
+                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                        "startTime": "8:00 PM",
+                                                                        "supportArtists": Array [],
+                                                                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                        "venue": Object {
+                                                                          "address": "7401 E. 1st Ave",
+                                                                          "city": "Denver",
+                                                                          "id": 59319,
+                                                                          "name": "The Soiled Dove Underground",
+                                                                          "url": "http://www.soileddove.com/",
+                                                                        },
+                                                                      },
+                                                                    ]
+                                                  }
+                                        />
+                              </div>
+                    </section>
+          </div>
           <div
-                    className="jambase"
+                    className="icons"
           >
                     <a
-                              href="http://www.JamBase.com"
-                              target="_top"
-                              title="JamBase Concert Search"
+                              href="http://eventful.com/"
                     >
                               <img
-                                        alt="Search JamBase Concerts"
-                                        border="0"
-                                        src="http://images.jambase.com/logos/jambase140x70.gif"
+                                        alt="Local Events, Concerts, Tickets"
+                                        className="eventful"
+                                        src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                               />
                     </a>
                     <a
@@ -1631,6 +1740,7 @@ ShallowWrapper {
               Update location:
 </p>,
             <withRouter(Connect(LocationForm))
+              currentLocation={undefined}
               id="main-form"
 />,
           ],
@@ -1654,6 +1764,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "currentLocation": undefined,
               "id": "main-form",
             },
             "ref": null,
@@ -1670,82 +1781,84 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             false,
-            <h2
-              className="event-happening-when-text"
->
-              This Week:
-</h2>,
-            <section
-              className="shows"
->
-              <div
-                            className="shows-inner"
+            undefined,
+            <div>
+              <h2
+                            className="event-happening-when-text"
               >
-                            <Unknown
-                                          show={
-                                                        Array [
-                                                                      Object {
-                                                                        "date": "Apr 13, 2018",
-                                                                        "headlineArtist": Object {
-                                                                          "Id": 34468,
-                                                                          "Name": "The English Beat",
-                                                                        },
-                                                                        "id": 3092703,
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                        "venue": Object {
-                                                                          "address": "7401 E. 1st Ave",
-                                                                          "city": "Denver",
-                                                                          "id": 59319,
-                                                                          "name": "The Soiled Dove Underground",
-                                                                          "url": "http://www.soileddove.com/",
-                                                                        },
-                                                                      },
-                                                                    ]
-                                          }
-                            />
-                            <Unknown
-                                          show={
-                                                        Array [
-                                                                      Object {
-                                                                        "date": "Apr 13, 2018",
-                                                                        "headlineArtist": Object {
-                                                                          "Id": 34468,
-                                                                          "Name": "The English Beat",
-                                                                        },
-                                                                        "id": 3092703,
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                        "venue": Object {
-                                                                          "address": "7401 E. 1st Ave",
-                                                                          "city": "Denver",
-                                                                          "id": 59319,
-                                                                          "name": "The Soiled Dove Underground",
-                                                                          "url": "http://www.soileddove.com/",
-                                                                        },
-                                                                      },
-                                                                    ]
-                                          }
-                            />
-              </div>
-</section>,
+                            This Week:
+              </h2>
+              <section
+                            className="shows"
+              >
+                            <div
+                                          className="shows-inner"
+                            >
+                                          <Unknown
+                                                        show={
+                                                                      Array [
+                                                                                    Object {
+                                                                                      "date": "Apr 13, 2018",
+                                                                                      "headlineArtist": Object {
+                                                                                        "Id": 34468,
+                                                                                        "Name": "The English Beat",
+                                                                                      },
+                                                                                      "id": 3092703,
+                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                      "startTime": "8:00 PM",
+                                                                                      "supportArtists": Array [],
+                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                      "venue": Object {
+                                                                                        "address": "7401 E. 1st Ave",
+                                                                                        "city": "Denver",
+                                                                                        "id": 59319,
+                                                                                        "name": "The Soiled Dove Underground",
+                                                                                        "url": "http://www.soileddove.com/",
+                                                                                      },
+                                                                                    },
+                                                                                  ]
+                                                        }
+                                          />
+                                          <Unknown
+                                                        show={
+                                                                      Array [
+                                                                                    Object {
+                                                                                      "date": "Apr 13, 2018",
+                                                                                      "headlineArtist": Object {
+                                                                                        "Id": 34468,
+                                                                                        "Name": "The English Beat",
+                                                                                      },
+                                                                                      "id": 3092703,
+                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                      "startTime": "8:00 PM",
+                                                                                      "supportArtists": Array [],
+                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                      "venue": Object {
+                                                                                        "address": "7401 E. 1st Ave",
+                                                                                        "city": "Denver",
+                                                                                        "id": 59319,
+                                                                                        "name": "The Soiled Dove Underground",
+                                                                                        "url": "http://www.soileddove.com/",
+                                                                                      },
+                                                                                    },
+                                                                                  ]
+                                                        }
+                                          />
+                            </div>
+              </section>
+</div>,
+            undefined,
             false,
             <div
-              className="jambase"
+              className="icons"
 >
               <a
-                            href="http://www.JamBase.com"
-                            target="_top"
-                            title="JamBase Concert Search"
+                            href="http://eventful.com/"
               >
                             <img
-                                          alt="Search JamBase Concerts"
-                                          border="0"
-                                          src="http://images.jambase.com/logos/jambase140x70.gif"
+                                          alt="Local Events, Concerts, Tickets"
+                                          className="eventful"
+                                          src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                             />
               </a>
               <a
@@ -1767,208 +1880,286 @@ ShallowWrapper {
         "ref": null,
         "rendered": Array [
           false,
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "This Week:",
-              "className": "event-happening-when-text",
-            },
-            "ref": null,
-            "rendered": "This Week:",
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="shows-inner"
+              "children": Array [
+                <h2
+                  className="event-happening-when-text"
 >
-                <Unknown
-                                show={
-                                                Array [
-                                                                Object {
-                                                                  "date": "Apr 13, 2018",
-                                                                  "headlineArtist": Object {
-                                                                    "Id": 34468,
-                                                                    "Name": "The English Beat",
-                                                                  },
-                                                                  "id": 3092703,
-                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                  "startTime": "8:00 PM",
-                                                                  "supportArtists": Array [],
-                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                  "venue": Object {
-                                                                    "address": "7401 E. 1st Ave",
-                                                                    "city": "Denver",
-                                                                    "id": 59319,
-                                                                    "name": "The Soiled Dove Underground",
-                                                                    "url": "http://www.soileddove.com/",
-                                                                  },
-                                                                },
-                                                              ]
-                                }
-                />
-                <Unknown
-                                show={
-                                                Array [
-                                                                Object {
-                                                                  "date": "Apr 13, 2018",
-                                                                  "headlineArtist": Object {
-                                                                    "Id": 34468,
-                                                                    "Name": "The English Beat",
-                                                                  },
-                                                                  "id": 3092703,
-                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                  "startTime": "8:00 PM",
-                                                                  "supportArtists": Array [],
-                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                  "venue": Object {
-                                                                    "address": "7401 E. 1st Ave",
-                                                                    "city": "Denver",
-                                                                    "id": 59319,
-                                                                    "name": "The Soiled Dove Underground",
-                                                                    "url": "http://www.soileddove.com/",
-                                                                  },
-                                                                },
-                                                              ]
-                                }
-                />
-</div>,
-              "className": "shows",
+                  This Week:
+</h2>,
+                <section
+                  className="shows"
+>
+                  <div
+                                    className="shows-inner"
+                  >
+                                    <Unknown
+                                                      show={
+                                                                        Array [
+                                                                                          Object {
+                                                                                            "date": "Apr 13, 2018",
+                                                                                            "headlineArtist": Object {
+                                                                                              "Id": 34468,
+                                                                                              "Name": "The English Beat",
+                                                                                            },
+                                                                                            "id": 3092703,
+                                                                                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                            "startTime": "8:00 PM",
+                                                                                            "supportArtists": Array [],
+                                                                                            "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                            "venue": Object {
+                                                                                              "address": "7401 E. 1st Ave",
+                                                                                              "city": "Denver",
+                                                                                              "id": 59319,
+                                                                                              "name": "The Soiled Dove Underground",
+                                                                                              "url": "http://www.soileddove.com/",
+                                                                                            },
+                                                                                          },
+                                                                                        ]
+                                                      }
+                                    />
+                                    <Unknown
+                                                      show={
+                                                                        Array [
+                                                                                          Object {
+                                                                                            "date": "Apr 13, 2018",
+                                                                                            "headlineArtist": Object {
+                                                                                              "Id": 34468,
+                                                                                              "Name": "The English Beat",
+                                                                                            },
+                                                                                            "id": 3092703,
+                                                                                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                            "startTime": "8:00 PM",
+                                                                                            "supportArtists": Array [],
+                                                                                            "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                            "venue": Object {
+                                                                                              "address": "7401 E. 1st Ave",
+                                                                                              "city": "Denver",
+                                                                                              "id": 59319,
+                                                                                              "name": "The Soiled Dove Underground",
+                                                                                              "url": "http://www.soileddove.com/",
+                                                                                            },
+                                                                                          },
+                                                                                        ]
+                                                      }
+                                    />
+                  </div>
+</section>,
+              ],
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <Unknown
-                    show={
-                                        Array [
-                                                            Object {
-                                                              "date": "Apr 13, 2018",
-                                                              "headlineArtist": Object {
-                                                                "Id": 34468,
-                                                                "Name": "The English Beat",
-                                                              },
-                                                              "id": 3092703,
-                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                              "startTime": "8:00 PM",
-                                                              "supportArtists": Array [],
-                                                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                              "venue": Object {
-                                                                "address": "7401 E. 1st Ave",
-                                                                "city": "Denver",
-                                                                "id": 59319,
-                                                                "name": "The Soiled Dove Underground",
-                                                                "url": "http://www.soileddove.com/",
-                                                              },
-                                                            },
-                                                          ]
-                    }
-/>,
-                  <Unknown
-                    show={
-                                        Array [
-                                                            Object {
-                                                              "date": "Apr 13, 2018",
-                                                              "headlineArtist": Object {
-                                                                "Id": 34468,
-                                                                "Name": "The English Beat",
-                                                              },
-                                                              "id": 3092703,
-                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                              "startTime": "8:00 PM",
-                                                              "supportArtists": Array [],
-                                                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                              "venue": Object {
-                                                                "address": "7401 E. 1st Ave",
-                                                                "city": "Denver",
-                                                                "id": 59319,
-                                                                "name": "The Soiled Dove Underground",
-                                                                "url": "http://www.soileddove.com/",
-                                                              },
-                                                            },
-                                                          ]
-                    }
-/>,
-                ],
-                "className": "shows-inner",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "This Week:",
+                  "className": "event-happening-when-text",
+                },
+                "ref": null,
+                "rendered": "This Week:",
+                "type": "h2",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="shows-inner"
+>
+                    <Unknown
+                                        show={
+                                                            Array [
+                                                                                Object {
+                                                                                  "date": "Apr 13, 2018",
+                                                                                  "headlineArtist": Object {
+                                                                                    "Id": 34468,
+                                                                                    "Name": "The English Beat",
+                                                                                  },
+                                                                                  "id": 3092703,
+                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                  "startTime": "8:00 PM",
+                                                                                  "supportArtists": Array [],
+                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                  "venue": Object {
+                                                                                    "address": "7401 E. 1st Ave",
+                                                                                    "city": "Denver",
+                                                                                    "id": 59319,
+                                                                                    "name": "The Soiled Dove Underground",
+                                                                                    "url": "http://www.soileddove.com/",
+                                                                                  },
+                                                                                },
+                                                                              ]
+                                        }
+                    />
+                    <Unknown
+                                        show={
+                                                            Array [
+                                                                                Object {
+                                                                                  "date": "Apr 13, 2018",
+                                                                                  "headlineArtist": Object {
+                                                                                    "Id": 34468,
+                                                                                    "Name": "The English Beat",
+                                                                                  },
+                                                                                  "id": 3092703,
+                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                  "startTime": "8:00 PM",
+                                                                                  "supportArtists": Array [],
+                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                  "venue": Object {
+                                                                                    "address": "7401 E. 1st Ave",
+                                                                                    "city": "Denver",
+                                                                                    "id": 59319,
+                                                                                    "name": "The Soiled Dove Underground",
+                                                                                    "url": "http://www.soileddove.com/",
+                                                                                  },
+                                                                                },
+                                                                              ]
+                                        }
+                    />
+</div>,
+                  "className": "shows",
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
-                  "key": "1undefined",
-                  "nodeType": "function",
+                  "key": undefined,
+                  "nodeType": "host",
                   "props": Object {
-                    "show": Array [
-                      Object {
-                        "date": "Apr 13, 2018",
-                        "headlineArtist": Object {
-                          "Id": 34468,
-                          "Name": "The English Beat",
-                        },
-                        "id": 3092703,
-                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                        "startTime": "8:00 PM",
-                        "supportArtists": Array [],
-                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                        "venue": Object {
-                          "address": "7401 E. 1st Ave",
-                          "city": "Denver",
-                          "id": 59319,
-                          "name": "The Soiled Dove Underground",
-                          "url": "http://www.soileddove.com/",
-                        },
-                      },
+                    "children": Array [
+                      <Unknown
+                        show={
+                                                Array [
+                                                                        Object {
+                                                                          "date": "Apr 13, 2018",
+                                                                          "headlineArtist": Object {
+                                                                            "Id": 34468,
+                                                                            "Name": "The English Beat",
+                                                                          },
+                                                                          "id": 3092703,
+                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                          "startTime": "8:00 PM",
+                                                                          "supportArtists": Array [],
+                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                          "venue": Object {
+                                                                            "address": "7401 E. 1st Ave",
+                                                                            "city": "Denver",
+                                                                            "id": 59319,
+                                                                            "name": "The Soiled Dove Underground",
+                                                                            "url": "http://www.soileddove.com/",
+                                                                          },
+                                                                        },
+                                                                      ]
+                        }
+/>,
+                      <Unknown
+                        show={
+                                                Array [
+                                                                        Object {
+                                                                          "date": "Apr 13, 2018",
+                                                                          "headlineArtist": Object {
+                                                                            "Id": 34468,
+                                                                            "Name": "The English Beat",
+                                                                          },
+                                                                          "id": 3092703,
+                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                          "startTime": "8:00 PM",
+                                                                          "supportArtists": Array [],
+                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                          "venue": Object {
+                                                                            "address": "7401 E. 1st Ave",
+                                                                            "city": "Denver",
+                                                                            "id": 59319,
+                                                                            "name": "The Soiled Dove Underground",
+                                                                            "url": "http://www.soileddove.com/",
+                                                                          },
+                                                                        },
+                                                                      ]
+                        }
+/>,
                     ],
+                    "className": "shows-inner",
                   },
                   "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": "1undefined",
-                  "nodeType": "function",
-                  "props": Object {
-                    "show": Array [
-                      Object {
-                        "date": "Apr 13, 2018",
-                        "headlineArtist": Object {
-                          "Id": 34468,
-                          "Name": "The English Beat",
-                        },
-                        "id": 3092703,
-                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                        "startTime": "8:00 PM",
-                        "supportArtists": Array [],
-                        "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                        "venue": Object {
-                          "address": "7401 E. 1st Ave",
-                          "city": "Denver",
-                          "id": 59319,
-                          "name": "The Soiled Dove Underground",
-                          "url": "http://www.soileddove.com/",
-                        },
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "1undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Array [
+                          Object {
+                            "date": "Apr 13, 2018",
+                            "headlineArtist": Object {
+                              "Id": 34468,
+                              "Name": "The English Beat",
+                            },
+                            "id": 3092703,
+                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                            "startTime": "8:00 PM",
+                            "supportArtists": Array [],
+                            "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                            "venue": Object {
+                              "address": "7401 E. 1st Ave",
+                              "city": "Denver",
+                              "id": 59319,
+                              "name": "The Soiled Dove Underground",
+                              "url": "http://www.soileddove.com/",
+                            },
+                          },
+                        ],
                       },
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "1undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Array [
+                          Object {
+                            "date": "Apr 13, 2018",
+                            "headlineArtist": Object {
+                              "Id": 34468,
+                              "Name": "The English Beat",
+                            },
+                            "id": 3092703,
+                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                            "startTime": "8:00 PM",
+                            "supportArtists": Array [],
+                            "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                            "venue": Object {
+                              "address": "7401 E. 1st Ave",
+                              "city": "Denver",
+                              "id": 59319,
+                              "name": "The Soiled Dove Underground",
+                              "url": "http://www.soileddove.com/",
+                            },
+                          },
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
                 },
-              ],
-              "type": "div",
-            },
-            "type": "section",
+                "type": "section",
+              },
+            ],
+            "type": "div",
           },
+          undefined,
           false,
           Object {
             "instance": null,
@@ -1977,14 +2168,12 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <a
-                  href="http://www.JamBase.com"
-                  target="_top"
-                  title="JamBase Concert Search"
+                  href="http://eventful.com/"
 >
                   <img
-                                    alt="Search JamBase Concerts"
-                                    border="0"
-                                    src="http://images.jambase.com/logos/jambase140x70.gif"
+                                    alt="Local Events, Concerts, Tickets"
+                                    className="eventful"
+                                    src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                   />
 </a>,
                 <a
@@ -2000,7 +2189,7 @@ ShallowWrapper {
                   />
 </a>,
               ],
-              "className": "jambase",
+              "className": "icons",
             },
             "ref": null,
             "rendered": Array [
@@ -2010,13 +2199,11 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <img
-                    alt="Search JamBase Concerts"
-                    border="0"
-                    src="http://images.jambase.com/logos/jambase140x70.gif"
+                    alt="Local Events, Concerts, Tickets"
+                    className="eventful"
+                    src="http://api.eventful.com/images/powered/eventful_139x44.gif"
 />,
-                  "href": "http://www.JamBase.com",
-                  "target": "_top",
-                  "title": "JamBase Concert Search",
+                  "href": "http://eventful.com/",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -2024,9 +2211,9 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "alt": "Search JamBase Concerts",
-                    "border": "0",
-                    "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                    "alt": "Local Events, Concerts, Tickets",
+                    "className": "eventful",
+                    "src": "http://api.eventful.com/images/powered/eventful_139x44.gif",
                   },
                   "ref": null,
                   "rendered": null,
@@ -2089,87 +2276,88 @@ ShallowWrapper {
                         Update location:
             </p>
             <withRouter(Connect(LocationForm))
+                        currentLocation={undefined}
                         id="main-form"
             />
 </div>,
           <div
             className="all-shows"
 >
-            <h2
-                        className="event-happening-when-text"
-            >
-                        This Week:
-            </h2>
-            <section
-                        className="shows"
-            >
-                        <div
-                                    className="shows-inner"
+            <div>
+                        <h2
+                                    className="event-happening-when-text"
                         >
-                                    <Unknown
-                                                show={
-                                                            Array [
-                                                                        Object {
-                                                                          "date": "Apr 13, 2018",
-                                                                          "headlineArtist": Object {
-                                                                            "Id": 34468,
-                                                                            "Name": "The English Beat",
-                                                                          },
-                                                                          "id": 3092703,
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                          "venue": Object {
-                                                                            "address": "7401 E. 1st Ave",
-                                                                            "city": "Denver",
-                                                                            "id": 59319,
-                                                                            "name": "The Soiled Dove Underground",
-                                                                            "url": "http://www.soileddove.com/",
-                                                                          },
-                                                                        },
-                                                                      ]
-                                                }
-                                    />
-                                    <Unknown
-                                                show={
-                                                            Array [
-                                                                        Object {
-                                                                          "date": "Apr 13, 2018",
-                                                                          "headlineArtist": Object {
-                                                                            "Id": 34468,
-                                                                            "Name": "The English Beat",
-                                                                          },
-                                                                          "id": 3092703,
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                          "venue": Object {
-                                                                            "address": "7401 E. 1st Ave",
-                                                                            "city": "Denver",
-                                                                            "id": 59319,
-                                                                            "name": "The Soiled Dove Underground",
-                                                                            "url": "http://www.soileddove.com/",
-                                                                          },
-                                                                        },
-                                                                      ]
-                                                }
-                                    />
-                        </div>
-            </section>
+                                    This Week:
+                        </h2>
+                        <section
+                                    className="shows"
+                        >
+                                    <div
+                                                className="shows-inner"
+                                    >
+                                                <Unknown
+                                                            show={
+                                                                        Array [
+                                                                                    Object {
+                                                                                      "date": "Apr 13, 2018",
+                                                                                      "headlineArtist": Object {
+                                                                                        "Id": 34468,
+                                                                                        "Name": "The English Beat",
+                                                                                      },
+                                                                                      "id": 3092703,
+                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                      "startTime": "8:00 PM",
+                                                                                      "supportArtists": Array [],
+                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                      "venue": Object {
+                                                                                        "address": "7401 E. 1st Ave",
+                                                                                        "city": "Denver",
+                                                                                        "id": 59319,
+                                                                                        "name": "The Soiled Dove Underground",
+                                                                                        "url": "http://www.soileddove.com/",
+                                                                                      },
+                                                                                    },
+                                                                                  ]
+                                                            }
+                                                />
+                                                <Unknown
+                                                            show={
+                                                                        Array [
+                                                                                    Object {
+                                                                                      "date": "Apr 13, 2018",
+                                                                                      "headlineArtist": Object {
+                                                                                        "Id": 34468,
+                                                                                        "Name": "The English Beat",
+                                                                                      },
+                                                                                      "id": 3092703,
+                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                      "startTime": "8:00 PM",
+                                                                                      "supportArtists": Array [],
+                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                      "venue": Object {
+                                                                                        "address": "7401 E. 1st Ave",
+                                                                                        "city": "Denver",
+                                                                                        "id": 59319,
+                                                                                        "name": "The Soiled Dove Underground",
+                                                                                        "url": "http://www.soileddove.com/",
+                                                                                      },
+                                                                                    },
+                                                                                  ]
+                                                            }
+                                                />
+                                    </div>
+                        </section>
+            </div>
             <div
-                        className="jambase"
+                        className="icons"
             >
                         <a
-                                    href="http://www.JamBase.com"
-                                    target="_top"
-                                    title="JamBase Concert Search"
+                                    href="http://eventful.com/"
                         >
                                     <img
-                                                alt="Search JamBase Concerts"
-                                                border="0"
-                                                src="http://images.jambase.com/logos/jambase140x70.gif"
+                                                alt="Local Events, Concerts, Tickets"
+                                                className="eventful"
+                                                src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                                     />
                         </a>
                         <a
@@ -2201,6 +2389,7 @@ ShallowWrapper {
                 Update location:
 </p>,
               <withRouter(Connect(LocationForm))
+                currentLocation={undefined}
                 id="main-form"
 />,
             ],
@@ -2224,6 +2413,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "currentLocation": undefined,
                 "id": "main-form",
               },
               "ref": null,
@@ -2240,82 +2430,84 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
-              <h2
-                className="event-happening-when-text"
->
-                This Week:
-</h2>,
-              <section
-                className="shows"
->
-                <div
-                                className="shows-inner"
+              undefined,
+              <div>
+                <h2
+                                className="event-happening-when-text"
                 >
-                                <Unknown
-                                                show={
-                                                                Array [
-                                                                                Object {
-                                                                                  "date": "Apr 13, 2018",
-                                                                                  "headlineArtist": Object {
-                                                                                    "Id": 34468,
-                                                                                    "Name": "The English Beat",
-                                                                                  },
-                                                                                  "id": 3092703,
-                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                  "startTime": "8:00 PM",
-                                                                                  "supportArtists": Array [],
-                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                                  "venue": Object {
-                                                                                    "address": "7401 E. 1st Ave",
-                                                                                    "city": "Denver",
-                                                                                    "id": 59319,
-                                                                                    "name": "The Soiled Dove Underground",
-                                                                                    "url": "http://www.soileddove.com/",
-                                                                                  },
-                                                                                },
-                                                                              ]
-                                                }
-                                />
-                                <Unknown
-                                                show={
-                                                                Array [
-                                                                                Object {
-                                                                                  "date": "Apr 13, 2018",
-                                                                                  "headlineArtist": Object {
-                                                                                    "Id": 34468,
-                                                                                    "Name": "The English Beat",
-                                                                                  },
-                                                                                  "id": 3092703,
-                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                  "startTime": "8:00 PM",
-                                                                                  "supportArtists": Array [],
-                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                                  "venue": Object {
-                                                                                    "address": "7401 E. 1st Ave",
-                                                                                    "city": "Denver",
-                                                                                    "id": 59319,
-                                                                                    "name": "The Soiled Dove Underground",
-                                                                                    "url": "http://www.soileddove.com/",
-                                                                                  },
-                                                                                },
-                                                                              ]
-                                                }
-                                />
-                </div>
-</section>,
+                                This Week:
+                </h2>
+                <section
+                                className="shows"
+                >
+                                <div
+                                                className="shows-inner"
+                                >
+                                                <Unknown
+                                                                show={
+                                                                                Array [
+                                                                                                Object {
+                                                                                                  "date": "Apr 13, 2018",
+                                                                                                  "headlineArtist": Object {
+                                                                                                    "Id": 34468,
+                                                                                                    "Name": "The English Beat",
+                                                                                                  },
+                                                                                                  "id": 3092703,
+                                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                  "startTime": "8:00 PM",
+                                                                                                  "supportArtists": Array [],
+                                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                                  "venue": Object {
+                                                                                                    "address": "7401 E. 1st Ave",
+                                                                                                    "city": "Denver",
+                                                                                                    "id": 59319,
+                                                                                                    "name": "The Soiled Dove Underground",
+                                                                                                    "url": "http://www.soileddove.com/",
+                                                                                                  },
+                                                                                                },
+                                                                                              ]
+                                                                }
+                                                />
+                                                <Unknown
+                                                                show={
+                                                                                Array [
+                                                                                                Object {
+                                                                                                  "date": "Apr 13, 2018",
+                                                                                                  "headlineArtist": Object {
+                                                                                                    "Id": 34468,
+                                                                                                    "Name": "The English Beat",
+                                                                                                  },
+                                                                                                  "id": 3092703,
+                                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                  "startTime": "8:00 PM",
+                                                                                                  "supportArtists": Array [],
+                                                                                                  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                                  "venue": Object {
+                                                                                                    "address": "7401 E. 1st Ave",
+                                                                                                    "city": "Denver",
+                                                                                                    "id": 59319,
+                                                                                                    "name": "The Soiled Dove Underground",
+                                                                                                    "url": "http://www.soileddove.com/",
+                                                                                                  },
+                                                                                                },
+                                                                                              ]
+                                                                }
+                                                />
+                                </div>
+                </section>
+</div>,
+              undefined,
               false,
               <div
-                className="jambase"
+                className="icons"
 >
                 <a
-                                href="http://www.JamBase.com"
-                                target="_top"
-                                title="JamBase Concert Search"
+                                href="http://eventful.com/"
                 >
                                 <img
-                                                alt="Search JamBase Concerts"
-                                                border="0"
-                                                src="http://images.jambase.com/logos/jambase140x70.gif"
+                                                alt="Local Events, Concerts, Tickets"
+                                                className="eventful"
+                                                src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                                 />
                 </a>
                 <a
@@ -2337,208 +2529,286 @@ ShallowWrapper {
           "ref": null,
           "rendered": Array [
             false,
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "This Week:",
-                "className": "event-happening-when-text",
-              },
-              "ref": null,
-              "rendered": "This Week:",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="shows-inner"
+                "children": Array [
+                  <h2
+                    className="event-happening-when-text"
 >
-                  <Unknown
-                                    show={
-                                                      Array [
-                                                                        Object {
-                                                                          "date": "Apr 13, 2018",
-                                                                          "headlineArtist": Object {
-                                                                            "Id": 34468,
-                                                                            "Name": "The English Beat",
-                                                                          },
-                                                                          "id": 3092703,
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                          "venue": Object {
-                                                                            "address": "7401 E. 1st Ave",
-                                                                            "city": "Denver",
-                                                                            "id": 59319,
-                                                                            "name": "The Soiled Dove Underground",
-                                                                            "url": "http://www.soileddove.com/",
-                                                                          },
-                                                                        },
-                                                                      ]
-                                    }
-                  />
-                  <Unknown
-                                    show={
-                                                      Array [
-                                                                        Object {
-                                                                          "date": "Apr 13, 2018",
-                                                                          "headlineArtist": Object {
-                                                                            "Id": 34468,
-                                                                            "Name": "The English Beat",
-                                                                          },
-                                                                          "id": 3092703,
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                          "venue": Object {
-                                                                            "address": "7401 E. 1st Ave",
-                                                                            "city": "Denver",
-                                                                            "id": 59319,
-                                                                            "name": "The Soiled Dove Underground",
-                                                                            "url": "http://www.soileddove.com/",
-                                                                          },
-                                                                        },
-                                                                      ]
-                                    }
-                  />
-</div>,
-                "className": "shows",
+                    This Week:
+</h2>,
+                  <section
+                    className="shows"
+>
+                    <div
+                                        className="shows-inner"
+                    >
+                                        <Unknown
+                                                            show={
+                                                                                Array [
+                                                                                                    Object {
+                                                                                                      "date": "Apr 13, 2018",
+                                                                                                      "headlineArtist": Object {
+                                                                                                        "Id": 34468,
+                                                                                                        "Name": "The English Beat",
+                                                                                                      },
+                                                                                                      "id": 3092703,
+                                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                      "startTime": "8:00 PM",
+                                                                                                      "supportArtists": Array [],
+                                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                                      "venue": Object {
+                                                                                                        "address": "7401 E. 1st Ave",
+                                                                                                        "city": "Denver",
+                                                                                                        "id": 59319,
+                                                                                                        "name": "The Soiled Dove Underground",
+                                                                                                        "url": "http://www.soileddove.com/",
+                                                                                                      },
+                                                                                                    },
+                                                                                                  ]
+                                                            }
+                                        />
+                                        <Unknown
+                                                            show={
+                                                                                Array [
+                                                                                                    Object {
+                                                                                                      "date": "Apr 13, 2018",
+                                                                                                      "headlineArtist": Object {
+                                                                                                        "Id": 34468,
+                                                                                                        "Name": "The English Beat",
+                                                                                                      },
+                                                                                                      "id": 3092703,
+                                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                      "startTime": "8:00 PM",
+                                                                                                      "supportArtists": Array [],
+                                                                                                      "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                                      "venue": Object {
+                                                                                                        "address": "7401 E. 1st Ave",
+                                                                                                        "city": "Denver",
+                                                                                                        "id": 59319,
+                                                                                                        "name": "The Soiled Dove Underground",
+                                                                                                        "url": "http://www.soileddove.com/",
+                                                                                                      },
+                                                                                                    },
+                                                                                                  ]
+                                                            }
+                                        />
+                    </div>
+</section>,
+                ],
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <Unknown
-                      show={
-                                            Array [
-                                                                  Object {
-                                                                    "date": "Apr 13, 2018",
-                                                                    "headlineArtist": Object {
-                                                                      "Id": 34468,
-                                                                      "Name": "The English Beat",
-                                                                    },
-                                                                    "id": 3092703,
-                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                    "startTime": "8:00 PM",
-                                                                    "supportArtists": Array [],
-                                                                    "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                    "venue": Object {
-                                                                      "address": "7401 E. 1st Ave",
-                                                                      "city": "Denver",
-                                                                      "id": 59319,
-                                                                      "name": "The Soiled Dove Underground",
-                                                                      "url": "http://www.soileddove.com/",
-                                                                    },
-                                                                  },
-                                                                ]
-                      }
-/>,
-                    <Unknown
-                      show={
-                                            Array [
-                                                                  Object {
-                                                                    "date": "Apr 13, 2018",
-                                                                    "headlineArtist": Object {
-                                                                      "Id": 34468,
-                                                                      "Name": "The English Beat",
-                                                                    },
-                                                                    "id": 3092703,
-                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                    "startTime": "8:00 PM",
-                                                                    "supportArtists": Array [],
-                                                                    "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                                                                    "venue": Object {
-                                                                      "address": "7401 E. 1st Ave",
-                                                                      "city": "Denver",
-                                                                      "id": 59319,
-                                                                      "name": "The Soiled Dove Underground",
-                                                                      "url": "http://www.soileddove.com/",
-                                                                    },
-                                                                  },
-                                                                ]
-                      }
-/>,
-                  ],
-                  "className": "shows-inner",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "This Week:",
+                    "className": "event-happening-when-text",
+                  },
+                  "ref": null,
+                  "rendered": "This Week:",
+                  "type": "h2",
                 },
-                "ref": null,
-                "rendered": Array [
-                  Object {
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="shows-inner"
+>
+                      <Unknown
+                                            show={
+                                                                  Array [
+                                                                                        Object {
+                                                                                          "date": "Apr 13, 2018",
+                                                                                          "headlineArtist": Object {
+                                                                                            "Id": 34468,
+                                                                                            "Name": "The English Beat",
+                                                                                          },
+                                                                                          "id": 3092703,
+                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                          "startTime": "8:00 PM",
+                                                                                          "supportArtists": Array [],
+                                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                          "venue": Object {
+                                                                                            "address": "7401 E. 1st Ave",
+                                                                                            "city": "Denver",
+                                                                                            "id": 59319,
+                                                                                            "name": "The Soiled Dove Underground",
+                                                                                            "url": "http://www.soileddove.com/",
+                                                                                          },
+                                                                                        },
+                                                                                      ]
+                                            }
+                      />
+                      <Unknown
+                                            show={
+                                                                  Array [
+                                                                                        Object {
+                                                                                          "date": "Apr 13, 2018",
+                                                                                          "headlineArtist": Object {
+                                                                                            "Id": 34468,
+                                                                                            "Name": "The English Beat",
+                                                                                          },
+                                                                                          "id": 3092703,
+                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                          "startTime": "8:00 PM",
+                                                                                          "supportArtists": Array [],
+                                                                                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                          "venue": Object {
+                                                                                            "address": "7401 E. 1st Ave",
+                                                                                            "city": "Denver",
+                                                                                            "id": 59319,
+                                                                                            "name": "The Soiled Dove Underground",
+                                                                                            "url": "http://www.soileddove.com/",
+                                                                                          },
+                                                                                        },
+                                                                                      ]
+                                            }
+                      />
+</div>,
+                    "className": "shows",
+                  },
+                  "ref": null,
+                  "rendered": Object {
                     "instance": null,
-                    "key": "1undefined",
-                    "nodeType": "function",
+                    "key": undefined,
+                    "nodeType": "host",
                     "props": Object {
-                      "show": Array [
-                        Object {
-                          "date": "Apr 13, 2018",
-                          "headlineArtist": Object {
-                            "Id": 34468,
-                            "Name": "The English Beat",
-                          },
-                          "id": 3092703,
-                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                          "startTime": "8:00 PM",
-                          "supportArtists": Array [],
-                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                          "venue": Object {
-                            "address": "7401 E. 1st Ave",
-                            "city": "Denver",
-                            "id": 59319,
-                            "name": "The Soiled Dove Underground",
-                            "url": "http://www.soileddove.com/",
-                          },
-                        },
+                      "children": Array [
+                        <Unknown
+                          show={
+                                                    Array [
+                                                                              Object {
+                                                                                "date": "Apr 13, 2018",
+                                                                                "headlineArtist": Object {
+                                                                                  "Id": 34468,
+                                                                                  "Name": "The English Beat",
+                                                                                },
+                                                                                "id": 3092703,
+                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                "startTime": "8:00 PM",
+                                                                                "supportArtists": Array [],
+                                                                                "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                "venue": Object {
+                                                                                  "address": "7401 E. 1st Ave",
+                                                                                  "city": "Denver",
+                                                                                  "id": 59319,
+                                                                                  "name": "The Soiled Dove Underground",
+                                                                                  "url": "http://www.soileddove.com/",
+                                                                                },
+                                                                              },
+                                                                            ]
+                          }
+/>,
+                        <Unknown
+                          show={
+                                                    Array [
+                                                                              Object {
+                                                                                "date": "Apr 13, 2018",
+                                                                                "headlineArtist": Object {
+                                                                                  "Id": 34468,
+                                                                                  "Name": "The English Beat",
+                                                                                },
+                                                                                "id": 3092703,
+                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                "startTime": "8:00 PM",
+                                                                                "supportArtists": Array [],
+                                                                                "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                                                                                "venue": Object {
+                                                                                  "address": "7401 E. 1st Ave",
+                                                                                  "city": "Denver",
+                                                                                  "id": 59319,
+                                                                                  "name": "The Soiled Dove Underground",
+                                                                                  "url": "http://www.soileddove.com/",
+                                                                                },
+                                                                              },
+                                                                            ]
+                          }
+/>,
                       ],
+                      "className": "shows-inner",
                     },
                     "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": "1undefined",
-                    "nodeType": "function",
-                    "props": Object {
-                      "show": Array [
-                        Object {
-                          "date": "Apr 13, 2018",
-                          "headlineArtist": Object {
-                            "Id": 34468,
-                            "Name": "The English Beat",
-                          },
-                          "id": 3092703,
-                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                          "startTime": "8:00 PM",
-                          "supportArtists": Array [],
-                          "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-                          "venue": Object {
-                            "address": "7401 E. 1st Ave",
-                            "city": "Denver",
-                            "id": 59319,
-                            "name": "The Soiled Dove Underground",
-                            "url": "http://www.soileddove.com/",
-                          },
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "1undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Array [
+                            Object {
+                              "date": "Apr 13, 2018",
+                              "headlineArtist": Object {
+                                "Id": 34468,
+                                "Name": "The English Beat",
+                              },
+                              "id": 3092703,
+                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                              "startTime": "8:00 PM",
+                              "supportArtists": Array [],
+                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                              "venue": Object {
+                                "address": "7401 E. 1st Ave",
+                                "city": "Denver",
+                                "id": 59319,
+                                "name": "The Soiled Dove Underground",
+                                "url": "http://www.soileddove.com/",
+                              },
+                            },
+                          ],
                         },
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "1undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Array [
+                            Object {
+                              "date": "Apr 13, 2018",
+                              "headlineArtist": Object {
+                                "Id": 34468,
+                                "Name": "The English Beat",
+                              },
+                              "id": 3092703,
+                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                              "startTime": "8:00 PM",
+                              "supportArtists": Array [],
+                              "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+                              "venue": Object {
+                                "address": "7401 E. 1st Ave",
+                                "city": "Denver",
+                                "id": 59319,
+                                "name": "The Soiled Dove Underground",
+                                "url": "http://www.soileddove.com/",
+                              },
+                            },
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
                   },
-                ],
-                "type": "div",
-              },
-              "type": "section",
+                  "type": "section",
+                },
+              ],
+              "type": "div",
             },
+            undefined,
             false,
             Object {
               "instance": null,
@@ -2547,14 +2817,12 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <a
-                    href="http://www.JamBase.com"
-                    target="_top"
-                    title="JamBase Concert Search"
+                    href="http://eventful.com/"
 >
                     <img
-                                        alt="Search JamBase Concerts"
-                                        border="0"
-                                        src="http://images.jambase.com/logos/jambase140x70.gif"
+                                        alt="Local Events, Concerts, Tickets"
+                                        className="eventful"
+                                        src="http://api.eventful.com/images/powered/eventful_139x44.gif"
                     />
 </a>,
                   <a
@@ -2570,7 +2838,7 @@ ShallowWrapper {
                     />
 </a>,
                 ],
-                "className": "jambase",
+                "className": "icons",
               },
               "ref": null,
               "rendered": Array [
@@ -2580,13 +2848,11 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <img
-                      alt="Search JamBase Concerts"
-                      border="0"
-                      src="http://images.jambase.com/logos/jambase140x70.gif"
+                      alt="Local Events, Concerts, Tickets"
+                      className="eventful"
+                      src="http://api.eventful.com/images/powered/eventful_139x44.gif"
 />,
-                    "href": "http://www.JamBase.com",
-                    "target": "_top",
-                    "title": "JamBase Concert Search",
+                    "href": "http://eventful.com/",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -2594,9 +2860,9 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "alt": "Search JamBase Concerts",
-                      "border": "0",
-                      "src": "http://images.jambase.com/logos/jambase140x70.gif",
+                      "alt": "Local Events, Concerts, Tickets",
+                      "className": "eventful",
+                      "src": "http://api.eventful.com/images/powered/eventful_139x44.gif",
                     },
                     "ref": null,
                     "rendered": null,

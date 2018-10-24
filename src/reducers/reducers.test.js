@@ -46,16 +46,44 @@ describe('upcomingShowsReducer', () => {
   });
 });
 
-describe('loadingReducer', () => {
+describe('tonightLoadingReducer', () => {
   it('should return a default state', () => {
-    expect(reducer.loadingReducer(undefined, {})).toEqual(false);
+    expect(reducer.tonightLoadingReducer(undefined, {})).toEqual(false);
   });
 
   it('should update with a boolean', () => {
     const bool = true;
 
     expect(
-      reducer.loadingReducer(undefined, actions.showIsLoading(bool))
+      reducer.tonightLoadingReducer(undefined, actions.tonightIsLoading(bool))
+    ).toEqual(bool);
+  });
+});
+
+describe('thisWeekLoadingReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.thisWeekLoadingReducer(undefined, {})).toEqual(false);
+  });
+
+  it('should update with a boolean', () => {
+    const bool = true;
+
+    expect(
+      reducer.thisWeekLoadingReducer(undefined, actions.thisWeekIsLoading(bool))
+    ).toEqual(bool);
+  });
+});
+
+describe('upcomingLoadingReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.upcomingLoadingReducer(undefined, {})).toEqual(false);
+  });
+
+  it('should update with a boolean', () => {
+    const bool = true;
+
+    expect(
+      reducer.upcomingLoadingReducer(undefined, actions.upcomingIsLoading(bool))
     ).toEqual(bool);
   });
 });
