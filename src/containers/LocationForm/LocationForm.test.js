@@ -13,7 +13,7 @@ describe('LocationForm', () => {
     mockEvent = { preventDefault: jest.fn() };
     mockFetchShows = jest.fn();
     mockHistory = { push: jest.fn() };
-    mockState = { zipCode: 80203 };
+    mockState = { location: 'Denver' };
 
     wrapper = shallow(
       <LocationForm fetchShows={mockFetchShows} history={mockHistory} />
@@ -25,8 +25,8 @@ describe('LocationForm', () => {
   });
 
   it('handleChange should set the state', () => {
-    mockEvent = { target: { value: 80203, name: 'zipCode' } };
-    const expected = { zipCode: 80203 };
+    mockEvent = { target: { value: 'Denver', name: 'location' } };
+    const expected = { location: 'Denver' };
 
     wrapper.instance().handleChange(mockEvent);
     expect(wrapper.state()).toEqual(expected);
@@ -44,7 +44,7 @@ describe('LocationForm', () => {
     it('expect fetchShows to have been called with correct params', () => {
       wrapper.setState(mockState);
       wrapper.instance().handleSubmit(mockEvent);
-      expect(mockFetchShows).toHaveBeenCalledWith(mockState.zipCode);
+      expect(mockFetchShows).toHaveBeenCalledWith(mockState.location);
     });
 
     it('expect history.push() to have been called', () => {
@@ -53,7 +53,7 @@ describe('LocationForm', () => {
     });
 
     it('should reset state to default', () => {
-      const expected = { zipCode: '' };
+      const expected = { location: '' };
 
       wrapper.setState(mockState);
       wrapper.instance().handleSubmit(mockEvent);
