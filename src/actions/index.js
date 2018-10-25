@@ -1,10 +1,8 @@
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { fetchImage } from '../cleaners/fetchImage';
-import { Dates } from '../cleaners/Dates';
-import { Query } from '../cleaners/Query';
+import { SimpleCleaners } from '../cleaners/SimpleCleaners';
 
-const dates = new Dates();
-const query = new Query();
+const clean = new SimpleCleaners();
 
 export const loadTonightsShows = shows => ({
   type: 'LOAD_TONIGHTS_SHOWS',
@@ -51,7 +49,7 @@ export const clearStore = () => ({
 });
 
 export const fetchShows = city => {
-  const date = dates.getDates();
+  const date = clean.date();
 
   if (localStorage.events) {
     const events = getStorage();
@@ -82,7 +80,7 @@ export const fetchShows = city => {
       dispatch(tonightIsLoading(true));
       dispatch(updateLocation(city));
 
-      const url = query.getUrl(city);
+      const url = clean.queryUrl(city);
       const todaysEvents = await getTodaysEvents(url);
       dispatch(tonightIsLoading(false));
       dispatch(loadTonightsShows(todaysEvents));

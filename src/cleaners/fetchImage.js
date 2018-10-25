@@ -1,6 +1,7 @@
-import { cleanImage } from './cleanImage';
+import { SimpleCleaners } from './SimpleCleaners';
 
 const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
+const clean = new SimpleCleaners();
 
 export const fetchImage = concerts => {
   const promises = concerts.map(async concert => {
@@ -11,14 +12,8 @@ export const fetchImage = concerts => {
     try {
       const response = await fetch(`${baseUrl}${keyUrl}`);
       const artistData = await response.json();
-      const image = cleanImage(artistData, concert.image);
-      const cleanBio = artistData => {
-        if (artistData.artist) {
-          return artistData.artist.bio.summary.split(' <a href=')[0];
-        }
-        return null;
-      };
-      const bio = cleanBio(artistData);
+      const image = clean.image(artistData, concert.image);
+      const bio = clean.bio(artistData);
 
       return { ...concert, image, bio };
     } catch (error) {

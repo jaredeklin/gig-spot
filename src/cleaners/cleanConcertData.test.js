@@ -1,10 +1,10 @@
 import { cleanConcertData } from './cleanConcertData';
 import { mockCleanConcertData, mockReturnedCleanConcertData } from './mockData';
-import { Dates } from './Dates';
+import { SimpleCleaners } from './SimpleCleaners';
+
+const clean = new SimpleCleaners();
 
 describe('cleanConcertData', () => {
-  const date = new Dates();
-
   it('should return clean concert data', () => {
     expect(cleanConcertData(mockCleanConcertData)).toEqual(
       mockReturnedCleanConcertData
@@ -13,8 +13,8 @@ describe('cleanConcertData', () => {
 
   it('should call cleanTime with correct params', () => {
     cleanConcertData(mockCleanConcertData);
-    date.cleanTime = jest.fn();
+    clean.time = jest.fn();
 
-    expect(date.cleanTime).toHaveBeenCalledWith(mockCleanConcertData[0].Date);
+    expect(clean.time).toHaveBeenCalledWith(mockCleanConcertData[0].Date);
   });
 });
