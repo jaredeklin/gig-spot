@@ -1,22 +1,20 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import * as actions from './index';
-import { fetchImage } from '../cleaners/fetchImage';
+
 import { cleanConcertData } from '../cleaners/cleanConcertData';
-import { filterDates } from '../cleaners/filterDates';
 import {
-  mockFetchShowsData,
-  mockFetchImageCallData,
-  mockFilterDataCall
+  mockFetchShowsData
+  // mockFetchImageCallData,
+  // mockFilterDataCall
 } from '../cleaners/mockData';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const jambaseApiKey = 12456;
 
-jest.mock('../cleaners/fetchImage');
+// jest.mock('../cleaners/fetchImage');
 jest.mock('../cleaners/cleanConcertData');
-jest.mock('../cleaners/filterDates');
 
 describe('loadTonightsShows', () => {
   it('should return a type of LOAD_TONIGHTS_SHOWS and payload', () => {
@@ -147,13 +145,9 @@ xdescribe('fetchShows', () => {
     expect(cleanConcertData).toHaveBeenCalled();
   });
 
-  it('fetchImage should be called with correct params', () => {
-    expect(fetchImage).toHaveBeenCalledWith(mockFetchImageCallData);
-  });
-
-  it('filterDates should be called with correct params', () => {
-    expect(filterDates).toHaveBeenCalledWith(mockFilterDataCall);
-  });
+  // it('fetchImage should be called with correct params', () => {
+  //   expect(fetchImage).toHaveBeenCalledWith(mockFetchImageCallData);
+  // });
 
   it('should fire proper actions if status is not ok', async () => {
     window.fetch = jest.fn().mockImplementation(() =>
