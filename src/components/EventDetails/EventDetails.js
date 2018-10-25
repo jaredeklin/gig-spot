@@ -16,8 +16,8 @@ export const EventDetails = ({ concert }) => {
     bio
   } = concert;
 
-  const allSupportArtists = supportArtists.map(artist => (
-    <h4 className="support" key={artist + Date.now()}>
+  const allSupportArtists = supportArtists.map((artist, index) => (
+    <h4 className="support" key={artist + index}>
       {artist}
     </h4>
   ));

@@ -5,27 +5,36 @@ describe('rootReducer', () => {
   it('should return appReducer with current action', () => {
     const expected = {
       error: false,
-      loading: true,
+      tonightLoading: true,
+      upcomingLoading: false,
+      thisWeekLoading: false,
       thisWeeksShows: [],
       tonightsShows: [],
-      upcomingShows: []
+      upcomingShows: [],
+      location: ''
     };
 
-    expect(rootReducer({}, actions.showIsLoading(true))).toEqual(expected);
+    expect(rootReducer({}, actions.tonightIsLoading(true))).toEqual(expected);
   });
 
   it('should clear the store when clearStore is fired', () => {
     const expected = {
+      location: '',
       error: false,
-      loading: false,
+      tonightLoading: false,
+      thisWeekLoading: false,
+      upcomingLoading: false,
       thisWeeksShows: [],
       tonightsShows: [],
       upcomingShows: []
     };
 
     const currentStore = {
+      location: 'Denver',
       error: true,
-      loading: true,
+      tonightLoading: true,
+      thisWeekLoading: false,
+      upcomingLoading: false,
       thisWeeksShows: [{ name: 'jared' }],
       tonightsShows: [],
       upcomingShows: []
