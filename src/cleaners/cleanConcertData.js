@@ -16,18 +16,10 @@ export const cleanConcertData = concerts => {
     }
     return true;
   });
+  // console.log(concerts);
 
   return concerts.reduce((concertArray, show) => {
-    const {
-      id,
-      popularity,
-      tickets,
-      description,
-      image,
-      start_time,
-      categories,
-      links
-    } = show;
+    const { id, image, start_time, links } = show;
 
     const venue = {
       name: show.venue_name,
@@ -41,21 +33,18 @@ export const cleanConcertData = concerts => {
     const artists = clean.artists(show);
     const headlineArtist = artists[0];
     const supportArtists = artists.filter(artist => artist !== artists[0]);
-    const ticketUrl = clean.tickets(links, tickets);
+    const tickets = clean.tickets(links, show.tickets);
     const date = moment(start_time).format('MMM D');
     const startTime = clean.time(start_time);
     const concertData = {
       headlineArtist,
       supportArtists,
-      description,
       venue,
       date,
       startTime,
       id,
-      popularity,
-      tickets: ticketUrl,
-      image: !image ? null : image.block250.url,
-      categories
+      tickets,
+      image: !image ? null : image.block250.url
     };
 
     return [...concertArray, concertData];

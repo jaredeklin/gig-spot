@@ -23,22 +23,22 @@ describe('SimpleCleaners', () => {
 
     it('It should return a cleaned correct value without performers', () => {
       const expected = ['Jared', 'Bob'];
-      expect(clean.artist(mock1)).toEqual(expected);
+      expect(clean.artists(mock1)).toEqual(expected);
     });
 
     it('It should return a correct value without performers', () => {
       const expected = ['Jared and Bob'];
-      expect(clean.artist(mock2)).toEqual(expected);
+      expect(clean.artists(mock2)).toEqual(expected);
     });
 
     it('It should return a correct value with a single performer', () => {
       const expected = ['Jared'];
-      expect(clean.artist(mock3)).toEqual(expected);
+      expect(clean.artists(mock3)).toEqual(expected);
     });
 
     it('It should return a correct value with multiple performers', () => {
       const expected = ['Jared', 'Bob'];
-      expect(clean.artist(mock4)).toEqual(expected);
+      expect(clean.artists(mock4)).toEqual(expected);
     });
   });
 

@@ -1,12 +1,12 @@
 import { fetchImage } from './fetchImage';
-import { cleanImage } from './cleanImage';
 import {
   mockFetchImageConcertData,
   mockFetchArtistImageReturnData
 } from './mockData';
+import { SimpleCleaners } from './SimpleCleaners';
 
 const lastFmApiKey = 12345;
-jest.mock('./cleanImage');
+const clean = new SimpleCleaners();
 
 describe('fetchImage', () => {
   xit('fetch should be called with correct params', () => {
@@ -25,16 +25,17 @@ describe('fetchImage', () => {
     expect(window.fetch).toHaveBeenCalledWith(url);
   });
 
-  xit('should call cleanImage with correct params', () => {
+  xit('should call clean.image with correct params', () => {
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({
         ok: true,
         json: () => Promise.resolve(mockFetchArtistImageReturnData)
       })
     );
+    clean.image = jest.fn();
 
     fetchImage(mockFetchImageConcertData);
-    expect(cleanImage).toHaveBeenCalledWith(mockFetchArtistImageReturnData);
+    expect(clean.image).toHaveBeenCalledWith(mockFetchArtistImageReturnData);
   });
 
   xit('should throw an error if response is bad', async () => {

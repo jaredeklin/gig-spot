@@ -1,7 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import * as actions from './index';
-import { jambaseApiKey } from '../cleaners/apiKey';
 import { fetchImage } from '../cleaners/fetchImage';
 import { cleanConcertData } from '../cleaners/cleanConcertData';
 import { filterDates } from '../cleaners/filterDates';
@@ -13,6 +12,7 @@ import {
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
+const jambaseApiKey = 12456;
 
 jest.mock('../cleaners/fetchImage');
 jest.mock('../cleaners/cleanConcertData');
