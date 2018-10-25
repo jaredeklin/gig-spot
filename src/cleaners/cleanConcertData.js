@@ -1,8 +1,9 @@
-import { cleanTime } from './cleanTime';
 import { CleanArtists } from './cleanArtists';
+import { Dates } from './Dates';
 const moment = require('moment');
 
 const cleanArtists = new CleanArtists();
+const time = new Dates();
 
 export const cleanConcertData = concerts => {
   concerts = concerts.filter(concert => {
@@ -45,7 +46,7 @@ export const cleanConcertData = concerts => {
     const ticketUrl = cleanTickets(links, tickets);
 
     const date = moment(start_time).format('MMM D');
-    const startTime = cleanTime(start_time);
+    const startTime = time.cleanTime(start_time);
     const concertData = {
       headlineArtist,
       supportArtists,

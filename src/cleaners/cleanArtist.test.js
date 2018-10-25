@@ -1,6 +1,6 @@
 import { CleanArtists } from './CleanArtists';
 
-describe('CleanArtists', () => {
+describe('CleanArtists clean method', () => {
   const artist = new CleanArtists();
 
   const mock1 = { title: 'Jared- Bob (16+ Event)', performers: null };

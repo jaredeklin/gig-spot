@@ -1,7 +1,7 @@
 const moment = require('moment');
 
 export class Dates {
-  getDates() {
+  getDates = () => {
     return {
       today: moment().format('YYYYMMDD00'),
       tommorrow: moment()
@@ -17,5 +17,11 @@ export class Dates {
         .add(3, 'months')
         .format('YYYYMMDD00')
     };
-  }
+  };
+
+  cleanTime = time => {
+    const startTime = moment(time).format('h:mm A');
+
+    return startTime === '12:00 AM' ? '' : startTime;
+  };
 }
