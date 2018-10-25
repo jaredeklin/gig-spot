@@ -31,7 +31,7 @@ export const mockConcertData = [
     region_name: 'Colorado',
     start_time: '2018-10-24 20:00:00',
     stop_time: null,
-    tickets: { link: [{ url: 'www.axs.com' }] },
+    tickets: { link: [{ url: 'www.stubhub.com' }] },
     title: 'Joan Baez',
     tz_city: null,
     tz_country: null,

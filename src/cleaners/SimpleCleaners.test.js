@@ -67,11 +67,11 @@ describe('SimpleCleaners', () => {
     const tickets = mockConcertData[0].tickets;
 
     it('should return preferred ticket url', () => {
-      expect(clean.tickets(links, null)).toEqual('www.axs.com');
+      expect(clean.tickets(links, tickets)).toEqual('www.axs.com');
     });
 
     it('should return ticket url if not prefered', () => {
-      expect(clean.tickets(null, tickets)).toEqual('www.axs.com');
+      expect(clean.tickets(null, tickets)).toEqual('www.stubhub.com');
     });
 
     it('should return null if no ticket or link info', () => {
