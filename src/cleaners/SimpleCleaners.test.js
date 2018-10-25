@@ -1,5 +1,5 @@
 import { SimpleCleaners } from './SimpleCleaners';
-import { mockLastFmReturnData } from './mockData';
+import { mockLastFmReturnData, mockConcertData } from './mockData';
 
 describe('SimpleCleaners', () => {
   const clean = new SimpleCleaners();
@@ -55,10 +55,33 @@ describe('SimpleCleaners', () => {
     });
   });
 
-  describe('SimpleCleaners queryUrl', () => {
+  describe('SimpleCleaners queryUrl method', () => {
     it('should return correct query url', () => {
       const expected = 'https://salty-waters-47393.herokuapp.com/http://api.eventful.com/json/events/search?app_key=fXn9D3Xfj44jjsj7&location=Denver&category=music&image_sizes=block250&sort_order=popularity&page_size=25&include=tickets,links'; //eslint-disable-line
       expect(clean.queryUrl('Denver')).toEqual(expected);
+    });
+  });
+
+  describe('SimpleCleaners tickets method', () => {
+    const links = mockConcertData[0].links;
+    const tickets = mockConcertData[0].tickets;
+
+    it('should return preferred ticket url', () => {
+      expect(clean.tickets(links, null)).toEqual('www.axs.com');
+    });
+
+    it('should return ticket url if not prefered', () => {
+      expect(clean.tickets(null, tickets)).toEqual('www.axs.com');
+    });
+
+    it('should return null if no ticket or link info', () => {
+      expect(clean.tickets(null, null)).toEqual(null);
+    });
+  });
+
+  describe('SimpleCleaners bio method', () => {
+    it('should return null if artist does exist', () => {
+      expect(clean.bio({})).toEqual(null);
     });
   });
 });
