@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { App, mapStateToProps } from './App';
+import 'jest-localstorage-mock';
 
 describe('App', () => {
   let wrapper;
