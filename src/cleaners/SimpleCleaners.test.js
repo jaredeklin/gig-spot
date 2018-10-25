@@ -1,5 +1,5 @@
 import { SimpleCleaners } from './SimpleCleaners';
-import { mockFetchArtistImageReturnData } from './mockData';
+import { mockLastFmReturnData } from './mockData';
 
 describe('SimpleCleaners', () => {
   const clean = new SimpleCleaners();
@@ -43,15 +43,15 @@ describe('SimpleCleaners', () => {
   });
 
   describe('SimpleCleaners image method', () => {
-    const base = 'https://lastfm-img2.akamaized.net/i/u/300x300';
-    const mockUrl = `${base}/fa3db70a62ae49dbbbfbd4183d68289f.png`;
-
     it('should return a single image', () => {
-      expect(clean.image(mockFetchArtistImageReturnData)).toEqual(mockUrl);
+      const expected =
+        'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png';
+      expect(clean.image(mockLastFmReturnData, 'image.jpg')).toEqual(expected);
     });
 
-    it('if artist doesnt exist return null', () => {
-      expect(clean.image({})).toEqual('black-woven.jpg');
+    it('if artist doesnt exist return default image or current image', () => {
+      expect(clean.image({}, null)).toEqual('black-woven.jpg');
+      expect(clean.image({}, 'currentImage.jpg')).toEqual('currentImage.jpg');
     });
   });
 

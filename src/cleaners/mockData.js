@@ -259,8 +259,10 @@ export const mockFetchImageConcertData = [
   }
 ];
 
-export const mockFetchArtistImageReturnData = {
+export const mockLastFmReturnData = {
   artist: {
+    name: 'The English Beat',
+    bio: { summary: 'So many beats  <a href=www.lastfm.com>' },
     image: [
       {
         '#text':
@@ -292,33 +294,55 @@ export const mockFetchArtistImageReturnData = {
           'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
         size: ''
       }
-    ],
-
-    name: 'The English Beat'
+    ]
   }
 };
 
-export const mockFetchImageReturnData = [
+export const mockGetLastFmReturnData = [
   {
-    date: 'Apr 13, 2018',
-    headlineArtist: {
-      Id: 34468,
-      Name: 'The English Beat'
-    },
-    id: 3092703,
+    bio: 'So many beats ',
+    date: 'Oct 24',
+    headlineArtist: 'Joan Baez',
+    id: 'E0-001-112093347-3',
+    image:
+      'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
     startTime: '8:00 PM',
     supportArtists: [],
-    tickets:
-      'http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api',
+    tickets: 'www.axs.com',
     venue: {
-      name: 'The Soiled Dove Underground',
-      id: 59319,
-      url: 'http://www.soileddove.com/',
-      address: '7401 E. 1st Ave',
-      city: 'Denver'
-    },
+      address: '1621 Glenarm Place',
+      city: 'Denver',
+      id: 'V0-001-000198697-3',
+      name: 'Paramount Theatre',
+      state: 'CO',
+      url:
+        'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+      zip: '80202'
+    }
+  }
+];
+
+export const mockFetchImageReturnData = [
+  {
+    date: 'Oct 24',
+    headlineArtist: 'Joan Baez',
+    id: 'E0-001-112093347-3',
     image:
-      'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png'
+      'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+    startTime: '8:00 PM',
+    supportArtists: [],
+    tickets: 'www.axs.com',
+    bio: 'Yada yada yada',
+    venue: {
+      address: '1621 Glenarm Place',
+      city: 'Denver',
+      id: 'V0-001-000198697-3',
+      name: 'Paramount Theatre',
+      state: 'CO',
+      url:
+        'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+      zip: '80202'
+    }
   }
 ];
 
