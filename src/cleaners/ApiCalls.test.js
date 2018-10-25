@@ -10,8 +10,12 @@ const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
 // const clean = new SimpleCleaners();
 const api = new ApiCalls();
 
+jest.mock('../cleaners/cleanConcertData');
+
 describe('ApiCalls', () => {
   describe('getLastFmData', () => {
+    const mockConcert = mockReturnedCleanConcertData[0];
+
     beforeEach(() => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
@@ -22,7 +26,7 @@ describe('ApiCalls', () => {
     });
 
     it('fetch should be called with correct params', () => {
-      const artist = mockReturnedCleanConcertData[0].headlineArtist;
+      const artist = mockConcert.headlineArtist;
       const base = 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&';
       const url = `${base}artist=${artist}&api_key=${lastFmApiKey}&format=json`;
 
@@ -36,17 +40,19 @@ describe('ApiCalls', () => {
       );
     });
 
-    xit('should throw an error if response is bad', async () => {
+    it('should return original obj + bio: null if response is bad', async () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.reject({
-          status: 404
+          status: 400
         })
       );
 
-      const expected = { status: 404 };
-      expect(api.getLastFmData(mockReturnedCleanConcertData)).rejects.toEqual(
-        expected
-      );
+      expect(await api.getLastFmData(mockReturnedCleanConcertData)).toEqual([
+        {
+          ...mockConcert,
+          bio: null
+        }
+      ]);
     });
   });
 });

@@ -18,8 +18,8 @@ export class ApiCalls {
         const bio = clean.bio(artistData);
 
         return { ...concert, image, bio };
-      } catch (error) {
-        console.log(error); //eslint-disable-line
+      } catch (Error) {
+        console.log(Error); //eslint-disable-line
         return { ...concert, bio: null };
       }
     });

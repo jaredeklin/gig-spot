@@ -13,7 +13,6 @@ const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const jambaseApiKey = 12456;
 
-// jest.mock('../cleaners/fetchImage');
 jest.mock('../cleaners/cleanConcertData');
 
 describe('loadTonightsShows', () => {
