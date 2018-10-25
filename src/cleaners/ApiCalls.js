@@ -58,6 +58,7 @@ export class ApiCalls {
         return `${upcoming}-${upcomingEnd}`;
 
       default:
+        console.log('Invalid type param'); //eslint-disable-line
         break;
     }
   };

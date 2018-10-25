@@ -4,7 +4,7 @@ const moment = require('moment');
 const clean = new SimpleCleaners();
 
 export const cleanConcertData = concerts => {
-  concerts = concerts.filter(concert => {
+  const filteredConcerts = concerts.filter(concert => {
     const { title, performers } = concert;
 
     if (title.includes('Tickets') && !performers) {
@@ -16,9 +16,8 @@ export const cleanConcertData = concerts => {
     }
     return true;
   });
-  // console.log(concerts);
 
-  return concerts.reduce((concertArray, show) => {
+  return filteredConcerts.reduce((concertArray, show) => {
     const { id, image, start_time, links } = show;
 
     const venue = {
