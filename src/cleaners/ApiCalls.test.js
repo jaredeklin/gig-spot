@@ -1,16 +1,19 @@
 import {
   mockReturnedCleanConcertData,
   mockLastFmReturnData,
-  mockGetLastFmReturnData
+  mockGetLastFmReturnData,
+  mockInitialReturnEventData
 } from './mockData';
 // import { SimpleCleaners } from './SimpleCleaners';
 import { ApiCalls } from './ApiCalls';
+import { cleanConcertData } from './cleanConcertData';
 
 const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
 // const clean = new SimpleCleaners();
-const api = new ApiCalls();
+let api = new ApiCalls();
+const date = new Date();
 
-jest.mock('../cleaners/cleanConcertData');
+jest.mock('./cleanConcertData');
 
 describe('ApiCalls', () => {
   describe('getLastFmData', () => {
@@ -42,8 +45,9 @@ describe('ApiCalls', () => {
 
     it('should return original obj + bio: null if response is bad', async () => {
       window.fetch = jest.fn().mockImplementation(() =>
-        Promise.reject({
-          status: 400
+        Promise.resolve({
+          ok: false,
+          statusText: 'Bad Request'
         })
       );
 
@@ -53,6 +57,79 @@ describe('ApiCalls', () => {
           bio: null
         }
       ]);
+    });
+  });
+
+  describe('getEvents', () => {
+    const url = 'www.test.com/';
+
+    beforeEach(() => {
+      api.getLastFmData = jest.fn();
+
+      window.fetch = jest.fn(() =>
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockInitialReturnEventData)
+        })
+      );
+
+      api.getEvents('today', url, date);
+    });
+
+    it('fetch should be called with the correct params', async () => {
+      const expected = 'www.test.com/&date=Today';
+
+      expect(window.fetch).toHaveBeenCalledWith(expected);
+    });
+
+    it('should call cleanConcertData and getLastFmData with correct params', () => {
+      expect(cleanConcertData).toHaveBeenCalledWith(
+        mockInitialReturnEventData.events.event
+      );
+      expect(api.getLastFmData).toHaveBeenCalledWith(
+        mockReturnedCleanConcertData
+      );
+    });
+
+    // it('should throw an error if response is bad', async () => {
+    //   window.fetch = jest.fn().mockImplementation(() =>
+    //     Promise.resolve({
+    //       ok: false,
+    //       statusText: 'Bad Request'
+    //     })
+    //   );
+    //   const expected = Promise.resolve(Error('Bad Request'));
+
+    //   expect(await api.getEvents('today', url, date)).toEqual(expected);
+    // });
+  });
+
+  describe('getDateRange', () => {
+    const mockDate = {
+      tommorrow: 2018120100,
+      nextWeek: 2018120700,
+      upcoming: 2018120800,
+      upcomingEnd: 2018123100
+    };
+
+    it('should return the correct value with today param', () => {
+      expect(api.getDateRange('today', mockDate)).toEqual('Today');
+    });
+
+    it('should return the correct value with week param', () => {
+      const expected = '2018120100-2018120700';
+
+      expect(api.getDateRange('week', mockDate)).toEqual(expected);
+    });
+
+    it('should return the correct value with upcoming param', () => {
+      const expected = '2018120800-2018123100';
+
+      expect(api.getDateRange('upcoming', mockDate)).toEqual(expected);
+    });
+
+    it('should return undefined in invalid param', () => {
+      expect(api.getDateRange('', mockDate)).toEqual(undefined);
     });
   });
 });

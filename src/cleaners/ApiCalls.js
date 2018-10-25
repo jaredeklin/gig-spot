@@ -11,17 +11,18 @@ export class ApiCalls {
       const baseUrl = 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo';
       const keyUrl = `&artist=${artist}&api_key=${lastFmApiKey}&format=json`;
 
-      try {
-        const response = await fetch(`${baseUrl}${keyUrl}`);
-        const artistData = await response.json();
-        const image = clean.image(artistData, concert.image);
-        const bio = clean.bio(artistData);
+      const response = await fetch(`${baseUrl}${keyUrl}`);
 
-        return { ...concert, image, bio };
-      } catch (Error) {
-        console.log(Error); //eslint-disable-line
+      if (!response.ok) {
+        console.log(response.statusText, concert.headlineArtist); //eslint-disable-line
         return { ...concert, bio: null };
       }
+
+      const artistData = await response.json();
+      const image = clean.image(artistData, concert.image);
+      const bio = clean.bio(artistData);
+
+      return { ...concert, image, bio };
     });
 
     return Promise.all(promises);
@@ -35,12 +36,8 @@ export class ApiCalls {
       throw Error(response.statusText);
     }
 
-    return await this.cleanData(response);
-  };
-
-  cleanData = async response => {
-    const concertData = await response.json();
-    const cleanData = cleanConcertData(concertData.events.event);
+    const eventData = await response.json();
+    const cleanData = cleanConcertData(eventData.events.event);
 
     return await this.getLastFmData(cleanData);
   };
