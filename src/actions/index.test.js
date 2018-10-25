@@ -108,6 +108,17 @@ describe('clearStore', () => {
   });
 });
 
+describe('updateLocation', () => {
+  it('should return a type of UPDATE_LOCATION and a payload', () => {
+    const expected = {
+      type: 'UPDATE_LOCATION',
+      city: 'Denver'
+    };
+
+    expect(actions.updateLocation('Denver')).toEqual(expected);
+  });
+});
+
 xdescribe('fetchShows', () => {
   const mockLocation = { zipCode: 80218 };
   const { zipCode } = mockLocation;

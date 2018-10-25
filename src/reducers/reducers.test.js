@@ -101,3 +101,17 @@ describe('errorReducer', () => {
     ).toEqual(bool);
   });
 });
+
+describe('updateLocationReducer', () => {
+  it('should return a default state', () => {
+    expect(reducer.updateLocationReducer(undefined, {})).toEqual('');
+  });
+
+  it('should load a location', () => {
+    const location = 'Denver';
+
+    expect(
+      reducer.updateLocationReducer(undefined, actions.updateLocation(location))
+    ).toEqual(location);
+  });
+});
