@@ -9,4 +9,17 @@ describe('EventDetails', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should handle image loading error', () => {
+    const wrapper = shallow(<EventDetails concert={mockConcertProps} />);
+    const mockEvent = { target: { src: 'someImage.jpg' } };
+    const expected = 'black-woven.jpg';
+
+    expect(
+      wrapper
+        .find('img')
+        .props()
+        .onError(mockEvent)
+    ).toEqual(expected);
+  });
 });
