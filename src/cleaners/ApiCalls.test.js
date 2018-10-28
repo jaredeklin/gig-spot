@@ -9,13 +9,13 @@ import { ApiCalls } from './ApiCalls';
 import { cleanConcertData } from './cleanConcertData';
 
 const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
-// const clean = new SimpleCleaners();
-let api = new ApiCalls();
-const date = new Date();
 
 jest.mock('./cleanConcertData');
 
 describe('ApiCalls', () => {
+  const api = new ApiCalls();
+  const date = new Date();
+
   describe('getLastFmData', () => {
     const mockConcert = mockReturnedCleanConcertData[0];
 
@@ -91,17 +91,22 @@ describe('ApiCalls', () => {
       );
     });
 
-    // it('should throw an error if response is bad', async () => {
-    //   window.fetch = jest.fn().mockImplementation(() =>
-    //     Promise.resolve({
-    //       ok: false,
-    //       statusText: 'Bad Request'
-    //     })
-    //   );
-    //   const expected = Promise.resolve(Error('Bad Request'));
+    it('should throw an error if response is bad', async () => {
+      window.fetch = jest.fn(() =>
+        Promise.resolve({
+          ok: false,
+          statusText: 'Bad Request'
+        })
+      );
 
-    //   expect(await api.getEvents('today', url, date)).toEqual(expected);
-    // });
+      expect.assertions(1);
+
+      try {
+        await await api.getEvents('today', url, date);
+      } catch (error) {
+        expect(error.message).toEqual('Bad Request');
+      }
+    });
   });
 
   describe('getDateRange', () => {

@@ -2,9 +2,12 @@ import { SimpleCleaners } from './SimpleCleaners';
 import { cleanConcertData } from './cleanConcertData';
 
 const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
-const clean = new SimpleCleaners();
 
 export class ApiCalls {
+  constructor() {
+    this.clean = new SimpleCleaners();
+  }
+
   getLastFmData = concerts => {
     const promises = concerts.map(async concert => {
       const artist = concert.headlineArtist.replace(/&/gi, 'and');
@@ -19,8 +22,8 @@ export class ApiCalls {
       }
 
       const artistData = await response.json();
-      const image = clean.image(artistData, concert.image);
-      const bio = clean.bio(artistData);
+      const image = this.clean.image(artistData, concert.image);
+      const bio = this.clean.bio(artistData);
 
       return { ...concert, image, bio };
     });
@@ -33,7 +36,7 @@ export class ApiCalls {
     const response = await fetch(`${url}&date=${dateRange}`);
 
     if (!response.ok) {
-      throw Error(response.statusText);
+      throw new Error(response.statusText);
     }
 
     const eventData = await response.json();
