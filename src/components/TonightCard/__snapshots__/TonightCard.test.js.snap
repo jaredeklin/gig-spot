@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     show={
         Object {
+            "bio": "Ooh la la",
             "date": "Apr 13, 2018",
             "headlineArtist": Object {
               "Id": 34468,

@@ -10,6 +10,13 @@ describe('EventDetails', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should match the snapshot when there is no image or bio', () => {
+    const noImageBioProps = { ...mockConcertProps, image: null, bio: null };
+    const wrapper = shallow(<EventDetails concert={noImageBioProps} />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should handle image loading error', () => {
     const wrapper = shallow(<EventDetails concert={mockConcertProps} />);
     const mockEvent = { target: { src: 'someImage.jpg' } };
