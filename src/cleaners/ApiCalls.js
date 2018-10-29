@@ -3,7 +3,7 @@ import { cleanConcertData } from './cleanConcertData';
 
 const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
 
-export class ApiCalls {
+class ApiCalls {
   constructor() {
     this.clean = new SimpleCleaners();
   }
@@ -63,3 +63,5 @@ export class ApiCalls {
     }
   };
 }
+
+export default ApiCalls;

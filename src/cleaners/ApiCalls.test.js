@@ -4,8 +4,7 @@ import {
   mockGetLastFmReturnData,
   mockInitialReturnEventData
 } from './mockData';
-// import { SimpleCleaners } from './SimpleCleaners';
-import { ApiCalls } from './ApiCalls';
+import ApiCalls from './ApiCalls';
 import { cleanConcertData } from './cleanConcertData';
 
 const lastFmApiKey = process.env.REACT_APP_LASTFM_KEY;
