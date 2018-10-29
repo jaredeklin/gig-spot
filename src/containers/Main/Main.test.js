@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Main, mapStateToProps } from './Main';
-import { mockFetchImageReturnData } from '../../cleaners/mockData';
+import { mockGetLastFmReturnData } from '../../cleaners/mockData';
 
 describe('Main', () => {
-  let mockTonightsShows = [mockFetchImageReturnData];
-  const mockUpcomingShows = [mockFetchImageReturnData];
-  const mockThisWeeksShows = [mockFetchImageReturnData];
+  let mockTonightsShows = mockGetLastFmReturnData;
+  const mockUpcomingShows = mockGetLastFmReturnData;
+  const mockThisWeeksShows = mockGetLastFmReturnData;
 
   it('should match the snapshot with props', () => {
     const wrapper = shallow(

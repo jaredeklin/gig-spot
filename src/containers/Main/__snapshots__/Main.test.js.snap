@@ -7,27 +7,25 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     thisWeeksShows={
         Array [
-            Array [
-              Object {
-                "bio": "Yada yada yada",
-                "date": "Oct 24",
-                "headlineArtist": "Joan Baez",
-                "id": "E0-001-112093347-3",
-                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                "startTime": "8:00 PM",
-                "supportArtists": Array [],
-                "tickets": "www.axs.com",
-                "venue": Object {
-                  "address": "1621 Glenarm Place",
-                  "city": "Denver",
-                  "id": "V0-001-000198697-3",
-                  "name": "Paramount Theatre",
-                  "state": "CO",
-                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                  "zip": "80202",
-                },
+            Object {
+              "bio": "So many beats ",
+              "date": "Oct 24",
+              "headlineArtist": "Joan Baez",
+              "id": "E0-001-112093347-3",
+              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+              "startTime": "8:00 PM",
+              "supportArtists": Array [],
+              "tickets": "www.axs.com",
+              "venue": Object {
+                "address": "1621 Glenarm Place",
+                "city": "Denver",
+                "id": "V0-001-000198697-3",
+                "name": "Paramount Theatre",
+                "state": "CO",
+                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                "zip": "80202",
               },
-            ],
+            },
           ]
     }
     tonightsShows={
@@ -41,27 +39,25 @@ ShallowWrapper {
     }
     upcomingShows={
         Array [
-            Array [
-              Object {
-                "bio": "Yada yada yada",
-                "date": "Oct 24",
-                "headlineArtist": "Joan Baez",
-                "id": "E0-001-112093347-3",
-                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                "startTime": "8:00 PM",
-                "supportArtists": Array [],
-                "tickets": "www.axs.com",
-                "venue": Object {
-                  "address": "1621 Glenarm Place",
-                  "city": "Denver",
-                  "id": "V0-001-000198697-3",
-                  "name": "Paramount Theatre",
-                  "state": "CO",
-                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                  "zip": "80202",
-                },
+            Object {
+              "bio": "So many beats ",
+              "date": "Oct 24",
+              "headlineArtist": "Joan Baez",
+              "id": "E0-001-112093347-3",
+              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+              "startTime": "8:00 PM",
+              "supportArtists": Array [],
+              "tickets": "www.axs.com",
+              "venue": Object {
+                "address": "1621 Glenarm Place",
+                "city": "Denver",
+                "id": "V0-001-000198697-3",
+                "name": "Paramount Theatre",
+                "state": "CO",
+                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                "zip": "80202",
               },
-            ],
+            },
           ]
     }
 />,
@@ -138,27 +134,25 @@ ShallowWrapper {
                               >
                                         <Unknown
                                                   show={
-                                                            Array [
-                                                                      Object {
-                                                                        "bio": "Yada yada yada",
-                                                                        "date": "Oct 24",
-                                                                        "headlineArtist": "Joan Baez",
-                                                                        "id": "E0-001-112093347-3",
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "www.axs.com",
-                                                                        "venue": Object {
-                                                                          "address": "1621 Glenarm Place",
-                                                                          "city": "Denver",
-                                                                          "id": "V0-001-000198697-3",
-                                                                          "name": "Paramount Theatre",
-                                                                          "state": "CO",
-                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                          "zip": "80202",
-                                                                        },
+                                                            Object {
+                                                                      "bio": "So many beats ",
+                                                                      "date": "Oct 24",
+                                                                      "headlineArtist": "Joan Baez",
+                                                                      "id": "E0-001-112093347-3",
+                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                      "startTime": "8:00 PM",
+                                                                      "supportArtists": Array [],
+                                                                      "tickets": "www.axs.com",
+                                                                      "venue": Object {
+                                                                        "address": "1621 Glenarm Place",
+                                                                        "city": "Denver",
+                                                                        "id": "V0-001-000198697-3",
+                                                                        "name": "Paramount Theatre",
+                                                                        "state": "CO",
+                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                        "zip": "80202",
                                                                       },
-                                                                    ]
+                                                                    }
                                                   }
                                         />
                               </div>
@@ -292,27 +286,25 @@ ShallowWrapper {
                             >
                                           <Unknown
                                                         show={
-                                                                      Array [
-                                                                                    Object {
-                                                                                      "bio": "Yada yada yada",
-                                                                                      "date": "Oct 24",
-                                                                                      "headlineArtist": "Joan Baez",
-                                                                                      "id": "E0-001-112093347-3",
-                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                      "startTime": "8:00 PM",
-                                                                                      "supportArtists": Array [],
-                                                                                      "tickets": "www.axs.com",
-                                                                                      "venue": Object {
-                                                                                        "address": "1621 Glenarm Place",
-                                                                                        "city": "Denver",
-                                                                                        "id": "V0-001-000198697-3",
-                                                                                        "name": "Paramount Theatre",
-                                                                                        "state": "CO",
-                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                        "zip": "80202",
-                                                                                      },
+                                                                      Object {
+                                                                                    "bio": "So many beats ",
+                                                                                    "date": "Oct 24",
+                                                                                    "headlineArtist": "Joan Baez",
+                                                                                    "id": "E0-001-112093347-3",
+                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                    "startTime": "8:00 PM",
+                                                                                    "supportArtists": Array [],
+                                                                                    "tickets": "www.axs.com",
+                                                                                    "venue": Object {
+                                                                                      "address": "1621 Glenarm Place",
+                                                                                      "city": "Denver",
+                                                                                      "id": "V0-001-000198697-3",
+                                                                                      "name": "Paramount Theatre",
+                                                                                      "state": "CO",
+                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                      "zip": "80202",
                                                                                     },
-                                                                                  ]
+                                                                                  }
                                                         }
                                           />
                             </div>
@@ -537,27 +529,25 @@ ShallowWrapper {
                   >
                                     <Unknown
                                                       show={
-                                                                        Array [
-                                                                                          Object {
-                                                                                            "bio": "Yada yada yada",
-                                                                                            "date": "Oct 24",
-                                                                                            "headlineArtist": "Joan Baez",
-                                                                                            "id": "E0-001-112093347-3",
-                                                                                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                            "startTime": "8:00 PM",
-                                                                                            "supportArtists": Array [],
-                                                                                            "tickets": "www.axs.com",
-                                                                                            "venue": Object {
-                                                                                              "address": "1621 Glenarm Place",
-                                                                                              "city": "Denver",
-                                                                                              "id": "V0-001-000198697-3",
-                                                                                              "name": "Paramount Theatre",
-                                                                                              "state": "CO",
-                                                                                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                              "zip": "80202",
-                                                                                            },
+                                                                        Object {
+                                                                                          "bio": "So many beats ",
+                                                                                          "date": "Oct 24",
+                                                                                          "headlineArtist": "Joan Baez",
+                                                                                          "id": "E0-001-112093347-3",
+                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                          "startTime": "8:00 PM",
+                                                                                          "supportArtists": Array [],
+                                                                                          "tickets": "www.axs.com",
+                                                                                          "venue": Object {
+                                                                                            "address": "1621 Glenarm Place",
+                                                                                            "city": "Denver",
+                                                                                            "id": "V0-001-000198697-3",
+                                                                                            "name": "Paramount Theatre",
+                                                                                            "state": "CO",
+                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                            "zip": "80202",
                                                                                           },
-                                                                                        ]
+                                                                                        }
                                                       }
                                     />
                   </div>
@@ -588,27 +578,25 @@ ShallowWrapper {
 >
                     <Unknown
                                         show={
-                                                            Array [
-                                                                                Object {
-                                                                                  "bio": "Yada yada yada",
-                                                                                  "date": "Oct 24",
-                                                                                  "headlineArtist": "Joan Baez",
-                                                                                  "id": "E0-001-112093347-3",
-                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                  "startTime": "8:00 PM",
-                                                                                  "supportArtists": Array [],
-                                                                                  "tickets": "www.axs.com",
-                                                                                  "venue": Object {
-                                                                                    "address": "1621 Glenarm Place",
-                                                                                    "city": "Denver",
-                                                                                    "id": "V0-001-000198697-3",
-                                                                                    "name": "Paramount Theatre",
-                                                                                    "state": "CO",
-                                                                                    "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                    "zip": "80202",
-                                                                                  },
+                                                            Object {
+                                                                                "bio": "So many beats ",
+                                                                                "date": "Oct 24",
+                                                                                "headlineArtist": "Joan Baez",
+                                                                                "id": "E0-001-112093347-3",
+                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                "startTime": "8:00 PM",
+                                                                                "supportArtists": Array [],
+                                                                                "tickets": "www.axs.com",
+                                                                                "venue": Object {
+                                                                                  "address": "1621 Glenarm Place",
+                                                                                  "city": "Denver",
+                                                                                  "id": "V0-001-000198697-3",
+                                                                                  "name": "Paramount Theatre",
+                                                                                  "state": "CO",
+                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                  "zip": "80202",
                                                                                 },
-                                                                              ]
+                                                                              }
                                         }
                     />
 </div>,
@@ -623,27 +611,25 @@ ShallowWrapper {
                     "children": Array [
                       <Unknown
                         show={
-                                                Array [
-                                                                        Object {
-                                                                          "bio": "Yada yada yada",
-                                                                          "date": "Oct 24",
-                                                                          "headlineArtist": "Joan Baez",
-                                                                          "id": "E0-001-112093347-3",
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "www.axs.com",
-                                                                          "venue": Object {
-                                                                            "address": "1621 Glenarm Place",
-                                                                            "city": "Denver",
-                                                                            "id": "V0-001-000198697-3",
-                                                                            "name": "Paramount Theatre",
-                                                                            "state": "CO",
-                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                            "zip": "80202",
-                                                                          },
+                                                Object {
+                                                                        "bio": "So many beats ",
+                                                                        "date": "Oct 24",
+                                                                        "headlineArtist": "Joan Baez",
+                                                                        "id": "E0-001-112093347-3",
+                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                        "startTime": "8:00 PM",
+                                                                        "supportArtists": Array [],
+                                                                        "tickets": "www.axs.com",
+                                                                        "venue": Object {
+                                                                          "address": "1621 Glenarm Place",
+                                                                          "city": "Denver",
+                                                                          "id": "V0-001-000198697-3",
+                                                                          "name": "Paramount Theatre",
+                                                                          "state": "CO",
+                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                          "zip": "80202",
                                                                         },
-                                                                      ]
+                                                                      }
                         }
 />,
                     ],
@@ -653,30 +639,28 @@ ShallowWrapper {
                   "rendered": Array [
                     Object {
                       "instance": null,
-                      "key": "4undefined",
+                      "key": "4E0-001-112093347-3",
                       "nodeType": "function",
                       "props": Object {
-                        "show": Array [
-                          Object {
-                            "bio": "Yada yada yada",
-                            "date": "Oct 24",
-                            "headlineArtist": "Joan Baez",
-                            "id": "E0-001-112093347-3",
-                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                            "startTime": "8:00 PM",
-                            "supportArtists": Array [],
-                            "tickets": "www.axs.com",
-                            "venue": Object {
-                              "address": "1621 Glenarm Place",
-                              "city": "Denver",
-                              "id": "V0-001-000198697-3",
-                              "name": "Paramount Theatre",
-                              "state": "CO",
-                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                              "zip": "80202",
-                            },
+                        "show": Object {
+                          "bio": "So many beats ",
+                          "date": "Oct 24",
+                          "headlineArtist": "Joan Baez",
+                          "id": "E0-001-112093347-3",
+                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                          "startTime": "8:00 PM",
+                          "supportArtists": Array [],
+                          "tickets": "www.axs.com",
+                          "venue": Object {
+                            "address": "1621 Glenarm Place",
+                            "city": "Denver",
+                            "id": "V0-001-000198697-3",
+                            "name": "Paramount Theatre",
+                            "state": "CO",
+                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                            "zip": "80202",
                           },
-                        ],
+                        },
                       },
                       "ref": null,
                       "rendered": null,
@@ -860,27 +844,25 @@ ShallowWrapper {
                                     >
                                                 <Unknown
                                                             show={
-                                                                        Array [
-                                                                                    Object {
-                                                                                      "bio": "Yada yada yada",
-                                                                                      "date": "Oct 24",
-                                                                                      "headlineArtist": "Joan Baez",
-                                                                                      "id": "E0-001-112093347-3",
-                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                      "startTime": "8:00 PM",
-                                                                                      "supportArtists": Array [],
-                                                                                      "tickets": "www.axs.com",
-                                                                                      "venue": Object {
-                                                                                        "address": "1621 Glenarm Place",
-                                                                                        "city": "Denver",
-                                                                                        "id": "V0-001-000198697-3",
-                                                                                        "name": "Paramount Theatre",
-                                                                                        "state": "CO",
-                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                        "zip": "80202",
-                                                                                      },
+                                                                        Object {
+                                                                                    "bio": "So many beats ",
+                                                                                    "date": "Oct 24",
+                                                                                    "headlineArtist": "Joan Baez",
+                                                                                    "id": "E0-001-112093347-3",
+                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                    "startTime": "8:00 PM",
+                                                                                    "supportArtists": Array [],
+                                                                                    "tickets": "www.axs.com",
+                                                                                    "venue": Object {
+                                                                                      "address": "1621 Glenarm Place",
+                                                                                      "city": "Denver",
+                                                                                      "id": "V0-001-000198697-3",
+                                                                                      "name": "Paramount Theatre",
+                                                                                      "state": "CO",
+                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                      "zip": "80202",
                                                                                     },
-                                                                                  ]
+                                                                                  }
                                                             }
                                                 />
                                     </div>
@@ -1014,27 +996,25 @@ ShallowWrapper {
                                 >
                                                 <Unknown
                                                                 show={
-                                                                                Array [
-                                                                                                Object {
-                                                                                                  "bio": "Yada yada yada",
-                                                                                                  "date": "Oct 24",
-                                                                                                  "headlineArtist": "Joan Baez",
-                                                                                                  "id": "E0-001-112093347-3",
-                                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                  "startTime": "8:00 PM",
-                                                                                                  "supportArtists": Array [],
-                                                                                                  "tickets": "www.axs.com",
-                                                                                                  "venue": Object {
-                                                                                                    "address": "1621 Glenarm Place",
-                                                                                                    "city": "Denver",
-                                                                                                    "id": "V0-001-000198697-3",
-                                                                                                    "name": "Paramount Theatre",
-                                                                                                    "state": "CO",
-                                                                                                    "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                    "zip": "80202",
-                                                                                                  },
+                                                                                Object {
+                                                                                                "bio": "So many beats ",
+                                                                                                "date": "Oct 24",
+                                                                                                "headlineArtist": "Joan Baez",
+                                                                                                "id": "E0-001-112093347-3",
+                                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                "startTime": "8:00 PM",
+                                                                                                "supportArtists": Array [],
+                                                                                                "tickets": "www.axs.com",
+                                                                                                "venue": Object {
+                                                                                                  "address": "1621 Glenarm Place",
+                                                                                                  "city": "Denver",
+                                                                                                  "id": "V0-001-000198697-3",
+                                                                                                  "name": "Paramount Theatre",
+                                                                                                  "state": "CO",
+                                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                                  "zip": "80202",
                                                                                                 },
-                                                                                              ]
+                                                                                              }
                                                                 }
                                                 />
                                 </div>
@@ -1259,27 +1239,25 @@ ShallowWrapper {
                     >
                                         <Unknown
                                                             show={
-                                                                                Array [
-                                                                                                    Object {
-                                                                                                      "bio": "Yada yada yada",
-                                                                                                      "date": "Oct 24",
-                                                                                                      "headlineArtist": "Joan Baez",
-                                                                                                      "id": "E0-001-112093347-3",
-                                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                      "startTime": "8:00 PM",
-                                                                                                      "supportArtists": Array [],
-                                                                                                      "tickets": "www.axs.com",
-                                                                                                      "venue": Object {
-                                                                                                        "address": "1621 Glenarm Place",
-                                                                                                        "city": "Denver",
-                                                                                                        "id": "V0-001-000198697-3",
-                                                                                                        "name": "Paramount Theatre",
-                                                                                                        "state": "CO",
-                                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                        "zip": "80202",
-                                                                                                      },
+                                                                                Object {
+                                                                                                    "bio": "So many beats ",
+                                                                                                    "date": "Oct 24",
+                                                                                                    "headlineArtist": "Joan Baez",
+                                                                                                    "id": "E0-001-112093347-3",
+                                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                    "startTime": "8:00 PM",
+                                                                                                    "supportArtists": Array [],
+                                                                                                    "tickets": "www.axs.com",
+                                                                                                    "venue": Object {
+                                                                                                      "address": "1621 Glenarm Place",
+                                                                                                      "city": "Denver",
+                                                                                                      "id": "V0-001-000198697-3",
+                                                                                                      "name": "Paramount Theatre",
+                                                                                                      "state": "CO",
+                                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                                      "zip": "80202",
                                                                                                     },
-                                                                                                  ]
+                                                                                                  }
                                                             }
                                         />
                     </div>
@@ -1310,27 +1288,25 @@ ShallowWrapper {
 >
                       <Unknown
                                             show={
-                                                                  Array [
-                                                                                        Object {
-                                                                                          "bio": "Yada yada yada",
-                                                                                          "date": "Oct 24",
-                                                                                          "headlineArtist": "Joan Baez",
-                                                                                          "id": "E0-001-112093347-3",
-                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                          "startTime": "8:00 PM",
-                                                                                          "supportArtists": Array [],
-                                                                                          "tickets": "www.axs.com",
-                                                                                          "venue": Object {
-                                                                                            "address": "1621 Glenarm Place",
-                                                                                            "city": "Denver",
-                                                                                            "id": "V0-001-000198697-3",
-                                                                                            "name": "Paramount Theatre",
-                                                                                            "state": "CO",
-                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                            "zip": "80202",
-                                                                                          },
+                                                                  Object {
+                                                                                        "bio": "So many beats ",
+                                                                                        "date": "Oct 24",
+                                                                                        "headlineArtist": "Joan Baez",
+                                                                                        "id": "E0-001-112093347-3",
+                                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                        "startTime": "8:00 PM",
+                                                                                        "supportArtists": Array [],
+                                                                                        "tickets": "www.axs.com",
+                                                                                        "venue": Object {
+                                                                                          "address": "1621 Glenarm Place",
+                                                                                          "city": "Denver",
+                                                                                          "id": "V0-001-000198697-3",
+                                                                                          "name": "Paramount Theatre",
+                                                                                          "state": "CO",
+                                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                          "zip": "80202",
                                                                                         },
-                                                                                      ]
+                                                                                      }
                                             }
                       />
 </div>,
@@ -1345,27 +1321,25 @@ ShallowWrapper {
                       "children": Array [
                         <Unknown
                           show={
-                                                    Array [
-                                                                              Object {
-                                                                                "bio": "Yada yada yada",
-                                                                                "date": "Oct 24",
-                                                                                "headlineArtist": "Joan Baez",
-                                                                                "id": "E0-001-112093347-3",
-                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                "startTime": "8:00 PM",
-                                                                                "supportArtists": Array [],
-                                                                                "tickets": "www.axs.com",
-                                                                                "venue": Object {
-                                                                                  "address": "1621 Glenarm Place",
-                                                                                  "city": "Denver",
-                                                                                  "id": "V0-001-000198697-3",
-                                                                                  "name": "Paramount Theatre",
-                                                                                  "state": "CO",
-                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                  "zip": "80202",
-                                                                                },
+                                                    Object {
+                                                                              "bio": "So many beats ",
+                                                                              "date": "Oct 24",
+                                                                              "headlineArtist": "Joan Baez",
+                                                                              "id": "E0-001-112093347-3",
+                                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                              "startTime": "8:00 PM",
+                                                                              "supportArtists": Array [],
+                                                                              "tickets": "www.axs.com",
+                                                                              "venue": Object {
+                                                                                "address": "1621 Glenarm Place",
+                                                                                "city": "Denver",
+                                                                                "id": "V0-001-000198697-3",
+                                                                                "name": "Paramount Theatre",
+                                                                                "state": "CO",
+                                                                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                "zip": "80202",
                                                                               },
-                                                                            ]
+                                                                            }
                           }
 />,
                       ],
@@ -1375,30 +1349,28 @@ ShallowWrapper {
                     "rendered": Array [
                       Object {
                         "instance": null,
-                        "key": "4undefined",
+                        "key": "4E0-001-112093347-3",
                         "nodeType": "function",
                         "props": Object {
-                          "show": Array [
-                            Object {
-                              "bio": "Yada yada yada",
-                              "date": "Oct 24",
-                              "headlineArtist": "Joan Baez",
-                              "id": "E0-001-112093347-3",
-                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                              "startTime": "8:00 PM",
-                              "supportArtists": Array [],
-                              "tickets": "www.axs.com",
-                              "venue": Object {
-                                "address": "1621 Glenarm Place",
-                                "city": "Denver",
-                                "id": "V0-001-000198697-3",
-                                "name": "Paramount Theatre",
-                                "state": "CO",
-                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                "zip": "80202",
-                              },
+                          "show": Object {
+                            "bio": "So many beats ",
+                            "date": "Oct 24",
+                            "headlineArtist": "Joan Baez",
+                            "id": "E0-001-112093347-3",
+                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                            "startTime": "8:00 PM",
+                            "supportArtists": Array [],
+                            "tickets": "www.axs.com",
+                            "venue": Object {
+                              "address": "1621 Glenarm Place",
+                              "city": "Denver",
+                              "id": "V0-001-000198697-3",
+                              "name": "Paramount Theatre",
+                              "state": "CO",
+                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                              "zip": "80202",
                             },
-                          ],
+                          },
                         },
                         "ref": null,
                         "rendered": null,
@@ -1533,77 +1505,71 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     thisWeeksShows={
         Array [
-            Array [
-              Object {
-                "bio": "Yada yada yada",
-                "date": "Oct 24",
-                "headlineArtist": "Joan Baez",
-                "id": "E0-001-112093347-3",
-                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                "startTime": "8:00 PM",
-                "supportArtists": Array [],
-                "tickets": "www.axs.com",
-                "venue": Object {
-                  "address": "1621 Glenarm Place",
-                  "city": "Denver",
-                  "id": "V0-001-000198697-3",
-                  "name": "Paramount Theatre",
-                  "state": "CO",
-                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                  "zip": "80202",
-                },
+            Object {
+              "bio": "So many beats ",
+              "date": "Oct 24",
+              "headlineArtist": "Joan Baez",
+              "id": "E0-001-112093347-3",
+              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+              "startTime": "8:00 PM",
+              "supportArtists": Array [],
+              "tickets": "www.axs.com",
+              "venue": Object {
+                "address": "1621 Glenarm Place",
+                "city": "Denver",
+                "id": "V0-001-000198697-3",
+                "name": "Paramount Theatre",
+                "state": "CO",
+                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                "zip": "80202",
               },
-            ],
+            },
           ]
     }
     tonightsShows={
         Array [
-            Array [
-              Object {
-                "bio": "Yada yada yada",
-                "date": "Oct 24",
-                "headlineArtist": "Joan Baez",
-                "id": "E0-001-112093347-3",
-                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                "startTime": "8:00 PM",
-                "supportArtists": Array [],
-                "tickets": "www.axs.com",
-                "venue": Object {
-                  "address": "1621 Glenarm Place",
-                  "city": "Denver",
-                  "id": "V0-001-000198697-3",
-                  "name": "Paramount Theatre",
-                  "state": "CO",
-                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                  "zip": "80202",
-                },
+            Object {
+              "bio": "So many beats ",
+              "date": "Oct 24",
+              "headlineArtist": "Joan Baez",
+              "id": "E0-001-112093347-3",
+              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+              "startTime": "8:00 PM",
+              "supportArtists": Array [],
+              "tickets": "www.axs.com",
+              "venue": Object {
+                "address": "1621 Glenarm Place",
+                "city": "Denver",
+                "id": "V0-001-000198697-3",
+                "name": "Paramount Theatre",
+                "state": "CO",
+                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                "zip": "80202",
               },
-            ],
+            },
           ]
     }
     upcomingShows={
         Array [
-            Array [
-              Object {
-                "bio": "Yada yada yada",
-                "date": "Oct 24",
-                "headlineArtist": "Joan Baez",
-                "id": "E0-001-112093347-3",
-                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                "startTime": "8:00 PM",
-                "supportArtists": Array [],
-                "tickets": "www.axs.com",
-                "venue": Object {
-                  "address": "1621 Glenarm Place",
-                  "city": "Denver",
-                  "id": "V0-001-000198697-3",
-                  "name": "Paramount Theatre",
-                  "state": "CO",
-                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                  "zip": "80202",
-                },
+            Object {
+              "bio": "So many beats ",
+              "date": "Oct 24",
+              "headlineArtist": "Joan Baez",
+              "id": "E0-001-112093347-3",
+              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+              "startTime": "8:00 PM",
+              "supportArtists": Array [],
+              "tickets": "www.axs.com",
+              "venue": Object {
+                "address": "1621 Glenarm Place",
+                "city": "Denver",
+                "id": "V0-001-000198697-3",
+                "name": "Paramount Theatre",
+                "state": "CO",
+                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                "zip": "80202",
               },
-            ],
+            },
           ]
     }
 />,
@@ -1648,52 +1614,48 @@ ShallowWrapper {
                               >
                                         <Unknown
                                                   show={
-                                                            Array [
-                                                                      Object {
-                                                                        "bio": "Yada yada yada",
-                                                                        "date": "Oct 24",
-                                                                        "headlineArtist": "Joan Baez",
-                                                                        "id": "E0-001-112093347-3",
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "www.axs.com",
-                                                                        "venue": Object {
-                                                                          "address": "1621 Glenarm Place",
-                                                                          "city": "Denver",
-                                                                          "id": "V0-001-000198697-3",
-                                                                          "name": "Paramount Theatre",
-                                                                          "state": "CO",
-                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                          "zip": "80202",
-                                                                        },
+                                                            Object {
+                                                                      "bio": "So many beats ",
+                                                                      "date": "Oct 24",
+                                                                      "headlineArtist": "Joan Baez",
+                                                                      "id": "E0-001-112093347-3",
+                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                      "startTime": "8:00 PM",
+                                                                      "supportArtists": Array [],
+                                                                      "tickets": "www.axs.com",
+                                                                      "venue": Object {
+                                                                        "address": "1621 Glenarm Place",
+                                                                        "city": "Denver",
+                                                                        "id": "V0-001-000198697-3",
+                                                                        "name": "Paramount Theatre",
+                                                                        "state": "CO",
+                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                        "zip": "80202",
                                                                       },
-                                                                    ]
+                                                                    }
                                                   }
                                         />
                                         <Unknown
                                                   show={
-                                                            Array [
-                                                                      Object {
-                                                                        "bio": "Yada yada yada",
-                                                                        "date": "Oct 24",
-                                                                        "headlineArtist": "Joan Baez",
-                                                                        "id": "E0-001-112093347-3",
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "www.axs.com",
-                                                                        "venue": Object {
-                                                                          "address": "1621 Glenarm Place",
-                                                                          "city": "Denver",
-                                                                          "id": "V0-001-000198697-3",
-                                                                          "name": "Paramount Theatre",
-                                                                          "state": "CO",
-                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                          "zip": "80202",
-                                                                        },
+                                                            Object {
+                                                                      "bio": "So many beats ",
+                                                                      "date": "Oct 24",
+                                                                      "headlineArtist": "Joan Baez",
+                                                                      "id": "E0-001-112093347-3",
+                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                      "startTime": "8:00 PM",
+                                                                      "supportArtists": Array [],
+                                                                      "tickets": "www.axs.com",
+                                                                      "venue": Object {
+                                                                        "address": "1621 Glenarm Place",
+                                                                        "city": "Denver",
+                                                                        "id": "V0-001-000198697-3",
+                                                                        "name": "Paramount Theatre",
+                                                                        "state": "CO",
+                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                        "zip": "80202",
                                                                       },
-                                                                    ]
+                                                                    }
                                                   }
                                         />
                               </div>
@@ -1796,52 +1758,48 @@ ShallowWrapper {
                             >
                                           <Unknown
                                                         show={
-                                                                      Array [
-                                                                                    Object {
-                                                                                      "bio": "Yada yada yada",
-                                                                                      "date": "Oct 24",
-                                                                                      "headlineArtist": "Joan Baez",
-                                                                                      "id": "E0-001-112093347-3",
-                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                      "startTime": "8:00 PM",
-                                                                                      "supportArtists": Array [],
-                                                                                      "tickets": "www.axs.com",
-                                                                                      "venue": Object {
-                                                                                        "address": "1621 Glenarm Place",
-                                                                                        "city": "Denver",
-                                                                                        "id": "V0-001-000198697-3",
-                                                                                        "name": "Paramount Theatre",
-                                                                                        "state": "CO",
-                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                        "zip": "80202",
-                                                                                      },
+                                                                      Object {
+                                                                                    "bio": "So many beats ",
+                                                                                    "date": "Oct 24",
+                                                                                    "headlineArtist": "Joan Baez",
+                                                                                    "id": "E0-001-112093347-3",
+                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                    "startTime": "8:00 PM",
+                                                                                    "supportArtists": Array [],
+                                                                                    "tickets": "www.axs.com",
+                                                                                    "venue": Object {
+                                                                                      "address": "1621 Glenarm Place",
+                                                                                      "city": "Denver",
+                                                                                      "id": "V0-001-000198697-3",
+                                                                                      "name": "Paramount Theatre",
+                                                                                      "state": "CO",
+                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                      "zip": "80202",
                                                                                     },
-                                                                                  ]
+                                                                                  }
                                                         }
                                           />
                                           <Unknown
                                                         show={
-                                                                      Array [
-                                                                                    Object {
-                                                                                      "bio": "Yada yada yada",
-                                                                                      "date": "Oct 24",
-                                                                                      "headlineArtist": "Joan Baez",
-                                                                                      "id": "E0-001-112093347-3",
-                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                      "startTime": "8:00 PM",
-                                                                                      "supportArtists": Array [],
-                                                                                      "tickets": "www.axs.com",
-                                                                                      "venue": Object {
-                                                                                        "address": "1621 Glenarm Place",
-                                                                                        "city": "Denver",
-                                                                                        "id": "V0-001-000198697-3",
-                                                                                        "name": "Paramount Theatre",
-                                                                                        "state": "CO",
-                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                        "zip": "80202",
-                                                                                      },
+                                                                      Object {
+                                                                                    "bio": "So many beats ",
+                                                                                    "date": "Oct 24",
+                                                                                    "headlineArtist": "Joan Baez",
+                                                                                    "id": "E0-001-112093347-3",
+                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                    "startTime": "8:00 PM",
+                                                                                    "supportArtists": Array [],
+                                                                                    "tickets": "www.axs.com",
+                                                                                    "venue": Object {
+                                                                                      "address": "1621 Glenarm Place",
+                                                                                      "city": "Denver",
+                                                                                      "id": "V0-001-000198697-3",
+                                                                                      "name": "Paramount Theatre",
+                                                                                      "state": "CO",
+                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                      "zip": "80202",
                                                                                     },
-                                                                                  ]
+                                                                                  }
                                                         }
                                           />
                             </div>
@@ -1900,52 +1858,48 @@ ShallowWrapper {
                   >
                                     <Unknown
                                                       show={
-                                                                        Array [
-                                                                                          Object {
-                                                                                            "bio": "Yada yada yada",
-                                                                                            "date": "Oct 24",
-                                                                                            "headlineArtist": "Joan Baez",
-                                                                                            "id": "E0-001-112093347-3",
-                                                                                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                            "startTime": "8:00 PM",
-                                                                                            "supportArtists": Array [],
-                                                                                            "tickets": "www.axs.com",
-                                                                                            "venue": Object {
-                                                                                              "address": "1621 Glenarm Place",
-                                                                                              "city": "Denver",
-                                                                                              "id": "V0-001-000198697-3",
-                                                                                              "name": "Paramount Theatre",
-                                                                                              "state": "CO",
-                                                                                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                              "zip": "80202",
-                                                                                            },
+                                                                        Object {
+                                                                                          "bio": "So many beats ",
+                                                                                          "date": "Oct 24",
+                                                                                          "headlineArtist": "Joan Baez",
+                                                                                          "id": "E0-001-112093347-3",
+                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                          "startTime": "8:00 PM",
+                                                                                          "supportArtists": Array [],
+                                                                                          "tickets": "www.axs.com",
+                                                                                          "venue": Object {
+                                                                                            "address": "1621 Glenarm Place",
+                                                                                            "city": "Denver",
+                                                                                            "id": "V0-001-000198697-3",
+                                                                                            "name": "Paramount Theatre",
+                                                                                            "state": "CO",
+                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                            "zip": "80202",
                                                                                           },
-                                                                                        ]
+                                                                                        }
                                                       }
                                     />
                                     <Unknown
                                                       show={
-                                                                        Array [
-                                                                                          Object {
-                                                                                            "bio": "Yada yada yada",
-                                                                                            "date": "Oct 24",
-                                                                                            "headlineArtist": "Joan Baez",
-                                                                                            "id": "E0-001-112093347-3",
-                                                                                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                            "startTime": "8:00 PM",
-                                                                                            "supportArtists": Array [],
-                                                                                            "tickets": "www.axs.com",
-                                                                                            "venue": Object {
-                                                                                              "address": "1621 Glenarm Place",
-                                                                                              "city": "Denver",
-                                                                                              "id": "V0-001-000198697-3",
-                                                                                              "name": "Paramount Theatre",
-                                                                                              "state": "CO",
-                                                                                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                              "zip": "80202",
-                                                                                            },
+                                                                        Object {
+                                                                                          "bio": "So many beats ",
+                                                                                          "date": "Oct 24",
+                                                                                          "headlineArtist": "Joan Baez",
+                                                                                          "id": "E0-001-112093347-3",
+                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                          "startTime": "8:00 PM",
+                                                                                          "supportArtists": Array [],
+                                                                                          "tickets": "www.axs.com",
+                                                                                          "venue": Object {
+                                                                                            "address": "1621 Glenarm Place",
+                                                                                            "city": "Denver",
+                                                                                            "id": "V0-001-000198697-3",
+                                                                                            "name": "Paramount Theatre",
+                                                                                            "state": "CO",
+                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                            "zip": "80202",
                                                                                           },
-                                                                                        ]
+                                                                                        }
                                                       }
                                     />
                   </div>
@@ -1976,52 +1930,48 @@ ShallowWrapper {
 >
                     <Unknown
                                         show={
-                                                            Array [
-                                                                                Object {
-                                                                                  "bio": "Yada yada yada",
-                                                                                  "date": "Oct 24",
-                                                                                  "headlineArtist": "Joan Baez",
-                                                                                  "id": "E0-001-112093347-3",
-                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                  "startTime": "8:00 PM",
-                                                                                  "supportArtists": Array [],
-                                                                                  "tickets": "www.axs.com",
-                                                                                  "venue": Object {
-                                                                                    "address": "1621 Glenarm Place",
-                                                                                    "city": "Denver",
-                                                                                    "id": "V0-001-000198697-3",
-                                                                                    "name": "Paramount Theatre",
-                                                                                    "state": "CO",
-                                                                                    "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                    "zip": "80202",
-                                                                                  },
+                                                            Object {
+                                                                                "bio": "So many beats ",
+                                                                                "date": "Oct 24",
+                                                                                "headlineArtist": "Joan Baez",
+                                                                                "id": "E0-001-112093347-3",
+                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                "startTime": "8:00 PM",
+                                                                                "supportArtists": Array [],
+                                                                                "tickets": "www.axs.com",
+                                                                                "venue": Object {
+                                                                                  "address": "1621 Glenarm Place",
+                                                                                  "city": "Denver",
+                                                                                  "id": "V0-001-000198697-3",
+                                                                                  "name": "Paramount Theatre",
+                                                                                  "state": "CO",
+                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                  "zip": "80202",
                                                                                 },
-                                                                              ]
+                                                                              }
                                         }
                     />
                     <Unknown
                                         show={
-                                                            Array [
-                                                                                Object {
-                                                                                  "bio": "Yada yada yada",
-                                                                                  "date": "Oct 24",
-                                                                                  "headlineArtist": "Joan Baez",
-                                                                                  "id": "E0-001-112093347-3",
-                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                  "startTime": "8:00 PM",
-                                                                                  "supportArtists": Array [],
-                                                                                  "tickets": "www.axs.com",
-                                                                                  "venue": Object {
-                                                                                    "address": "1621 Glenarm Place",
-                                                                                    "city": "Denver",
-                                                                                    "id": "V0-001-000198697-3",
-                                                                                    "name": "Paramount Theatre",
-                                                                                    "state": "CO",
-                                                                                    "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                    "zip": "80202",
-                                                                                  },
+                                                            Object {
+                                                                                "bio": "So many beats ",
+                                                                                "date": "Oct 24",
+                                                                                "headlineArtist": "Joan Baez",
+                                                                                "id": "E0-001-112093347-3",
+                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                "startTime": "8:00 PM",
+                                                                                "supportArtists": Array [],
+                                                                                "tickets": "www.axs.com",
+                                                                                "venue": Object {
+                                                                                  "address": "1621 Glenarm Place",
+                                                                                  "city": "Denver",
+                                                                                  "id": "V0-001-000198697-3",
+                                                                                  "name": "Paramount Theatre",
+                                                                                  "state": "CO",
+                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                  "zip": "80202",
                                                                                 },
-                                                                              ]
+                                                                              }
                                         }
                     />
 </div>,
@@ -2036,52 +1986,48 @@ ShallowWrapper {
                     "children": Array [
                       <Unknown
                         show={
-                                                Array [
-                                                                        Object {
-                                                                          "bio": "Yada yada yada",
-                                                                          "date": "Oct 24",
-                                                                          "headlineArtist": "Joan Baez",
-                                                                          "id": "E0-001-112093347-3",
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "www.axs.com",
-                                                                          "venue": Object {
-                                                                            "address": "1621 Glenarm Place",
-                                                                            "city": "Denver",
-                                                                            "id": "V0-001-000198697-3",
-                                                                            "name": "Paramount Theatre",
-                                                                            "state": "CO",
-                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                            "zip": "80202",
-                                                                          },
+                                                Object {
+                                                                        "bio": "So many beats ",
+                                                                        "date": "Oct 24",
+                                                                        "headlineArtist": "Joan Baez",
+                                                                        "id": "E0-001-112093347-3",
+                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                        "startTime": "8:00 PM",
+                                                                        "supportArtists": Array [],
+                                                                        "tickets": "www.axs.com",
+                                                                        "venue": Object {
+                                                                          "address": "1621 Glenarm Place",
+                                                                          "city": "Denver",
+                                                                          "id": "V0-001-000198697-3",
+                                                                          "name": "Paramount Theatre",
+                                                                          "state": "CO",
+                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                          "zip": "80202",
                                                                         },
-                                                                      ]
+                                                                      }
                         }
 />,
                       <Unknown
                         show={
-                                                Array [
-                                                                        Object {
-                                                                          "bio": "Yada yada yada",
-                                                                          "date": "Oct 24",
-                                                                          "headlineArtist": "Joan Baez",
-                                                                          "id": "E0-001-112093347-3",
-                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                          "startTime": "8:00 PM",
-                                                                          "supportArtists": Array [],
-                                                                          "tickets": "www.axs.com",
-                                                                          "venue": Object {
-                                                                            "address": "1621 Glenarm Place",
-                                                                            "city": "Denver",
-                                                                            "id": "V0-001-000198697-3",
-                                                                            "name": "Paramount Theatre",
-                                                                            "state": "CO",
-                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                            "zip": "80202",
-                                                                          },
+                                                Object {
+                                                                        "bio": "So many beats ",
+                                                                        "date": "Oct 24",
+                                                                        "headlineArtist": "Joan Baez",
+                                                                        "id": "E0-001-112093347-3",
+                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                        "startTime": "8:00 PM",
+                                                                        "supportArtists": Array [],
+                                                                        "tickets": "www.axs.com",
+                                                                        "venue": Object {
+                                                                          "address": "1621 Glenarm Place",
+                                                                          "city": "Denver",
+                                                                          "id": "V0-001-000198697-3",
+                                                                          "name": "Paramount Theatre",
+                                                                          "state": "CO",
+                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                          "zip": "80202",
                                                                         },
-                                                                      ]
+                                                                      }
                         }
 />,
                     ],
@@ -2091,30 +2037,28 @@ ShallowWrapper {
                   "rendered": Array [
                     Object {
                       "instance": null,
-                      "key": "1undefined",
+                      "key": "1E0-001-112093347-3",
                       "nodeType": "function",
                       "props": Object {
-                        "show": Array [
-                          Object {
-                            "bio": "Yada yada yada",
-                            "date": "Oct 24",
-                            "headlineArtist": "Joan Baez",
-                            "id": "E0-001-112093347-3",
-                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                            "startTime": "8:00 PM",
-                            "supportArtists": Array [],
-                            "tickets": "www.axs.com",
-                            "venue": Object {
-                              "address": "1621 Glenarm Place",
-                              "city": "Denver",
-                              "id": "V0-001-000198697-3",
-                              "name": "Paramount Theatre",
-                              "state": "CO",
-                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                              "zip": "80202",
-                            },
+                        "show": Object {
+                          "bio": "So many beats ",
+                          "date": "Oct 24",
+                          "headlineArtist": "Joan Baez",
+                          "id": "E0-001-112093347-3",
+                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                          "startTime": "8:00 PM",
+                          "supportArtists": Array [],
+                          "tickets": "www.axs.com",
+                          "venue": Object {
+                            "address": "1621 Glenarm Place",
+                            "city": "Denver",
+                            "id": "V0-001-000198697-3",
+                            "name": "Paramount Theatre",
+                            "state": "CO",
+                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                            "zip": "80202",
                           },
-                        ],
+                        },
                       },
                       "ref": null,
                       "rendered": null,
@@ -2122,30 +2066,28 @@ ShallowWrapper {
                     },
                     Object {
                       "instance": null,
-                      "key": "1undefined",
+                      "key": "1E0-001-112093347-3",
                       "nodeType": "function",
                       "props": Object {
-                        "show": Array [
-                          Object {
-                            "bio": "Yada yada yada",
-                            "date": "Oct 24",
-                            "headlineArtist": "Joan Baez",
-                            "id": "E0-001-112093347-3",
-                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                            "startTime": "8:00 PM",
-                            "supportArtists": Array [],
-                            "tickets": "www.axs.com",
-                            "venue": Object {
-                              "address": "1621 Glenarm Place",
-                              "city": "Denver",
-                              "id": "V0-001-000198697-3",
-                              "name": "Paramount Theatre",
-                              "state": "CO",
-                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                              "zip": "80202",
-                            },
+                        "show": Object {
+                          "bio": "So many beats ",
+                          "date": "Oct 24",
+                          "headlineArtist": "Joan Baez",
+                          "id": "E0-001-112093347-3",
+                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                          "startTime": "8:00 PM",
+                          "supportArtists": Array [],
+                          "tickets": "www.axs.com",
+                          "venue": Object {
+                            "address": "1621 Glenarm Place",
+                            "city": "Denver",
+                            "id": "V0-001-000198697-3",
+                            "name": "Paramount Theatre",
+                            "state": "CO",
+                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                            "zip": "80202",
                           },
-                        ],
+                        },
                       },
                       "ref": null,
                       "rendered": null,
@@ -2297,52 +2239,48 @@ ShallowWrapper {
                                     >
                                                 <Unknown
                                                             show={
-                                                                        Array [
-                                                                                    Object {
-                                                                                      "bio": "Yada yada yada",
-                                                                                      "date": "Oct 24",
-                                                                                      "headlineArtist": "Joan Baez",
-                                                                                      "id": "E0-001-112093347-3",
-                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                      "startTime": "8:00 PM",
-                                                                                      "supportArtists": Array [],
-                                                                                      "tickets": "www.axs.com",
-                                                                                      "venue": Object {
-                                                                                        "address": "1621 Glenarm Place",
-                                                                                        "city": "Denver",
-                                                                                        "id": "V0-001-000198697-3",
-                                                                                        "name": "Paramount Theatre",
-                                                                                        "state": "CO",
-                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                        "zip": "80202",
-                                                                                      },
+                                                                        Object {
+                                                                                    "bio": "So many beats ",
+                                                                                    "date": "Oct 24",
+                                                                                    "headlineArtist": "Joan Baez",
+                                                                                    "id": "E0-001-112093347-3",
+                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                    "startTime": "8:00 PM",
+                                                                                    "supportArtists": Array [],
+                                                                                    "tickets": "www.axs.com",
+                                                                                    "venue": Object {
+                                                                                      "address": "1621 Glenarm Place",
+                                                                                      "city": "Denver",
+                                                                                      "id": "V0-001-000198697-3",
+                                                                                      "name": "Paramount Theatre",
+                                                                                      "state": "CO",
+                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                      "zip": "80202",
                                                                                     },
-                                                                                  ]
+                                                                                  }
                                                             }
                                                 />
                                                 <Unknown
                                                             show={
-                                                                        Array [
-                                                                                    Object {
-                                                                                      "bio": "Yada yada yada",
-                                                                                      "date": "Oct 24",
-                                                                                      "headlineArtist": "Joan Baez",
-                                                                                      "id": "E0-001-112093347-3",
-                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                      "startTime": "8:00 PM",
-                                                                                      "supportArtists": Array [],
-                                                                                      "tickets": "www.axs.com",
-                                                                                      "venue": Object {
-                                                                                        "address": "1621 Glenarm Place",
-                                                                                        "city": "Denver",
-                                                                                        "id": "V0-001-000198697-3",
-                                                                                        "name": "Paramount Theatre",
-                                                                                        "state": "CO",
-                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                        "zip": "80202",
-                                                                                      },
+                                                                        Object {
+                                                                                    "bio": "So many beats ",
+                                                                                    "date": "Oct 24",
+                                                                                    "headlineArtist": "Joan Baez",
+                                                                                    "id": "E0-001-112093347-3",
+                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                    "startTime": "8:00 PM",
+                                                                                    "supportArtists": Array [],
+                                                                                    "tickets": "www.axs.com",
+                                                                                    "venue": Object {
+                                                                                      "address": "1621 Glenarm Place",
+                                                                                      "city": "Denver",
+                                                                                      "id": "V0-001-000198697-3",
+                                                                                      "name": "Paramount Theatre",
+                                                                                      "state": "CO",
+                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                      "zip": "80202",
                                                                                     },
-                                                                                  ]
+                                                                                  }
                                                             }
                                                 />
                                     </div>
@@ -2445,52 +2383,48 @@ ShallowWrapper {
                                 >
                                                 <Unknown
                                                                 show={
-                                                                                Array [
-                                                                                                Object {
-                                                                                                  "bio": "Yada yada yada",
-                                                                                                  "date": "Oct 24",
-                                                                                                  "headlineArtist": "Joan Baez",
-                                                                                                  "id": "E0-001-112093347-3",
-                                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                  "startTime": "8:00 PM",
-                                                                                                  "supportArtists": Array [],
-                                                                                                  "tickets": "www.axs.com",
-                                                                                                  "venue": Object {
-                                                                                                    "address": "1621 Glenarm Place",
-                                                                                                    "city": "Denver",
-                                                                                                    "id": "V0-001-000198697-3",
-                                                                                                    "name": "Paramount Theatre",
-                                                                                                    "state": "CO",
-                                                                                                    "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                    "zip": "80202",
-                                                                                                  },
+                                                                                Object {
+                                                                                                "bio": "So many beats ",
+                                                                                                "date": "Oct 24",
+                                                                                                "headlineArtist": "Joan Baez",
+                                                                                                "id": "E0-001-112093347-3",
+                                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                "startTime": "8:00 PM",
+                                                                                                "supportArtists": Array [],
+                                                                                                "tickets": "www.axs.com",
+                                                                                                "venue": Object {
+                                                                                                  "address": "1621 Glenarm Place",
+                                                                                                  "city": "Denver",
+                                                                                                  "id": "V0-001-000198697-3",
+                                                                                                  "name": "Paramount Theatre",
+                                                                                                  "state": "CO",
+                                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                                  "zip": "80202",
                                                                                                 },
-                                                                                              ]
+                                                                                              }
                                                                 }
                                                 />
                                                 <Unknown
                                                                 show={
-                                                                                Array [
-                                                                                                Object {
-                                                                                                  "bio": "Yada yada yada",
-                                                                                                  "date": "Oct 24",
-                                                                                                  "headlineArtist": "Joan Baez",
-                                                                                                  "id": "E0-001-112093347-3",
-                                                                                                  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                  "startTime": "8:00 PM",
-                                                                                                  "supportArtists": Array [],
-                                                                                                  "tickets": "www.axs.com",
-                                                                                                  "venue": Object {
-                                                                                                    "address": "1621 Glenarm Place",
-                                                                                                    "city": "Denver",
-                                                                                                    "id": "V0-001-000198697-3",
-                                                                                                    "name": "Paramount Theatre",
-                                                                                                    "state": "CO",
-                                                                                                    "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                    "zip": "80202",
-                                                                                                  },
+                                                                                Object {
+                                                                                                "bio": "So many beats ",
+                                                                                                "date": "Oct 24",
+                                                                                                "headlineArtist": "Joan Baez",
+                                                                                                "id": "E0-001-112093347-3",
+                                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                "startTime": "8:00 PM",
+                                                                                                "supportArtists": Array [],
+                                                                                                "tickets": "www.axs.com",
+                                                                                                "venue": Object {
+                                                                                                  "address": "1621 Glenarm Place",
+                                                                                                  "city": "Denver",
+                                                                                                  "id": "V0-001-000198697-3",
+                                                                                                  "name": "Paramount Theatre",
+                                                                                                  "state": "CO",
+                                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                                  "zip": "80202",
                                                                                                 },
-                                                                                              ]
+                                                                                              }
                                                                 }
                                                 />
                                 </div>
@@ -2549,52 +2483,48 @@ ShallowWrapper {
                     >
                                         <Unknown
                                                             show={
-                                                                                Array [
-                                                                                                    Object {
-                                                                                                      "bio": "Yada yada yada",
-                                                                                                      "date": "Oct 24",
-                                                                                                      "headlineArtist": "Joan Baez",
-                                                                                                      "id": "E0-001-112093347-3",
-                                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                      "startTime": "8:00 PM",
-                                                                                                      "supportArtists": Array [],
-                                                                                                      "tickets": "www.axs.com",
-                                                                                                      "venue": Object {
-                                                                                                        "address": "1621 Glenarm Place",
-                                                                                                        "city": "Denver",
-                                                                                                        "id": "V0-001-000198697-3",
-                                                                                                        "name": "Paramount Theatre",
-                                                                                                        "state": "CO",
-                                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                        "zip": "80202",
-                                                                                                      },
+                                                                                Object {
+                                                                                                    "bio": "So many beats ",
+                                                                                                    "date": "Oct 24",
+                                                                                                    "headlineArtist": "Joan Baez",
+                                                                                                    "id": "E0-001-112093347-3",
+                                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                    "startTime": "8:00 PM",
+                                                                                                    "supportArtists": Array [],
+                                                                                                    "tickets": "www.axs.com",
+                                                                                                    "venue": Object {
+                                                                                                      "address": "1621 Glenarm Place",
+                                                                                                      "city": "Denver",
+                                                                                                      "id": "V0-001-000198697-3",
+                                                                                                      "name": "Paramount Theatre",
+                                                                                                      "state": "CO",
+                                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                                      "zip": "80202",
                                                                                                     },
-                                                                                                  ]
+                                                                                                  }
                                                             }
                                         />
                                         <Unknown
                                                             show={
-                                                                                Array [
-                                                                                                    Object {
-                                                                                                      "bio": "Yada yada yada",
-                                                                                                      "date": "Oct 24",
-                                                                                                      "headlineArtist": "Joan Baez",
-                                                                                                      "id": "E0-001-112093347-3",
-                                                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                      "startTime": "8:00 PM",
-                                                                                                      "supportArtists": Array [],
-                                                                                                      "tickets": "www.axs.com",
-                                                                                                      "venue": Object {
-                                                                                                        "address": "1621 Glenarm Place",
-                                                                                                        "city": "Denver",
-                                                                                                        "id": "V0-001-000198697-3",
-                                                                                                        "name": "Paramount Theatre",
-                                                                                                        "state": "CO",
-                                                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                        "zip": "80202",
-                                                                                                      },
+                                                                                Object {
+                                                                                                    "bio": "So many beats ",
+                                                                                                    "date": "Oct 24",
+                                                                                                    "headlineArtist": "Joan Baez",
+                                                                                                    "id": "E0-001-112093347-3",
+                                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                                    "startTime": "8:00 PM",
+                                                                                                    "supportArtists": Array [],
+                                                                                                    "tickets": "www.axs.com",
+                                                                                                    "venue": Object {
+                                                                                                      "address": "1621 Glenarm Place",
+                                                                                                      "city": "Denver",
+                                                                                                      "id": "V0-001-000198697-3",
+                                                                                                      "name": "Paramount Theatre",
+                                                                                                      "state": "CO",
+                                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                                      "zip": "80202",
                                                                                                     },
-                                                                                                  ]
+                                                                                                  }
                                                             }
                                         />
                     </div>
@@ -2625,52 +2555,48 @@ ShallowWrapper {
 >
                       <Unknown
                                             show={
-                                                                  Array [
-                                                                                        Object {
-                                                                                          "bio": "Yada yada yada",
-                                                                                          "date": "Oct 24",
-                                                                                          "headlineArtist": "Joan Baez",
-                                                                                          "id": "E0-001-112093347-3",
-                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                          "startTime": "8:00 PM",
-                                                                                          "supportArtists": Array [],
-                                                                                          "tickets": "www.axs.com",
-                                                                                          "venue": Object {
-                                                                                            "address": "1621 Glenarm Place",
-                                                                                            "city": "Denver",
-                                                                                            "id": "V0-001-000198697-3",
-                                                                                            "name": "Paramount Theatre",
-                                                                                            "state": "CO",
-                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                            "zip": "80202",
-                                                                                          },
+                                                                  Object {
+                                                                                        "bio": "So many beats ",
+                                                                                        "date": "Oct 24",
+                                                                                        "headlineArtist": "Joan Baez",
+                                                                                        "id": "E0-001-112093347-3",
+                                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                        "startTime": "8:00 PM",
+                                                                                        "supportArtists": Array [],
+                                                                                        "tickets": "www.axs.com",
+                                                                                        "venue": Object {
+                                                                                          "address": "1621 Glenarm Place",
+                                                                                          "city": "Denver",
+                                                                                          "id": "V0-001-000198697-3",
+                                                                                          "name": "Paramount Theatre",
+                                                                                          "state": "CO",
+                                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                          "zip": "80202",
                                                                                         },
-                                                                                      ]
+                                                                                      }
                                             }
                       />
                       <Unknown
                                             show={
-                                                                  Array [
-                                                                                        Object {
-                                                                                          "bio": "Yada yada yada",
-                                                                                          "date": "Oct 24",
-                                                                                          "headlineArtist": "Joan Baez",
-                                                                                          "id": "E0-001-112093347-3",
-                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                          "startTime": "8:00 PM",
-                                                                                          "supportArtists": Array [],
-                                                                                          "tickets": "www.axs.com",
-                                                                                          "venue": Object {
-                                                                                            "address": "1621 Glenarm Place",
-                                                                                            "city": "Denver",
-                                                                                            "id": "V0-001-000198697-3",
-                                                                                            "name": "Paramount Theatre",
-                                                                                            "state": "CO",
-                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                            "zip": "80202",
-                                                                                          },
+                                                                  Object {
+                                                                                        "bio": "So many beats ",
+                                                                                        "date": "Oct 24",
+                                                                                        "headlineArtist": "Joan Baez",
+                                                                                        "id": "E0-001-112093347-3",
+                                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                                        "startTime": "8:00 PM",
+                                                                                        "supportArtists": Array [],
+                                                                                        "tickets": "www.axs.com",
+                                                                                        "venue": Object {
+                                                                                          "address": "1621 Glenarm Place",
+                                                                                          "city": "Denver",
+                                                                                          "id": "V0-001-000198697-3",
+                                                                                          "name": "Paramount Theatre",
+                                                                                          "state": "CO",
+                                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                          "zip": "80202",
                                                                                         },
-                                                                                      ]
+                                                                                      }
                                             }
                       />
 </div>,
@@ -2685,52 +2611,48 @@ ShallowWrapper {
                       "children": Array [
                         <Unknown
                           show={
-                                                    Array [
-                                                                              Object {
-                                                                                "bio": "Yada yada yada",
-                                                                                "date": "Oct 24",
-                                                                                "headlineArtist": "Joan Baez",
-                                                                                "id": "E0-001-112093347-3",
-                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                "startTime": "8:00 PM",
-                                                                                "supportArtists": Array [],
-                                                                                "tickets": "www.axs.com",
-                                                                                "venue": Object {
-                                                                                  "address": "1621 Glenarm Place",
-                                                                                  "city": "Denver",
-                                                                                  "id": "V0-001-000198697-3",
-                                                                                  "name": "Paramount Theatre",
-                                                                                  "state": "CO",
-                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                  "zip": "80202",
-                                                                                },
+                                                    Object {
+                                                                              "bio": "So many beats ",
+                                                                              "date": "Oct 24",
+                                                                              "headlineArtist": "Joan Baez",
+                                                                              "id": "E0-001-112093347-3",
+                                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                              "startTime": "8:00 PM",
+                                                                              "supportArtists": Array [],
+                                                                              "tickets": "www.axs.com",
+                                                                              "venue": Object {
+                                                                                "address": "1621 Glenarm Place",
+                                                                                "city": "Denver",
+                                                                                "id": "V0-001-000198697-3",
+                                                                                "name": "Paramount Theatre",
+                                                                                "state": "CO",
+                                                                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                "zip": "80202",
                                                                               },
-                                                                            ]
+                                                                            }
                           }
 />,
                         <Unknown
                           show={
-                                                    Array [
-                                                                              Object {
-                                                                                "bio": "Yada yada yada",
-                                                                                "date": "Oct 24",
-                                                                                "headlineArtist": "Joan Baez",
-                                                                                "id": "E0-001-112093347-3",
-                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                "startTime": "8:00 PM",
-                                                                                "supportArtists": Array [],
-                                                                                "tickets": "www.axs.com",
-                                                                                "venue": Object {
-                                                                                  "address": "1621 Glenarm Place",
-                                                                                  "city": "Denver",
-                                                                                  "id": "V0-001-000198697-3",
-                                                                                  "name": "Paramount Theatre",
-                                                                                  "state": "CO",
-                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                  "zip": "80202",
-                                                                                },
+                                                    Object {
+                                                                              "bio": "So many beats ",
+                                                                              "date": "Oct 24",
+                                                                              "headlineArtist": "Joan Baez",
+                                                                              "id": "E0-001-112093347-3",
+                                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                                                                              "startTime": "8:00 PM",
+                                                                              "supportArtists": Array [],
+                                                                              "tickets": "www.axs.com",
+                                                                              "venue": Object {
+                                                                                "address": "1621 Glenarm Place",
+                                                                                "city": "Denver",
+                                                                                "id": "V0-001-000198697-3",
+                                                                                "name": "Paramount Theatre",
+                                                                                "state": "CO",
+                                                                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                                                                                "zip": "80202",
                                                                               },
-                                                                            ]
+                                                                            }
                           }
 />,
                       ],
@@ -2740,30 +2662,28 @@ ShallowWrapper {
                     "rendered": Array [
                       Object {
                         "instance": null,
-                        "key": "1undefined",
+                        "key": "1E0-001-112093347-3",
                         "nodeType": "function",
                         "props": Object {
-                          "show": Array [
-                            Object {
-                              "bio": "Yada yada yada",
-                              "date": "Oct 24",
-                              "headlineArtist": "Joan Baez",
-                              "id": "E0-001-112093347-3",
-                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                              "startTime": "8:00 PM",
-                              "supportArtists": Array [],
-                              "tickets": "www.axs.com",
-                              "venue": Object {
-                                "address": "1621 Glenarm Place",
-                                "city": "Denver",
-                                "id": "V0-001-000198697-3",
-                                "name": "Paramount Theatre",
-                                "state": "CO",
-                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                "zip": "80202",
-                              },
+                          "show": Object {
+                            "bio": "So many beats ",
+                            "date": "Oct 24",
+                            "headlineArtist": "Joan Baez",
+                            "id": "E0-001-112093347-3",
+                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                            "startTime": "8:00 PM",
+                            "supportArtists": Array [],
+                            "tickets": "www.axs.com",
+                            "venue": Object {
+                              "address": "1621 Glenarm Place",
+                              "city": "Denver",
+                              "id": "V0-001-000198697-3",
+                              "name": "Paramount Theatre",
+                              "state": "CO",
+                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                              "zip": "80202",
                             },
-                          ],
+                          },
                         },
                         "ref": null,
                         "rendered": null,
@@ -2771,30 +2691,28 @@ ShallowWrapper {
                       },
                       Object {
                         "instance": null,
-                        "key": "1undefined",
+                        "key": "1E0-001-112093347-3",
                         "nodeType": "function",
                         "props": Object {
-                          "show": Array [
-                            Object {
-                              "bio": "Yada yada yada",
-                              "date": "Oct 24",
-                              "headlineArtist": "Joan Baez",
-                              "id": "E0-001-112093347-3",
-                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                              "startTime": "8:00 PM",
-                              "supportArtists": Array [],
-                              "tickets": "www.axs.com",
-                              "venue": Object {
-                                "address": "1621 Glenarm Place",
-                                "city": "Denver",
-                                "id": "V0-001-000198697-3",
-                                "name": "Paramount Theatre",
-                                "state": "CO",
-                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                "zip": "80202",
-                              },
+                          "show": Object {
+                            "bio": "So many beats ",
+                            "date": "Oct 24",
+                            "headlineArtist": "Joan Baez",
+                            "id": "E0-001-112093347-3",
+                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
+                            "startTime": "8:00 PM",
+                            "supportArtists": Array [],
+                            "tickets": "www.axs.com",
+                            "venue": Object {
+                              "address": "1621 Glenarm Place",
+                              "city": "Denver",
+                              "id": "V0-001-000198697-3",
+                              "name": "Paramount Theatre",
+                              "state": "CO",
+                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
+                              "zip": "80202",
                             },
-                          ],
+                          },
                         },
                         "ref": null,
                         "rendered": null,
