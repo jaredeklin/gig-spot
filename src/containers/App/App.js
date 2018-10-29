@@ -21,11 +21,9 @@ export class App extends Component {
   };
 
   componentDidMount = () => {
-    const { fetchShows } = this.props;
-
     if (localStorage.events) {
       const events = storage.getEventsFrom();
-      fetchShows(events.city);
+      this.props.fetchShows(events.city);
     }
   };
 
@@ -59,6 +57,7 @@ export class App extends Component {
         {error && <Error />}
 
         <Route
+          exact
           path={'/event-details/:id'}
           render={({ match }) => {
             const concert = this.findMatch(match);

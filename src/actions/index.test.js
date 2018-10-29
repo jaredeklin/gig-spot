@@ -124,8 +124,7 @@ describe('updateLocation', () => {
 describe('fetchShows', () => {
   MockDate.set(moment('20181201'));
 
-  const mockLocation = { location: 'Denver' };
-  const { location } = mockLocation;
+  const location = 'Denver';
   const store = mockStore({});
   const storage = new Storage();
 

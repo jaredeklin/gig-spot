@@ -5,8 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={false}
     location={
         Object {
             "pathname": "",
@@ -72,8 +70,9 @@ ShallowWrapper {
           path="/main"
 />,
         undefined,
-        false,
+        undefined,
         <Route
+          exact={true}
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -167,12 +166,13 @@ ShallowWrapper {
         "type": [Function],
       },
       undefined,
-      false,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -215,8 +215,9 @@ ShallowWrapper {
             path="/main"
 />,
           undefined,
-          false,
+          undefined,
           <Route
+            exact={true}
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -310,12 +311,13 @@ ShallowWrapper {
           "type": [Function],
         },
         undefined,
-        false,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "exact": true,
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -342,8 +344,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={true}
     location={
         Object {
             "pathname": "",
@@ -356,6 +356,7 @@ ShallowWrapper {
             },
           ]
     }
+    tonightLoading={true}
     tonightsShows={
         Array [
             Object {
@@ -408,9 +409,12 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
+        <Unknown
+          message="Finding local shows...."
+/>,
         undefined,
-        false,
         <Route
+          exact={true}
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -503,13 +507,24 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "message": "Finding local shows....",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       undefined,
-      false,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -551,9 +566,12 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
+          <Unknown
+            message="Finding local shows...."
+/>,
           undefined,
-          false,
           <Route
+            exact={true}
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -646,13 +664,24 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "message": "Finding local shows....",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         undefined,
-        false,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "exact": true,
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -679,8 +708,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={false}
     location={
         Object {
             "pathname": "/event-details",
@@ -758,8 +785,9 @@ ShallowWrapper {
           path="/main"
 />,
         undefined,
-        false,
+        undefined,
         <Route
+          exact={true}
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -896,12 +924,13 @@ ShallowWrapper {
         "type": [Function],
       },
       undefined,
-      false,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -956,8 +985,9 @@ ShallowWrapper {
             path="/main"
 />,
           undefined,
-          false,
+          undefined,
           <Route
+            exact={true}
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -1094,12 +1124,13 @@ ShallowWrapper {
           "type": [Function],
         },
         undefined,
-        false,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "exact": true,
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -1126,8 +1157,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={false}
     location={
         Object {
             "pathname": "/main",
@@ -1193,8 +1222,9 @@ ShallowWrapper {
           path="/main"
 />,
         undefined,
-        false,
+        undefined,
         <Route
+          exact={true}
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -1288,364 +1318,13 @@ ShallowWrapper {
         "type": [Function],
       },
       undefined,
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "path": "/event-details/:id",
-          "render": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <header
-            className="App-header"
->
-            <h1>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    className="header-link"
-                                    to="/"
-                        >
-                                    Gig Spot
-                        </NavLink>
-            </h1>
-</header>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/main"
-/>,
-          undefined,
-          false,
-          <Route
-            path="/event-details/:id"
-            render={[Function]}
-/>,
-        ],
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                className="header-link"
-                                to="/"
-                >
-                                Gig Spot
-                </NavLink>
-</h1>,
-              false,
-            ],
-            "className": "App-header",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  className="header-link"
-                  to="/"
->
-                  Gig Spot
-</NavLink>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Gig Spot",
-                  "className": "header-link",
-                  "to": "/",
-                },
-                "ref": null,
-                "rendered": "Gig Spot",
-                "type": [Function],
-              },
-              "type": "h1",
-            },
-            false,
-          ],
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/main",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        undefined,
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "path": "/event-details/:id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`App should match the snapshot when there is a match 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    error={true}
-    loading={false}
-    location={
-        Object {
-            "pathname": "",
-          }
-    }
-    match={
-        Object {
-            "params": Object {
-              "id": 1,
-            },
-          }
-    }
-    thisWeeksShows={
-        Array [
-            Object {
-              "id": 3,
-            },
-          ]
-    }
-    tonightsShows={
-        Array [
-            Object {
-              "id": 1,
-            },
-          ]
-    }
-    upcomingShows={
-        Array [
-            Object {
-              "id": 2,
-            },
-          ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <header
-          className="App-header"
->
-          <h1>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              className="header-link"
-                              to="/"
-                    >
-                              Gig Spot
-                    </NavLink>
-          </h1>
-</header>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/"
-/>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/main"
-/>,
-        undefined,
-        <Unknown />,
-        <Route
-          path="/event-details/:id"
-          render={[Function]}
-/>,
-      ],
-      "className": "App",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            className="header-link"
-                            to="/"
-              >
-                            Gig Spot
-              </NavLink>
-</h1>,
-            false,
-          ],
-          "className": "App-header",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                className="header-link"
-                to="/"
->
-                Gig Spot
-</NavLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Gig Spot",
-                "className": "header-link",
-                "to": "/",
-              },
-              "ref": null,
-              "rendered": "Gig Spot",
-              "type": [Function],
-            },
-            "type": "h1",
-          },
-          false,
-        ],
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/main",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
       undefined,
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -1688,8 +1367,9 @@ ShallowWrapper {
             path="/main"
 />,
           undefined,
-          <Unknown />,
+          undefined,
           <Route
+            exact={true}
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -1783,20 +1463,13 @@ ShallowWrapper {
           "type": [Function],
         },
         undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "exact": true,
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -1824,7 +1497,6 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
     error={true}
-    loading={false}
     location={
         Object {
             "pathname": "",
@@ -1892,6 +1564,7 @@ ShallowWrapper {
         undefined,
         <Unknown />,
         <Route
+          exact={true}
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -1999,6 +1672,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -2043,6 +1717,7 @@ ShallowWrapper {
           undefined,
           <Unknown />,
           <Route
+            exact={true}
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -2150,366 +1825,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "path": "/event-details/:id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`App should match the snapshot when there is not a match 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    error={true}
-    loading={false}
-    location={
-        Object {
-            "pathname": "",
-          }
-    }
-    match={
-        Object {
-            "params": Object {
-              "id": 7,
-            },
-          }
-    }
-    thisWeeksShows={
-        Array [
-            Object {
-              "id": 3,
-            },
-          ]
-    }
-    tonightsShows={
-        Array [
-            Object {
-              "id": 1,
-            },
-          ]
-    }
-    upcomingShows={
-        Array [
-            Object {
-              "id": 2,
-            },
-          ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <header
-          className="App-header"
->
-          <h1>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              className="header-link"
-                              to="/"
-                    >
-                              Gig Spot
-                    </NavLink>
-          </h1>
-</header>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/"
-/>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/main"
-/>,
-        undefined,
-        <Unknown />,
-        <Route
-          path="/event-details/:id"
-          render={[Function]}
-/>,
-      ],
-      "className": "App",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            className="header-link"
-                            to="/"
-              >
-                            Gig Spot
-              </NavLink>
-</h1>,
-            false,
-          ],
-          "className": "App-header",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                className="header-link"
-                to="/"
->
-                Gig Spot
-</NavLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Gig Spot",
-                "className": "header-link",
-                "to": "/",
-              },
-              "ref": null,
-              "rendered": "Gig Spot",
-              "type": [Function],
-            },
-            "type": "h1",
-          },
-          false,
-        ],
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/main",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      undefined,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "path": "/event-details/:id",
-          "render": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <header
-            className="App-header"
->
-            <h1>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    className="header-link"
-                                    to="/"
-                        >
-                                    Gig Spot
-                        </NavLink>
-            </h1>
-</header>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/main"
-/>,
-          undefined,
-          <Unknown />,
-          <Route
-            path="/event-details/:id"
-            render={[Function]}
-/>,
-        ],
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                className="header-link"
-                                to="/"
-                >
-                                Gig Spot
-                </NavLink>
-</h1>,
-              false,
-            ],
-            "className": "App-header",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  className="header-link"
-                  to="/"
->
-                  Gig Spot
-</NavLink>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Gig Spot",
-                  "className": "header-link",
-                  "to": "/",
-                },
-                "ref": null,
-                "rendered": "Gig Spot",
-                "type": [Function],
-              },
-              "type": "h1",
-            },
-            false,
-          ],
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
             "exact": true,
-            "path": "/",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/main",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "path": "/event-details/:id",
             "render": [Function],
           },
