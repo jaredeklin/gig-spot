@@ -24,6 +24,11 @@ describe('LocationForm', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should match the snapshot if current city is defined', () => {
+    wrapper = shallow(<LocationForm currentLocation={'Denver'} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('handleChange should set the state', () => {
     mockEvent = { target: { value: 'Denver', name: 'location' } };
     const expected = { location: 'Denver' };
