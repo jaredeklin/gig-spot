@@ -1,10 +1,6 @@
 import { SimpleCleaners } from '../cleaners/SimpleCleaners';
-import { ApiCalls } from '../cleaners/ApiCalls';
+import ApiCalls from '../cleaners/ApiCalls';
 import { Storage } from '../cleaners/Storage';
-
-const clean = new SimpleCleaners();
-const api = new ApiCalls();
-const storage = new Storage();
 
 export const loadTonightsShows = shows => ({
   type: 'LOAD_TONIGHTS_SHOWS',
@@ -51,6 +47,9 @@ export const clearStore = () => ({
 });
 
 export const fetchShows = city => {
+  const clean = new SimpleCleaners();
+  const api = new ApiCalls();
+  const storage = new Storage();
   const date = clean.date();
 
   if (localStorage.events) {
@@ -59,18 +58,12 @@ export const fetchShows = city => {
 
     if (match) {
       return dispatch => {
-        try {
-          dispatch(clearStore());
-          dispatch(showHasErrored(false));
-          dispatch(updateLocation(city));
-          dispatch(loadTonightsShows(events.tonightsShows));
-          dispatch(loadThisWeeksShows(events.thisWeeksShows));
-          dispatch(loadUpcomingShows(events.upcomingShows));
-        } catch (error) {
-          if (error) {
-            dispatch(showHasErrored(true));
-          }
-        }
+        dispatch(clearStore());
+        dispatch(showHasErrored(false));
+        dispatch(updateLocation(city));
+        dispatch(loadTonightsShows(events.tonightsShows));
+        dispatch(loadThisWeeksShows(events.thisWeeksShows));
+        dispatch(loadUpcomingShows(events.upcomingShows));
       };
     }
   }
@@ -79,23 +72,23 @@ export const fetchShows = city => {
     try {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
+
       dispatch(tonightIsLoading(true));
       dispatch(updateLocation(city));
-
       const url = clean.queryUrl(city);
       const todaysEvents = await api.getEvents('today', url, date);
-      dispatch(tonightIsLoading(false));
       dispatch(loadTonightsShows(todaysEvents));
+      dispatch(tonightIsLoading(false));
 
       dispatch(thisWeekIsLoading(true));
       const thisWeekEvents = await api.getEvents('week', url, date);
-      dispatch(thisWeekIsLoading(false));
       dispatch(loadThisWeeksShows(thisWeekEvents));
+      dispatch(thisWeekIsLoading(false));
 
       dispatch(upcomingIsLoading(true));
       const upcomingEvents = await api.getEvents('upcoming', url, date);
-      dispatch(upcomingIsLoading(false));
       dispatch(loadUpcomingShows(upcomingEvents));
+      dispatch(upcomingIsLoading(false));
 
       const events = {
         tonightsShows: todaysEvents,
@@ -107,12 +100,8 @@ export const fetchShows = city => {
 
       storage.addEventsTo(events);
     } catch (error) {
-      if (error) {
-        dispatch(showHasErrored(true));
-        dispatch(tonightIsLoading(false));
-        dispatch(thisWeekIsLoading(false));
-        dispatch(upcomingIsLoading(false));
-      }
+      dispatch(clearStore());
+      dispatch(showHasErrored(true));
     }
   };
 };
