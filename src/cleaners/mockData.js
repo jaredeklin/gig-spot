@@ -362,3 +362,14 @@ export const mockInitialReturnEventData = {
   search_time: '0.04',
   total_items: '31'
 };
+
+export const mockUrl =
+  'https://salty-waters-47393.herokuapp.com/http://api.eventful.com/json/events/search?app_key=fXn9D3Xfj44jjsj7&location=Denver&category=music&image_sizes=block250&sort_order=popularity&page_size=25&include=tickets,links';
+
+export const mockDate = {
+  nextWeek: '2018120800',
+  today: '2018120100',
+  tommorrow: '2018120200',
+  upcoming: '2018120900',
+  upcomingEnd: '2019030100'
+};
