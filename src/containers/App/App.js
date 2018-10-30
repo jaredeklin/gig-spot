@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { withRouter, Route, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Main from '../Main/Main';
 import { EventDetails } from '../../components/EventDetails/EventDetails';
 import { LandingPage } from '../../components/LandingPage/LandingPage';
-import PropTypes from 'prop-types';
-import { fetchShows, getStorage } from '../../actions/index';
 import { Loading } from '../../components/Loading/Loading';
 import { Error } from '../../components/Error/Error';
+import { fetchShows } from '../../actions/index';
+import { Storage } from '../../cleaners/Storage';
+
+const storage = new Storage();
 
 export class App extends Component {
   findMatch = match => {
@@ -18,11 +21,9 @@ export class App extends Component {
   };
 
   componentDidMount = () => {
-    const { fetchShows } = this.props;
-
     if (localStorage.events) {
-      const events = getStorage();
-      fetchShows(events.city);
+      const events = storage.getEventsFrom();
+      this.props.fetchShows(events.city);
     }
   };
 
@@ -56,6 +57,7 @@ export class App extends Component {
         {error && <Error />}
 
         <Route
+          exact
           path={'/event-details/:id'}
           render={({ match }) => {
             const concert = this.findMatch(match);

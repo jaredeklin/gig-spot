@@ -52,7 +52,7 @@ export class LocationForm extends Component {
 }
 
 export const mapDispatchToProps = dispatch => ({
-  fetchShows: shows => dispatch(fetchShows(shows))
+  fetchShows: location => dispatch(fetchShows(location))
 });
 
 export default withRouter(

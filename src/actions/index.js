@@ -1,10 +1,6 @@
-import { cleanConcertData } from '../cleaners/cleanConcertData';
-import { fetchImage } from '../cleaners/fetchImage';
-import { Dates } from '../cleaners/Dates';
-import { Query } from '../cleaners/Query';
-
-const dates = new Dates();
-const query = new Query();
+import { SimpleCleaners } from '../cleaners/SimpleCleaners';
+import ApiCalls from '../cleaners/ApiCalls';
+import { Storage } from '../cleaners/Storage';
 
 export const loadTonightsShows = shows => ({
   type: 'LOAD_TONIGHTS_SHOWS',
@@ -51,26 +47,23 @@ export const clearStore = () => ({
 });
 
 export const fetchShows = city => {
-  const date = dates.getDates();
+  const clean = new SimpleCleaners();
+  const api = new ApiCalls();
+  const storage = new Storage();
+  const date = clean.date();
 
   if (localStorage.events) {
-    const events = getStorage();
+    const events = storage.getEventsFrom();
     const match = date.today === events.date && city === events.city;
 
     if (match) {
       return dispatch => {
-        try {
-          dispatch(clearStore());
-          dispatch(showHasErrored(false));
-          dispatch(updateLocation(city));
-          dispatch(loadTonightsShows(events.tonightsShows));
-          dispatch(loadThisWeeksShows(events.thisWeeksShows));
-          dispatch(loadUpcomingShows(events.upcomingShows));
-        } catch (error) {
-          if (error) {
-            dispatch(showHasErrored(true));
-          }
-        }
+        dispatch(clearStore());
+        dispatch(showHasErrored(false));
+        dispatch(updateLocation(city));
+        dispatch(loadTonightsShows(events.tonightsShows));
+        dispatch(loadThisWeeksShows(events.thisWeeksShows));
+        dispatch(loadUpcomingShows(events.upcomingShows));
       };
     }
   }
@@ -79,23 +72,23 @@ export const fetchShows = city => {
     try {
       dispatch(clearStore());
       dispatch(showHasErrored(false));
+
       dispatch(tonightIsLoading(true));
       dispatch(updateLocation(city));
-
-      const url = query.getUrl(city);
-      const todaysEvents = await getTodaysEvents(url);
-      dispatch(tonightIsLoading(false));
+      const url = clean.queryUrl(city);
+      const todaysEvents = await api.getEvents('today', url, date);
       dispatch(loadTonightsShows(todaysEvents));
+      dispatch(tonightIsLoading(false));
 
       dispatch(thisWeekIsLoading(true));
-      const thisWeekEvents = await getThisWeeksEvents(url, date);
-      dispatch(thisWeekIsLoading(false));
+      const thisWeekEvents = await api.getEvents('week', url, date);
       dispatch(loadThisWeeksShows(thisWeekEvents));
+      dispatch(thisWeekIsLoading(false));
 
       dispatch(upcomingIsLoading(true));
-      const upcomingEvents = await getUpcomingEvents(url, date);
-      dispatch(upcomingIsLoading(false));
+      const upcomingEvents = await api.getEvents('upcoming', url, date);
       dispatch(loadUpcomingShows(upcomingEvents));
+      dispatch(upcomingIsLoading(false));
 
       const events = {
         tonightsShows: todaysEvents,
@@ -105,67 +98,10 @@ export const fetchShows = city => {
         city
       };
 
-      addToStorage(events);
+      storage.addEventsTo(events);
     } catch (error) {
-      if (error) {
-        dispatch(showHasErrored(true));
-        dispatch(tonightIsLoading(false));
-        dispatch(thisWeekIsLoading(false));
-        dispatch(upcomingIsLoading(false));
-      }
+      dispatch(clearStore());
+      dispatch(showHasErrored(true));
     }
   };
-};
-
-const cleanData = async response => {
-  const concertData = await response.json();
-  const cleanData = cleanConcertData(concertData.events.event);
-
-  return await fetchImage(cleanData);
-};
-
-const getTodaysEvents = async url => {
-  const response = await fetch(`${url}&date=Today`);
-
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-
-  return await cleanData(response);
-};
-
-const getThisWeeksEvents = async (url, { tommorrow, nextWeek }) => {
-  const date = `date=${tommorrow}-${nextWeek}`;
-  const response = await fetch(`${url}&${date}`);
-
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-
-  return await cleanData(response);
-};
-
-const getUpcomingEvents = async (url, { upcoming, upcomingEnd }) => {
-  const date = `date=${upcoming}-${upcomingEnd}`;
-  const response = await fetch(`${url}&${date}`);
-
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-
-  return await cleanData(response);
-};
-
-const addToStorage = events => {
-  if (localStorage.events) {
-    localStorage.removeItem('events');
-  }
-
-  const stringifiedEvents = JSON.stringify(events);
-  localStorage.setItem('events', stringifiedEvents);
-};
-
-export const getStorage = () => {
-  const retrievedEvents = localStorage.getItem('events');
-  return JSON.parse(retrievedEvents);
 };

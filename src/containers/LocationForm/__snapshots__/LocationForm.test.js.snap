@@ -26,9 +26,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <input
-          name="zipCode"
+          name="location"
           onChange={[Function]}
-          placeholder="Zip-code"
+          placeholder="City"
           type="text"
           value=""
 />,
@@ -47,9 +47,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "name": "zipCode",
+          "name": "location",
           "onChange": [Function],
-          "placeholder": "Zip-code",
+          "placeholder": "City",
           "type": "text",
           "value": "",
         },
@@ -79,9 +79,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <input
-            name="zipCode"
+            name="location"
             onChange={[Function]}
-            placeholder="Zip-code"
+            placeholder="City"
             type="text"
             value=""
 />,
@@ -100,9 +100,139 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "name": "zipCode",
+            "name": "location",
             "onChange": [Function],
-            "placeholder": "Zip-code",
+            "placeholder": "City",
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Submit",
+          },
+          "ref": null,
+          "rendered": "Submit",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`LocationForm should match the snapshot if current city is defined 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LocationForm
+    currentLocation="Denver"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <input
+          name="location"
+          onChange={[Function]}
+          placeholder="Denver"
+          type="text"
+          value=""
+/>,
+        <button>
+          Submit
+</button>,
+      ],
+      "className": "location-form",
+      "id": undefined,
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "location",
+          "onChange": [Function],
+          "placeholder": "Denver",
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Submit",
+        },
+        "ref": null,
+        "rendered": "Submit",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <input
+            name="location"
+            onChange={[Function]}
+            placeholder="Denver"
+            type="text"
+            value=""
+/>,
+          <button>
+            Submit
+</button>,
+        ],
+        "className": "location-form",
+        "id": undefined,
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "location",
+            "onChange": [Function],
+            "placeholder": "Denver",
             "type": "text",
             "value": "",
           },

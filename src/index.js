@@ -9,9 +9,10 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers/root-reducer';
 import App from './containers/App/App';
 
-/* eslint-disable */
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
-/* eslint-enable */
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 const router = (
   <Provider store={store}>

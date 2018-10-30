@@ -24,7 +24,7 @@ ShallowWrapper {
                 Gig Spot
         </h1>
         <p>
-                Enter a zipcode to find concerts in your area
+                Enter your city find concerts in your area
         </p>
         <withRouter(Connect(LocationForm)) />
 </article>,
@@ -41,7 +41,7 @@ ShallowWrapper {
             Gig Spot
 </h1>,
           <p>
-            Enter a zipcode to find concerts in your area
+            Enter your city find concerts in your area
 </p>,
           <withRouter(Connect(LocationForm)) />,
         ],
@@ -65,10 +65,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Enter a zipcode to find concerts in your area",
+            "children": "Enter your city find concerts in your area",
           },
           "ref": null,
-          "rendered": "Enter a zipcode to find concerts in your area",
+          "rendered": "Enter your city find concerts in your area",
           "type": "p",
         },
         Object {
@@ -98,7 +98,7 @@ ShallowWrapper {
                     Gig Spot
           </h1>
           <p>
-                    Enter a zipcode to find concerts in your area
+                    Enter your city find concerts in your area
           </p>
           <withRouter(Connect(LocationForm)) />
 </article>,
@@ -115,7 +115,7 @@ ShallowWrapper {
               Gig Spot
 </h1>,
             <p>
-              Enter a zipcode to find concerts in your area
+              Enter your city find concerts in your area
 </p>,
             <withRouter(Connect(LocationForm)) />,
           ],
@@ -139,10 +139,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Enter a zipcode to find concerts in your area",
+              "children": "Enter your city find concerts in your area",
             },
             "ref": null,
-            "rendered": "Enter a zipcode to find concerts in your area",
+            "rendered": "Enter your city find concerts in your area",
             "type": "p",
           },
           Object {

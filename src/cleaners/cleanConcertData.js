@@ -1,11 +1,10 @@
-import { cleanTime } from './cleanTime';
-import { CleanArtists } from './cleanArtists';
-const moment = require('moment');
+import { SimpleCleaners } from './SimpleCleaners';
 
-const cleanArtists = new CleanArtists();
+const moment = require('moment');
+const clean = new SimpleCleaners();
 
 export const cleanConcertData = concerts => {
-  concerts = concerts.filter(concert => {
+  const filteredConcerts = concerts.filter(concert => {
     const { title, performers } = concert;
 
     if (title.includes('Tickets') && !performers) {
@@ -18,17 +17,8 @@ export const cleanConcertData = concerts => {
     return true;
   });
 
-  return concerts.reduce((concertArray, show) => {
-    const {
-      id,
-      popularity,
-      tickets,
-      description,
-      image,
-      start_time,
-      categories,
-      links
-    } = show;
+  return filteredConcerts.reduce((concertArray, show) => {
+    const { id, image, start_time, links } = show;
 
     const venue = {
       name: show.venue_name,
@@ -39,43 +29,23 @@ export const cleanConcertData = concerts => {
       state: show.region_abbr,
       zip: show.postal_code
     };
-    const artists = cleanArtists.clean(show);
+    const artists = clean.artists(show);
     const headlineArtist = artists[0];
     const supportArtists = artists.filter(artist => artist !== artists[0]);
-    const ticketUrl = cleanTickets(links, tickets);
-
+    const tickets = clean.tickets(links, show.tickets);
     const date = moment(start_time).format('MMM D');
-    const startTime = cleanTime(start_time);
+    const startTime = clean.time(start_time);
     const concertData = {
       headlineArtist,
       supportArtists,
-      description,
       venue,
       date,
       startTime,
       id,
-      popularity,
-      tickets: ticketUrl,
-      image: !image ? null : image.block250.url,
-      categories
+      tickets,
+      image: !image ? null : image.block250.url
     };
 
     return [...concertArray, concertData];
   }, []);
-};
-
-const cleanTickets = (links, tickets) => {
-  if (links) {
-    const preferred = links.link.find(ticket => ticket.url.includes('axs.com'));
-
-    if (preferred) {
-      return preferred.url;
-    }
-  }
-
-  if (tickets) {
-    return tickets.link[0].url;
-  }
-
-  return null;
 };

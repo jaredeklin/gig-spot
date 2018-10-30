@@ -1,19 +1,16 @@
 import { cleanConcertData } from './cleanConcertData';
-import { mockCleanConcertData, mockReturnedCleanConcertData } from './mockData';
-import { cleanTime } from './cleanTime';
-
-jest.mock('./cleanTime');
+import { mockConcertData, mockReturnedCleanConcertData } from './mockData';
 
 describe('cleanConcertData', () => {
   it('should return clean concert data', () => {
-    expect(cleanConcertData(mockCleanConcertData)).toEqual(
+    expect(cleanConcertData(mockConcertData)).toEqual(
       mockReturnedCleanConcertData
     );
   });
 
-  it('should call cleanTime with correct params', () => {
-    cleanConcertData(mockCleanConcertData);
-
-    expect(cleanTime).toHaveBeenCalledWith(mockCleanConcertData[0].Date);
+  it('should return clean concert data if image is null', () => {
+    const concertWOImage = [{ ...mockConcertData[0], image: null }];
+    const expected = [{ ...mockReturnedCleanConcertData[0], image: null }];
+    expect(cleanConcertData(concertWOImage)).toEqual(expected);
   });
 });

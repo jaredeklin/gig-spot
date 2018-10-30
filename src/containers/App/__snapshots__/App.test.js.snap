@@ -5,8 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={false}
     location={
         Object {
             "pathname": "",
@@ -71,14 +69,10 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
-        false,
-        false,
+        undefined,
+        undefined,
         <Route
-          component={[Function]}
           exact={true}
-          path="/event-details"
-/>,
-        <Route
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -171,26 +165,14 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      false,
-      false,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [Function],
           "exact": true,
-          "path": "/event-details",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -232,14 +214,10 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
-          false,
-          false,
+          undefined,
+          undefined,
           <Route
-            component={[Function]}
             exact={true}
-            path="/event-details"
-/>,
-          <Route
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -332,26 +310,14 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        false,
-        false,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
             "exact": true,
-            "path": "/event-details",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -378,8 +344,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={true}
     location={
         Object {
             "pathname": "",
@@ -392,6 +356,7 @@ ShallowWrapper {
             },
           ]
     }
+    tonightLoading={true}
     tonightsShows={
         Array [
             Object {
@@ -444,25 +409,12 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
-        <div
-          className="loading"
->
-          <img
-                    alt="loading"
-                    className="loading-gif"
-                    src="spinning-7-inch.gif"
-          />
-          <h2>
-                    Finding local shows....
-          </h2>
-</div>,
-        false,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/event-details"
+        <Unknown
+          message="Finding local shows...."
 />,
+        undefined,
         <Route
+          exact={true}
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -558,68 +510,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "children": Array [
-            <img
-              alt="loading"
-              className="loading-gif"
-              src="spinning-7-inch.gif"
-/>,
-            <h2>
-              Finding local shows....
-</h2>,
-          ],
-          "className": "loading",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "loading",
-              "className": "loading-gif",
-              "src": "spinning-7-inch.gif",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Finding local shows....",
-            },
-            "ref": null,
-            "rendered": "Finding local shows....",
-            "type": "h2",
-          },
-        ],
-        "type": "div",
-      },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/event-details",
+          "message": "Finding local shows....",
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -661,25 +566,12 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
-          <div
-            className="loading"
->
-            <img
-                        alt="loading"
-                        className="loading-gif"
-                        src="spinning-7-inch.gif"
-            />
-            <h2>
-                        Finding local shows....
-            </h2>
-</div>,
-          false,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/event-details"
+          <Unknown
+            message="Finding local shows...."
 />,
+          undefined,
           <Route
+            exact={true}
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -775,68 +667,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
-            "children": Array [
-              <img
-                alt="loading"
-                className="loading-gif"
-                src="spinning-7-inch.gif"
-/>,
-              <h2>
-                Finding local shows....
-</h2>,
-            ],
-            "className": "loading",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "loading",
-                "className": "loading-gif",
-                "src": "spinning-7-inch.gif",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Finding local shows....",
-              },
-              "ref": null,
-              "rendered": "Finding local shows....",
-              "type": "h2",
-            },
-          ],
-          "type": "div",
-        },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/event-details",
+            "message": "Finding local shows....",
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "exact": true,
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -863,8 +708,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={false}
     location={
         Object {
             "pathname": "/event-details",
@@ -941,14 +784,10 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
-        false,
-        false,
+        undefined,
+        undefined,
         <Route
-          component={[Function]}
           exact={true}
-          path="/event-details"
-/>,
-        <Route
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -1084,26 +923,14 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      false,
-      false,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [Function],
           "exact": true,
-          "path": "/event-details",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -1157,14 +984,10 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
-          false,
-          false,
+          undefined,
+          undefined,
           <Route
-            component={[Function]}
             exact={true}
-            path="/event-details"
-/>,
-          <Route
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -1300,26 +1123,14 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        false,
-        false,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
             "exact": true,
-            "path": "/event-details",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -1346,8 +1157,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    error={false}
-    loading={false}
     location={
         Object {
             "pathname": "/main",
@@ -1412,14 +1221,10 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
-        false,
-        false,
+        undefined,
+        undefined,
         <Route
-          component={[Function]}
           exact={true}
-          path="/event-details"
-/>,
-        <Route
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -1512,26 +1317,14 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      false,
-      false,
+      undefined,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [Function],
           "exact": true,
-          "path": "/event-details",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -1573,14 +1366,10 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
-          false,
-          false,
+          undefined,
+          undefined,
           <Route
-            component={[Function]}
             exact={true}
-            path="/event-details"
-/>,
-          <Route
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -1673,436 +1462,14 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        false,
-        false,
+        undefined,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
             "exact": true,
-            "path": "/event-details",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "path": "/event-details/:id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`App should match the snapshot when there is a match 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    error={true}
-    loading={false}
-    location={
-        Object {
-            "pathname": "",
-          }
-    }
-    match={
-        Object {
-            "params": Object {
-              "id": 1,
-            },
-          }
-    }
-    thisWeeksShows={
-        Array [
-            Object {
-              "id": 3,
-            },
-          ]
-    }
-    tonightsShows={
-        Array [
-            Object {
-              "id": 1,
-            },
-          ]
-    }
-    upcomingShows={
-        Array [
-            Object {
-              "id": 2,
-            },
-          ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <header
-          className="App-header"
->
-          <h1>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              className="header-link"
-                              to="/"
-                    >
-                              Gig Spot
-                    </NavLink>
-          </h1>
-</header>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/"
-/>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/main"
-/>,
-        false,
-        <h2
-          className="error"
->
-          Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/event-details"
-/>,
-        <Route
-          path="/event-details/:id"
-          render={[Function]}
-/>,
-      ],
-      "className": "App",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            className="header-link"
-                            to="/"
-              >
-                            Gig Spot
-              </NavLink>
-</h1>,
-            false,
-          ],
-          "className": "App-header",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                className="header-link"
-                to="/"
->
-                Gig Spot
-</NavLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Gig Spot",
-                "className": "header-link",
-                "to": "/",
-              },
-              "ref": null,
-              "rendered": "Gig Spot",
-              "type": [Function],
-            },
-            "type": "h1",
-          },
-          false,
-        ],
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/main",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "className": "error",
-        },
-        "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/event-details",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "path": "/event-details/:id",
-          "render": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <header
-            className="App-header"
->
-            <h1>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    className="header-link"
-                                    to="/"
-                        >
-                                    Gig Spot
-                        </NavLink>
-            </h1>
-</header>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/main"
-/>,
-          false,
-          <h2
-            className="error"
->
-            Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/event-details"
-/>,
-          <Route
-            path="/event-details/:id"
-            render={[Function]}
-/>,
-        ],
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                className="header-link"
-                                to="/"
-                >
-                                Gig Spot
-                </NavLink>
-</h1>,
-              false,
-            ],
-            "className": "App-header",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  className="header-link"
-                  to="/"
->
-                  Gig Spot
-</NavLink>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Gig Spot",
-                  "className": "header-link",
-                  "to": "/",
-                },
-                "ref": null,
-                "rendered": "Gig Spot",
-                "type": [Function],
-              },
-              "type": "h1",
-            },
-            false,
-          ],
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/main",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-            "className": "error",
-          },
-          "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/event-details",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "path": "/event-details/:id",
             "render": [Function],
           },
@@ -2130,7 +1497,6 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
     error={true}
-    loading={false}
     location={
         Object {
             "pathname": "",
@@ -2195,18 +1561,10 @@ ShallowWrapper {
           exact={true}
           path="/main"
 />,
-        false,
-        <h2
-          className="error"
->
-          Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
+        undefined,
+        <Unknown />,
         <Route
-          component={[Function]}
           exact={true}
-          path="/event-details"
-/>,
-        <Route
           path="/event-details/:id"
           render={[Function]}
 />,
@@ -2299,28 +1657,12 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      false,
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "className": "error",
-        },
-        "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/event-details",
-        },
+        "nodeType": "function",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -2330,6 +1672,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "exact": true,
           "path": "/event-details/:id",
           "render": [Function],
         },
@@ -2371,18 +1714,10 @@ ShallowWrapper {
             exact={true}
             path="/main"
 />,
-          false,
-          <h2
-            className="error"
->
-            Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
+          undefined,
+          <Unknown />,
           <Route
-            component={[Function]}
             exact={true}
-            path="/event-details"
-/>,
-          <Route
             path="/event-details/:id"
             render={[Function]}
 />,
@@ -2475,447 +1810,22 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        false,
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-            "className": "error",
-          },
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "type": "h2",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
             "exact": true,
-            "path": "/event-details",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "path": "/event-details/:id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`App should match the snapshot when there is not a match 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    error={true}
-    loading={false}
-    location={
-        Object {
-            "pathname": "",
-          }
-    }
-    match={
-        Object {
-            "params": Object {
-              "id": 7,
-            },
-          }
-    }
-    thisWeeksShows={
-        Array [
-            Object {
-              "id": 3,
-            },
-          ]
-    }
-    tonightsShows={
-        Array [
-            Object {
-              "id": 1,
-            },
-          ]
-    }
-    upcomingShows={
-        Array [
-            Object {
-              "id": 2,
-            },
-          ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <header
-          className="App-header"
->
-          <h1>
-                    <NavLink
-                              activeClassName="active"
-                              ariaCurrent="true"
-                              className="header-link"
-                              to="/"
-                    >
-                              Gig Spot
-                    </NavLink>
-          </h1>
-</header>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/"
-/>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/main"
-/>,
-        false,
-        <h2
-          className="error"
->
-          Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/event-details"
-/>,
-        <Route
-          path="/event-details/:id"
-          render={[Function]}
-/>,
-      ],
-      "className": "App",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              <NavLink
-                            activeClassName="active"
-                            ariaCurrent="true"
-                            className="header-link"
-                            to="/"
-              >
-                            Gig Spot
-              </NavLink>
-</h1>,
-            false,
-          ],
-          "className": "App-header",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                className="header-link"
-                to="/"
->
-                Gig Spot
-</NavLink>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Gig Spot",
-                "className": "header-link",
-                "to": "/",
-              },
-              "ref": null,
-              "rendered": "Gig Spot",
-              "type": [Function],
-            },
-            "type": "h1",
-          },
-          false,
-        ],
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/main",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      false,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "className": "error",
-        },
-        "ref": null,
-        "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "component": [Function],
-          "exact": true,
-          "path": "/event-details",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "path": "/event-details/:id",
-          "render": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <header
-            className="App-header"
->
-            <h1>
-                        <NavLink
-                                    activeClassName="active"
-                                    ariaCurrent="true"
-                                    className="header-link"
-                                    to="/"
-                        >
-                                    Gig Spot
-                        </NavLink>
-            </h1>
-</header>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/main"
-/>,
-          false,
-          <h2
-            className="error"
->
-            Nooooooooo!!!!!!! Something went wrong. Please try again.
-</h2>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/event-details"
-/>,
-          <Route
-            path="/event-details/:id"
-            render={[Function]}
-/>,
-        ],
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                <NavLink
-                                activeClassName="active"
-                                ariaCurrent="true"
-                                className="header-link"
-                                to="/"
-                >
-                                Gig Spot
-                </NavLink>
-</h1>,
-              false,
-            ],
-            "className": "App-header",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <NavLink
-                  activeClassName="active"
-                  ariaCurrent="true"
-                  className="header-link"
-                  to="/"
->
-                  Gig Spot
-</NavLink>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "activeClassName": "active",
-                  "ariaCurrent": "true",
-                  "children": "Gig Spot",
-                  "className": "header-link",
-                  "to": "/",
-                },
-                "ref": null,
-                "rendered": "Gig Spot",
-                "type": [Function],
-              },
-              "type": "h1",
-            },
-            false,
-          ],
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/main",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-            "className": "error",
-          },
-          "ref": null,
-          "rendered": "Nooooooooo!!!!!!! Something went wrong. Please try again.",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/event-details",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "path": "/event-details/:id",
             "render": [Function],
           },

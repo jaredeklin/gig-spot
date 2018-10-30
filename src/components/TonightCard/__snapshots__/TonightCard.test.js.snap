@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     show={
         Object {
+            "bio": "Ooh la la",
             "date": "Apr 13, 2018",
             "headlineArtist": Object {
               "Id": 34468,
@@ -50,6 +51,7 @@ ShallowWrapper {
         <img
                 alt="artist"
                 className="artist-image"
+                onError={[Function]}
                 src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
         />
         <div
@@ -58,7 +60,10 @@ ShallowWrapper {
                 <h4
                         className="artist"
                 >
-                        The English Beat
+                        Object {
+                                "Id": 34468,
+                                "Name": "The English Beat",
+                              }
                 </h4>
                 <div
                         className="venue"
@@ -90,6 +95,7 @@ ShallowWrapper {
           <img
             alt="artist"
             className="artist-image"
+            onError={[Function]}
             src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
 />,
           <div
@@ -98,7 +104,10 @@ ShallowWrapper {
             <h4
                         className="artist"
             >
-                        The English Beat
+                        Object {
+                                    "Id": 34468,
+                                    "Name": "The English Beat",
+                                  }
             </h4>
             <div
                         className="venue"
@@ -128,6 +137,7 @@ ShallowWrapper {
           "props": Object {
             "alt": "artist",
             "className": "artist-image",
+            "onError": [Function],
             "src": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
           },
           "ref": null,
@@ -143,7 +153,10 @@ ShallowWrapper {
               <h4
                 className="artist"
 >
-                The English Beat
+                Object {
+                                "Id": 34468,
+                                "Name": "The English Beat",
+                              }
 </h4>,
               <div
                 className="venue"
@@ -170,11 +183,17 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "The English Beat",
+                "children": Object {
+                  "Id": 34468,
+                  "Name": "The English Beat",
+                },
                 "className": "artist",
               },
               "ref": null,
-              "rendered": "The English Beat",
+              "rendered": Object {
+                "Id": 34468,
+                "Name": "The English Beat",
+              },
               "type": "h4",
             },
             Object {
@@ -233,6 +252,7 @@ ShallowWrapper {
           <img
                     alt="artist"
                     className="artist-image"
+                    onError={[Function]}
                     src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
           />
           <div
@@ -241,7 +261,10 @@ ShallowWrapper {
                     <h4
                               className="artist"
                     >
-                              The English Beat
+                              Object {
+                                        "Id": 34468,
+                                        "Name": "The English Beat",
+                                      }
                     </h4>
                     <div
                               className="venue"
@@ -273,6 +296,7 @@ ShallowWrapper {
             <img
               alt="artist"
               className="artist-image"
+              onError={[Function]}
               src="https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
 />,
             <div
@@ -281,7 +305,10 @@ ShallowWrapper {
               <h4
                             className="artist"
               >
-                            The English Beat
+                            Object {
+                                          "Id": 34468,
+                                          "Name": "The English Beat",
+                                        }
               </h4>
               <div
                             className="venue"
@@ -311,6 +338,7 @@ ShallowWrapper {
             "props": Object {
               "alt": "artist",
               "className": "artist-image",
+              "onError": [Function],
               "src": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
             },
             "ref": null,
@@ -326,7 +354,10 @@ ShallowWrapper {
                 <h4
                   className="artist"
 >
-                  The English Beat
+                  Object {
+                                    "Id": 34468,
+                                    "Name": "The English Beat",
+                                  }
 </h4>,
                 <div
                   className="venue"
@@ -353,11 +384,17 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "The English Beat",
+                  "children": Object {
+                    "Id": 34468,
+                    "Name": "The English Beat",
+                  },
                   "className": "artist",
                 },
                 "ref": null,
-                "rendered": "The English Beat",
+                "rendered": Object {
+                  "Id": 34468,
+                  "Name": "The English Beat",
+                },
                 "type": "h4",
               },
               Object {

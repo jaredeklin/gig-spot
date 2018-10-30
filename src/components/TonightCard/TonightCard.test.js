@@ -8,4 +8,17 @@ describe('TonightCard', () => {
     const wrapper = shallow(<TonightCard show={mockConcertProps} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should handle image loading error', () => {
+    const wrapper = shallow(<TonightCard show={mockConcertProps} />);
+    const mockEvent = { target: { src: 'someImage.jpg' } };
+    const expected = 'black-woven.jpg';
+
+    expect(
+      wrapper
+        .find('img')
+        .props()
+        .onError(mockEvent)
+    ).toEqual(expected);
+  });
 });

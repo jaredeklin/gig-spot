@@ -1,223 +1,357 @@
-/* eslint-disable */
+export const mockConcertData = [
+  {
+    all_day: '0',
+    calendar_count: null,
+    calendars: null,
+    city_name: 'Denver',
+    comment_count: null,
+    country_abbr: 'USA',
+    country_abbr2: 'US',
+    country_name: 'United States',
+    created: '2018-02-26 16:26:04',
+    description: null,
+    geocode_type: 'EVDB Geocoder',
+    going: null,
+    going_count: null,
+    groups: null,
+    id: 'E0-001-112093347-3',
+    image: { block250: { url: 'www.image.com' } },
+    latitude: '39.7442397',
+    link_count: null,
+    links: { link: [{ url: 'www.axs.com' }] },
+    longitude: '-104.9901931',
+    modified: '2018-03-03 05:28:50',
+    olson_path: 'America/Denver',
+    owner: 'evdb',
+    performers: null,
+    postal_code: '80202',
+    privacy: '1',
+    recur_string: null,
+    region_abbr: 'CO',
+    region_name: 'Colorado',
+    start_time: '2018-10-24 20:00:00',
+    stop_time: null,
+    tickets: { link: [{ url: 'www.stubhub.com' }] },
+    title: 'Joan Baez',
+    tz_city: null,
+    tz_country: null,
+    tz_id: null,
+    tz_olson_path: null,
+    url:
+      'http://denver.eventful.com/events/joan-baez-/E0-001-112093347-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+    venue_address: '1621 Glenarm Place',
+    venue_display: '1',
+    venue_id: 'V0-001-000198697-3',
+    venue_name: 'Paramount Theatre',
+    venue_url:
+      'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+    watching_count: null
+  },
+  {
+    all_day: '0',
+    calendar_count: null,
+    calendars: null,
+    city_name: 'Denver',
+    comment_count: null,
+    country_abbr: 'USA',
+    country_abbr2: 'US',
+    country_name: 'United States',
+    created: '2018-02-26 16:26:04',
+    description: null,
+    geocode_type: 'EVDB Geocoder',
+    going: null,
+    going_count: null,
+    groups: null,
+    id: 'E0-001-112093347-34',
+    image: { block250: { url: 'www.image.com' } },
+    latitude: '39.7442397',
+    link_count: null,
+    links: { link: [] },
+    longitude: '-104.9901931',
+    modified: '2018-03-03 05:28:50',
+    olson_path: 'America/Denver',
+    owner: 'evdb',
+    performers: null,
+    postal_code: '80202',
+    privacy: '1',
+    recur_string: null,
+    region_abbr: 'CO',
+    region_name: 'Colorado',
+    start_time: '2018-10-24 20:00:00',
+    stop_time: null,
+    tickets: { link: [] },
+    title: 'Joan Baez Tickets',
+    tz_city: null,
+    tz_country: null,
+    tz_id: null,
+    tz_olson_path: null,
+    url:
+      'http://denver.eventful.com/events/joan-baez-/E0-001-112093347-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+    venue_address: '1621 Glenarm Place',
+    venue_display: '1',
+    venue_id: 'V0-001-000198697-3',
+    venue_name: 'Paramount Theatre',
+    venue_url:
+      'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+    watching_count: null
+  },
+  {
+    all_day: '0',
+    calendar_count: null,
+    calendars: null,
+    city_name: 'Denver',
+    comment_count: null,
+    country_abbr: 'USA',
+    country_abbr2: 'US',
+    country_name: 'United States',
+    created: '2018-02-26 16:26:04',
+    description: null,
+    geocode_type: 'EVDB Geocoder',
+    going: null,
+    going_count: null,
+    groups: null,
+    id: 'E0-001-112093347-4',
+    image: { block250: { url: 'www.image.com' } },
+    latitude: '39.7442397',
+    link_count: null,
+    links: { link: [] },
+    longitude: '-104.9901931',
+    modified: '2018-03-03 05:28:50',
+    olson_path: 'America/Denver',
+    owner: 'evdb',
+    performers: null,
+    postal_code: '80202',
+    privacy: '1',
+    recur_string: null,
+    region_abbr: 'CO',
+    region_name: 'Colorado',
+    start_time: '2018-10-24 20:00:00',
+    stop_time: null,
+    tickets: { link: [] },
+    title: 'Joan Baez Parking',
+    tz_city: null,
+    tz_country: null,
+    tz_id: null,
+    tz_olson_path: null,
+    url:
+      'http://denver.eventful.com/events/joan-baez-/E0-001-112093347-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+    venue_address: '1621 Glenarm Place',
+    venue_display: '1',
+    venue_id: 'V0-001-000198697-3',
+    venue_name: 'Paramount Theatre',
+    venue_url:
+      'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+    watching_count: null
+  }
+];
 
-export const mockFetchShowsData = {
-    "Info": {
-        "TotalResults": 174,
-        "PageNumber": 0,
-        "Message": null
-    },
-    "Events": [{
-        "Id": 3106726,
-        "Date": "2018-04-08T21:00:00",
-        "Venue": {
-            "Id": 160831,
-            "Name": "Streets Of London Pub",
-            "Address": "1501 E Colfax Ave",
-            "City": "Denver",
-            "State": "Colorado",
-            "StateCode": "CO",
-            "Country": "US",
-            "CountryCode": "US",
-            "ZipCode": "80218",
-            "Url": "",
-            "Latitude": 0.0,
-            "Longitude": 0.0
-        },
-        "Artists": [{
-            "Id": 123882,
-            "Name": "Shawn James"
-        }],
-        "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api"
-    }]
-};
-
-
-export const mockCleanConcertData = [{
-        "Id": 3106726,
-        "Date": "2018-04-08T21:00:00",
-        "startTime": "21:00",
-        "Venue": {
-            "Id": 160831,
-            "Name": "Streets Of London Pub",
-            "Address": "1501 E Colfax Ave",
-            "City": "Denver",
-            "State": "Colorado",
-            "StateCode": "CO",
-            "Country": "US",
-            "CountryCode": "US",
-            "ZipCode": "80218",
-            "Url": "",
-            "Latitude": 0.0,
-            "Longitude": 0.0
-        },
-        "Artists": [{
-            "Id": 123882,
-            "Name": "Shawn James"
-        }],
-        "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api"
-    }]
-
-export const mockReturnedCleanConcertData = [{"date": "2018 M04 8", "headlineArtist": {"Id": 123882, "Name": "Shawn James"}, "id": 3106726, "startTime": undefined, "supportArtists": [], "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": 160831, "name": "Streets Of London Pub", "url": ""}}]
-
+export const mockReturnedCleanConcertData = [
+  {
+    date: 'Oct 24',
+    headlineArtist: 'Joan Baez',
+    id: 'E0-001-112093347-3',
+    image: 'www.image.com',
+    startTime: '8:00 PM',
+    supportArtists: [],
+    tickets: 'www.axs.com',
+    venue: {
+      address: '1621 Glenarm Place',
+      city: 'Denver',
+      id: 'V0-001-000198697-3',
+      name: 'Paramount Theatre',
+      state: 'CO',
+      url:
+        'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+      zip: '80202'
+    }
+  }
+];
 export const mockTonightCardData = {
-  artist: "Selina Albright", 
-  venue: "The Soiled Dove Underground", 
-  date: {dayName: "Fri", day: "20", month: "Apr", year: "2018", startTime: "20:00"}, 
-  id: 3108932, 
-  image: "https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png" 
+  artist: 'Selina Albright',
+  venue: 'The Soiled Dove Underground',
+  date: {
+    dayName: 'Fri',
+    day: '20',
+    month: 'Apr',
+    year: '2018',
+    startTime: '20:00'
+  },
+  id: 3108932,
+  image:
+    'https://lastfm-img2.akamaized.net/i/u/300x300/2254265bbd13a9aea946244144459709.png'
 };
 
 export const mockTonightCardDataWOImage = {
-  date: "Apr 13, 2018",
+  date: 'Apr 13, 2018',
   headlineArtist: {
     Id: 34468,
-    Name: "The English Beat"
+    Name: 'The English Beat'
   },
   id: 3092703,
-  startTime: "8:00 PM",
+  startTime: '8:00 PM',
   supportArtists: [],
-  tickets: "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+  tickets:
+    'http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api',
   venue: {
-    name: "The Soiled Dove Underground", 
-    id: 59319, url: "http://www.soileddove.com/", 
-    address: "7401 E. 1st Ave", city: "Denver"
+    name: 'The Soiled Dove Underground',
+    id: 59319,
+    url: 'http://www.soileddove.com/',
+    address: '7401 E. 1st Ave',
+    city: 'Denver'
   }
-}
+};
 
-export const mockFetchImageConcertData = [{
-  date: "Apr 13, 2018",
-  headlineArtist: {
-    Id: 34468,
-    Name: "The English Beat"
-  },
-  id: 3092703,
-  startTime: "8:00 PM",
-  supportArtists: [],
-  tickets: "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-  venue: {
-    name: "The Soiled Dove Underground", 
-    id: 59319, url: "http://www.soileddove.com/", 
-    address: "7401 E. 1st Ave", city: "Denver"
+export const mockFetchImageConcertData = [
+  {
+    date: 'Apr 13, 2018',
+    headlineArtist: {
+      Id: 34468,
+      Name: 'The English Beat'
+    },
+    id: 3092703,
+    startTime: '8:00 PM',
+    supportArtists: [],
+    tickets:
+      'http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api',
+    venue: {
+      name: 'The Soiled Dove Underground',
+      id: 59319,
+      url: 'http://www.soileddove.com/',
+      address: '7401 E. 1st Ave',
+      city: 'Denver'
+    }
   }
-}]
+];
 
-export const mockFetchArtistImageReturnData = {
+export const mockLastFmReturnData = {
   artist: {
+    name: 'The English Beat',
+    bio: { summary: 'So many beats  <a href=www.lastfm.com>' },
     image: [
-      {'#text': "https://lastfm-img2.akamaized.net/i/u/34s/fa3db70a62ae49dbbbfbd4183d68289f.png", size: "small"},
-      {'#text': "https://lastfm-img2.akamaized.net/i/u/64s/fa3db70a62ae49dbbbfbd4183d68289f.png", size: "medium"},
-      {'#text': "https://lastfm-img2.akamaized.net/i/u/174s/fa3db70a62ae49dbbbfbd4183d68289f.png", size: "large"},
-      {'#text': "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png", size: "extralarge"},
-      {'#text': "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png", size: "mega"},
-      {'#text': "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png", size: ""}
-    ],
-
-    name: "The English Beat"
+      {
+        '#text':
+          'https://lastfm-img2.akamaized.net/i/u/34s/fa3db70a62ae49dbbbfbd4183d68289f.png',
+        size: 'small'
+      },
+      {
+        '#text':
+          'https://lastfm-img2.akamaized.net/i/u/64s/fa3db70a62ae49dbbbfbd4183d68289f.png',
+        size: 'medium'
+      },
+      {
+        '#text':
+          'https://lastfm-img2.akamaized.net/i/u/174s/fa3db70a62ae49dbbbfbd4183d68289f.png',
+        size: 'large'
+      },
+      {
+        '#text':
+          'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+        size: 'extralarge'
+      },
+      {
+        '#text':
+          'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+        size: 'mega'
+      },
+      {
+        '#text':
+          'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+        size: ''
+      }
+    ]
   }
-}
+};
 
-export const mockFetchImageReturnData = [{
-  date: "Apr 13, 2018",
-  headlineArtist: {
-    Id: 34468,
-    Name: "The English Beat"
-  },
-  id: 3092703,
-  startTime: "8:00 PM",
-  supportArtists: [],
-  tickets: "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
-  venue: {
-    name: "The Soiled Dove Underground", 
-    id: 59319, url: "http://www.soileddove.com/", 
-    address: "7401 E. 1st Ave", city: "Denver"
-  },
-  image: "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
-}];
+export const mockGetLastFmReturnData = [
+  {
+    bio: 'So many beats ',
+    date: 'Oct 24',
+    headlineArtist: 'Joan Baez',
+    id: 'E0-001-112093347-3',
+    image:
+      'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+    startTime: '8:00 PM',
+    supportArtists: [],
+    tickets: 'www.axs.com',
+    venue: {
+      address: '1621 Glenarm Place',
+      city: 'Denver',
+      id: 'V0-001-000198697-3',
+      name: 'Paramount Theatre',
+      state: 'CO',
+      url:
+        'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+      zip: '80202'
+    }
+  }
+];
+
+export const mockFetchImageReturnData = [
+  {
+    date: 'Oct 24',
+    headlineArtist: 'Joan Baez',
+    id: 'E0-001-112093347-3',
+    image:
+      'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+    startTime: '8:00 PM',
+    supportArtists: [],
+    tickets: 'www.axs.com',
+    bio: 'Yada yada yada',
+    venue: {
+      address: '1621 Glenarm Place',
+      city: 'Denver',
+      id: 'V0-001-000198697-3',
+      name: 'Paramount Theatre',
+      state: 'CO',
+      url:
+        'http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic',
+      zip: '80202'
+    }
+  }
+];
 
 export const mockConcertProps = {
-  date: "Apr 13, 2018",
+  date: 'Apr 13, 2018',
   headlineArtist: {
     Id: 34468,
-    Name: "The English Beat"
+    Name: 'The English Beat'
   },
   id: 3092703,
-  startTime: "8:00 PM",
-  supportArtists: [{"Id": '123882', "Name": "Shawn James"}],
-  tickets: "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api",
+  startTime: '8:00 PM',
+  supportArtists: [{ Id: '123882', Name: 'Shawn James' }],
+  tickets:
+    'http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1612325/tfly?utm_medium=api',
   venue: {
-    name: "The Soiled Dove Underground", 
-    id: 59319, url: "http://www.soileddove.com/", 
-    address: "7401 E. 1st Ave", city: "Denver"
+    name: 'The Soiled Dove Underground',
+    id: 59319,
+    url: 'http://www.soileddove.com/',
+    address: '7401 E. 1st Ave',
+    city: 'Denver'
   },
-  image: "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
-}
+  image:
+    'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+  bio: 'Ooh la la'
+};
 
-export const mockFetchImageCallData = [{
-  "date": "2018 M04 8", 
-  "headlineArtist": {"Id": '123882', "Name": "Shawn James"}, 
-  "id": '3106726', 
-  "startTime": "21:00", 
-  "supportArtists": [], 
-  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", 
-  "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": '160831', "name": "Streets Of London Pub", "url": ""}
-}]
+export const mockInitialReturnEventData = {
+  events: { event: mockConcertData },
+  first_item: null,
+  last_item: null,
+  page_count: '2',
+  page_items: null,
+  page_number: '1',
+  page_size: '25',
+  search_time: '0.04',
+  total_items: '31'
+};
 
-export const mockExpectedCleanConcertData = [{"Artists": [{"Id": 123882, "Name": "Shawn James"}], "Date": "2018-04-08T21:00:00", "Id": 3106726, "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "Venue": {"Address": "1501 E Colfax Ave", "City": "Denver", "Country": "US", "CountryCode": "US", "Id": 160831, "Latitude": 0, "Longitude": 0, "Name": "Streets Of London Pub", "State": "Colorado", "StateCode": "CO", "Url": "", "ZipCode": "80218"}}, {"Artists": [{"Id": 123882, "Name": "Shawn James"}], "Date": "2018-04-08T21:00:00", "Id": 3106726, "TicketUrl": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", "Venue": {"Address": "1501 E Colfax Ave", "City": "Denver", "Country": "US", "CountryCode": "US", "Id": 160831, "Latitude": 0, "Longitude": 0, "Name": "Streets Of London Pub", "State": "Colorado", "StateCode": "CO", "Url": "", "ZipCode": "80218"}}]
+export const mockUrl =
+  'https://salty-waters-47393.herokuapp.com/http://api.eventful.com/json/events/search?app_key=fXn9D3Xfj44jjsj7&location=Denver&category=music&image_sizes=block250&sort_order=popularity&page_size=25&include=tickets,links';
 
-export const mockFilterDataCall = [{
-  "date": "2018 M04 8", 
-  "headlineArtist": {"Id": '123882', "Name": "Shawn James"}, 
-  "id": '3106726', 
-  "startTime": "21:00", 
-  "supportArtists": [], 
-  "tickets": "http://www.shareasale.com/r.cfm?u=460319&b=234786&m=27601&afftrack=&urllink=https://www.ticketfly.com/purchase/event/1634017/tfly?utm_medium=api", 
-  "venue": {"address": "1501 E Colfax Ave", "city": "Denver", "id": '160831', "name": "Streets Of London Pub", "url": ""},
-  "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png"
-}]
-
-export const mockFilterDatesData = [{
-        "Id": 3083885,
-        "date": "2018-04-16T18:30:00",
-        "Artists": [{
-            "Id": 42467,
-            "Name": "Cradle of Filth "
-        }, {
-            "Id": 118639,
-            "Name": "Uncured"
-        }, {
-            "Id": 128218,
-            "Name": "Jinjer"
-        }],
-    }, {
-        "Id": 3109433,
-        "date": "2018-04-18T00:00:00",
-        "Artists": [{
-            "Id": 101680,
-            "Name": "Lapalux"
-        }],
-    }, {
-        "Id": 3102725,
-        "date": "2018-04-25T21:00:00",
-        
-        "Artists": [{
-            "Id": 25778,
-            "Name": "Chali 2na"
-        }, {
-            "Id": 36359,
-            "Name": "Method Man"
-        }, {
-            "Id": 40914,
-            "Name": "Redman"
-        }, {
-            "Id": 51319,
-            "Name": "Collie Buddz "
-        }],
-    }
-]
-
-export const mockExpectedFilterDates = [[{"Artists": [{"Id": 42467, "Name": "Cradle of Filth "}, {"Id": 118639, "Name": "Uncured"}, {"Id": 128218, "Name": "Jinjer"}], "Id": 3083885, "date": "M04 16"}], 
-[{"Artists": [{"Id": 101680, "Name": "Lapalux"}], "Id": 3109433, "date": "M04 18"}, ], 
-[{"Artists": [{"Id": 25778, "Name": "Chali 2na"}, {"Id": 36359, "Name": "Method Man"}, {"Id": 40914, "Name": "Redman"}, {"Id": 51319, "Name": "Collie Buddz "}], "Id": 3102725, "date": "M04 25"}]]
-
-
-
+export const mockDate = {
+  nextWeek: '2018120800',
+  today: '2018120100',
+  tommorrow: '2018120200',
+  upcoming: '2018120900',
+  upcomingEnd: '2019030100'
+};
