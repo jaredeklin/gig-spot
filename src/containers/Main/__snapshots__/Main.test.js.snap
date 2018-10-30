@@ -1,5 +1,175 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Main should match the snapshot when show props are empty 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    thisWeeksShows={Array []}
+    tonightsShows={Array []}
+    upcomingShows={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="change-location"
+>
+          <p>
+                    Update location:
+          </p>
+          <withRouter(Connect(LocationForm))
+                    currentLocation={undefined}
+                    id="main-form"
+          />
+</div>,
+        false,
+      ],
+      "className": "main",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              Update location:
+</p>,
+            <withRouter(Connect(LocationForm))
+              currentLocation={undefined}
+              id="main-form"
+/>,
+          ],
+          "className": "change-location",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update location:",
+            },
+            "ref": null,
+            "rendered": "Update location:",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentLocation": undefined,
+              "id": "main-form",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      false,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="change-location"
+>
+            <p>
+                        Update location:
+            </p>
+            <withRouter(Connect(LocationForm))
+                        currentLocation={undefined}
+                        id="main-form"
+            />
+</div>,
+          false,
+        ],
+        "className": "main",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Update location:
+</p>,
+              <withRouter(Connect(LocationForm))
+                currentLocation={undefined}
+                id="main-form"
+/>,
+            ],
+            "className": "change-location",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update location:",
+              },
+              "ref": null,
+              "rendered": "Update location:",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currentLocation": undefined,
+                "id": "main-form",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        false,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
 exports[`Main should match the snapshot with more than 2 items tonightsShows 1`] = `
 ShallowWrapper {
   "length": 1,
@@ -7,25 +177,11 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     thisWeeksShows={
         Array [
-            Object {
-              "bio": "So many beats ",
-              "date": "Oct 24",
-              "headlineArtist": "Joan Baez",
-              "id": "E0-001-112093347-3",
-              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-              "startTime": "8:00 PM",
-              "supportArtists": Array [],
-              "tickets": "www.axs.com",
-              "venue": Object {
-                "address": "1621 Glenarm Place",
-                "city": "Denver",
-                "id": "V0-001-000198697-3",
-                "name": "Paramount Theatre",
-                "state": "CO",
-                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                "zip": "80202",
-              },
-            },
+            Object {},
+            Object {},
+            Object {},
+            Object {},
+            Object {},
           ]
     }
     tonightsShows={
@@ -39,25 +195,11 @@ ShallowWrapper {
     }
     upcomingShows={
         Array [
-            Object {
-              "bio": "So many beats ",
-              "date": "Oct 24",
-              "headlineArtist": "Joan Baez",
-              "id": "E0-001-112093347-3",
-              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-              "startTime": "8:00 PM",
-              "supportArtists": Array [],
-              "tickets": "www.axs.com",
-              "venue": Object {
-                "address": "1621 Glenarm Place",
-                "city": "Denver",
-                "id": "V0-001-000198697-3",
-                "name": "Paramount Theatre",
-                "state": "CO",
-                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                "zip": "80202",
-              },
-            },
+            Object {},
+            Object {},
+            Object {},
+            Object {},
+            Object {},
           ]
     }
 />,
@@ -133,27 +275,49 @@ ShallowWrapper {
                                         className="shows-inner"
                               >
                                         <Unknown
-                                                  show={
-                                                            Object {
-                                                                      "bio": "So many beats ",
-                                                                      "date": "Oct 24",
-                                                                      "headlineArtist": "Joan Baez",
-                                                                      "id": "E0-001-112093347-3",
-                                                                      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                      "startTime": "8:00 PM",
-                                                                      "supportArtists": Array [],
-                                                                      "tickets": "www.axs.com",
-                                                                      "venue": Object {
-                                                                        "address": "1621 Glenarm Place",
-                                                                        "city": "Denver",
-                                                                        "id": "V0-001-000198697-3",
-                                                                        "name": "Paramount Theatre",
-                                                                        "state": "CO",
-                                                                        "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                        "zip": "80202",
-                                                                      },
-                                                                    }
-                                                  }
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                              </div>
+                    </section>
+          </div>
+          <div>
+                    <h2
+                              className="event-happening-when-text"
+                    >
+                              Upcoming:
+                    </h2>
+                    <section
+                              className="shows"
+                    >
+                              <div
+                                        className="shows-inner"
+                              >
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
+                                        />
+                                        <Unknown
+                                                  show={Object {}}
                                         />
                               </div>
                     </section>
@@ -285,33 +449,54 @@ ShallowWrapper {
                                           className="shows-inner"
                             >
                                           <Unknown
-                                                        show={
-                                                                      Object {
-                                                                                    "bio": "So many beats ",
-                                                                                    "date": "Oct 24",
-                                                                                    "headlineArtist": "Joan Baez",
-                                                                                    "id": "E0-001-112093347-3",
-                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                    "startTime": "8:00 PM",
-                                                                                    "supportArtists": Array [],
-                                                                                    "tickets": "www.axs.com",
-                                                                                    "venue": Object {
-                                                                                      "address": "1621 Glenarm Place",
-                                                                                      "city": "Denver",
-                                                                                      "id": "V0-001-000198697-3",
-                                                                                      "name": "Paramount Theatre",
-                                                                                      "state": "CO",
-                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                      "zip": "80202",
-                                                                                    },
-                                                                                  }
-                                                        }
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
                                           />
                             </div>
               </section>
 </div>,
             undefined,
-            false,
+            <div>
+              <h2
+                            className="event-happening-when-text"
+              >
+                            Upcoming:
+              </h2>
+              <section
+                            className="shows"
+              >
+                            <div
+                                          className="shows-inner"
+                            >
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                                          <Unknown
+                                                        show={Object {}}
+                                          />
+                            </div>
+              </section>
+</div>,
             <div
               className="icons"
 >
@@ -528,27 +713,19 @@ ShallowWrapper {
                                     className="shows-inner"
                   >
                                     <Unknown
-                                                      show={
-                                                                        Object {
-                                                                                          "bio": "So many beats ",
-                                                                                          "date": "Oct 24",
-                                                                                          "headlineArtist": "Joan Baez",
-                                                                                          "id": "E0-001-112093347-3",
-                                                                                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                          "startTime": "8:00 PM",
-                                                                                          "supportArtists": Array [],
-                                                                                          "tickets": "www.axs.com",
-                                                                                          "venue": Object {
-                                                                                            "address": "1621 Glenarm Place",
-                                                                                            "city": "Denver",
-                                                                                            "id": "V0-001-000198697-3",
-                                                                                            "name": "Paramount Theatre",
-                                                                                            "state": "CO",
-                                                                                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                            "zip": "80202",
-                                                                                          },
-                                                                                        }
-                                                      }
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
                                     />
                   </div>
 </section>,
@@ -577,27 +754,19 @@ ShallowWrapper {
                     className="shows-inner"
 >
                     <Unknown
-                                        show={
-                                                            Object {
-                                                                                "bio": "So many beats ",
-                                                                                "date": "Oct 24",
-                                                                                "headlineArtist": "Joan Baez",
-                                                                                "id": "E0-001-112093347-3",
-                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                "startTime": "8:00 PM",
-                                                                                "supportArtists": Array [],
-                                                                                "tickets": "www.axs.com",
-                                                                                "venue": Object {
-                                                                                  "address": "1621 Glenarm Place",
-                                                                                  "city": "Denver",
-                                                                                  "id": "V0-001-000198697-3",
-                                                                                  "name": "Paramount Theatre",
-                                                                                  "state": "CO",
-                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                  "zip": "80202",
-                                                                                },
-                                                                              }
-                                        }
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
                     />
 </div>,
                   "className": "shows",
@@ -610,27 +779,19 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <Unknown
-                        show={
-                                                Object {
-                                                                        "bio": "So many beats ",
-                                                                        "date": "Oct 24",
-                                                                        "headlineArtist": "Joan Baez",
-                                                                        "id": "E0-001-112093347-3",
-                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                        "startTime": "8:00 PM",
-                                                                        "supportArtists": Array [],
-                                                                        "tickets": "www.axs.com",
-                                                                        "venue": Object {
-                                                                          "address": "1621 Glenarm Place",
-                                                                          "city": "Denver",
-                                                                          "id": "V0-001-000198697-3",
-                                                                          "name": "Paramount Theatre",
-                                                                          "state": "CO",
-                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                          "zip": "80202",
-                                                                        },
-                                                                      }
-                        }
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
 />,
                     ],
                     "className": "shows-inner",
@@ -639,28 +800,54 @@ ShallowWrapper {
                   "rendered": Array [
                     Object {
                       "instance": null,
-                      "key": "4E0-001-112093347-3",
+                      "key": "4undefined",
                       "nodeType": "function",
                       "props": Object {
-                        "show": Object {
-                          "bio": "So many beats ",
-                          "date": "Oct 24",
-                          "headlineArtist": "Joan Baez",
-                          "id": "E0-001-112093347-3",
-                          "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                          "startTime": "8:00 PM",
-                          "supportArtists": Array [],
-                          "tickets": "www.axs.com",
-                          "venue": Object {
-                            "address": "1621 Glenarm Place",
-                            "city": "Denver",
-                            "id": "V0-001-000198697-3",
-                            "name": "Paramount Theatre",
-                            "state": "CO",
-                            "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                            "zip": "80202",
-                          },
-                        },
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "4undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "4undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "4undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "4undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
                       },
                       "ref": null,
                       "rendered": null,
@@ -675,7 +862,172 @@ ShallowWrapper {
             "type": "div",
           },
           undefined,
-          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="event-happening-when-text"
+>
+                  Upcoming:
+</h2>,
+                <section
+                  className="shows"
+>
+                  <div
+                                    className="shows-inner"
+                  >
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                                    <Unknown
+                                                      show={Object {}}
+                                    />
+                  </div>
+</section>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Upcoming:",
+                  "className": "event-happening-when-text",
+                },
+                "ref": null,
+                "rendered": "Upcoming:",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="shows-inner"
+>
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+                    <Unknown
+                                        show={Object {}}
+                    />
+</div>,
+                  "className": "shows",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                      <Unknown
+                        show={Object {}}
+/>,
+                    ],
+                    "className": "shows-inner",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "2undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2undefined",
+                      "nodeType": "function",
+                      "props": Object {
+                        "show": Object {},
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "section",
+              },
+            ],
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -843,27 +1195,49 @@ ShallowWrapper {
                                                 className="shows-inner"
                                     >
                                                 <Unknown
-                                                            show={
-                                                                        Object {
-                                                                                    "bio": "So many beats ",
-                                                                                    "date": "Oct 24",
-                                                                                    "headlineArtist": "Joan Baez",
-                                                                                    "id": "E0-001-112093347-3",
-                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                    "startTime": "8:00 PM",
-                                                                                    "supportArtists": Array [],
-                                                                                    "tickets": "www.axs.com",
-                                                                                    "venue": Object {
-                                                                                      "address": "1621 Glenarm Place",
-                                                                                      "city": "Denver",
-                                                                                      "id": "V0-001-000198697-3",
-                                                                                      "name": "Paramount Theatre",
-                                                                                      "state": "CO",
-                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                      "zip": "80202",
-                                                                                    },
-                                                                                  }
-                                                            }
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                    </div>
+                        </section>
+            </div>
+            <div>
+                        <h2
+                                    className="event-happening-when-text"
+                        >
+                                    Upcoming:
+                        </h2>
+                        <section
+                                    className="shows"
+                        >
+                                    <div
+                                                className="shows-inner"
+                                    >
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
+                                                />
+                                                <Unknown
+                                                            show={Object {}}
                                                 />
                                     </div>
                         </section>
@@ -995,33 +1369,54 @@ ShallowWrapper {
                                                 className="shows-inner"
                                 >
                                                 <Unknown
-                                                                show={
-                                                                                Object {
-                                                                                                "bio": "So many beats ",
-                                                                                                "date": "Oct 24",
-                                                                                                "headlineArtist": "Joan Baez",
-                                                                                                "id": "E0-001-112093347-3",
-                                                                                                "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                "startTime": "8:00 PM",
-                                                                                                "supportArtists": Array [],
-                                                                                                "tickets": "www.axs.com",
-                                                                                                "venue": Object {
-                                                                                                  "address": "1621 Glenarm Place",
-                                                                                                  "city": "Denver",
-                                                                                                  "id": "V0-001-000198697-3",
-                                                                                                  "name": "Paramount Theatre",
-                                                                                                  "state": "CO",
-                                                                                                  "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                  "zip": "80202",
-                                                                                                },
-                                                                                              }
-                                                                }
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
                                                 />
                                 </div>
                 </section>
 </div>,
               undefined,
-              false,
+              <div>
+                <h2
+                                className="event-happening-when-text"
+                >
+                                Upcoming:
+                </h2>
+                <section
+                                className="shows"
+                >
+                                <div
+                                                className="shows-inner"
+                                >
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                                <Unknown
+                                                                show={Object {}}
+                                                />
+                                </div>
+                </section>
+</div>,
               <div
                 className="icons"
 >
@@ -1238,27 +1633,19 @@ ShallowWrapper {
                                         className="shows-inner"
                     >
                                         <Unknown
-                                                            show={
-                                                                                Object {
-                                                                                                    "bio": "So many beats ",
-                                                                                                    "date": "Oct 24",
-                                                                                                    "headlineArtist": "Joan Baez",
-                                                                                                    "id": "E0-001-112093347-3",
-                                                                                                    "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                                    "startTime": "8:00 PM",
-                                                                                                    "supportArtists": Array [],
-                                                                                                    "tickets": "www.axs.com",
-                                                                                                    "venue": Object {
-                                                                                                      "address": "1621 Glenarm Place",
-                                                                                                      "city": "Denver",
-                                                                                                      "id": "V0-001-000198697-3",
-                                                                                                      "name": "Paramount Theatre",
-                                                                                                      "state": "CO",
-                                                                                                      "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                                      "zip": "80202",
-                                                                                                    },
-                                                                                                  }
-                                                            }
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
                                         />
                     </div>
 </section>,
@@ -1287,27 +1674,19 @@ ShallowWrapper {
                       className="shows-inner"
 >
                       <Unknown
-                                            show={
-                                                                  Object {
-                                                                                        "bio": "So many beats ",
-                                                                                        "date": "Oct 24",
-                                                                                        "headlineArtist": "Joan Baez",
-                                                                                        "id": "E0-001-112093347-3",
-                                                                                        "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                                        "startTime": "8:00 PM",
-                                                                                        "supportArtists": Array [],
-                                                                                        "tickets": "www.axs.com",
-                                                                                        "venue": Object {
-                                                                                          "address": "1621 Glenarm Place",
-                                                                                          "city": "Denver",
-                                                                                          "id": "V0-001-000198697-3",
-                                                                                          "name": "Paramount Theatre",
-                                                                                          "state": "CO",
-                                                                                          "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                          "zip": "80202",
-                                                                                        },
-                                                                                      }
-                                            }
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
                       />
 </div>,
                     "className": "shows",
@@ -1320,27 +1699,19 @@ ShallowWrapper {
                     "props": Object {
                       "children": Array [
                         <Unknown
-                          show={
-                                                    Object {
-                                                                              "bio": "So many beats ",
-                                                                              "date": "Oct 24",
-                                                                              "headlineArtist": "Joan Baez",
-                                                                              "id": "E0-001-112093347-3",
-                                                                              "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                                                                              "startTime": "8:00 PM",
-                                                                              "supportArtists": Array [],
-                                                                              "tickets": "www.axs.com",
-                                                                              "venue": Object {
-                                                                                "address": "1621 Glenarm Place",
-                                                                                "city": "Denver",
-                                                                                "id": "V0-001-000198697-3",
-                                                                                "name": "Paramount Theatre",
-                                                                                "state": "CO",
-                                                                                "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                                                                                "zip": "80202",
-                                                                              },
-                                                                            }
-                          }
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
 />,
                       ],
                       "className": "shows-inner",
@@ -1349,28 +1720,54 @@ ShallowWrapper {
                     "rendered": Array [
                       Object {
                         "instance": null,
-                        "key": "4E0-001-112093347-3",
+                        "key": "4undefined",
                         "nodeType": "function",
                         "props": Object {
-                          "show": Object {
-                            "bio": "So many beats ",
-                            "date": "Oct 24",
-                            "headlineArtist": "Joan Baez",
-                            "id": "E0-001-112093347-3",
-                            "image": "https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png",
-                            "startTime": "8:00 PM",
-                            "supportArtists": Array [],
-                            "tickets": "www.axs.com",
-                            "venue": Object {
-                              "address": "1621 Glenarm Place",
-                              "city": "Denver",
-                              "id": "V0-001-000198697-3",
-                              "name": "Paramount Theatre",
-                              "state": "CO",
-                              "url": "http://denver.eventful.com/venues/paramount-theatre-/V0-001-000198697-3?utm_source=apis&utm_medium=apim&utm_campaign=apic",
-                              "zip": "80202",
-                            },
-                          },
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "4undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "4undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "4undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "4undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
                         },
                         "ref": null,
                         "rendered": null,
@@ -1385,7 +1782,172 @@ ShallowWrapper {
               "type": "div",
             },
             undefined,
-            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2
+                    className="event-happening-when-text"
+>
+                    Upcoming:
+</h2>,
+                  <section
+                    className="shows"
+>
+                    <div
+                                        className="shows-inner"
+                    >
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                                        <Unknown
+                                                            show={Object {}}
+                                        />
+                    </div>
+</section>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Upcoming:",
+                    "className": "event-happening-when-text",
+                  },
+                  "ref": null,
+                  "rendered": "Upcoming:",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="shows-inner"
+>
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+                      <Unknown
+                                            show={Object {}}
+                      />
+</div>,
+                    "className": "shows",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                        <Unknown
+                          show={Object {}}
+/>,
+                      ],
+                      "className": "shows-inner",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "2undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2undefined",
+                        "nodeType": "function",
+                        "props": Object {
+                          "show": Object {},
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": "section",
+                },
+              ],
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1503,6 +2065,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
+    thisWeekLoading={true}
     thisWeeksShows={
         Array [
             Object {
@@ -1526,6 +2089,7 @@ ShallowWrapper {
             },
           ]
     }
+    tonightLoading={true}
     tonightsShows={
         Array [
             Object {
@@ -1549,6 +2113,7 @@ ShallowWrapper {
             },
           ]
     }
+    upcomingLoading={true}
     upcomingShows={
         Array [
             Object {
@@ -1586,20 +2151,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
-          className="change-location"
->
-          <p>
-                    Update location:
-          </p>
-          <withRouter(Connect(LocationForm))
-                    currentLocation={undefined}
-                    id="main-form"
-          />
-</div>,
+        false,
         <div
           className="all-shows"
 >
+          <Unknown
+                    message="Finding this weeks shows..."
+          />
           <div>
                     <h2
                               className="event-happening-when-text"
@@ -1661,6 +2219,9 @@ ShallowWrapper {
                               </div>
                     </section>
           </div>
+          <Unknown
+                    message="Finding upcoming shows..."
+          />
           <div
                     className="icons"
           >
@@ -1692,50 +2253,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <p>
-              Update location:
-</p>,
-            <withRouter(Connect(LocationForm))
-              currentLocation={undefined}
-              id="main-form"
-/>,
-          ],
-          "className": "change-location",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Update location:",
-            },
-            "ref": null,
-            "rendered": "Update location:",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "currentLocation": undefined,
-              "id": "main-form",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
-      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -1743,7 +2261,9 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             false,
-            undefined,
+            <Unknown
+              message="Finding this weeks shows..."
+/>,
             <div>
               <h2
                             className="event-happening-when-text"
@@ -1805,7 +2325,9 @@ ShallowWrapper {
                             </div>
               </section>
 </div>,
-            undefined,
+            <Unknown
+              message="Finding upcoming shows..."
+/>,
             false,
             <div
               className="icons"
@@ -1838,7 +2360,17 @@ ShallowWrapper {
         "ref": null,
         "rendered": Array [
           false,
-          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "message": "Finding this weeks shows...",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -2101,7 +2633,17 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "message": "Finding upcoming shows...",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           false,
           Object {
             "instance": null,
@@ -2211,20 +2753,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="change-location"
->
-            <p>
-                        Update location:
-            </p>
-            <withRouter(Connect(LocationForm))
-                        currentLocation={undefined}
-                        id="main-form"
-            />
-</div>,
+          false,
           <div
             className="all-shows"
 >
+            <Unknown
+                        message="Finding this weeks shows..."
+            />
             <div>
                         <h2
                                     className="event-happening-when-text"
@@ -2286,6 +2821,9 @@ ShallowWrapper {
                                     </div>
                         </section>
             </div>
+            <Unknown
+                        message="Finding upcoming shows..."
+            />
             <div
                         className="icons"
             >
@@ -2317,50 +2855,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <p>
-                Update location:
-</p>,
-              <withRouter(Connect(LocationForm))
-                currentLocation={undefined}
-                id="main-form"
-/>,
-            ],
-            "className": "change-location",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Update location:",
-              },
-              "ref": null,
-              "rendered": "Update location:",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "currentLocation": undefined,
-                "id": "main-form",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
-        },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -2368,7 +2863,9 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
-              undefined,
+              <Unknown
+                message="Finding this weeks shows..."
+/>,
               <div>
                 <h2
                                 className="event-happening-when-text"
@@ -2430,7 +2927,9 @@ ShallowWrapper {
                                 </div>
                 </section>
 </div>,
-              undefined,
+              <Unknown
+                message="Finding upcoming shows..."
+/>,
               false,
               <div
                 className="icons"
@@ -2463,7 +2962,17 @@ ShallowWrapper {
           "ref": null,
           "rendered": Array [
             false,
-            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "message": "Finding this weeks shows...",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -2726,7 +3235,17 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "message": "Finding upcoming shows...",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             false,
             Object {
               "instance": null,

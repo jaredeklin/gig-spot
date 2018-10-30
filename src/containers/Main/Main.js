@@ -22,13 +22,13 @@ export const Main = props => {
   const showThisWeeksEvents = thisWeeksShows.length > 0;
   const showUpcomingEvents = upcomingShows.length > 3;
 
-  if (tonightsShows) {
+  if (tonightsShows.length) {
     tonightCards = tonightsShows.map(show => (
       <TonightCard show={show} key={`3${show.id}`} />
     ));
   }
 
-  if (thisWeeksShows) {
+  if (thisWeeksShows.length) {
     if (tonightsShows.length <= 2) {
       const combined = [...tonightsShows, ...thisWeeksShows];
 
@@ -42,7 +42,7 @@ export const Main = props => {
     }
   }
 
-  if (upcomingShows) {
+  if (upcomingShows.length) {
     upcomingCards = upcomingShows.map(show => (
       <TonightCard show={show} key={`2${show.id}`} />
     ));
