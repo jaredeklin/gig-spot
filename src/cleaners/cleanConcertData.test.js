@@ -7,4 +7,10 @@ describe('cleanConcertData', () => {
       mockReturnedCleanConcertData
     );
   });
+
+  it('should return clean concert data if image is null', () => {
+    const concertWOImage = [{ ...mockConcertData[0], image: null }];
+    const expected = [{ ...mockReturnedCleanConcertData[0], image: null }];
+    expect(cleanConcertData(concertWOImage)).toEqual(expected);
+  });
 });
