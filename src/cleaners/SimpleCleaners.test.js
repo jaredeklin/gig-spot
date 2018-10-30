@@ -65,9 +65,14 @@ describe('SimpleCleaners', () => {
   describe('SimpleCleaners tickets method', () => {
     const links = mockConcertData[0].links;
     const tickets = mockConcertData[0].tickets;
+    const links1 = { ...links, link: [{ url: 'www.ticketmaster.com' }] };
 
     it('should return preferred ticket url', () => {
       expect(clean.tickets(links, tickets)).toEqual('www.axs.com');
+    });
+
+    it('should not return preferred ticket url if not preferred', () => {
+      expect(clean.tickets(links1, tickets)).toEqual('www.stubhub.com');
     });
 
     it('should return ticket url if not prefered', () => {
