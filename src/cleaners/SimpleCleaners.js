@@ -7,7 +7,7 @@ export class SimpleCleaners {
   time = time => {
     const startTime = moment(time).format('h:mm A');
 
-    return startTime === '12:00 AM' ? '' : startTime;
+    return startTime !== '12:00 AM' ? startTime : '';
   };
 
   image = (artistData, currentImage) => {

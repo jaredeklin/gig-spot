@@ -10,6 +10,12 @@ describe('SimpleCleaners', () => {
 
       expect(clean.time(mockTime)).toEqual('8:00 PM');
     });
+
+    it('should return an empty string if time is 12:00 AM', () => {
+      const mockTime = '2018-04-24T00:00:00';
+
+      expect(clean.time(mockTime)).toEqual('');
+    });
   });
 
   describe('SimpleCleaners artist method', () => {
