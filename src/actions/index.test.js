@@ -159,7 +159,8 @@ describe('fetchShows', () => {
     expect(actualActions).toEqual(expectedActions);
   });
 
-  it('should fire correct actions when there is no local storage', async () => {
+  it('should fire correct actions when local storage doesnt match', async () => {
+    storage.addEventsTo({ date: '2018120100' });
     await store.dispatch(actions.fetchShows(location));
 
     const expectedActions = [
