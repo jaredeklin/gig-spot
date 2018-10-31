@@ -1,6 +1,6 @@
 # Gig Spot
 
-#### View the deployed site || http://gigspot.surge.sh/
+#### View the deployed site || https://gigspot.surge.sh/
 
 ## Synopsis
 
