@@ -268,8 +268,7 @@ export const mockGetLastFmReturnData = [
     date: 'Oct 24',
     headlineArtist: 'Joan Baez',
     id: 'E0-001-112093347-3',
-    image:
-      'https://lastfm-img2.akamaized.net/i/u/300x300/fa3db70a62ae49dbbbfbd4183d68289f.png',
+    image: 'www.image.com',
     startTime: '8:00 PM',
     supportArtists: [],
     tickets: 'www.axs.com',
