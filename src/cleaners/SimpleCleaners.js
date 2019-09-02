@@ -11,12 +11,14 @@ export class SimpleCleaners {
   };
 
   image = (artistData, currentImage) => {
-    if (!artistData.artist || !artistData.artist.image[4]) {
-      return currentImage || defaultImage;
-    }
-    const artistImage = artistData.artist.image[4]['#text'];
+    return currentImage || defaultImage;
+    // TODO find alternative to LastFM for better images.
+    // if (!artistData.artist || !artistData.artist.image[4]) {
+    //   return currentImage || defaultImage;
+    // }
+    // const artistImage = artistData.artist.image[4]['#text'];
 
-    return artistImage;
+    // return artistImage;
   };
 
   bio = artistData => {
